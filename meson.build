@@ -22,6 +22,4 @@ if meson.is_subproject()
 
 else
     subdir('docs')
-    subdir('tools')
 endif
-
