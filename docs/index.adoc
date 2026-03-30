@@ -1,0 +1,9 @@
+= STM32 registers using Intel Groov
+:sourcehilighter: rouge
+:rouge-style: base16.solarizerd
+:source-language: c++
+:toc: left
+
+include::intro.adoc[]
+include::usage.adoc[]
+include::links.adoc[]

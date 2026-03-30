@@ -1,0 +1,7 @@
+== Introduction
+
+STM32 Groov register access.
+
+=== Dependencies
+
+- https://intel.github.io/generic-register-operation-optimizer[Intel Generic Register Operation Optimizer]

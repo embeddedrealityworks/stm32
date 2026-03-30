@@ -1,0 +1,9 @@
+=== Links
+
+Original repos for dependencies:
+
+- https://github.com/intel/generic-register-operation-optimizer[Intel Generic Register Operation Optimizer]
+- https://github.com/intel/cpp-baremetal-concurrency[Intel Baremetal Concurrency]
+- https://github.com/intel/cpp-baremetal-senders-and-receivers[Intel Baremetal Senders and Receivers]
+- https://github.com/fmtlib/fmt[FMT lib]
+- https://github.com/boostorg/mp11[Boost MP11]

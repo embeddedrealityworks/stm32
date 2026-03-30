@@ -1,0 +1,19 @@
+=== Usage
+
+Use as meson subproject.
+
+subprojects/stm32.wrap:
+[source, meson]
+----
+[wrap-git]
+url = https://github.com/embeddedrealityworks/stm32.git
+----
+
+meson.build:
+[source, meson]
+----
+stm32_sub = subproject('stm32')
+stm32_dep = stm32_sub.get_variable('stm32_dep')
+----
+
+This will collect also groov meson fork.
