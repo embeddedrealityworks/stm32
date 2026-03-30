@@ -39,3 +39,10 @@
 
 # debug information files
 *.dwo
+
+# meson things
+
+subprojects/*
+!subprojects/groov.wrap
+
+svd/raw*
