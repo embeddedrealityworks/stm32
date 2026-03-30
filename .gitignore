@@ -43,6 +43,6 @@
 # meson things
 
 subprojects/*
-!subprojects/groov.wrap
+!subprojects/generic-register-operation-optimizer.wrap
 
 svd/raw*
