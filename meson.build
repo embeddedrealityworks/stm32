@@ -13,6 +13,8 @@ if meson.is_subproject()
     groov_sub = subproject('generic-register-operation-optimizer')
     groov_dep = groov_sub.get_variable('groov_dep')
 
+    stm32_mcu = meson.get_external_property('stm32_mcu')
+
     inc = include_directories('include')
 
     stm32_dep = declare_dependency(
