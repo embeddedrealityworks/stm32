@@ -19,6 +19,8 @@ if meson.is_subproject()
 
     inc = include_directories('include')
 
+    svd_file = meson.current_source_dir() / 'svd' / stm32_mcu.to_upper() + '.svd'
+
     stm32_dep = declare_dependency(
         include_directories: inc,
         dependencies: [groov_dep],
