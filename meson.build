@@ -15,6 +15,8 @@ if meson.is_subproject()
 
     stm32_mcu = meson.get_external_property('stm32_mcu')
 
+    subdir('include/stm32')
+
     inc = include_directories('include')
 
     stm32_dep = declare_dependency(
