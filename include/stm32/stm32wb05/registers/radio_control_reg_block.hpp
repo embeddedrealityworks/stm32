@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // radio_control_reg_block_clk32count_reg_v1: CLK32COUNT_REG
 // Used by: RADIO_CONTROL_REG
@@ -92,4 +92,4 @@ using radio_control_reg_block_radio_control_irq_status_v1_tt =
                groov::field<"reserved0", std::uint8_t, 7, 1, common::access::ro>,
                groov::field<"slow_clk_irq", bool, 0, 0>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

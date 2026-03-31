@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // syscfg_c2imr1_v1: C2IMR1
 // Used by: SYSCFG
@@ -318,9 +318,9 @@ using syscfg_scsr_v1_tt =
              baseaddress + offset,
              common::access::rw,
                groov::field<"reserved1", std::uint32_t, 31, 9, common::access::ro>,
-               groov::field<"pkasrambsy", common::bit_ready_bar, 8, 8, common::access::ro>,
+               groov::field<"pkasrambsy", common::bit_nready, 8, 8, common::access::ro>,
                groov::field<"reserved0", std::uint8_t, 7, 2, common::access::ro>,
-               groov::field<"srambsy", common::bit_ready_bar, 1, 1, common::access::ro>,
+               groov::field<"srambsy", common::bit_nready, 1, 1, common::access::ro>,
                groov::field<"sram2er", bool, 0, 0>>;
 
 // syscfg_skr_v1: SKR
@@ -379,4 +379,4 @@ using syscfg_swpr_v1_tt =
                groov::field<"p1wp", bool, 1, 1>,
                groov::field<"p0wp", bool, 0, 0>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

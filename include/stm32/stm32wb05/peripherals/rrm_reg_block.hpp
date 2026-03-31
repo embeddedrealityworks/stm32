@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32wb05/registers/rrm_reg_block.hpp>
+#include "../registers/rrm_reg_block.hpp"
 
-namespace stm32::stm32wb05 {
+namespace mcu::stm32::stm32wb05 {
 
 namespace rrm_reg {
   template <stdx::ct_string name,
@@ -75,4 +75,4 @@ namespace rrm_reg {
 
 } // namespace rrm_reg
 
-} // namespace stm32::stm32wb05
+} // namespace mcu::stm32::stm32wb05

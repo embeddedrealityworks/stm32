@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // fmc_bcr1_v1: BCR1
 // Used by: FMC
@@ -524,4 +524,4 @@ using fmc_sr4_v1_tt =
                groov::field<"ils", bool, 1, 1>,
                groov::field<"irs", bool, 0, 0>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

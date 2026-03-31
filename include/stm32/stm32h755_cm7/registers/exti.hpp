@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // exti_cpuemr1_v1: CPUEMR1
 // Used by: EXTI
@@ -691,4 +691,4 @@ using exti_swier3_v1_tt =
                groov::field<"swier82", bool, 18, 18>,
                groov::field<"reserved0", std::uint32_t, 17, 0, common::access::ro>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

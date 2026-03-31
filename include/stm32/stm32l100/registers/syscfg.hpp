@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // syscfg_exticr1_v1: EXTICR1
 // Used by: SYSCFG
@@ -99,4 +99,4 @@ using syscfg_pmc_v1_tt =
                groov::field<"reserved0", std::uint32_t, 31, 1, common::access::ro>,
                groov::field<"usb_pu", bool, 0, 0>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

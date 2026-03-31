@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // dma_dma_ccr1_v1: DMA_CCR1
 // Used by: DMA1, DMA2
@@ -514,4 +514,4 @@ using dma_dma_isr_v1_tt =
                groov::field<"tcif1", bool, 1, 1, common::access::ro>,
                groov::field<"gif1", bool, 0, 0, common::access::ro>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

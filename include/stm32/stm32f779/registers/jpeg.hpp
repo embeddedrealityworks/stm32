@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // jpeg_dhtmem0_v1: DHTMEM0
 // Used by: JPEG
@@ -6208,4 +6208,4 @@ using jpeg_qmem3_9_v1_tt =
              common::access::rw,
                groov::field<"qmem_ram", std::uint32_t, 31, 0>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

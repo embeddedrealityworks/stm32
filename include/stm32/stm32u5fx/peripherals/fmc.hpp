@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32u5fx/registers/fmc.hpp>
+#include "../registers/fmc.hpp"
 
-namespace stm32::stm32u5fx {
+namespace mcu::stm32::stm32u5fx {
 
 namespace fmcx {
   template <stdx::ct_string name,
@@ -105,4 +105,4 @@ namespace fmcx {
 
 } // namespace fmcx
 
-} // namespace stm32::stm32u5fx
+} // namespace mcu::stm32::stm32u5fx

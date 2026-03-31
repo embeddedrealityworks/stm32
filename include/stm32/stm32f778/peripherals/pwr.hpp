@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32f778/registers/pwr.hpp>
+#include "../registers/pwr.hpp"
 
-namespace stm32::stm32f778 {
+namespace mcu::stm32::stm32f778 {
 
 namespace pwr {
   template <stdx::ct_string name,
@@ -35,4 +35,4 @@ namespace pwr {
 
 } // namespace pwr
 
-} // namespace stm32::stm32f778
+} // namespace mcu::stm32::stm32f778

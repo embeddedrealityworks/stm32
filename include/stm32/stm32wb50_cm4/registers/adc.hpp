@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // adc_awd2cr_v1: AWD2CR
 // Used by: ADC
@@ -76,7 +76,7 @@ using adc_cfgr_v1_tt =
              std::uint32_t,
              baseaddress + offset,
              common::access::rw,
-               groov::field<"jqdis", common::bit_enable_bar, 31, 31>,
+               groov::field<"jqdis", common::bit_nenable, 31, 31>,
                groov::field<"awdch1ch", std::uint8_t, 30, 26>,
                groov::field<"jauto", bool, 25, 25>,
                groov::field<"jawd1en", common::bit_enable, 24, 24>,
@@ -135,7 +135,7 @@ using adc_cr_v1_tt =
                groov::field<"adstp", bool, 4, 4>,
                groov::field<"jadstart", bool, 3, 3>,
                groov::field<"adstart", bool, 2, 2>,
-               groov::field<"addis", common::bit_enable_bar, 1, 1>,
+               groov::field<"addis", common::bit_nenable, 1, 1>,
                groov::field<"aden", common::bit_enable, 0, 0>>;
 
 // adc_difsel_v1: DIFSEL
@@ -514,4 +514,4 @@ using adc_tr3_v1_tt =
                groov::field<"reserved0", std::uint8_t, 15, 8, common::access::ro>,
                groov::field<"lt3", std::uint8_t, 7, 0>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

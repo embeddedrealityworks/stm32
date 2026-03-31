@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // i2c_ccr_v1: CCR
 // Used by: I2C3, I2C2, I2C1
@@ -176,4 +176,4 @@ using i2c_trise_v1_tt =
                groov::field<"reserved0", std::uint32_t, 31, 6, common::access::ro>,
                groov::field<"trise", std::uint8_t, 5, 0>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

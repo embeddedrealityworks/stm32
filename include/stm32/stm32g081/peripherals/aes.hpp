@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32g081/registers/aes.hpp>
+#include "../registers/aes.hpp"
 
-namespace stm32::stm32g081 {
+namespace mcu::stm32::stm32g081 {
 
 namespace aes {
   template <stdx::ct_string name,
@@ -155,4 +155,4 @@ namespace aes {
 
 } // namespace aes
 
-} // namespace stm32::stm32g081
+} // namespace mcu::stm32::stm32g081

@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32h7a3/registers/bdma.hpp>
+#include "../registers/bdma.hpp"
 
-namespace stm32::stm32h7a3 {
+namespace mcu::stm32::stm32h7a3 {
 
 namespace bdmax {
   template <stdx::ct_string name,
@@ -225,4 +225,4 @@ namespace bdmax {
 
 } // namespace bdmax
 
-} // namespace stm32::stm32h7a3
+} // namespace mcu::stm32::stm32h7a3

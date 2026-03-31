@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32n657/registers/csi.hpp>
+#include "../registers/csi.hpp"
 
-namespace stm32::stm32n657 {
+namespace mcu::stm32::stm32n657 {
 
 namespace csix {
   template <stdx::ct_string name,
@@ -235,4 +235,4 @@ namespace csix {
 
 } // namespace csix
 
-} // namespace stm32::stm32n657
+} // namespace mcu::stm32::stm32n657

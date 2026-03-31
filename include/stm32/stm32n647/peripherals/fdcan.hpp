@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32n647/registers/fdcan.hpp>
+#include "../registers/fdcan.hpp"
 
-namespace stm32::stm32n647 {
+namespace mcu::stm32::stm32n647 {
 
 namespace fdcanx {
   template <stdx::ct_string name,
@@ -365,4 +365,4 @@ namespace fdcanx {
 
 } // namespace fdcanx
 
-} // namespace stm32::stm32n647
+} // namespace mcu::stm32::stm32n647

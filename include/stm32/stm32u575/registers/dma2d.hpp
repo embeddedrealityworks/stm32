@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // dma2d_amtcr_v1: AMTCR
 // Used by: DMA2D, SEC_DMA2D
@@ -394,4 +394,4 @@ using dma2d_opfccr_v1_tt =
                groov::field<"reserved0", std::uint8_t, 8, 3, common::access::ro>,
                groov::field<"cm", std::uint8_t, 2, 0>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

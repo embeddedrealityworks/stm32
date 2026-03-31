@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // tzsc_icr1_v1: ICR1
 // Used by: TZIC
@@ -189,4 +189,4 @@ using tzsc_tzsc_seccfgr1_v1_tt =
                groov::field<"aessec", bool, 2, 2>,
                groov::field<"reserved0", std::uint8_t, 1, 0, common::access::ro>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

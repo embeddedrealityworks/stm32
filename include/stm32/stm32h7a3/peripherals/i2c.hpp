@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32h7a3/registers/i2c.hpp>
+#include "../registers/i2c.hpp"
 
-namespace stm32::stm32h7a3 {
+namespace mcu::stm32::stm32h7a3 {
 
 namespace i2cx {
   template <stdx::ct_string name,
@@ -134,4 +134,4 @@ namespace i2cx_v2 {
 
 } // namespace i2cx_v2
 
-} // namespace stm32::stm32h7a3
+} // namespace mcu::stm32::stm32h7a3

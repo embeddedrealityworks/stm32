@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32n657/registers/gpioc_s.hpp>
+#include "../registers/gpioc_s.hpp"
 
-namespace stm32::stm32n657 {
+namespace mcu::stm32::stm32n657 {
 
 namespace gpioc_s {
   template <stdx::ct_string name,
@@ -175,4 +175,4 @@ namespace gpioc_s {
 
 } // namespace gpioc_s
 
-} // namespace stm32::stm32n657
+} // namespace mcu::stm32::stm32n657

@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32h7s/registers/otg_fs.hpp>
+#include "../registers/otg_fs.hpp"
 
-namespace stm32::stm32h7s {
+namespace mcu::stm32::stm32h7s {
 
 namespace otg_fs {
   template <stdx::ct_string name,
@@ -1220,4 +1220,4 @@ namespace otg_fs {
 
 } // namespace otg_fs
 
-} // namespace stm32::stm32h7s
+} // namespace mcu::stm32::stm32h7s

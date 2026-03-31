@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // system_ctrl_die_id_v1: DIE_ID
 // Used by: SYSTEM_CTRL
@@ -430,4 +430,4 @@ using system_ctrl_syscfg_sr1_v1_tt =
                groov::field<"rfip_busy_status", bool, 5, 5>,
                groov::field<"reserved0", std::uint8_t, 4, 0>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

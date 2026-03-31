@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32wba54/registers/ptaconv.hpp>
+#include "../registers/ptaconv.hpp"
 
-namespace stm32::stm32wba54 {
+namespace mcu::stm32::stm32wba54 {
 
 namespace ptaconvx {
   template <stdx::ct_string name,
@@ -30,4 +30,4 @@ namespace ptaconvx {
 
 } // namespace ptaconvx
 
-} // namespace stm32::stm32wba54
+} // namespace mcu::stm32::stm32wba54

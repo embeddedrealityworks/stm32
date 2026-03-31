@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32n645/registers/adc12.hpp>
+#include "../registers/adc12.hpp"
 
-namespace stm32::stm32n645 {
+namespace mcu::stm32::stm32n645 {
 
 namespace adc12x {
   template <stdx::ct_string name,
@@ -35,4 +35,4 @@ namespace adc12x {
 
 } // namespace adc12x
 
-} // namespace stm32::stm32n645
+} // namespace mcu::stm32::stm32n645

@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32u599/registers/gfxmmu.hpp>
+#include "../registers/gfxmmu.hpp"
 
-namespace stm32::stm32u599 {
+namespace mcu::stm32::stm32u599 {
 
 namespace gfxmmux {
   template <stdx::ct_string name,
@@ -10300,4 +10300,4 @@ namespace gfxmmux {
 
 } // namespace gfxmmux
 
-} // namespace stm32::stm32u599
+} // namespace mcu::stm32::stm32u599

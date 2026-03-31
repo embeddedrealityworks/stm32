@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // mpu_mpu_ctrl_v1: MPU_CTRL
 // Used by: MPU
@@ -89,4 +89,4 @@ using mpu_mpu_typer_v1_tt =
                groov::field<"reserved0", std::uint8_t, 7, 1>,
                groov::field<"separate", bool, 0, 0>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

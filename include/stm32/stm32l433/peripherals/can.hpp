@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32l433/registers/can.hpp>
+#include "../registers/can.hpp"
 
-namespace stm32::stm32l433 {
+namespace mcu::stm32::stm32l433 {
 
 namespace can1 {
   template <stdx::ct_string name,
@@ -435,4 +435,4 @@ namespace can1 {
 
 } // namespace can1
 
-} // namespace stm32::stm32l433
+} // namespace mcu::stm32::stm32l433

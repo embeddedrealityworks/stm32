@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // usart_brr_v1: BRR
 // Used by: USART1, USART2, USART6, USART3
@@ -145,4 +145,4 @@ using usart_sr_v1_tt =
                groov::field<"fe", common::bit_enable, 1, 1, common::access::ro>,
                groov::field<"pe", common::bit_enable, 0, 0, common::access::ro>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

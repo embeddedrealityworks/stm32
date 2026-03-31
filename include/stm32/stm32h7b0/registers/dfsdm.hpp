@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // dfsdm_dfsdm_ch0awscdr_v1: DFSDM_CH0AWSCDR
 // Used by: DFSDM1, DFSDM2
@@ -2767,4 +2767,4 @@ using dfsdm_dfsdm_flt7rdatar_v1_tt =
                groov::field<"reserved0", bool, 3, 3, common::access::ro>,
                groov::field<"rdatach", std::uint8_t, 2, 0, common::access::ro>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

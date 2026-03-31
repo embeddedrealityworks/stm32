@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // hsem_cr_v1: CR
 // Used by: HSEM
@@ -1166,4 +1166,4 @@ using hsem_rlr9_v1_tt =
                groov::field<"masterid", std::uint8_t, 15, 8>,
                groov::field<"procid", std::uint8_t, 7, 0>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

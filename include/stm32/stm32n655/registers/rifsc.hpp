@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // rifsc_rifsc_ppsr0_v1: RIFSC_PPSR0
 // Used by: RIFSC, RIFSC_S
@@ -1271,4 +1271,4 @@ using rifsc_rifsc_risc_seccfgr5_v1_tt =
                groov::field<"sec161", bool, 1, 1>,
                groov::field<"sec160", bool, 0, 0>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

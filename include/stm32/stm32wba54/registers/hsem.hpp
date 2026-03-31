@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // hsem_hsem_cr_v1: HSEM_CR
 // Used by: HSEM, SEC_HSEM
@@ -711,4 +711,4 @@ using hsem_hsem_sisr_v1_tt =
                groov::field<"reserved0", std::uint16_t, 31, 16, common::access::ro>,
                groov::field<"sisf", std::uint16_t, 15, 0, common::access::ro>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

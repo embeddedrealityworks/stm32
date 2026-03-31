@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32h5f5/registers/gpioe.hpp>
+#include "../registers/gpioe.hpp"
 
-namespace stm32::stm32h5f5 {
+namespace mcu::stm32::stm32h5f5 {
 
 namespace gpioex {
   template <stdx::ct_string name,
@@ -80,4 +80,4 @@ namespace gpioex {
 
 } // namespace gpioex
 
-} // namespace stm32::stm32h5f5
+} // namespace mcu::stm32::stm32h5f5

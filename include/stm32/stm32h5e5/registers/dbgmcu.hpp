@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // dbgmcu_dbgmcu_ahb1fzr_v1: DBGMCU_AHB1FZR
 // Used by: DBGMCU, DBGMCU_S
@@ -352,4 +352,4 @@ using dbgmcu_dbgmcu_sr_v1_tt =
                groov::field<"ap_enabled", std::uint16_t, 31, 16>,
                groov::field<"ap_present", std::uint16_t, 15, 0>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

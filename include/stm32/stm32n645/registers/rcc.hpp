@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // rcc_rcc_ahb1encr_v1: RCC_AHB1ENCR
 // Used by: RCC, RCC_S
@@ -4524,7 +4524,7 @@ using rcc_rcc_pll1cfgr3_v1_tt =
                groov::field<"reserved0", std::uint8_t, 7, 5, common::access::ro>,
                groov::field<"pll1modsprdw", bool, 4, 4>,
                groov::field<"pll1moddsen", common::bit_enable, 3, 3>,
-               groov::field<"pll1modssdis", common::bit_enable_bar, 2, 2>,
+               groov::field<"pll1modssdis", common::bit_nenable, 2, 2>,
                groov::field<"pll1dacen", common::bit_enable, 1, 1>,
                groov::field<"pll1modssrst", common::bit_reset, 0, 0>>;
 
@@ -4580,7 +4580,7 @@ using rcc_rcc_pll2cfgr3_v1_tt =
                groov::field<"reserved0", std::uint8_t, 7, 5, common::access::ro>,
                groov::field<"pll2modsprdw", bool, 4, 4>,
                groov::field<"pll2moddsen", common::bit_enable, 3, 3>,
-               groov::field<"pll2modssdis", common::bit_enable_bar, 2, 2>,
+               groov::field<"pll2modssdis", common::bit_nenable, 2, 2>,
                groov::field<"pll2dacen", common::bit_enable, 1, 1>,
                groov::field<"pll2modssrst", common::bit_reset, 0, 0>>;
 
@@ -4636,7 +4636,7 @@ using rcc_rcc_pll3cfgr3_v1_tt =
                groov::field<"reserved0", std::uint8_t, 7, 5, common::access::ro>,
                groov::field<"pll3modsprdw", bool, 4, 4>,
                groov::field<"pll3moddsen", common::bit_enable, 3, 3>,
-               groov::field<"pll3modssdis", common::bit_enable_bar, 2, 2>,
+               groov::field<"pll3modssdis", common::bit_nenable, 2, 2>,
                groov::field<"pll3dacen", common::bit_enable, 1, 1>,
                groov::field<"pll3modssrst", common::bit_reset, 0, 0>>;
 
@@ -4692,7 +4692,7 @@ using rcc_rcc_pll4cfgr3_v1_tt =
                groov::field<"reserved0", std::uint8_t, 7, 5, common::access::ro>,
                groov::field<"pll4modsprdw", bool, 4, 4>,
                groov::field<"pll4moddsen", common::bit_enable, 3, 3>,
-               groov::field<"pll4modssdis", common::bit_enable_bar, 2, 2>,
+               groov::field<"pll4modssdis", common::bit_nenable, 2, 2>,
                groov::field<"pll4dacen", common::bit_enable, 1, 1>,
                groov::field<"pll4modssrst", common::bit_reset, 0, 0>>;
 
@@ -5667,4 +5667,4 @@ using rcc_rcc_stopcsr_v1_tt =
                groov::field<"hsistopens", bool, 1, 1, common::access::wo>,
                groov::field<"msistopens", bool, 0, 0, common::access::wo>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

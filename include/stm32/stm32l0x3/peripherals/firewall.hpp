@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32l0x3/registers/firewall.hpp>
+#include "../registers/firewall.hpp"
 
-namespace stm32::stm32l0x3 {
+namespace mcu::stm32::stm32l0x3 {
 
 namespace firewall {
   template <stdx::ct_string name,
@@ -50,4 +50,4 @@ namespace firewall {
 
 } // namespace firewall
 
-} // namespace stm32::stm32l0x3
+} // namespace mcu::stm32::stm32l0x3

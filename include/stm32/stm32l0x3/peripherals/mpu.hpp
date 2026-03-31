@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32l0x3/registers/mpu.hpp>
+#include "../registers/mpu.hpp"
 
-namespace stm32::stm32l0x3 {
+namespace mcu::stm32::stm32l0x3 {
 
 namespace mpu {
   template <stdx::ct_string name,
@@ -40,4 +40,4 @@ namespace mpu {
 
 } // namespace mpu
 
-} // namespace stm32::stm32l0x3
+} // namespace mcu::stm32::stm32l0x3

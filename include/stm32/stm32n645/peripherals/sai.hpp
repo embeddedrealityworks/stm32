@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32n645/registers/sai.hpp>
+#include "../registers/sai.hpp"
 
-namespace stm32::stm32n645 {
+namespace mcu::stm32::stm32n645 {
 
 namespace saix {
   template <stdx::ct_string name,
@@ -110,4 +110,4 @@ namespace saix {
 
 } // namespace saix
 
-} // namespace stm32::stm32n645
+} // namespace mcu::stm32::stm32n645

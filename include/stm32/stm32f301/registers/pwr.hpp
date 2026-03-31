@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // pwr_cr_v1: CR
 // Used by: PWR
@@ -48,4 +48,4 @@ using pwr_csr_v1_tt =
                groov::field<"sbf", bool, 1, 1, common::access::ro>,
                groov::field<"wuf", bool, 0, 0, common::access::ro>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

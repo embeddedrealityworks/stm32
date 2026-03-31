@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // play_play_cfgcr_v1: PLAY_CFGCR
 // Used by: PLAY, PLAY_S
@@ -1389,4 +1389,4 @@ using play_play_swinset_v1_tt =
                groov::field<"swin1", bool, 1, 1>,
                groov::field<"swin0", bool, 0, 0>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

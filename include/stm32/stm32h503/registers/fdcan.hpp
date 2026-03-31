@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // fdcan_fdcan_cccr_v1: FDCAN_CCCR
 // Used by: FDCAN1
@@ -634,4 +634,4 @@ using fdcan_fdcan_xidam_v1_tt =
                groov::field<"reserved0", std::uint8_t, 31, 29, common::access::ro>,
                groov::field<"eidm", std::uint32_t, 28, 0>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

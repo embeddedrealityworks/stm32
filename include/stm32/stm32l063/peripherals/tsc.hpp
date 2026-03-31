@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32l063/registers/tsc.hpp>
+#include "../registers/tsc.hpp"
 
-namespace stm32::stm32l063 {
+namespace mcu::stm32::stm32l063 {
 
 namespace tsc {
   template <stdx::ct_string name,
@@ -100,4 +100,4 @@ namespace tsc {
 
 } // namespace tsc
 
-} // namespace stm32::stm32l063
+} // namespace mcu::stm32::stm32l063

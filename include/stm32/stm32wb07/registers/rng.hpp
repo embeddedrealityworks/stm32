@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // rng_rng_cr_v1: RNG_CR
 // Used by: RNG
@@ -20,7 +20,7 @@ using rng_rng_cr_v1_tt =
                groov::field<"reserved2", std::uint32_t, 31, 4, common::access::ro>,
                groov::field<"tst_clk", bool, 3, 3>,
                groov::field<"reserved1", bool, 2, 2, common::access::ro>,
-               groov::field<"rng_dis", common::bit_enable_bar, 1, 1>,
+               groov::field<"rng_dis", common::bit_nenable, 1, 1>,
                groov::field<"reserved0", bool, 0, 0, common::access::ro>>;
 
 // rng_rng_sr_v1: RNG_SR
@@ -51,4 +51,4 @@ using rng_rng_val_v1_tt =
                groov::field<"reserved0", std::uint16_t, 31, 16>,
                groov::field<"rnd_val", std::uint16_t, 15, 0>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

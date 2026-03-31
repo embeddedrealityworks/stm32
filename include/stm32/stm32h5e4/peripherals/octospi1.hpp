@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32h5e4/registers/octospi1.hpp>
+#include "../registers/octospi1.hpp"
 
-namespace stm32::stm32h5e4 {
+namespace mcu::stm32::stm32h5e4 {
 
 namespace octospi1x {
   template <stdx::ct_string name,
@@ -150,4 +150,4 @@ namespace octospi1x {
 
 } // namespace octospi1x
 
-} // namespace stm32::stm32h5e4
+} // namespace mcu::stm32::stm32h5e4

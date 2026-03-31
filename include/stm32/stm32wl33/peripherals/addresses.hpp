@@ -3,7 +3,7 @@
 
 #include <cstdint>
 
-namespace stm32::stm32wl33 {
+namespace mcu::stm32::stm32wl33 {
 namespace adc { inline constexpr std::uint32_t ADC_BASE = 0x4100'6000; } // namespace adc
 namespace aes { inline constexpr std::uint32_t AES_BASE = 0x4890'0000; } // namespace aes
 namespace comp { inline constexpr std::uint32_t COMP_BASE = 0x4000'9000; } // namespace comp
@@ -40,4 +40,4 @@ namespace tim16 { inline constexpr std::uint32_t TIM16_BASE = 0x4000'5000; } // 
 namespace tim2 { inline constexpr std::uint32_t TIM2_BASE = 0x4000'2000; } // namespace tim2
 namespace usart { inline constexpr std::uint32_t USART_BASE = 0x4100'4000; } // namespace usart
 
-} // namespace stm32::stm32wl33
+} // namespace mcu::stm32::stm32wl33

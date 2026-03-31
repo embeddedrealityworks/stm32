@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32l4r9/registers/dsi.hpp>
+#include "../registers/dsi.hpp"
 
-namespace stm32::stm32l4r9 {
+namespace mcu::stm32::stm32l4r9 {
 
 namespace dsi {
   template <stdx::ct_string name,
@@ -375,4 +375,4 @@ namespace dsi {
 
 } // namespace dsi
 
-} // namespace stm32::stm32l4r9
+} // namespace mcu::stm32::stm32l4r9

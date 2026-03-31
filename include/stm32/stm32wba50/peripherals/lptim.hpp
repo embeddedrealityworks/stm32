@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32wba50/registers/lptim.hpp>
+#include "../registers/lptim.hpp"
 
-namespace stm32::stm32wba50 {
+namespace mcu::stm32::stm32wba50 {
 
 namespace lptim1 {
   template <stdx::ct_string name,
@@ -45,4 +45,4 @@ namespace lptim1 {
 
 } // namespace lptim1
 
-} // namespace stm32::stm32wba50
+} // namespace mcu::stm32::stm32wba50

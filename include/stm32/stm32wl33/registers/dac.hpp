@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // dac_cr_v1: CR
 // Used by: DAC
@@ -83,4 +83,4 @@ using dac_swtrigr_v1_tt =
                groov::field<"reserved0", std::uint32_t, 31, 1, common::access::ro>,
                groov::field<"swtrig", bool, 0, 0, common::access::wo>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

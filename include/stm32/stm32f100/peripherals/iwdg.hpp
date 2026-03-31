@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32f100/registers/iwdg.hpp>
+#include "../registers/iwdg.hpp"
 
-namespace stm32::stm32f100 {
+namespace mcu::stm32::stm32f100 {
 
 namespace iwdg {
   template <stdx::ct_string name,
@@ -35,4 +35,4 @@ namespace iwdg {
 
 } // namespace iwdg
 
-} // namespace stm32::stm32f100
+} // namespace mcu::stm32::stm32f100

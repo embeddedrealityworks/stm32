@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // hrtim_adc1r_v1: ADC1R
 // Used by: HRTIM_Common
@@ -1488,12 +1488,12 @@ using hrtim_cr1_v1_tt =
                groov::field<"ad2usrc", std::uint8_t, 21, 19>,
                groov::field<"ad1usrc", std::uint8_t, 18, 16>,
                groov::field<"reserved0", std::uint16_t, 15, 6, common::access::ro>,
-               groov::field<"teudis", common::bit_enable_bar, 5, 5>,
-               groov::field<"tdudis", common::bit_enable_bar, 4, 4>,
-               groov::field<"tcudis", common::bit_enable_bar, 3, 3>,
-               groov::field<"tbudis", common::bit_enable_bar, 2, 2>,
-               groov::field<"taudis", common::bit_enable_bar, 1, 1>,
-               groov::field<"mudis", common::bit_enable_bar, 0, 0>>;
+               groov::field<"teudis", common::bit_nenable, 5, 5>,
+               groov::field<"tdudis", common::bit_nenable, 4, 4>,
+               groov::field<"tcudis", common::bit_nenable, 3, 3>,
+               groov::field<"tbudis", common::bit_nenable, 2, 2>,
+               groov::field<"taudis", common::bit_nenable, 1, 1>,
+               groov::field<"mudis", common::bit_nenable, 0, 0>>;
 
 // hrtim_cr2_v1: CR2
 // Used by: HRTIM_Common
@@ -2393,16 +2393,16 @@ using hrtim_odisr_v1_tt =
              baseaddress + offset,
              common::access::rw,
                groov::field<"reserved0", std::uint32_t, 31, 10, common::access::ro>,
-               groov::field<"te2odis", common::bit_enable_bar, 9, 9>,
-               groov::field<"te1odis", common::bit_enable_bar, 8, 8>,
-               groov::field<"td2odis", common::bit_enable_bar, 7, 7>,
-               groov::field<"td1odis", common::bit_enable_bar, 6, 6>,
-               groov::field<"tc2odis", common::bit_enable_bar, 5, 5>,
-               groov::field<"tc1odis", common::bit_enable_bar, 4, 4>,
-               groov::field<"tb2odis", common::bit_enable_bar, 3, 3>,
-               groov::field<"tb1odis", common::bit_enable_bar, 2, 2>,
-               groov::field<"ta2odis", common::bit_enable_bar, 1, 1>,
-               groov::field<"ta1odis", common::bit_enable_bar, 0, 0>>;
+               groov::field<"te2odis", common::bit_nenable, 9, 9>,
+               groov::field<"te1odis", common::bit_nenable, 8, 8>,
+               groov::field<"td2odis", common::bit_nenable, 7, 7>,
+               groov::field<"td1odis", common::bit_nenable, 6, 6>,
+               groov::field<"tc2odis", common::bit_nenable, 5, 5>,
+               groov::field<"tc1odis", common::bit_nenable, 4, 4>,
+               groov::field<"tb2odis", common::bit_nenable, 3, 3>,
+               groov::field<"tb1odis", common::bit_nenable, 2, 2>,
+               groov::field<"ta2odis", common::bit_nenable, 1, 1>,
+               groov::field<"ta1odis", common::bit_nenable, 0, 0>>;
 
 // hrtim_odsr_v1: ODSR
 // Used by: HRTIM_Common
@@ -4483,4 +4483,4 @@ using hrtim_timeisr_v1_tt =
                groov::field<"cmp2", bool, 1, 1>,
                groov::field<"cmp1", bool, 0, 0>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

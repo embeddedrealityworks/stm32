@@ -3,7 +3,7 @@
 
 #include <cstdint>
 
-namespace stm32::stm32l162 {
+namespace mcu::stm32::stm32l162 {
 namespace adc { inline constexpr std::uint32_t ADC_BASE = 0x4001'2400; } // namespace adc
 namespace aes { inline constexpr std::uint32_t AES_BASE = 0x5006'0000; } // namespace aes
 namespace comp { inline constexpr std::uint32_t COMP_BASE = 0x4000'7c00; } // namespace comp
@@ -55,4 +55,4 @@ namespace usb { inline constexpr std::uint32_t USB_BASE = 0x4000'5c00; } // name
 namespace usb_sram { inline constexpr std::uint32_t USB_SRAM_BASE = 0x4000'6000; } // namespace usb_sram
 namespace wwdg { inline constexpr std::uint32_t WWDG_BASE = 0x4000'2c00; } // namespace wwdg
 
-} // namespace stm32::stm32l162
+} // namespace mcu::stm32::stm32l162

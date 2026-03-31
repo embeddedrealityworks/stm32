@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32u575/registers/saes.hpp>
+#include "../registers/saes.hpp"
 
-namespace stm32::stm32u575 {
+namespace mcu::stm32::stm32u575 {
 
 namespace saesx {
   template <stdx::ct_string name,
@@ -115,4 +115,4 @@ namespace saesx {
 
 } // namespace saesx
 
-} // namespace stm32::stm32u575
+} // namespace mcu::stm32::stm32u575

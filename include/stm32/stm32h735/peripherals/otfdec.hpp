@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32h735/registers/otfdec.hpp>
+#include "../registers/otfdec.hpp"
 
-namespace stm32::stm32h735 {
+namespace mcu::stm32::stm32h735 {
 
 namespace otfdecx {
   template <stdx::ct_string name,
@@ -210,4 +210,4 @@ namespace otfdecx {
 
 } // namespace otfdecx
 
-} // namespace stm32::stm32h735
+} // namespace mcu::stm32::stm32h735

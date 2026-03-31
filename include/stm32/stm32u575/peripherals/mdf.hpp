@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32u575/registers/mdf.hpp>
+#include "../registers/mdf.hpp"
 
-namespace stm32::stm32u575 {
+namespace mcu::stm32::stm32u575 {
 
 namespace mdfx {
   template <stdx::ct_string name,
@@ -505,4 +505,4 @@ namespace mdfx {
 
 } // namespace mdfx
 
-} // namespace stm32::stm32u575
+} // namespace mcu::stm32::stm32u575

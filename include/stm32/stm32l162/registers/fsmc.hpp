@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // fsmc_bcr1_v1: BCR1
 // Used by: FSMC
@@ -271,4 +271,4 @@ using fsmc_bwtr4_v1_tt =
                groov::field<"addhld", std::uint8_t, 7, 4>,
                groov::field<"addset", std::uint8_t, 3, 0>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

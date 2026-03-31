@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32n645/registers/icache.hpp>
+#include "../registers/icache.hpp"
 
-namespace stm32::stm32n645 {
+namespace mcu::stm32::stm32n645 {
 
 namespace icachex {
   template <stdx::ct_string name,
@@ -45,4 +45,4 @@ namespace icachex {
 
 } // namespace icachex
 
-} // namespace stm32::stm32n645
+} // namespace mcu::stm32::stm32n645

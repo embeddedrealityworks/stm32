@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // globalstatmach_word0_v1: WORD0
 // Used by: GLOBALSTATMACH
@@ -121,4 +121,4 @@ using globalstatmach_word6_v1_tt =
                groov::field<"reserved0", std::uint32_t, 31, 7, common::access::ro>,
                groov::field<"defaultantennaid", std::uint8_t, 6, 0>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

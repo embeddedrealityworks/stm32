@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32wb09/registers/system_ctrl.hpp>
+#include "../registers/system_ctrl.hpp"
 
-namespace stm32::stm32wb09 {
+namespace mcu::stm32::stm32wb09 {
 
 namespace system_ctrl {
   template <stdx::ct_string name,
@@ -90,4 +90,4 @@ namespace system_ctrl {
 
 } // namespace system_ctrl
 
-} // namespace stm32::stm32wb09
+} // namespace mcu::stm32::stm32wb09

@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // tsc_tsc_cr_v1: TSC_CR
 // Used by: TSC
@@ -320,4 +320,4 @@ using tsc_tsc_isr_v1_tt =
                groov::field<"mcef", bool, 1, 1, common::access::ro>,
                groov::field<"eoaf", bool, 0, 0, common::access::ro>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

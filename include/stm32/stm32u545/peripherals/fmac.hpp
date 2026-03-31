@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32u545/registers/fmac.hpp>
+#include "../registers/fmac.hpp"
 
-namespace stm32::stm32u545 {
+namespace mcu::stm32::stm32u545 {
 
 namespace fmacx {
   template <stdx::ct_string name,
@@ -55,4 +55,4 @@ namespace fmacx {
 
 } // namespace fmacx
 
-} // namespace stm32::stm32u545
+} // namespace mcu::stm32::stm32u545

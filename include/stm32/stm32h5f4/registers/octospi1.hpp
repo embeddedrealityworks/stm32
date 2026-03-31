@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // octospi1_octospi1_abr_v1: OCTOSPI1_ABR
 // Used by: OCTOSPI1, OCTOSPI1_S, OCTOSPI2, OCTOSPI2_S
@@ -449,4 +449,4 @@ using octospi1_octospi1_wtcr_v1_tt =
                groov::field<"reserved0", std::uint32_t, 31, 5, common::access::ro>,
                groov::field<"dcyc", std::uint8_t, 4, 0>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

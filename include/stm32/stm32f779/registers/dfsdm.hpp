@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // dfsdm_dfsdm0_awcfr_v1: DFSDM0_AWCFR
 // Used by: DFSDM
@@ -1667,4 +1667,4 @@ using dfsdm_dfsdm_chwdat7r_v1_tt =
                groov::field<"reserved0", std::uint16_t, 31, 16>,
                groov::field<"wdata", std::uint16_t, 15, 0>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

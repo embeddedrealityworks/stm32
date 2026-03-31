@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32h573/registers/tamp.hpp>
+#include "../registers/tamp.hpp"
 
-namespace stm32::stm32h573 {
+namespace mcu::stm32::stm32h573 {
 
 namespace tampx {
   template <stdx::ct_string name,
@@ -265,4 +265,4 @@ namespace tampx {
 
 } // namespace tampx
 
-} // namespace stm32::stm32h573
+} // namespace mcu::stm32::stm32h573

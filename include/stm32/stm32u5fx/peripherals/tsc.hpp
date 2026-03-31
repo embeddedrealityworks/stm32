@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32u5fx/registers/tsc.hpp>
+#include "../registers/tsc.hpp"
 
-namespace stm32::stm32u5fx {
+namespace mcu::stm32::stm32u5fx {
 
 namespace tscx {
   template <stdx::ct_string name,
@@ -100,4 +100,4 @@ namespace tscx {
 
 } // namespace tscx
 
-} // namespace stm32::stm32u5fx
+} // namespace mcu::stm32::stm32u5fx

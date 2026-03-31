@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // usb_fs_btable_v1: BTABLE
 // Used by: USB_FS
@@ -283,4 +283,4 @@ using usb_fs_usb_ep7r_v1_tt =
                groov::field<"stat_tx", std::uint8_t, 5, 4>,
                groov::field<"ea", std::uint8_t, 3, 0>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

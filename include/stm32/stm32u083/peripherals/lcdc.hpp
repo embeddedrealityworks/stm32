@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32u083/registers/lcdc.hpp>
+#include "../registers/lcdc.hpp"
 
-namespace stm32::stm32u083 {
+namespace mcu::stm32::stm32u083 {
 
 namespace lcd {
   template <stdx::ct_string name,
@@ -115,4 +115,4 @@ namespace lcd {
 
 } // namespace lcd
 
-} // namespace stm32::stm32u083
+} // namespace mcu::stm32::stm32u083

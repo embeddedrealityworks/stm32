@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // flash_ctrl_address_v1: ADDRESS
 // Used by: FLASH_CTRL
@@ -205,4 +205,4 @@ using flash_ctrl_size_v1_tt =
                groov::field<"reserved0", bool, 16, 16>,
                groov::field<"flash_size", std::uint16_t, 15, 0>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32n657/registers/tim10_s.hpp>
+#include "../registers/tim10_s.hpp"
 
-namespace stm32::stm32n657 {
+namespace mcu::stm32::stm32n657 {
 
 namespace tim10_s {
   template <stdx::ct_string name,
@@ -75,4 +75,4 @@ namespace tim10_s {
 
 } // namespace tim10_s
 
-} // namespace stm32::stm32n657
+} // namespace mcu::stm32::stm32n657

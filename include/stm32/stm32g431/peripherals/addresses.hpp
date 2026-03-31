@@ -3,7 +3,7 @@
 
 #include <cstdint>
 
-namespace stm32::stm32g431 {
+namespace mcu::stm32::stm32g431 {
 namespace adc1 { inline constexpr std::uint32_t ADC1_BASE = 0x5000'0000; } // namespace adc1
 namespace adc12_common { inline constexpr std::uint32_t ADC12_COMMON_BASE = 0x5000'0300; } // namespace adc12_common
 namespace adc2 { inline constexpr std::uint32_t ADC2_BASE = 0x5000'0100; } // namespace adc2
@@ -70,4 +70,4 @@ namespace usb_fs_device { inline constexpr std::uint32_t USB_FS_DEVICE_BASE = 0x
 namespace vrefbuf { inline constexpr std::uint32_t VREFBUF_BASE = 0x4001'0030; } // namespace vrefbuf
 namespace wwdg { inline constexpr std::uint32_t WWDG_BASE = 0x4000'2c00; } // namespace wwdg
 
-} // namespace stm32::stm32g431
+} // namespace mcu::stm32::stm32g431

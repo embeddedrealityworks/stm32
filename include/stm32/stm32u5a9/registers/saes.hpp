@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // saes_cr_v1: CR
 // Used by: SAES, SEC_SAES
@@ -284,4 +284,4 @@ using saes_sr_v1_tt =
                groov::field<"rderr", bool, 1, 1>,
                groov::field<"ccf", bool, 0, 0>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

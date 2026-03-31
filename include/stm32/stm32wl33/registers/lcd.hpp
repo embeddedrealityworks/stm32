@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // lcd_lcd_clr_v1: LCD_CLR
 // Used by: LCD
@@ -186,4 +186,4 @@ using lcd_lcd_sr_v1_tt =
                groov::field<"sof", bool, 1, 1>,
                groov::field<"ens", bool, 0, 0>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

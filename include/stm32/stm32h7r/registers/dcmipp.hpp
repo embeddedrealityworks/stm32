@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // dcmipp_dcmipp_cmcr_v1: DCMIPP_CMCR
 // Used by: DCMIPP
@@ -603,4 +603,4 @@ using dcmipp_dcmipp_prsr_v1_tt =
                groov::field<"errf", bool, 6, 6, common::access::ro>,
                groov::field<"reserved0", std::uint8_t, 5, 0, common::access::ro>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

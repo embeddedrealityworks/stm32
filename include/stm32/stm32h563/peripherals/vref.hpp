@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32h563/registers/vref.hpp>
+#include "../registers/vref.hpp"
 
-namespace stm32::stm32h563 {
+namespace mcu::stm32::stm32h563 {
 
 namespace vrefx {
   template <stdx::ct_string name,
@@ -25,4 +25,4 @@ namespace vrefx {
 
 } // namespace vrefx
 
-} // namespace stm32::stm32h563
+} // namespace mcu::stm32::stm32h563

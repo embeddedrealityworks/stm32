@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32f413/registers/usb_otg_fs.hpp>
+#include "../registers/usb_otg_fs.hpp"
 
-namespace stm32::stm32f413 {
+namespace mcu::stm32::stm32f413 {
 
 namespace otg_fs_device {
   template <stdx::ct_string name,
@@ -527,4 +527,4 @@ namespace otg_fs_global {
 
 } // namespace otg_fs_global
 
-} // namespace stm32::stm32f413
+} // namespace mcu::stm32::stm32f413

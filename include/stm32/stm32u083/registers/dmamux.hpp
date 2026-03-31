@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // dmamux_dmamux_c0cr_v1: DMAMUX_C0CR
 // Used by: DMAMUX
@@ -415,4 +415,4 @@ using dmamux_dmamux_rgsr_v1_tt =
                groov::field<"of1", bool, 1, 1, common::access::ro>,
                groov::field<"of0", bool, 0, 0, common::access::ro>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

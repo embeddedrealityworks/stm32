@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32n655/registers/gpioq.hpp>
+#include "../registers/gpioq.hpp"
 
-namespace stm32::stm32n655 {
+namespace mcu::stm32::stm32n655 {
 
 namespace gpioq {
   template <stdx::ct_string name,
@@ -175,4 +175,4 @@ namespace gpioq {
 
 } // namespace gpioq
 
-} // namespace stm32::stm32n655
+} // namespace mcu::stm32::stm32n655

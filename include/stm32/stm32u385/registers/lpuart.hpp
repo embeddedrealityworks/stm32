@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // lpuart_lpuart_autocr_v1: LPUART_AUTOCR
 // Used by: LPUART, SEC_LPUART
@@ -19,7 +19,7 @@ using lpuart_lpuart_autocr_v1_tt =
              common::access::rw,
                groov::field<"reserved0", std::uint16_t, 31, 23, common::access::ro>,
                groov::field<"trigsel", std::uint8_t, 22, 19>,
-               groov::field<"idledis", common::bit_enable_bar, 18, 18>,
+               groov::field<"idledis", common::bit_nenable, 18, 18>,
                groov::field<"trigen", common::bit_enable, 17, 17>,
                groov::field<"trigpol", bool, 16, 16>,
                groov::field<"tdn", std::uint16_t, 15, 0>>;
@@ -146,7 +146,7 @@ using lpuart_lpuart_cr3_v1_tt =
                groov::field<"dep", bool, 15, 15>,
                groov::field<"dem", bool, 14, 14>,
                groov::field<"ddre", bool, 13, 13>,
-               groov::field<"ovrdis", common::bit_enable_bar, 12, 12>,
+               groov::field<"ovrdis", common::bit_nenable, 12, 12>,
                groov::field<"reserved2", bool, 11, 11, common::access::ro>,
                groov::field<"ctsie", common::bit_enable, 10, 10>,
                groov::field<"ctse", bool, 9, 9>,
@@ -172,7 +172,7 @@ using lpuart_lpuart_cr3_alternate1_v1_tt =
                groov::field<"dep", bool, 15, 15>,
                groov::field<"dem", bool, 14, 14>,
                groov::field<"ddre", bool, 13, 13>,
-               groov::field<"ovrdis", common::bit_enable_bar, 12, 12>,
+               groov::field<"ovrdis", common::bit_nenable, 12, 12>,
                groov::field<"reserved2", bool, 11, 11, common::access::ro>,
                groov::field<"ctsie", common::bit_enable, 10, 10>,
                groov::field<"ctse", bool, 9, 9>,
@@ -330,4 +330,4 @@ using lpuart_lpuart_tdr_v1_tt =
                groov::field<"reserved0", std::uint32_t, 31, 9, common::access::ro>,
                groov::field<"tdr", std::uint16_t, 8, 0>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

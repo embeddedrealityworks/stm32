@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // rif_iac_icr0_v1: IAC_ICR0
 // Used by: IAC, IAC_S
@@ -1039,4 +1039,4 @@ using rif_iac_isr5_v1_tt =
                groov::field<"iaf161", bool, 1, 1, common::access::ro>,
                groov::field<"iaf160", bool, 0, 0, common::access::ro>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

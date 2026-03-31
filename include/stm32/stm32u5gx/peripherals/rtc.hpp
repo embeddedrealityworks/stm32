@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32u5gx/registers/rtc.hpp>
+#include "../registers/rtc.hpp"
 
-namespace stm32::stm32u5gx {
+namespace mcu::stm32::stm32u5gx {
 
 namespace rtcx {
   template <stdx::ct_string name,
@@ -140,4 +140,4 @@ namespace rtcx {
 
 } // namespace rtcx
 
-} // namespace stm32::stm32u5gx
+} // namespace mcu::stm32::stm32u5gx

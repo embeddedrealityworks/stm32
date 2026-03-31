@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32n657/registers/pka.hpp>
+#include "../registers/pka.hpp"
 
-namespace stm32::stm32n657 {
+namespace mcu::stm32::stm32n657 {
 
 namespace pkax {
   template <stdx::ct_string name,
@@ -30,4 +30,4 @@ namespace pkax {
 
 } // namespace pkax
 
-} // namespace stm32::stm32n657
+} // namespace mcu::stm32::stm32n657

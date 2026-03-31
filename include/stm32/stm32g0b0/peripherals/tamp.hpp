@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32g0b0/registers/tamp.hpp>
+#include "../registers/tamp.hpp"
 
-namespace stm32::stm32g0b0 {
+namespace mcu::stm32::stm32g0b0 {
 
 namespace tamp {
   template <stdx::ct_string name,
@@ -75,4 +75,4 @@ namespace tamp {
 
 } // namespace tamp
 
-} // namespace stm32::stm32g0b0
+} // namespace mcu::stm32::stm32g0b0

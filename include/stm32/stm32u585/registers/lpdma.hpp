@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // lpdma_lpdma_c0br1_v1: LPDMA_C0BR1
 // Used by: LPDMA1, SEC_LPDMA1
@@ -823,4 +823,4 @@ using lpdma_lpdma_smisr_v1_tt =
                groov::field<"mis1", bool, 1, 1, common::access::ro>,
                groov::field<"mis0", bool, 0, 0, common::access::ro>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

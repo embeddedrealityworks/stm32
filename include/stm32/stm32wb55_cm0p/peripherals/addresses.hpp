@@ -3,7 +3,7 @@
 
 #include <cstdint>
 
-namespace stm32::stm32wb55_cm0p {
+namespace mcu::stm32::stm32wb55_cm0p {
 namespace adc { inline constexpr std::uint32_t ADC_BASE = 0x5004'0000; } // namespace adc
 namespace aes1 { inline constexpr std::uint32_t AES1_BASE = 0x5006'0000; } // namespace aes1
 namespace aes2 { inline constexpr std::uint32_t AES2_BASE = 0x5800'1800; } // namespace aes2
@@ -50,4 +50,4 @@ namespace usart1 { inline constexpr std::uint32_t USART1_BASE = 0x4001'3800; } /
 namespace usb { inline constexpr std::uint32_t USB_BASE = 0x4000'6800; } // namespace usb
 namespace wwdg { inline constexpr std::uint32_t WWDG_BASE = 0x4000'2c00; } // namespace wwdg
 
-} // namespace stm32::stm32wb55_cm0p
+} // namespace mcu::stm32::stm32wb55_cm0p

@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32n645/registers/bsec.hpp>
+#include "../registers/bsec.hpp"
 
-namespace stm32::stm32n645 {
+namespace mcu::stm32::stm32n645 {
 
 namespace bsecx {
   template <stdx::ct_string name,
@@ -2345,4 +2345,4 @@ namespace bsecx {
 
 } // namespace bsecx
 
-} // namespace stm32::stm32n645
+} // namespace mcu::stm32::stm32n645

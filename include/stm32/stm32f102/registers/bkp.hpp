@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // bkp_cr_v1: CR
 // Used by: BKP
@@ -601,4 +601,4 @@ using bkp_rtccr_v1_tt =
                groov::field<"cco", bool, 7, 7>,
                groov::field<"cal", std::uint8_t, 6, 0>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

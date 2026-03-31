@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // i2c_i2c_cr1_v1: I2C_CR1
 // Used by: I2C1
@@ -223,4 +223,4 @@ using i2c_i2c_txdr_v1_tt =
                groov::field<"reserved0", std::uint32_t, 31, 8, common::access::ro>,
                groov::field<"txdata", std::uint8_t, 7, 0>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

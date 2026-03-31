@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32u385/registers/tim2.hpp>
+#include "../registers/tim2.hpp"
 
-namespace stm32::stm32u385 {
+namespace mcu::stm32::stm32u385 {
 
 namespace tim2x {
   template <stdx::ct_string name,
@@ -135,4 +135,4 @@ namespace tim2x {
 
 } // namespace tim2x
 
-} // namespace stm32::stm32u385
+} // namespace mcu::stm32::stm32u385

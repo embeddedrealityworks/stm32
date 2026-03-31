@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // hash_cr_v1: CR
 // Used by: HASH
@@ -845,4 +845,4 @@ using hash_str_v1_tt =
                groov::field<"reserved0", std::uint8_t, 7, 5, common::access::ro>,
                groov::field<"nblw", std::uint8_t, 4, 0>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

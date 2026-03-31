@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32f439/registers/adc.hpp>
+#include "../registers/adc.hpp"
 
-namespace stm32::stm32f439 {
+namespace mcu::stm32::stm32f439 {
 
 namespace adcx {
   template <stdx::ct_string name,
@@ -139,4 +139,4 @@ namespace c_adc {
 
 } // namespace c_adc
 
-} // namespace stm32::stm32f439
+} // namespace mcu::stm32::stm32f439

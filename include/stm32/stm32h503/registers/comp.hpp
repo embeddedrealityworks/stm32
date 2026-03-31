@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // comp_comp_cfgr1_v1: COMP_CFGR1
 // Used by: COMP
@@ -81,4 +81,4 @@ using comp_comp_sr_v1_tt =
                groov::field<"reserved0", std::uint16_t, 15, 1, common::access::ro>,
                groov::field<"c1val", bool, 0, 0, common::access::ro>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

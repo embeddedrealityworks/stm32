@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // dts_dts_pvt_ier_v1: DTS_PVT_IER
 // Used by: DTS, DTS_S
@@ -608,4 +608,4 @@ using dts_dts_tsraw_isr_v1_tt =
                groov::field<"ts1_irq_raw_status", bool, 1, 1, common::access::ro>,
                groov::field<"ts0_irq_raw_status", bool, 0, 0, common::access::ro>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

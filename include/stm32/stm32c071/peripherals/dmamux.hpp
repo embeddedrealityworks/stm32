@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32c071/registers/dmamux.hpp>
+#include "../registers/dmamux.hpp"
 
-namespace stm32::stm32c071 {
+namespace mcu::stm32::stm32c071 {
 
 namespace dmamux {
   template <stdx::ct_string name,
@@ -80,4 +80,4 @@ namespace dmamux {
 
 } // namespace dmamux
 
-} // namespace stm32::stm32c071
+} // namespace mcu::stm32::stm32c071

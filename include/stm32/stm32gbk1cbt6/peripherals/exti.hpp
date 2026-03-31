@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32gbk1cbt6/registers/exti.hpp>
+#include "../registers/exti.hpp"
 
-namespace stm32::stm32gbk1cbt6 {
+namespace mcu::stm32::stm32gbk1cbt6 {
 
 namespace exti {
   template <stdx::ct_string name,
@@ -75,4 +75,4 @@ namespace exti {
 
 } // namespace exti
 
-} // namespace stm32::stm32gbk1cbt6
+} // namespace mcu::stm32::stm32gbk1cbt6

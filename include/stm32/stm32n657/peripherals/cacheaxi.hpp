@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32n657/registers/cacheaxi.hpp>
+#include "../registers/cacheaxi.hpp"
 
-namespace stm32::stm32n657 {
+namespace mcu::stm32::stm32n657 {
 
 namespace cacheaxix {
   template <stdx::ct_string name,
@@ -90,4 +90,4 @@ namespace cacheaxix {
 
 } // namespace cacheaxix
 
-} // namespace stm32::stm32n657
+} // namespace mcu::stm32::stm32n657

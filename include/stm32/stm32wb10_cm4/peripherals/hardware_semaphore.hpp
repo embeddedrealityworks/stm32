@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32wb10_cm4/registers/hardware_semaphore.hpp>
+#include "../registers/hardware_semaphore.hpp"
 
-namespace stm32::stm32wb10_cm4 {
+namespace mcu::stm32::stm32wb10_cm4 {
 
 namespace hsem {
   template <stdx::ct_string name,
@@ -410,4 +410,4 @@ namespace hsem {
 
 } // namespace hsem
 
-} // namespace stm32::stm32wb10_cm4
+} // namespace mcu::stm32::stm32wb10_cm4

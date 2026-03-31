@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // dlybsd_dlybsd_cfg_v1: DLYBSD_CFG
 // Used by: DLYBSD, DLYBSD_S, DLYBSD2, DLYBSD2_S
@@ -39,4 +39,4 @@ using dlybsd_dlybsd_status_v1_tt =
                groov::field<"sdmmc_rx_tap_sel_ack", bool, 1, 1>,
                groov::field<"sdmmc_dll_lock", common::bit_locked, 0, 0>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // flash_acr_v1: ACR
 // Used by: Flash
@@ -137,7 +137,7 @@ using flash_sr_v1_tt =
                groov::field<"ready", bool, 3, 3, common::access::ro>,
                groov::field<"endhv", bool, 2, 2, common::access::ro>,
                groov::field<"eop", bool, 1, 1, common::access::ro>,
-               groov::field<"bsy", common::bit_ready_bar, 0, 0, common::access::ro>>;
+               groov::field<"bsy", common::bit_nready, 0, 0, common::access::ro>>;
 
 // flash_wrpr1_v1: WRPR1
 // Used by: Flash
@@ -175,4 +175,4 @@ using flash_wrpr3_v1_tt =
              common::access::rw,
                groov::field<"wrp3", std::uint32_t, 31, 0>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

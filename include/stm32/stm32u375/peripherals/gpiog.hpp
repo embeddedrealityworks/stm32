@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32u375/registers/gpiog.hpp>
+#include "../registers/gpiog.hpp"
 
-namespace stm32::stm32u375 {
+namespace mcu::stm32::stm32u375 {
 
 namespace gpiogx {
   template <stdx::ct_string name,
@@ -80,4 +80,4 @@ namespace gpiogx {
 
 } // namespace gpiogx
 
-} // namespace stm32::stm32u375
+} // namespace mcu::stm32::stm32u375

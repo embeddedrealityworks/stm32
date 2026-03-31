@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32wb30_cm4/registers/usart.hpp>
+#include "../registers/usart.hpp"
 
-namespace stm32::stm32wb30_cm4 {
+namespace mcu::stm32::stm32wb30_cm4 {
 
 namespace usart1 {
   template <stdx::ct_string name,
@@ -75,4 +75,4 @@ namespace usart1 {
 
 } // namespace usart1
 
-} // namespace stm32::stm32wb30_cm4
+} // namespace mcu::stm32::stm32wb30_cm4

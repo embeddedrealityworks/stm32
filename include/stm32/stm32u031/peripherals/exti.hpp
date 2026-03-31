@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32u031/registers/exti.hpp>
+#include "../registers/exti.hpp"
 
-namespace stm32::stm32u031 {
+namespace mcu::stm32::stm32u031 {
 
 namespace exti {
   template <stdx::ct_string name,
@@ -80,4 +80,4 @@ namespace exti {
 
 } // namespace exti
 
-} // namespace stm32::stm32u031
+} // namespace mcu::stm32::stm32u031

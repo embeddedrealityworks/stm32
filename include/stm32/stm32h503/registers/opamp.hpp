@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // opamp_opamp1_csr_v1: OPAMP1_CSR
 // Used by: OPAMP1
@@ -76,4 +76,4 @@ using opamp_opamp_or_v1_tt =
              common::access::rw,
                groov::field<"reserved0", std::uint32_t, 31, 0, common::access::ro>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

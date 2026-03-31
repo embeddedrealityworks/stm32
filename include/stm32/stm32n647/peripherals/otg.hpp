@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32n647/registers/otg.hpp>
+#include "../registers/otg.hpp"
 
-namespace stm32::stm32n647 {
+namespace mcu::stm32::stm32n647 {
 
 namespace otgx {
   template <stdx::ct_string name,
@@ -1220,4 +1220,4 @@ namespace otgx {
 
 } // namespace otgx
 
-} // namespace stm32::stm32n647
+} // namespace mcu::stm32::stm32n647

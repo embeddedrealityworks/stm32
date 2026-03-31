@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32f750/registers/dma2d.hpp>
+#include "../registers/dma2d.hpp"
 
-namespace stm32::stm32f750 {
+namespace mcu::stm32::stm32f750 {
 
 namespace dma2d {
   template <stdx::ct_string name,
@@ -125,4 +125,4 @@ namespace dma2d {
 
 } // namespace dma2d
 
-} // namespace stm32::stm32f750
+} // namespace mcu::stm32::stm32f750

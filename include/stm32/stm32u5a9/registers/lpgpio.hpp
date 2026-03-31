@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // lpgpio_lpgpio_brr_v1: LPGPIO_BRR
 // Used by: LPGPIO1, SEC_LPGPIO1
@@ -162,4 +162,4 @@ using lpgpio_lpgpio_odr_v1_tt =
                groov::field<"od1", bool, 1, 1>,
                groov::field<"od0", bool, 0, 0>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

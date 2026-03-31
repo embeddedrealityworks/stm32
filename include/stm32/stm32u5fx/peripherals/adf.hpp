@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32u5fx/registers/adf.hpp>
+#include "../registers/adf.hpp"
 
-namespace stm32::stm32u5fx {
+namespace mcu::stm32::stm32u5fx {
 
 namespace adfx {
   template <stdx::ct_string name,
@@ -90,4 +90,4 @@ namespace adfx {
 
 } // namespace adfx
 
-} // namespace stm32::stm32u5fx
+} // namespace mcu::stm32::stm32u5fx

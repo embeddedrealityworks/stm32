@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // usbphyc_ldo_v1: LDO
 // Used by: USBPHYC
@@ -66,4 +66,4 @@ using usbphyc_tune_v1_tt =
                groov::field<"incurrint", bool, 1, 1>,
                groov::field<"incurren", common::bit_enable, 0, 0>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

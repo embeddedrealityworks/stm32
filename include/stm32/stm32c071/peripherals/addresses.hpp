@@ -3,7 +3,7 @@
 
 #include <cstdint>
 
-namespace stm32::stm32c071 {
+namespace mcu::stm32::stm32c071 {
 namespace adc { inline constexpr std::uint32_t ADC_BASE = 0x4001'2400; } // namespace adc
 namespace crc { inline constexpr std::uint32_t CRC_BASE = 0x4002'3000; } // namespace crc
 namespace crs { inline constexpr std::uint32_t CRS_BASE = 0x4000'6c00; } // namespace crs
@@ -37,4 +37,4 @@ namespace usart2 { inline constexpr std::uint32_t USART2_BASE = 0x4000'4400; } /
 namespace usb { inline constexpr std::uint32_t USB_BASE = 0x4000'5c00; } // namespace usb
 namespace wwdg { inline constexpr std::uint32_t WWDG_BASE = 0x4000'2c00; } // namespace wwdg
 
-} // namespace stm32::stm32c071
+} // namespace mcu::stm32::stm32c071

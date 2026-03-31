@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32h7s/registers/dcmipp.hpp>
+#include "../registers/dcmipp.hpp"
 
-namespace stm32::stm32h7s {
+namespace mcu::stm32::stm32h7s {
 
 namespace dcmipp {
   template <stdx::ct_string name,
@@ -200,4 +200,4 @@ namespace dcmipp {
 
 } // namespace dcmipp
 
-} // namespace stm32::stm32h7s
+} // namespace mcu::stm32::stm32h7s

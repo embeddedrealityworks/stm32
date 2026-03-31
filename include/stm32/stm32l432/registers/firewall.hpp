@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // firewall_cr_v1: CR
 // Used by: FIREWALL
@@ -106,4 +106,4 @@ using firewall_vdssa_v1_tt =
                groov::field<"add", std::uint16_t, 15, 6>,
                groov::field<"reserved0", std::uint8_t, 5, 0, common::access::ro>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

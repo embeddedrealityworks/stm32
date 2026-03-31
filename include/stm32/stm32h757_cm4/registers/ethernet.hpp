@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // ethernet_dmaccarxbr_v1: DMACCARXBR
 // Used by: Ethernet_MAC
@@ -1069,7 +1069,7 @@ using ethernet_macpocr_v1_tt =
                groov::field<"reserved2", std::uint16_t, 31, 16, common::access::ro>,
                groov::field<"dn", std::uint8_t, 15, 8>,
                groov::field<"reserved1", bool, 7, 7, common::access::ro>,
-               groov::field<"drrdis", common::bit_enable_bar, 6, 6>,
+               groov::field<"drrdis", common::bit_nenable, 6, 6>,
                groov::field<"apdreqtrig", bool, 5, 5>,
                groov::field<"asynctrig", bool, 4, 4>,
                groov::field<"reserved0", bool, 3, 3, common::access::ro>,
@@ -1913,4 +1913,4 @@ using ethernet_tx_single_collision_good_packets_v1_tt =
              common::access::ro,
                groov::field<"txsnglcolg", std::uint32_t, 31, 0>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

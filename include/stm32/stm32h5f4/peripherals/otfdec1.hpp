@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32h5f4/registers/otfdec1.hpp>
+#include "../registers/otfdec1.hpp"
 
-namespace stm32::stm32h5f4 {
+namespace mcu::stm32::stm32h5f4 {
 
 namespace otfdec1x {
   template <stdx::ct_string name,
@@ -220,4 +220,4 @@ namespace otfdec1x {
 
 } // namespace otfdec1x
 
-} // namespace stm32::stm32h5f4
+} // namespace mcu::stm32::stm32h5f4

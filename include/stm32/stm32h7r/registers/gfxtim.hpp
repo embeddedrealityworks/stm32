@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // gfxtim_gfxtim_afcc1r_v1: GFXTIM_AFCC1R
 // Used by: GFXTIM
@@ -382,13 +382,13 @@ using gfxtim_gfxtim_tdr_v1_tt =
              baseaddress + offset,
              common::access::rw,
                groov::field<"reserved3", std::uint16_t, 31, 21, common::access::ro>,
-               groov::field<"rfc2dis", common::bit_enable_bar, 20, 20, common::access::wo>,
+               groov::field<"rfc2dis", common::bit_nenable, 20, 20, common::access::wo>,
                groov::field<"reserved2", std::uint8_t, 19, 17, common::access::ro>,
-               groov::field<"rfc1dis", common::bit_enable_bar, 16, 16, common::access::wo>,
+               groov::field<"rfc1dis", common::bit_nenable, 16, 16, common::access::wo>,
                groov::field<"reserved1", std::uint16_t, 15, 5, common::access::ro>,
-               groov::field<"alcdis", common::bit_enable_bar, 4, 4, common::access::wo>,
+               groov::field<"alcdis", common::bit_nenable, 4, 4, common::access::wo>,
                groov::field<"reserved0", std::uint8_t, 3, 1, common::access::ro>,
-               groov::field<"afcdis", common::bit_enable_bar, 0, 0, common::access::wo>>;
+               groov::field<"afcdis", common::bit_nenable, 0, 0, common::access::wo>>;
 
 // gfxtim_gfxtim_tsr_v1: GFXTIM_TSR
 // Used by: GFXTIM
@@ -466,7 +466,7 @@ using gfxtim_gfxtim_wdgtcr_v1_tt =
                groov::field<"wdghrc", std::uint8_t, 5, 4>,
                groov::field<"reserved0", bool, 3, 3, common::access::ro>,
                groov::field<"wdgs", bool, 2, 2, common::access::ro>,
-               groov::field<"wdgdis", common::bit_enable_bar, 1, 1, common::access::wo>,
+               groov::field<"wdgdis", common::bit_nenable, 1, 1, common::access::wo>,
                groov::field<"wdgen", common::bit_enable, 0, 0, common::access::wo>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // dbg_dbg_apb_fz1_v1: DBG_APB_FZ1
 // Used by: DBG
@@ -79,4 +79,4 @@ using dbg_idcode_v1_tt =
                groov::field<"reserved0", std::uint8_t, 15, 12>,
                groov::field<"dev_id", std::uint16_t, 11, 0>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

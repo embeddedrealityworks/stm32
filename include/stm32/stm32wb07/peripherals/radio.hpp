@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32wb07/registers/radio.hpp>
+#include "../registers/radio.hpp"
 
-namespace stm32::stm32wb07 {
+namespace mcu::stm32::stm32wb07 {
 
 namespace radio {
   template <stdx::ct_string name,
@@ -275,4 +275,4 @@ namespace radio {
 
 } // namespace radio
 
-} // namespace stm32::stm32wb07
+} // namespace mcu::stm32::stm32wb07

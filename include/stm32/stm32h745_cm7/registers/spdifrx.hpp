@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // spdifrx_cr_v1: CR
 // Used by: SPDIFRX
@@ -212,4 +212,4 @@ using spdifrx_verr_v1_tt =
                groov::field<"majrev", std::uint8_t, 7, 4>,
                groov::field<"minrev", std::uint8_t, 3, 0>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

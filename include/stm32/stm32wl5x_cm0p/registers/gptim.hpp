@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // gptim_arr_v1: ARR
 // Used by: TIM2
@@ -332,7 +332,7 @@ using gptim_cr1_v1_tt =
                groov::field<"dir", bool, 4, 4>,
                groov::field<"opm", bool, 3, 3>,
                groov::field<"urs", bool, 2, 2>,
-               groov::field<"udis", common::bit_enable_bar, 1, 1>,
+               groov::field<"udis", common::bit_nenable, 1, 1>,
                groov::field<"cen", common::bit_enable, 0, 0>>;
 
 // gptim_cr1_v2: CR1
@@ -353,7 +353,7 @@ using gptim_cr1_v2_tt =
                groov::field<"reserved0", std::uint8_t, 6, 4, common::access::ro>,
                groov::field<"opm", bool, 3, 3>,
                groov::field<"urs", bool, 2, 2>,
-               groov::field<"udis", common::bit_enable_bar, 1, 1>,
+               groov::field<"udis", common::bit_nenable, 1, 1>,
                groov::field<"cen", common::bit_enable, 0, 0>>;
 
 // gptim_cr2_v1: CR2
@@ -728,4 +728,4 @@ using gptim_tim2_tisel_v1_tt =
                groov::field<"reserved0", std::uint8_t, 7, 4, common::access::ro>,
                groov::field<"ti1sel", std::uint8_t, 3, 0>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

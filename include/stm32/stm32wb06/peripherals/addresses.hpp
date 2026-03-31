@@ -3,7 +3,7 @@
 
 #include <cstdint>
 
-namespace stm32::stm32wb06 {
+namespace mcu::stm32::stm32wb06 {
 namespace adc { inline constexpr std::uint32_t ADC_BASE = 0x4100'6000; } // namespace adc
 namespace blue { inline constexpr std::uint32_t BLUE_BASE = 0x6000'0000; } // namespace blue
 namespace crc { inline constexpr std::uint32_t CRC_BASE = 0x4820'0000; } // namespace crc
@@ -33,4 +33,4 @@ namespace tim1 { inline constexpr std::uint32_t TIM1_BASE = 0x4000'2000; } // na
 namespace usart { inline constexpr std::uint32_t USART_BASE = 0x4100'4000; } // namespace usart
 namespace wakeup { inline constexpr std::uint32_t WAKEUP_BASE = 0x6000'1800; } // namespace wakeup
 
-} // namespace stm32::stm32wb06
+} // namespace mcu::stm32::stm32wb06

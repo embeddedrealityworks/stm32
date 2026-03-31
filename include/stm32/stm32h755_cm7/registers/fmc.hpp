@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // fmc_bcr1_v1: BCR1
 // Used by: FMC
@@ -21,7 +21,7 @@ using fmc_bcr1_v1_tt =
                groov::field<"reserved3", std::uint8_t, 30, 26, common::access::ro>,
                groov::field<"bmap", std::uint8_t, 25, 24>,
                groov::field<"reserved2", std::uint8_t, 23, 22, common::access::ro>,
-               groov::field<"wfdis", common::bit_enable_bar, 21, 21>,
+               groov::field<"wfdis", common::bit_nenable, 21, 21>,
                groov::field<"cclken", common::bit_enable, 20, 20>,
                groov::field<"cburstrw", bool, 19, 19>,
                groov::field<"cpsize", std::uint8_t, 18, 16>,
@@ -54,7 +54,7 @@ using fmc_bcr2_v1_tt =
                groov::field<"reserved3", std::uint8_t, 30, 26, common::access::ro>,
                groov::field<"bmap", std::uint8_t, 25, 24>,
                groov::field<"reserved2", std::uint8_t, 23, 22, common::access::ro>,
-               groov::field<"wfdis", common::bit_enable_bar, 21, 21>,
+               groov::field<"wfdis", common::bit_nenable, 21, 21>,
                groov::field<"cclken", common::bit_enable, 20, 20>,
                groov::field<"cburstrw", bool, 19, 19>,
                groov::field<"cpsize", std::uint8_t, 18, 16>,
@@ -87,7 +87,7 @@ using fmc_bcr3_v1_tt =
                groov::field<"reserved3", std::uint8_t, 30, 26, common::access::ro>,
                groov::field<"bmap", std::uint8_t, 25, 24>,
                groov::field<"reserved2", std::uint8_t, 23, 22, common::access::ro>,
-               groov::field<"wfdis", common::bit_enable_bar, 21, 21>,
+               groov::field<"wfdis", common::bit_nenable, 21, 21>,
                groov::field<"cclken", common::bit_enable, 20, 20>,
                groov::field<"cburstrw", bool, 19, 19>,
                groov::field<"cpsize", std::uint8_t, 18, 16>,
@@ -120,7 +120,7 @@ using fmc_bcr4_v1_tt =
                groov::field<"reserved3", std::uint8_t, 30, 26, common::access::ro>,
                groov::field<"bmap", std::uint8_t, 25, 24>,
                groov::field<"reserved2", std::uint8_t, 23, 22, common::access::ro>,
-               groov::field<"wfdis", common::bit_enable_bar, 21, 21>,
+               groov::field<"wfdis", common::bit_nenable, 21, 21>,
                groov::field<"cclken", common::bit_enable, 20, 20>,
                groov::field<"cburstrw", bool, 19, 19>,
                groov::field<"cpsize", std::uint8_t, 18, 16>,
@@ -497,4 +497,4 @@ using fmc_sr_v1_tt =
                groov::field<"ils", bool, 1, 1>,
                groov::field<"irs", bool, 0, 0>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

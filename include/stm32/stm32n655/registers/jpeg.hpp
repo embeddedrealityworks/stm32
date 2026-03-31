@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // jpeg_jpeg_cfr_v1: JPEG_CFR
 // Used by: JPEG, JPEG_S
@@ -7925,4 +7925,4 @@ using jpeg_jpeg_sr_v1_tt =
                groov::field<"iftf", bool, 1, 1, common::access::ro>,
                groov::field<"reserved0", bool, 0, 0, common::access::ro>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

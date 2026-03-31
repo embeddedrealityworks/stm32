@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32wl33/registers/lcsc.hpp>
+#include "../registers/lcsc.hpp"
 
-namespace stm32::stm32wl33 {
+namespace mcu::stm32::stm32wl33 {
 
 namespace lcsc {
   template <stdx::ct_string name,
@@ -85,4 +85,4 @@ namespace lcsc {
 
 } // namespace lcsc
 
-} // namespace stm32::stm32wl33
+} // namespace mcu::stm32::stm32wl33

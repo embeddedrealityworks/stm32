@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32h73x/registers/bdma.hpp>
+#include "../registers/bdma.hpp"
 
-namespace stm32::stm32h73x {
+namespace mcu::stm32::stm32h73x {
 
 namespace bdma {
   template <stdx::ct_string name,
@@ -225,4 +225,4 @@ namespace bdma {
 
 } // namespace bdma
 
-} // namespace stm32::stm32h73x
+} // namespace mcu::stm32::stm32h73x

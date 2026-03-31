@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32f733/registers/usb_otg_hs.hpp>
+#include "../registers/usb_otg_hs.hpp"
 
-namespace stm32::stm32f733 {
+namespace mcu::stm32::stm32f733 {
 
 namespace otg_hs_host {
   template <stdx::ct_string name,
@@ -1207,4 +1207,4 @@ namespace otg_hs_device {
 
 } // namespace otg_hs_device
 
-} // namespace stm32::stm32f733
+} // namespace mcu::stm32::stm32f733

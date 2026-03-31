@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // mce_mce_cc1cfgr_v1: MCE_CC1CFGR
 // Used by: MCE1, MCE1_S, MCE2, MCE2_S, MCE3, MCE3_S, MCE4, MCE4_S
@@ -1130,10 +1130,10 @@ using mce_mce_sr_v1_tt =
              baseaddress + offset,
              common::access::rw,
                groov::field<"reserved2", std::uint32_t, 31, 5, common::access::ro>,
-               groov::field<"encdis", common::bit_enable_bar, 4, 4, common::access::ro>,
+               groov::field<"encdis", common::bit_nenable, 4, 4, common::access::ro>,
                groov::field<"reserved1", bool, 3, 3, common::access::ro>,
                groov::field<"fmkvalid", bool, 2, 2, common::access::ro>,
                groov::field<"reserved0", bool, 1, 1, common::access::ro>,
                groov::field<"mkvalid", bool, 0, 0, common::access::ro>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

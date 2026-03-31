@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // cordic_cordic_csr_v1: CORDIC_CSR
 // Used by: CORDIC, CORDIC_S
@@ -55,4 +55,4 @@ using cordic_cordic_wdata_v1_tt =
              common::access::wo,
                groov::field<"arg", std::uint32_t, 31, 0>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // sdio_acktimer_v1: ACKTIMER
 // Used by: SDMMC1, SDMMC2
@@ -572,4 +572,4 @@ using sdio_star_v1_tt =
                groov::field<"dcrcfail", bool, 1, 1>,
                groov::field<"ccrcfail", bool, 0, 0>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

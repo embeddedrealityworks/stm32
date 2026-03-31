@@ -3,7 +3,7 @@
 
 #include <cstdint>
 
-namespace stm32::stm32h5e4 {
+namespace mcu::stm32::stm32h5e4 {
 namespace adc { inline constexpr std::uint32_t ADC_BASE = 0x4202'8000; } // namespace adc
 namespace adc3 { inline constexpr std::uint32_t ADC3_BASE = 0x4202'd800; } // namespace adc3
 namespace adc3_s { inline constexpr std::uint32_t ADC3_S_BASE = 0x5202'd800; } // namespace adc3_s
@@ -243,4 +243,4 @@ namespace vrefbuf_s { inline constexpr std::uint32_t VREFBUF_S_BASE = 0x5400'740
 namespace wwdg { inline constexpr std::uint32_t WWDG_BASE = 0x4000'2c00; } // namespace wwdg
 namespace wwdg_s { inline constexpr std::uint32_t WWDG_S_BASE = 0x5000'2c00; } // namespace wwdg_s
 
-} // namespace stm32::stm32h5e4
+} // namespace mcu::stm32::stm32h5e4

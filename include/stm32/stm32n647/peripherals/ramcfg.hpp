@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32n647/registers/ramcfg.hpp>
+#include "../registers/ramcfg.hpp"
 
-namespace stm32::stm32n647 {
+namespace mcu::stm32::stm32n647 {
 
 namespace ramcfgx {
   template <stdx::ct_string name,
@@ -205,4 +205,4 @@ namespace ramcfgx {
 
 } // namespace ramcfgx
 
-} // namespace stm32::stm32n647
+} // namespace mcu::stm32::stm32n647

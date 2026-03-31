@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32u5gx/registers/rng.hpp>
+#include "../registers/rng.hpp"
 
-namespace stm32::stm32u5gx {
+namespace mcu::stm32::stm32u5gx {
 
 namespace rngx {
   template <stdx::ct_string name,
@@ -35,4 +35,4 @@ namespace rngx {
 
 } // namespace rngx
 
-} // namespace stm32::stm32u5gx
+} // namespace mcu::stm32::stm32u5gx

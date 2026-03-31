@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // vrefbuf_vrefbuf_ccr_v1: VREFBUF_CCR
 // Used by: VREFBUF
@@ -37,4 +37,4 @@ using vrefbuf_vrefbuf_csr_v1_tt =
                groov::field<"hiz", bool, 1, 1>,
                groov::field<"envr", bool, 0, 0>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

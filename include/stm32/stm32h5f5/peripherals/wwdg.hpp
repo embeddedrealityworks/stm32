@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32h5f5/registers/wwdg.hpp>
+#include "../registers/wwdg.hpp"
 
-namespace stm32::stm32h5f5 {
+namespace mcu::stm32::stm32h5f5 {
 
 namespace wwdgx {
   template <stdx::ct_string name,
@@ -30,4 +30,4 @@ namespace wwdgx {
 
 } // namespace wwdgx
 
-} // namespace stm32::stm32h5f5
+} // namespace mcu::stm32::stm32h5f5

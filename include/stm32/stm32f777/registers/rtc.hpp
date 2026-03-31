@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // rtc_alrmar_v1: ALRMAR
 // Used by: RTC
@@ -647,7 +647,7 @@ using rtc_tampcr_v1_tt =
                groov::field<"tamp1mf", bool, 18, 18>,
                groov::field<"tamp1noerase", bool, 17, 17>,
                groov::field<"tamp1ie", common::bit_enable, 16, 16>,
-               groov::field<"tamppudis", common::bit_enable_bar, 15, 15>,
+               groov::field<"tamppudis", common::bit_nenable, 15, 15>,
                groov::field<"tampprch", std::uint8_t, 14, 13>,
                groov::field<"tampflt", std::uint8_t, 12, 11>,
                groov::field<"tampfreq", std::uint8_t, 10, 8>,
@@ -759,4 +759,4 @@ using rtc_wutr_v1_tt =
                groov::field<"reserved0", std::uint16_t, 31, 16, common::access::ro>,
                groov::field<"wut", std::uint16_t, 15, 0>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

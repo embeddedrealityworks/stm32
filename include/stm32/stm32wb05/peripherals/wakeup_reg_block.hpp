@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32wb05/registers/wakeup_reg_block.hpp>
+#include "../registers/wakeup_reg_block.hpp"
 
-namespace stm32::stm32wb05 {
+namespace mcu::stm32::stm32wb05 {
 
 namespace wakeup_reg {
   template <stdx::ct_string name,
@@ -85,4 +85,4 @@ namespace wakeup_reg {
 
 } // namespace wakeup_reg
 
-} // namespace stm32::stm32wb05
+} // namespace mcu::stm32::stm32wb05

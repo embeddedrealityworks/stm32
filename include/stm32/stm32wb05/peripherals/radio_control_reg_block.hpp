@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32wb05/registers/radio_control_reg_block.hpp>
+#include "../registers/radio_control_reg_block.hpp"
 
-namespace stm32::stm32wb05 {
+namespace mcu::stm32::stm32wb05 {
 
 namespace radio_control_reg {
   template <stdx::ct_string name,
@@ -45,4 +45,4 @@ namespace radio_control_reg {
 
 } // namespace radio_control_reg
 
-} // namespace stm32::stm32wb05
+} // namespace mcu::stm32::stm32wb05

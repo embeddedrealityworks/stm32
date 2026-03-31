@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32wba50/registers/gpdma.hpp>
+#include "../registers/gpdma.hpp"
 
-namespace stm32::stm32wba50 {
+namespace mcu::stm32::stm32wba50 {
 
 namespace gpdma {
   template <stdx::ct_string name,
@@ -440,4 +440,4 @@ namespace gpdma {
 
 } // namespace gpdma
 
-} // namespace stm32::stm32wba50
+} // namespace mcu::stm32::stm32wba50

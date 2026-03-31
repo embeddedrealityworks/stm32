@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // iwdg_kr_v1: KR
 // Used by: IWDG
@@ -60,4 +60,4 @@ using iwdg_sr_v1_tt =
                groov::field<"rvu", bool, 1, 1>,
                groov::field<"pvu", bool, 0, 0>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

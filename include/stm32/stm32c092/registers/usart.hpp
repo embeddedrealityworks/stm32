@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // usart_usart_brr_v1: USART_BRR
 // Used by: USART1, USART2, USART3, USART4
@@ -144,7 +144,7 @@ using usart_usart_cr3_v1_tt =
                groov::field<"dep", bool, 15, 15>,
                groov::field<"dem", bool, 14, 14>,
                groov::field<"ddre", bool, 13, 13>,
-               groov::field<"ovrdis", common::bit_enable_bar, 12, 12>,
+               groov::field<"ovrdis", common::bit_nenable, 12, 12>,
                groov::field<"onebit", bool, 11, 11>,
                groov::field<"ctsie", common::bit_enable, 10, 10>,
                groov::field<"ctse", bool, 9, 9>,
@@ -348,4 +348,4 @@ using usart_usart_tdr_v1_tt =
                groov::field<"reserved0", std::uint32_t, 31, 9, common::access::ro>,
                groov::field<"tdr", std::uint16_t, 8, 0>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

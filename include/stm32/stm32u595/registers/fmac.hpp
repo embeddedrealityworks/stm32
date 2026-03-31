@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // fmac_cr_v1: CR
 // Used by: FMAC, SEC_FMAC
@@ -136,4 +136,4 @@ using fmac_ybufcfg_v1_tt =
                groov::field<"y_buf_size", std::uint8_t, 15, 8>,
                groov::field<"y_base", std::uint8_t, 7, 0>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

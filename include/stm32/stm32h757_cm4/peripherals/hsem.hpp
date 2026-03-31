@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32h757_cm4/registers/hsem.hpp>
+#include "../registers/hsem.hpp"
 
-namespace stm32::stm32h757_cm4 {
+namespace mcu::stm32::stm32h757_cm4 {
 
 namespace hsem {
   template <stdx::ct_string name,
@@ -385,4 +385,4 @@ namespace hsem {
 
 } // namespace hsem
 
-} // namespace stm32::stm32h757_cm4
+} // namespace mcu::stm32::stm32h757_cm4

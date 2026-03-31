@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // dcmi_dcmi_cr_v1: DCMI_CR
 // Used by: DCMI, SEC_DCMI
@@ -194,4 +194,4 @@ using dcmi_dcmi_sr_v1_tt =
                groov::field<"vsync", bool, 1, 1, common::access::ro>,
                groov::field<"hsync", bool, 0, 0, common::access::ro>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

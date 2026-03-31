@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // octospim_p1cr_v1: P1CR
 // Used by: OCTOSPIM
@@ -59,4 +59,4 @@ using octospim_p2cr_v1_tt =
                groov::field<"clksrc", bool, 1, 1>,
                groov::field<"clken", common::bit_enable, 0, 0>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

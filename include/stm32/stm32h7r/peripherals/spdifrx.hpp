@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32h7r/registers/spdifrx.hpp>
+#include "../registers/spdifrx.hpp"
 
-namespace stm32::stm32h7r {
+namespace mcu::stm32::stm32h7r {
 
 namespace spdifrx {
   template <stdx::ct_string name,
@@ -60,4 +60,4 @@ namespace spdifrx {
 
 } // namespace spdifrx
 
-} // namespace stm32::stm32h7r
+} // namespace mcu::stm32::stm32h7r

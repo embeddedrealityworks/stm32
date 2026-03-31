@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // dlyb_dlyb_cfgr_v1: DLYB_CFGR
 // Used by: DLYBSD1, SEC_DLYBSD1, DLYBOS1, SEC_DLYBOS1
@@ -39,4 +39,4 @@ using dlyb_dlyb_cr_v1_tt =
                groov::field<"sen", common::bit_enable, 1, 1>,
                groov::field<"den", common::bit_enable, 0, 0>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

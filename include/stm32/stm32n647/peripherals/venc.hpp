@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32n647/registers/venc.hpp>
+#include "../registers/venc.hpp"
 
-namespace stm32::stm32n647 {
+namespace mcu::stm32::stm32n647 {
 
 namespace vencx {
   template <stdx::ct_string name,
@@ -1790,4 +1790,4 @@ namespace vencx {
 
 } // namespace vencx
 
-} // namespace stm32::stm32n647
+} // namespace mcu::stm32::stm32n647

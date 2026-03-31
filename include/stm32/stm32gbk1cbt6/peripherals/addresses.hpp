@@ -3,7 +3,7 @@
 
 #include <cstdint>
 
-namespace stm32::stm32gbk1cbt6 {
+namespace mcu::stm32::stm32gbk1cbt6 {
 namespace adc1 { inline constexpr std::uint32_t ADC1_BASE = 0x5000'0000; } // namespace adc1
 namespace adc12_common { inline constexpr std::uint32_t ADC12_COMMON_BASE = 0x5000'0300; } // namespace adc12_common
 namespace adc2 { inline constexpr std::uint32_t ADC2_BASE = 0x5000'0100; } // namespace adc2
@@ -68,4 +68,4 @@ namespace usart3 { inline constexpr std::uint32_t USART3_BASE = 0x4000'4800; } /
 namespace usb_fs_device { inline constexpr std::uint32_t USB_FS_DEVICE_BASE = 0x4000'5c00; } // namespace usb_fs_device
 namespace wwdg { inline constexpr std::uint32_t WWDG_BASE = 0x4000'2c00; } // namespace wwdg
 
-} // namespace stm32::stm32gbk1cbt6
+} // namespace mcu::stm32::stm32gbk1cbt6

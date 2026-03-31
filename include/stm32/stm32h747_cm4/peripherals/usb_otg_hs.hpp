@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32h747_cm4/registers/usb_otg_hs.hpp>
+#include "../registers/usb_otg_hs.hpp"
 
-namespace stm32::stm32h747_cm4 {
+namespace mcu::stm32::stm32h747_cm4 {
 
 namespace usb_otg_hsx {
   template <stdx::ct_string name,
@@ -1067,4 +1067,4 @@ namespace usb_otg_hsx_v4 {
 
 } // namespace usb_otg_hsx_v4
 
-} // namespace stm32::stm32h747_cm4
+} // namespace mcu::stm32::stm32h747_cm4

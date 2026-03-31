@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32h73x/registers/cryp.hpp>
+#include "../registers/cryp.hpp"
 
-namespace stm32::stm32h73x {
+namespace mcu::stm32::stm32h73x {
 
 namespace cryp {
   template <stdx::ct_string name,
@@ -195,4 +195,4 @@ namespace cryp {
 
 } // namespace cryp
 
-} // namespace stm32::stm32h73x
+} // namespace mcu::stm32::stm32h73x

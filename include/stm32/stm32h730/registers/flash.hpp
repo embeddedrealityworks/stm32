@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // flash_acr_v1: ACR
 // Used by: Flash
@@ -412,7 +412,7 @@ using flash_sr_v1_tt =
                groov::field<"crc_busy", bool, 3, 3>,
                groov::field<"qw", bool, 2, 2>,
                groov::field<"wbne", bool, 1, 1>,
-               groov::field<"bsy", common::bit_ready_bar, 0, 0>>;
+               groov::field<"bsy", common::bit_nready, 0, 0>>;
 
 // flash_wpsn_cur_v1: WPSN_CUR
 // Used by: Flash
@@ -440,4 +440,4 @@ using flash_wpsn_prg_v1_tt =
                groov::field<"reserved0", std::uint32_t, 31, 8, common::access::ro>,
                groov::field<"wrpsn", std::uint8_t, 7, 0>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

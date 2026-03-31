@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // ramcfg_ramcfg_m1cr_v1: RAMCFG_M1CR
 // Used by: RAMCFG, SEC_RAMCFG
@@ -491,4 +491,4 @@ using ramcfg_ramcfg_m5sear_v1_tt =
              common::access::rw,
                groov::field<"esea", std::uint32_t, 31, 0, common::access::ro>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

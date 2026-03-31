@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32h5f4/registers/gpdma.hpp>
+#include "../registers/gpdma.hpp"
 
-namespace stm32::stm32h5f4 {
+namespace mcu::stm32::stm32h5f4 {
 
 namespace gpdmax {
   template <stdx::ct_string name,
@@ -660,4 +660,4 @@ namespace gpdmax {
 
 } // namespace gpdmax
 
-} // namespace stm32::stm32h5f4
+} // namespace mcu::stm32::stm32h5f4

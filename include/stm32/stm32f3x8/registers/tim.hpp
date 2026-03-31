@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // tim_arr_v1: ARR
 // Used by: TIM2, TIM5
@@ -451,7 +451,7 @@ using tim_cr1_v1_tt =
                groov::field<"dir", bool, 4, 4>,
                groov::field<"opm", bool, 3, 3>,
                groov::field<"urs", bool, 2, 2>,
-               groov::field<"udis", common::bit_enable_bar, 1, 1>,
+               groov::field<"udis", common::bit_nenable, 1, 1>,
                groov::field<"cen", common::bit_enable, 0, 0>>;
 
 // tim_cr1_v2: CR1
@@ -470,7 +470,7 @@ using tim_cr1_v2_tt =
                groov::field<"reserved0", std::uint8_t, 6, 4, common::access::ro>,
                groov::field<"opm", bool, 3, 3>,
                groov::field<"urs", bool, 2, 2>,
-               groov::field<"udis", common::bit_enable_bar, 1, 1>,
+               groov::field<"udis", common::bit_nenable, 1, 1>,
                groov::field<"cen", common::bit_enable, 0, 0>>;
 
 // tim_cr1_v3: CR1
@@ -488,7 +488,7 @@ using tim_cr1_v3_tt =
                groov::field<"reserved0", std::uint8_t, 6, 4, common::access::ro>,
                groov::field<"opm", bool, 3, 3>,
                groov::field<"urs", bool, 2, 2>,
-               groov::field<"udis", common::bit_enable_bar, 1, 1>,
+               groov::field<"udis", common::bit_nenable, 1, 1>,
                groov::field<"cen", common::bit_enable, 0, 0>>;
 
 // tim_cr1_v4: CR1
@@ -506,7 +506,7 @@ using tim_cr1_v4_tt =
                groov::field<"arpe", common::bit_enable, 7, 7>,
                groov::field<"reserved0", std::uint8_t, 6, 3, common::access::ro>,
                groov::field<"urs", bool, 2, 2>,
-               groov::field<"udis", common::bit_enable_bar, 1, 1>,
+               groov::field<"udis", common::bit_nenable, 1, 1>,
                groov::field<"cen", common::bit_enable, 0, 0>>;
 
 // tim_cr2_v1: CR2
@@ -1031,4 +1031,4 @@ using tim_sr_v6_tt =
                groov::field<"cc1if", bool, 1, 1>,
                groov::field<"uif", bool, 0, 0>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

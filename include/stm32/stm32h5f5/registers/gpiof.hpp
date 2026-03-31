@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // gpiof_gpiof_afrh_v1: GPIOF_AFRH
 // Used by: GPIOF, GPIOF_S
@@ -366,4 +366,4 @@ using gpiof_gpiof_seccfgr_v1_tt =
                groov::field<"sec1", bool, 1, 1>,
                groov::field<"sec0", bool, 0, 0>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // bdma_bdma_ccr0_v1: BDMA_CCR0
 // Used by: BDMA1, BDMA2
@@ -693,4 +693,4 @@ using bdma_bdma_isr_v1_tt =
                groov::field<"tcif1", bool, 1, 1>,
                groov::field<"gif1", bool, 0, 0>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // lpgpio_lpgpio_brr_v1: LPGPIO_BRR
 // Used by: LPGPIO1, SEC_LPGPIO1
@@ -61,22 +61,22 @@ using lpgpio_lpgpio_bsrr_v1_tt =
                groov::field<"bry18", bool, 18, 18>,
                groov::field<"bry17", bool, 17, 17>,
                groov::field<"bry16", bool, 16, 16>,
-               groov::field<"bsy15", common::bit_ready_bar, 15, 15>,
-               groov::field<"bsy14", common::bit_ready_bar, 14, 14>,
-               groov::field<"bsy13", common::bit_ready_bar, 13, 13>,
-               groov::field<"bsy12", common::bit_ready_bar, 12, 12>,
-               groov::field<"bsy11", common::bit_ready_bar, 11, 11>,
-               groov::field<"bsy10", common::bit_ready_bar, 10, 10>,
-               groov::field<"bsy9", common::bit_ready_bar, 9, 9>,
-               groov::field<"bsy8", common::bit_ready_bar, 8, 8>,
-               groov::field<"bsy7", common::bit_ready_bar, 7, 7>,
-               groov::field<"bsy6", common::bit_ready_bar, 6, 6>,
-               groov::field<"bsy5", common::bit_ready_bar, 5, 5>,
-               groov::field<"bsy4", common::bit_ready_bar, 4, 4>,
-               groov::field<"bsy3", common::bit_ready_bar, 3, 3>,
-               groov::field<"bsy2", common::bit_ready_bar, 2, 2>,
-               groov::field<"bsy1", common::bit_ready_bar, 1, 1>,
-               groov::field<"bsy0", common::bit_ready_bar, 0, 0>>;
+               groov::field<"bsy15", common::bit_nready, 15, 15>,
+               groov::field<"bsy14", common::bit_nready, 14, 14>,
+               groov::field<"bsy13", common::bit_nready, 13, 13>,
+               groov::field<"bsy12", common::bit_nready, 12, 12>,
+               groov::field<"bsy11", common::bit_nready, 11, 11>,
+               groov::field<"bsy10", common::bit_nready, 10, 10>,
+               groov::field<"bsy9", common::bit_nready, 9, 9>,
+               groov::field<"bsy8", common::bit_nready, 8, 8>,
+               groov::field<"bsy7", common::bit_nready, 7, 7>,
+               groov::field<"bsy6", common::bit_nready, 6, 6>,
+               groov::field<"bsy5", common::bit_nready, 5, 5>,
+               groov::field<"bsy4", common::bit_nready, 4, 4>,
+               groov::field<"bsy3", common::bit_nready, 3, 3>,
+               groov::field<"bsy2", common::bit_nready, 2, 2>,
+               groov::field<"bsy1", common::bit_nready, 1, 1>,
+               groov::field<"bsy0", common::bit_nready, 0, 0>>;
 
 // lpgpio_lpgpio_idr_v1: LPGPIO_IDR
 // Used by: LPGPIO1, SEC_LPGPIO1
@@ -147,4 +147,4 @@ using lpgpio_lpgpio_odr_v1_tt =
                groov::field<"ody1", bool, 1, 1>,
                groov::field<"ody0", bool, 0, 0>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

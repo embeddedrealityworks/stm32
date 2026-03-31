@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32n647/registers/xspim.hpp>
+#include "../registers/xspim.hpp"
 
-namespace stm32::stm32n647 {
+namespace mcu::stm32::stm32n647 {
 
 namespace xspimx {
   template <stdx::ct_string name,
@@ -20,4 +20,4 @@ namespace xspimx {
 
 } // namespace xspimx
 
-} // namespace stm32::stm32n647
+} // namespace mcu::stm32::stm32n647

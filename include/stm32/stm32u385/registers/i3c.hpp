@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // i3c_i3c_bcr_v1: I3C_BCR
 // Used by: I3C1, SEC_I3C1, I3C2, SEC_I3C2
@@ -72,7 +72,7 @@ using i3c_i3c_cfgr_v1_tt =
                groov::field<"trighwen", common::bit_enable, 29, 29>,
                groov::field<"trigpol", bool, 28, 28>,
                groov::field<"trigsel", std::uint8_t, 27, 24>,
-               groov::field<"fcfdis", common::bit_enable_bar, 23, 23>,
+               groov::field<"fcfdis", common::bit_nenable, 23, 23>,
                groov::field<"reserved3", bool, 22, 22, common::access::ro>,
                groov::field<"cflush", bool, 21, 21, common::access::wo>,
                groov::field<"cdmaen", common::bit_enable, 20, 20>,
@@ -191,7 +191,7 @@ using i3c_i3c_devr1_v1_tt =
              std::uint32_t,
              baseaddress + offset,
              common::access::rw,
-               groov::field<"dis", common::bit_enable_bar, 31, 31, common::access::ro>,
+               groov::field<"dis", common::bit_nenable, 31, 31, common::access::ro>,
                groov::field<"reserved2", std::uint16_t, 30, 20, common::access::ro>,
                groov::field<"susp", bool, 19, 19>,
                groov::field<"ibiden", common::bit_enable, 18, 18>,
@@ -211,7 +211,7 @@ using i3c_i3c_devr2_v1_tt =
              std::uint32_t,
              baseaddress + offset,
              common::access::rw,
-               groov::field<"dis", common::bit_enable_bar, 31, 31, common::access::ro>,
+               groov::field<"dis", common::bit_nenable, 31, 31, common::access::ro>,
                groov::field<"reserved2", std::uint16_t, 30, 20, common::access::ro>,
                groov::field<"susp", bool, 19, 19>,
                groov::field<"ibiden", common::bit_enable, 18, 18>,
@@ -231,7 +231,7 @@ using i3c_i3c_devr3_v1_tt =
              std::uint32_t,
              baseaddress + offset,
              common::access::rw,
-               groov::field<"dis", common::bit_enable_bar, 31, 31, common::access::ro>,
+               groov::field<"dis", common::bit_nenable, 31, 31, common::access::ro>,
                groov::field<"reserved2", std::uint16_t, 30, 20, common::access::ro>,
                groov::field<"susp", bool, 19, 19>,
                groov::field<"ibiden", common::bit_enable, 18, 18>,
@@ -251,7 +251,7 @@ using i3c_i3c_devr4_v1_tt =
              std::uint32_t,
              baseaddress + offset,
              common::access::rw,
-               groov::field<"dis", common::bit_enable_bar, 31, 31, common::access::ro>,
+               groov::field<"dis", common::bit_nenable, 31, 31, common::access::ro>,
                groov::field<"reserved2", std::uint16_t, 30, 20, common::access::ro>,
                groov::field<"susp", bool, 19, 19>,
                groov::field<"ibiden", common::bit_enable, 18, 18>,
@@ -645,4 +645,4 @@ using i3c_i3c_timingr2_v1_tt =
                groov::field<"stalld", bool, 1, 1>,
                groov::field<"stallt", bool, 0, 0>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

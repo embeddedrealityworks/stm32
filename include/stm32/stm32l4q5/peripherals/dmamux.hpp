@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32l4q5/registers/dmamux.hpp>
+#include "../registers/dmamux.hpp"
 
-namespace stm32::stm32l4q5 {
+namespace mcu::stm32::stm32l4q5 {
 
 namespace dmamux1 {
   template <stdx::ct_string name,
@@ -125,4 +125,4 @@ namespace dmamux1 {
 
 } // namespace dmamux1
 
-} // namespace stm32::stm32l4q5
+} // namespace mcu::stm32::stm32l4q5

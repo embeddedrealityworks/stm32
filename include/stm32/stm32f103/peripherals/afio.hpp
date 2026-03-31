@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32f103/registers/afio.hpp>
+#include "../registers/afio.hpp"
 
-namespace stm32::stm32f103 {
+namespace mcu::stm32::stm32f103 {
 
 namespace afio {
   template <stdx::ct_string name,
@@ -50,4 +50,4 @@ namespace afio {
 
 } // namespace afio
 
-} // namespace stm32::stm32f103
+} // namespace mcu::stm32::stm32f103

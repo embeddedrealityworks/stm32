@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // opamp_csr_v1: CSR
 // Used by: OPAMP
@@ -81,4 +81,4 @@ using opamp_otr_v1_tt =
                groov::field<"ao2_opt_offset_trim", std::uint16_t, 19, 10>,
                groov::field<"ao1_opt_offset_trim", std::uint16_t, 9, 0>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

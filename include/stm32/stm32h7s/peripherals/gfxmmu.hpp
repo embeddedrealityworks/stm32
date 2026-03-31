@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32h7s/registers/gfxmmu.hpp>
+#include "../registers/gfxmmu.hpp"
 
-namespace stm32::stm32h7s {
+namespace mcu::stm32::stm32h7s {
 
 namespace gfxmmu {
   template <stdx::ct_string name,
@@ -10300,4 +10300,4 @@ namespace gfxmmu {
 
 } // namespace gfxmmu
 
-} // namespace stm32::stm32h7s
+} // namespace mcu::stm32::stm32h7s

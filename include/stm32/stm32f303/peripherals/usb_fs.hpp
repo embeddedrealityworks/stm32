@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32f303/registers/usb_fs.hpp>
+#include "../registers/usb_fs.hpp"
 
-namespace stm32::stm32f303 {
+namespace mcu::stm32::stm32f303 {
 
 namespace usb_fs {
   template <stdx::ct_string name,
@@ -80,4 +80,4 @@ namespace usb_fs {
 
 } // namespace usb_fs
 
-} // namespace stm32::stm32f303
+} // namespace mcu::stm32::stm32f303

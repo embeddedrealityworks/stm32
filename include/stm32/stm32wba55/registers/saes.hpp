@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // saes_saes_cr_v1: SAES_CR
 // Used by: SAES, SEC_SAES
@@ -366,4 +366,4 @@ using saes_saes_suspr7_v1_tt =
              common::access::rw,
                groov::field<"susp", std::uint32_t, 31, 0>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

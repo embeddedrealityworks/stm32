@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // dma_hifcr_v1: HIFCR
 // Used by: DMA1, DMA2
@@ -201,7 +201,7 @@ using dma_s0fcr_v1_tt =
                groov::field<"feie", common::bit_enable, 7, 7>,
                groov::field<"reserved0", bool, 6, 6, common::access::ro>,
                groov::field<"fs", std::uint8_t, 5, 3, common::access::ro>,
-               groov::field<"dmdis", common::bit_enable_bar, 2, 2>,
+               groov::field<"dmdis", common::bit_nenable, 2, 2>,
                groov::field<"fth", std::uint8_t, 1, 0>>;
 
 // dma_s0m0ar_v1: S0M0AR
@@ -299,7 +299,7 @@ using dma_s1fcr_v1_tt =
                groov::field<"feie", common::bit_enable, 7, 7>,
                groov::field<"reserved0", bool, 6, 6, common::access::ro>,
                groov::field<"fs", std::uint8_t, 5, 3, common::access::ro>,
-               groov::field<"dmdis", common::bit_enable_bar, 2, 2>,
+               groov::field<"dmdis", common::bit_nenable, 2, 2>,
                groov::field<"fth", std::uint8_t, 1, 0>>;
 
 // dma_s1m0ar_v1: S1M0AR
@@ -397,7 +397,7 @@ using dma_s2fcr_v1_tt =
                groov::field<"feie", common::bit_enable, 7, 7>,
                groov::field<"reserved0", bool, 6, 6, common::access::ro>,
                groov::field<"fs", std::uint8_t, 5, 3, common::access::ro>,
-               groov::field<"dmdis", common::bit_enable_bar, 2, 2>,
+               groov::field<"dmdis", common::bit_nenable, 2, 2>,
                groov::field<"fth", std::uint8_t, 1, 0>>;
 
 // dma_s2m0ar_v1: S2M0AR
@@ -495,7 +495,7 @@ using dma_s3fcr_v1_tt =
                groov::field<"feie", common::bit_enable, 7, 7>,
                groov::field<"reserved0", bool, 6, 6, common::access::ro>,
                groov::field<"fs", std::uint8_t, 5, 3, common::access::ro>,
-               groov::field<"dmdis", common::bit_enable_bar, 2, 2>,
+               groov::field<"dmdis", common::bit_nenable, 2, 2>,
                groov::field<"fth", std::uint8_t, 1, 0>>;
 
 // dma_s3m0ar_v1: S3M0AR
@@ -593,7 +593,7 @@ using dma_s4fcr_v1_tt =
                groov::field<"feie", common::bit_enable, 7, 7>,
                groov::field<"reserved0", bool, 6, 6, common::access::ro>,
                groov::field<"fs", std::uint8_t, 5, 3, common::access::ro>,
-               groov::field<"dmdis", common::bit_enable_bar, 2, 2>,
+               groov::field<"dmdis", common::bit_nenable, 2, 2>,
                groov::field<"fth", std::uint8_t, 1, 0>>;
 
 // dma_s4m0ar_v1: S4M0AR
@@ -691,7 +691,7 @@ using dma_s5fcr_v1_tt =
                groov::field<"feie", common::bit_enable, 7, 7>,
                groov::field<"reserved0", bool, 6, 6, common::access::ro>,
                groov::field<"fs", std::uint8_t, 5, 3, common::access::ro>,
-               groov::field<"dmdis", common::bit_enable_bar, 2, 2>,
+               groov::field<"dmdis", common::bit_nenable, 2, 2>,
                groov::field<"fth", std::uint8_t, 1, 0>>;
 
 // dma_s5m0ar_v1: S5M0AR
@@ -789,7 +789,7 @@ using dma_s6fcr_v1_tt =
                groov::field<"feie", common::bit_enable, 7, 7>,
                groov::field<"reserved0", bool, 6, 6, common::access::ro>,
                groov::field<"fs", std::uint8_t, 5, 3, common::access::ro>,
-               groov::field<"dmdis", common::bit_enable_bar, 2, 2>,
+               groov::field<"dmdis", common::bit_nenable, 2, 2>,
                groov::field<"fth", std::uint8_t, 1, 0>>;
 
 // dma_s6m0ar_v1: S6M0AR
@@ -887,7 +887,7 @@ using dma_s7fcr_v1_tt =
                groov::field<"feie", common::bit_enable, 7, 7>,
                groov::field<"reserved0", bool, 6, 6, common::access::ro>,
                groov::field<"fs", std::uint8_t, 5, 3, common::access::ro>,
-               groov::field<"dmdis", common::bit_enable_bar, 2, 2>,
+               groov::field<"dmdis", common::bit_nenable, 2, 2>,
                groov::field<"fth", std::uint8_t, 1, 0>>;
 
 // dma_s7m0ar_v1: S7M0AR
@@ -939,4 +939,4 @@ using dma_s7par_v1_tt =
              common::access::rw,
                groov::field<"pa", std::uint32_t, 31, 0>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

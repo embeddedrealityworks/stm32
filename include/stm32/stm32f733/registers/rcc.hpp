@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // rcc_ahb1enr_v1: AHB1ENR
 // Used by: RCC
@@ -702,4 +702,4 @@ using rcc_sscgr_v1_tt =
                groov::field<"incstep", std::uint16_t, 27, 13>,
                groov::field<"modper", std::uint16_t, 12, 0>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

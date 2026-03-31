@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32wl33/registers/status.hpp>
+#include "../registers/status.hpp"
 
-namespace stm32::stm32wl33 {
+namespace mcu::stm32::stm32wl33 {
 
 namespace status {
   template <stdx::ct_string name,
@@ -85,4 +85,4 @@ namespace status {
 
 } // namespace status
 
-} // namespace stm32::stm32wl33
+} // namespace mcu::stm32::stm32wl33

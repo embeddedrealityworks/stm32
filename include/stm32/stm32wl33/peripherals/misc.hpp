@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32wl33/registers/misc.hpp>
+#include "../registers/misc.hpp"
 
-namespace stm32::stm32wl33 {
+namespace mcu::stm32::stm32wl33 {
 
 namespace misc {
   template <stdx::ct_string name,
@@ -50,4 +50,4 @@ namespace misc {
 
 } // namespace misc
 
-} // namespace stm32::stm32wl33
+} // namespace mcu::stm32::stm32wl33

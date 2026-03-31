@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32n647/registers/ltdc.hpp>
+#include "../registers/ltdc.hpp"
 
-namespace stm32::stm32n647 {
+namespace mcu::stm32::stm32n647 {
 
 namespace ltdcx {
   template <stdx::ct_string name,
@@ -365,4 +365,4 @@ namespace ltdcx {
 
 } // namespace ltdcx
 
-} // namespace stm32::stm32n647
+} // namespace mcu::stm32::stm32n647

@@ -3,7 +3,7 @@
 
 #include <cstdint>
 
-namespace stm32::stm32h562 {
+namespace mcu::stm32::stm32h562 {
 namespace adc1 { inline constexpr std::uint32_t ADC1_BASE = 0x4202'8000; } // namespace adc1
 namespace adc2 { inline constexpr std::uint32_t ADC2_BASE = 0x4202'8100; } // namespace adc2
 namespace adcc { inline constexpr std::uint32_t ADCC_BASE = 0x4202'8300; } // namespace adcc
@@ -202,4 +202,4 @@ namespace usb { inline constexpr std::uint32_t USB_BASE = 0x4001'6000; } // name
 namespace vrefbuf { inline constexpr std::uint32_t VREFBUF_BASE = 0x4400'7400; } // namespace vrefbuf
 namespace wwdg { inline constexpr std::uint32_t WWDG_BASE = 0x4000'2c00; } // namespace wwdg
 
-} // namespace stm32::stm32h562
+} // namespace mcu::stm32::stm32h562

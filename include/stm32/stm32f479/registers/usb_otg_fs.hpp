@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // usb_otg_fs_diepctl1_v1: DIEPCTL1
 // Used by: OTG_FS_DEVICE
@@ -18,7 +18,7 @@ using usb_otg_fs_diepctl1_v1_tt =
              baseaddress + offset,
              common::access::rw,
                groov::field<"epena", bool, 31, 31>,
-               groov::field<"epdis", common::bit_enable_bar, 30, 30>,
+               groov::field<"epdis", common::bit_nenable, 30, 30>,
                groov::field<"soddfrm_sd1pid", bool, 29, 29, common::access::wo>,
                groov::field<"sd0pid_sevnfrm", bool, 28, 28, common::access::wo>,
                groov::field<"snak", bool, 27, 27, common::access::wo>,
@@ -44,7 +44,7 @@ using usb_otg_fs_diepctl2_v1_tt =
              baseaddress + offset,
              common::access::rw,
                groov::field<"epena", bool, 31, 31>,
-               groov::field<"epdis", common::bit_enable_bar, 30, 30>,
+               groov::field<"epdis", common::bit_nenable, 30, 30>,
                groov::field<"soddfrm", bool, 29, 29, common::access::wo>,
                groov::field<"sd0pid_sevnfrm", bool, 28, 28, common::access::wo>,
                groov::field<"snak", bool, 27, 27, common::access::wo>,
@@ -70,7 +70,7 @@ using usb_otg_fs_diepctl3_v1_tt =
              baseaddress + offset,
              common::access::rw,
                groov::field<"epena", bool, 31, 31>,
-               groov::field<"epdis", common::bit_enable_bar, 30, 30>,
+               groov::field<"epdis", common::bit_nenable, 30, 30>,
                groov::field<"soddfrm", bool, 29, 29, common::access::wo>,
                groov::field<"sd0pid_sevnfrm", bool, 28, 28, common::access::wo>,
                groov::field<"snak", bool, 27, 27, common::access::wo>,
@@ -249,7 +249,7 @@ using usb_otg_fs_doepctl0_v1_tt =
              baseaddress + offset,
              common::access::rw,
                groov::field<"epena", bool, 31, 31, common::access::wo>,
-               groov::field<"epdis", common::bit_enable_bar, 30, 30, common::access::ro>,
+               groov::field<"epdis", common::bit_nenable, 30, 30, common::access::ro>,
                groov::field<"reserved3", std::uint8_t, 29, 28, common::access::ro>,
                groov::field<"snak", bool, 27, 27, common::access::wo>,
                groov::field<"cnak", bool, 26, 26, common::access::wo>,
@@ -274,7 +274,7 @@ using usb_otg_fs_doepctl1_v1_tt =
              baseaddress + offset,
              common::access::rw,
                groov::field<"epena", bool, 31, 31>,
-               groov::field<"epdis", common::bit_enable_bar, 30, 30>,
+               groov::field<"epdis", common::bit_nenable, 30, 30>,
                groov::field<"soddfrm", bool, 29, 29, common::access::wo>,
                groov::field<"sd0pid_sevnfrm", bool, 28, 28, common::access::wo>,
                groov::field<"snak", bool, 27, 27, common::access::wo>,
@@ -300,7 +300,7 @@ using usb_otg_fs_doepctl2_v1_tt =
              baseaddress + offset,
              common::access::rw,
                groov::field<"epena", bool, 31, 31>,
-               groov::field<"epdis", common::bit_enable_bar, 30, 30>,
+               groov::field<"epdis", common::bit_nenable, 30, 30>,
                groov::field<"soddfrm", bool, 29, 29, common::access::wo>,
                groov::field<"sd0pid_sevnfrm", bool, 28, 28, common::access::wo>,
                groov::field<"snak", bool, 27, 27, common::access::wo>,
@@ -326,7 +326,7 @@ using usb_otg_fs_doepctl3_v1_tt =
              baseaddress + offset,
              common::access::rw,
                groov::field<"epena", bool, 31, 31>,
-               groov::field<"epdis", common::bit_enable_bar, 30, 30>,
+               groov::field<"epdis", common::bit_nenable, 30, 30>,
                groov::field<"soddfrm", bool, 29, 29, common::access::wo>,
                groov::field<"sd0pid_sevnfrm", bool, 28, 28, common::access::wo>,
                groov::field<"snak", bool, 27, 27, common::access::wo>,
@@ -354,7 +354,7 @@ using usb_otg_fs_doepint0_v1_tt =
                groov::field<"reserved2", std::uint32_t, 31, 7, common::access::ro>,
                groov::field<"b2bstup", bool, 6, 6>,
                groov::field<"reserved1", bool, 5, 5, common::access::ro>,
-               groov::field<"otepdis", common::bit_enable_bar, 4, 4>,
+               groov::field<"otepdis", common::bit_nenable, 4, 4>,
                groov::field<"stup", bool, 3, 3>,
                groov::field<"reserved0", bool, 2, 2, common::access::ro>,
                groov::field<"epdisd", bool, 1, 1>,
@@ -373,7 +373,7 @@ using usb_otg_fs_doepint1_v1_tt =
                groov::field<"reserved2", std::uint32_t, 31, 7, common::access::ro>,
                groov::field<"b2bstup", bool, 6, 6>,
                groov::field<"reserved1", bool, 5, 5, common::access::ro>,
-               groov::field<"otepdis", common::bit_enable_bar, 4, 4>,
+               groov::field<"otepdis", common::bit_nenable, 4, 4>,
                groov::field<"stup", bool, 3, 3>,
                groov::field<"reserved0", bool, 2, 2, common::access::ro>,
                groov::field<"epdisd", bool, 1, 1>,
@@ -392,7 +392,7 @@ using usb_otg_fs_doepint2_v1_tt =
                groov::field<"reserved2", std::uint32_t, 31, 7, common::access::ro>,
                groov::field<"b2bstup", bool, 6, 6>,
                groov::field<"reserved1", bool, 5, 5, common::access::ro>,
-               groov::field<"otepdis", common::bit_enable_bar, 4, 4>,
+               groov::field<"otepdis", common::bit_nenable, 4, 4>,
                groov::field<"stup", bool, 3, 3>,
                groov::field<"reserved0", bool, 2, 2, common::access::ro>,
                groov::field<"epdisd", bool, 1, 1>,
@@ -411,7 +411,7 @@ using usb_otg_fs_doepint3_v1_tt =
                groov::field<"reserved2", std::uint32_t, 31, 7, common::access::ro>,
                groov::field<"b2bstup", bool, 6, 6>,
                groov::field<"reserved1", bool, 5, 5, common::access::ro>,
-               groov::field<"otepdis", common::bit_enable_bar, 4, 4>,
+               groov::field<"otepdis", common::bit_nenable, 4, 4>,
                groov::field<"stup", bool, 3, 3>,
                groov::field<"reserved0", bool, 2, 2, common::access::ro>,
                groov::field<"epdisd", bool, 1, 1>,
@@ -631,7 +631,7 @@ using usb_otg_fs_fs_dctl_v1_tt =
                groov::field<"tctl", std::uint8_t, 6, 4>,
                groov::field<"gonsts", bool, 3, 3, common::access::ro>,
                groov::field<"ginsts", bool, 2, 2, common::access::ro>,
-               groov::field<"sdis", common::bit_enable_bar, 1, 1>,
+               groov::field<"sdis", common::bit_nenable, 1, 1>,
                groov::field<"rwusig", bool, 0, 0>>;
 
 // usb_otg_fs_fs_diepctl0_v1: FS_DIEPCTL0
@@ -645,7 +645,7 @@ using usb_otg_fs_fs_diepctl0_v1_tt =
              baseaddress + offset,
              common::access::rw,
                groov::field<"epena", bool, 31, 31, common::access::ro>,
-               groov::field<"epdis", common::bit_enable_bar, 30, 30, common::access::ro>,
+               groov::field<"epdis", common::bit_nenable, 30, 30, common::access::ro>,
                groov::field<"reserved3", std::uint8_t, 29, 28, common::access::ro>,
                groov::field<"snak", bool, 27, 27, common::access::wo>,
                groov::field<"cnak", bool, 26, 26, common::access::wo>,
@@ -1076,7 +1076,7 @@ using usb_otg_fs_fs_hcchar0_v1_tt =
              baseaddress + offset,
              common::access::rw,
                groov::field<"chena", bool, 31, 31>,
-               groov::field<"chdis", common::bit_enable_bar, 30, 30>,
+               groov::field<"chdis", common::bit_nenable, 30, 30>,
                groov::field<"oddfrm", bool, 29, 29>,
                groov::field<"dad", std::uint8_t, 28, 22>,
                groov::field<"mcnt", std::uint8_t, 21, 20>,
@@ -1098,7 +1098,7 @@ using usb_otg_fs_fs_hcchar1_v1_tt =
              baseaddress + offset,
              common::access::rw,
                groov::field<"chena", bool, 31, 31>,
-               groov::field<"chdis", common::bit_enable_bar, 30, 30>,
+               groov::field<"chdis", common::bit_nenable, 30, 30>,
                groov::field<"oddfrm", bool, 29, 29>,
                groov::field<"dad", std::uint8_t, 28, 22>,
                groov::field<"mcnt", std::uint8_t, 21, 20>,
@@ -1120,7 +1120,7 @@ using usb_otg_fs_fs_hcchar2_v1_tt =
              baseaddress + offset,
              common::access::rw,
                groov::field<"chena", bool, 31, 31>,
-               groov::field<"chdis", common::bit_enable_bar, 30, 30>,
+               groov::field<"chdis", common::bit_nenable, 30, 30>,
                groov::field<"oddfrm", bool, 29, 29>,
                groov::field<"dad", std::uint8_t, 28, 22>,
                groov::field<"mcnt", std::uint8_t, 21, 20>,
@@ -1142,7 +1142,7 @@ using usb_otg_fs_fs_hcchar3_v1_tt =
              baseaddress + offset,
              common::access::rw,
                groov::field<"chena", bool, 31, 31>,
-               groov::field<"chdis", common::bit_enable_bar, 30, 30>,
+               groov::field<"chdis", common::bit_nenable, 30, 30>,
                groov::field<"oddfrm", bool, 29, 29>,
                groov::field<"dad", std::uint8_t, 28, 22>,
                groov::field<"mcnt", std::uint8_t, 21, 20>,
@@ -1164,7 +1164,7 @@ using usb_otg_fs_fs_hcchar4_v1_tt =
              baseaddress + offset,
              common::access::rw,
                groov::field<"chena", bool, 31, 31>,
-               groov::field<"chdis", common::bit_enable_bar, 30, 30>,
+               groov::field<"chdis", common::bit_nenable, 30, 30>,
                groov::field<"oddfrm", bool, 29, 29>,
                groov::field<"dad", std::uint8_t, 28, 22>,
                groov::field<"mcnt", std::uint8_t, 21, 20>,
@@ -1186,7 +1186,7 @@ using usb_otg_fs_fs_hcchar5_v1_tt =
              baseaddress + offset,
              common::access::rw,
                groov::field<"chena", bool, 31, 31>,
-               groov::field<"chdis", common::bit_enable_bar, 30, 30>,
+               groov::field<"chdis", common::bit_nenable, 30, 30>,
                groov::field<"oddfrm", bool, 29, 29>,
                groov::field<"dad", std::uint8_t, 28, 22>,
                groov::field<"mcnt", std::uint8_t, 21, 20>,
@@ -1208,7 +1208,7 @@ using usb_otg_fs_fs_hcchar6_v1_tt =
              baseaddress + offset,
              common::access::rw,
                groov::field<"chena", bool, 31, 31>,
-               groov::field<"chdis", common::bit_enable_bar, 30, 30>,
+               groov::field<"chdis", common::bit_nenable, 30, 30>,
                groov::field<"oddfrm", bool, 29, 29>,
                groov::field<"dad", std::uint8_t, 28, 22>,
                groov::field<"mcnt", std::uint8_t, 21, 20>,
@@ -1230,7 +1230,7 @@ using usb_otg_fs_fs_hcchar7_v1_tt =
              baseaddress + offset,
              common::access::rw,
                groov::field<"chena", bool, 31, 31>,
-               groov::field<"chdis", common::bit_enable_bar, 30, 30>,
+               groov::field<"chdis", common::bit_nenable, 30, 30>,
                groov::field<"oddfrm", bool, 29, 29>,
                groov::field<"dad", std::uint8_t, 28, 22>,
                groov::field<"mcnt", std::uint8_t, 21, 20>,
@@ -1864,4 +1864,4 @@ using usb_otg_fs_hfir_v1_tt =
                groov::field<"reserved0", std::uint16_t, 31, 16, common::access::ro>,
                groov::field<"frivl", std::uint16_t, 15, 0>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

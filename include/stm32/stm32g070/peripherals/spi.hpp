@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32g070/registers/spi.hpp>
+#include "../registers/spi.hpp"
 
-namespace stm32::stm32g070 {
+namespace mcu::stm32::stm32g070 {
 
 namespace spix {
   template <stdx::ct_string name,
@@ -80,4 +80,4 @@ namespace spix {
 
 } // namespace spix
 
-} // namespace stm32::stm32g070
+} // namespace mcu::stm32::stm32g070

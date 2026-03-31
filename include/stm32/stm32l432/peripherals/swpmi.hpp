@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32l432/registers/swpmi.hpp>
+#include "../registers/swpmi.hpp"
 
-namespace stm32::stm32l432 {
+namespace mcu::stm32::stm32l432 {
 
 namespace swpmi1 {
   template <stdx::ct_string name,
@@ -55,4 +55,4 @@ namespace swpmi1 {
 
 } // namespace swpmi1
 
-} // namespace stm32::stm32l432
+} // namespace mcu::stm32::stm32l432

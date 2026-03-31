@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32wb55_cm0p/registers/syscfg_vrefbuf.hpp>
+#include "../registers/syscfg_vrefbuf.hpp"
 
-namespace stm32::stm32wb55_cm0p {
+namespace mcu::stm32::stm32wb55_cm0p {
 
 namespace syscfg_vrefbuf {
   template <stdx::ct_string name,
@@ -105,4 +105,4 @@ namespace syscfg_vrefbuf {
 
 } // namespace syscfg_vrefbuf
 
-} // namespace stm32::stm32wb55_cm0p
+} // namespace mcu::stm32::stm32wb55_cm0p

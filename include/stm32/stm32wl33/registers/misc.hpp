@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // misc_absolute_time_v1: ABSOLUTE_TIME
 // Used by: MISC
@@ -104,4 +104,4 @@ using misc_wakeup_irq_status_v1_tt =
                groov::field<"rfip_wakeup_f", bool, 1, 1>,
                groov::field<"cpu_wakeup_f", bool, 0, 0>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

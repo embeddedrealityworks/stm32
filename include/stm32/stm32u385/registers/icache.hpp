@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // icache_icache_cr_v1: ICACHE_CR
 // Used by: ICACHE, SEC_ICACHE
@@ -123,7 +123,7 @@ using icache_icache_fcr_v1_tt =
              common::access::wo,
                groov::field<"reserved1", std::uint32_t, 31, 3, common::access::ro>,
                groov::field<"cerrf", bool, 2, 2>,
-               groov::field<"cbsyendf", common::bit_ready_bar, 1, 1>,
+               groov::field<"cbsyendf", common::bit_nready, 1, 1>,
                groov::field<"reserved0", bool, 0, 0, common::access::ro>>;
 
 // icache_icache_hmonr_v1: ICACHE_HMONR
@@ -150,7 +150,7 @@ using icache_icache_ier_v1_tt =
              common::access::rw,
                groov::field<"reserved1", std::uint32_t, 31, 3, common::access::ro>,
                groov::field<"errie", common::bit_enable, 2, 2>,
-               groov::field<"bsyendie", common::bit_ready_bar, 1, 1>,
+               groov::field<"bsyendie", common::bit_nready, 1, 1>,
                groov::field<"reserved0", bool, 0, 0, common::access::ro>>;
 
 // icache_icache_mmonr_v1: ICACHE_MMONR
@@ -178,7 +178,7 @@ using icache_icache_sr_v1_tt =
              common::access::ro,
                groov::field<"reserved0", std::uint32_t, 31, 3>,
                groov::field<"errf", bool, 2, 2>,
-               groov::field<"bsyendf", common::bit_ready_bar, 1, 1>,
+               groov::field<"bsyendf", common::bit_nready, 1, 1>,
                groov::field<"busyf", bool, 0, 0>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

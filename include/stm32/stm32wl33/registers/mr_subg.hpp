@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // mr_subg_afc0_config_v1: AFC0_CONFIG
 // Used by: MR_SUBG
@@ -561,4 +561,4 @@ using mr_subg_synth2_ana_eng_v1_tt =
                groov::field<"rfd_pll_ld_win_acc", bool, 3, 3>,
                groov::field<"rfd_pll_vco_alc_amp", std::uint8_t, 2, 0>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

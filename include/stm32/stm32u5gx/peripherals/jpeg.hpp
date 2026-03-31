@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32u5gx/registers/jpeg.hpp>
+#include "../registers/jpeg.hpp"
 
-namespace stm32::stm32u5gx {
+namespace mcu::stm32::stm32u5gx {
 
 namespace jpegx {
   template <stdx::ct_string name,
@@ -2535,4 +2535,4 @@ namespace jpegx {
 
 } // namespace jpegx
 
-} // namespace stm32::stm32u5gx
+} // namespace mcu::stm32::stm32u5gx

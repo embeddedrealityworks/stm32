@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32h747_cm4/registers/art.hpp>
+#include "../registers/art.hpp"
 
-namespace stm32::stm32h747_cm4 {
+namespace mcu::stm32::stm32h747_cm4 {
 
 namespace art {
   template <stdx::ct_string name,
@@ -20,4 +20,4 @@ namespace art {
 
 } // namespace art
 
-} // namespace stm32::stm32h747_cm4
+} // namespace mcu::stm32::stm32h747_cm4

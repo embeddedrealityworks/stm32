@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // sai_aclrfr_v1: ACLRFR
 // Used by: SAI1
@@ -362,4 +362,4 @@ using sai_pdmdly_v1_tt =
                groov::field<"reserved0", bool, 3, 3, common::access::ro>,
                groov::field<"dlym1l", std::uint8_t, 2, 0>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // syscfg_comp2_csr_v1: COMP2_CSR
 // Used by: SYSCFG_COMP_OPAMP
@@ -266,4 +266,4 @@ using syscfg_syscfg_rcr_v1_tt =
                groov::field<"page1_wp", bool, 1, 1>,
                groov::field<"page0_wp", bool, 0, 0>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

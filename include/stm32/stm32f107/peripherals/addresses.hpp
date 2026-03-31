@@ -3,7 +3,7 @@
 
 #include <cstdint>
 
-namespace stm32::stm32f107 {
+namespace mcu::stm32::stm32f107 {
 namespace adc1 { inline constexpr std::uint32_t ADC1_BASE = 0x4001'2400; } // namespace adc1
 namespace adc2 { inline constexpr std::uint32_t ADC2_BASE = 0x4001'2800; } // namespace adc2
 namespace adc3 { inline constexpr std::uint32_t ADC3_BASE = 0x4001'3c00; } // namespace adc3
@@ -72,4 +72,4 @@ namespace usb_otg_host { inline constexpr std::uint32_t USB_OTG_HOST_BASE = 0x50
 namespace usb_otg_pwrclk { inline constexpr std::uint32_t USB_OTG_PWRCLK_BASE = 0x5000'0e00; } // namespace usb_otg_pwrclk
 namespace wwdg { inline constexpr std::uint32_t WWDG_BASE = 0x4000'2c00; } // namespace wwdg
 
-} // namespace stm32::stm32f107
+} // namespace mcu::stm32::stm32f107

@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32h5f4/registers/ccb.hpp>
+#include "../registers/ccb.hpp"
 
-namespace stm32::stm32h5f4 {
+namespace mcu::stm32::stm32h5f4 {
 
 namespace ccbx {
   template <stdx::ct_string name,
@@ -45,4 +45,4 @@ namespace ccbx {
 
 } // namespace ccbx
 
-} // namespace stm32::stm32h5f4
+} // namespace mcu::stm32::stm32h5f4

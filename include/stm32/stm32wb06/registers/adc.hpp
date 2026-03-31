@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // adc_comp_1_v1: COMP_1
 // Used by: ADC
@@ -372,4 +372,4 @@ using adc_wd_th_v1_tt =
                groov::field<"reserved0", std::uint8_t, 15, 12, common::access::ro>,
                groov::field<"wd_lt", std::uint16_t, 11, 0>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

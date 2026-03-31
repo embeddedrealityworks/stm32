@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32h7r/registers/icache.hpp>
+#include "../registers/icache.hpp"
 
-namespace stm32::stm32h7r {
+namespace mcu::stm32::stm32h7r {
 
 namespace icache {
   template <stdx::ct_string name,
@@ -45,4 +45,4 @@ namespace icache {
 
 } // namespace icache
 
-} // namespace stm32::stm32h7r
+} // namespace mcu::stm32::stm32h7r

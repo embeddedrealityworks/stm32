@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // usbsram_usbsram_chep_rxtxbd_0_v1: USBSRAM_CHEP_RXTXBD_0
 // Used by: USBSRAM, SEC_USBSRAM
@@ -471,4 +471,4 @@ using usbsram_usbsram_chep_txrxbd_7_alternate_v1_tt =
                groov::field<"count_rx", std::uint16_t, 25, 16, common::access::ro>,
                groov::field<"addr_rx", std::uint16_t, 15, 0>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32l100/registers/ri.hpp>
+#include "../registers/ri.hpp"
 
-namespace stm32::stm32l100 {
+namespace mcu::stm32::stm32l100 {
 
 namespace ri {
   template <stdx::ct_string name,
@@ -125,4 +125,4 @@ namespace ri {
 
 } // namespace ri
 
-} // namespace stm32::stm32l100
+} // namespace mcu::stm32::stm32l100

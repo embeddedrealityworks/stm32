@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32h7a3/registers/lptim.hpp>
+#include "../registers/lptim.hpp"
 
-namespace stm32::stm32h7a3 {
+namespace mcu::stm32::stm32h7a3 {
 
 namespace lptimx {
   template <stdx::ct_string name,
@@ -114,4 +114,4 @@ namespace lptim3 {
 
 } // namespace lptim3
 
-} // namespace stm32::stm32h7a3
+} // namespace mcu::stm32::stm32h7a3

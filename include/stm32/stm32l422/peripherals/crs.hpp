@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32l422/registers/crs.hpp>
+#include "../registers/crs.hpp"
 
-namespace stm32::stm32l422 {
+namespace mcu::stm32::stm32l422 {
 
 namespace crs {
   template <stdx::ct_string name,
@@ -35,4 +35,4 @@ namespace crs {
 
 } // namespace crs
 
-} // namespace stm32::stm32l422
+} // namespace mcu::stm32::stm32l422

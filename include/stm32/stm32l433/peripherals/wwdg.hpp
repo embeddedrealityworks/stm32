@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32l433/registers/wwdg.hpp>
+#include "../registers/wwdg.hpp"
 
-namespace stm32::stm32l433 {
+namespace mcu::stm32::stm32l433 {
 
 namespace wwdg {
   template <stdx::ct_string name,
@@ -30,4 +30,4 @@ namespace wwdg {
 
 } // namespace wwdg
 
-} // namespace stm32::stm32l433
+} // namespace mcu::stm32::stm32l433

@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32l4s5/registers/dbgmcu.hpp>
+#include "../registers/dbgmcu.hpp"
 
-namespace stm32::stm32l4s5 {
+namespace mcu::stm32::stm32l4s5 {
 
 namespace dbgmcu {
   template <stdx::ct_string name,
@@ -40,4 +40,4 @@ namespace dbgmcu {
 
 } // namespace dbgmcu
 
-} // namespace stm32::stm32l4s5
+} // namespace mcu::stm32::stm32l4s5

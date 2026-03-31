@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // gtzc_gtzc1_mpcbb1_privcfgr0_v1: GTZC1_MPCBB1_PRIVCFGR0
 // Used by: GTZC1
@@ -2906,4 +2906,4 @@ using gtzc_gtzc1_tzsc_privcfgr3_v1_tt =
                groov::field<"i3c2priv", bool, 2, 2>,
                groov::field<"reserved0", std::uint8_t, 1, 0, common::access::ro>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

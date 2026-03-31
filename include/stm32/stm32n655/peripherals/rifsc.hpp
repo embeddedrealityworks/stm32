@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32n655/registers/rifsc.hpp>
+#include "../registers/rifsc.hpp"
 
-namespace stm32::stm32n655 {
+namespace mcu::stm32::stm32n655 {
 
 namespace rifscx {
   template <stdx::ct_string name,
@@ -205,4 +205,4 @@ namespace rifscx {
 
 } // namespace rifscx
 
-} // namespace stm32::stm32n655
+} // namespace mcu::stm32::stm32n655

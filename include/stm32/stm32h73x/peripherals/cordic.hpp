@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32h73x/registers/cordic.hpp>
+#include "../registers/cordic.hpp"
 
-namespace stm32::stm32h73x {
+namespace mcu::stm32::stm32h73x {
 
 namespace cordic {
   template <stdx::ct_string name,
@@ -30,4 +30,4 @@ namespace cordic {
 
 } // namespace cordic
 
-} // namespace stm32::stm32h73x
+} // namespace mcu::stm32::stm32h73x

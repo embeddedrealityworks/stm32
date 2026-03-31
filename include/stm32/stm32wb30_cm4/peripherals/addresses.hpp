@@ -3,7 +3,7 @@
 
 #include <cstdint>
 
-namespace stm32::stm32wb30_cm4 {
+namespace mcu::stm32::stm32wb30_cm4 {
 namespace adc { inline constexpr std::uint32_t ADC_BASE = 0x5004'0000; } // namespace adc
 namespace aes2 { inline constexpr std::uint32_t AES2_BASE = 0x5800'1800; } // namespace aes2
 namespace crc { inline constexpr std::uint32_t CRC_BASE = 0x4002'3000; } // namespace crc
@@ -37,4 +37,4 @@ namespace tim2 { inline constexpr std::uint32_t TIM2_BASE = 0x4000'0000; } // na
 namespace usart1 { inline constexpr std::uint32_t USART1_BASE = 0x4001'3800; } // namespace usart1
 namespace wwdg { inline constexpr std::uint32_t WWDG_BASE = 0x4000'2c00; } // namespace wwdg
 
-} // namespace stm32::stm32wb30_cm4
+} // namespace mcu::stm32::stm32wb30_cm4

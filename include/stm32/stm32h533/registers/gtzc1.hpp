@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // gtzc1_gtzc1_tzic_fcr1_v1: GTZC1_TZIC_FCR1
 // Used by: GTZC1_TZIC, GTZC1_TZIC_S
@@ -945,4 +945,4 @@ using gtzc1_gtzc1_tzsc_seccfgr3_v1_tt =
                groov::field<"vrefbufsec", bool, 1, 1>,
                groov::field<"lptim6sec", bool, 0, 0>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

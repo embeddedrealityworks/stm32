@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32h745_cm4/registers/dsihost.hpp>
+#include "../registers/dsihost.hpp"
 
-namespace stm32::stm32h745_cm4 {
+namespace mcu::stm32::stm32h745_cm4 {
 
 namespace dsihost {
   template <stdx::ct_string name,
@@ -375,4 +375,4 @@ namespace dsihost {
 
 } // namespace dsihost
 
-} // namespace stm32::stm32h745_cm4
+} // namespace mcu::stm32::stm32h745_cm4

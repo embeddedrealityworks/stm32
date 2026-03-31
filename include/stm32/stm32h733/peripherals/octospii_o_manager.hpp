@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32h733/registers/octospii_o_manager.hpp>
+#include "../registers/octospii_o_manager.hpp"
 
-namespace stm32::stm32h733 {
+namespace mcu::stm32::stm32h733 {
 
 namespace octospii_o_manager {
   template <stdx::ct_string name,
@@ -30,4 +30,4 @@ namespace octospii_o_manager {
 
 } // namespace octospii_o_manager
 
-} // namespace stm32::stm32h733
+} // namespace mcu::stm32::stm32h733

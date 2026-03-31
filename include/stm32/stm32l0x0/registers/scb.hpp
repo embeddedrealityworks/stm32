@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // scb_aircr_v1: AIRCR
 // Used by: SCB
@@ -141,4 +141,4 @@ using scb_vtor_v1_tt =
                groov::field<"tbloff", std::uint32_t, 31, 7>,
                groov::field<"reserved0", std::uint8_t, 6, 0, common::access::ro>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

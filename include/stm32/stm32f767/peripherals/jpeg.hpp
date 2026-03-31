@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32f767/registers/jpeg.hpp>
+#include "../registers/jpeg.hpp"
 
-namespace stm32::stm32f767 {
+namespace mcu::stm32::stm32f767 {
 
 namespace jpeg {
   template <stdx::ct_string name,
@@ -2535,4 +2535,4 @@ namespace jpeg {
 
 } // namespace jpeg
 
-} // namespace stm32::stm32f767
+} // namespace mcu::stm32::stm32f767

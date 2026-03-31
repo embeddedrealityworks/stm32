@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32f410/registers/rcc.hpp>
+#include "../registers/rcc.hpp"
 
-namespace stm32::stm32f410 {
+namespace mcu::stm32::stm32f410 {
 
 namespace rcc {
   template <stdx::ct_string name,
@@ -105,4 +105,4 @@ namespace rcc {
 
 } // namespace rcc
 
-} // namespace stm32::stm32f410
+} // namespace mcu::stm32::stm32f410

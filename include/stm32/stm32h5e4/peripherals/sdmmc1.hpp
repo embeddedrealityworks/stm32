@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32h5e4/registers/sdmmc1.hpp>
+#include "../registers/sdmmc1.hpp"
 
-namespace stm32::stm32h5e4 {
+namespace mcu::stm32::stm32h5e4 {
 
 namespace sdmmc1x {
   template <stdx::ct_string name,
@@ -205,4 +205,4 @@ namespace sdmmc1x {
 
 } // namespace sdmmc1x
 
-} // namespace stm32::stm32h5e4
+} // namespace mcu::stm32::stm32h5e4

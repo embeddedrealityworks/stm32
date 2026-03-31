@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32f215/registers/sdio.hpp>
+#include "../registers/sdio.hpp"
 
-namespace stm32::stm32f215 {
+namespace mcu::stm32::stm32f215 {
 
 namespace sdio {
   template <stdx::ct_string name,
@@ -105,4 +105,4 @@ namespace sdio {
 
 } // namespace sdio
 
-} // namespace stm32::stm32f215
+} // namespace mcu::stm32::stm32f215

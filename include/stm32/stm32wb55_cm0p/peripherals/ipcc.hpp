@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32wb55_cm0p/registers/ipcc.hpp>
+#include "../registers/ipcc.hpp"
 
-namespace stm32::stm32wb55_cm0p {
+namespace mcu::stm32::stm32wb55_cm0p {
 
 namespace ipcc {
   template <stdx::ct_string name,
@@ -75,4 +75,4 @@ namespace ipcc {
 
 } // namespace ipcc
 
-} // namespace stm32::stm32wb55_cm0p
+} // namespace mcu::stm32::stm32wb55_cm0p

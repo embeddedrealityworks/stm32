@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32n655/registers/dlybsd.hpp>
+#include "../registers/dlybsd.hpp"
 
-namespace stm32::stm32n655 {
+namespace mcu::stm32::stm32n655 {
 
 namespace dlybsdx {
   template <stdx::ct_string name,
@@ -25,4 +25,4 @@ namespace dlybsdx {
 
 } // namespace dlybsdx
 
-} // namespace stm32::stm32n655
+} // namespace mcu::stm32::stm32n655

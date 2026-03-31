@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // ccb_ccb_cr_v1: CCB_CR
 // Used by: CCB, SEC_CCB
@@ -217,4 +217,4 @@ using ccb_ccb_sr_v1_tt =
                groov::field<"reserved0", std::uint8_t, 7, 5>,
                groov::field<"opstep", std::uint8_t, 4, 0>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

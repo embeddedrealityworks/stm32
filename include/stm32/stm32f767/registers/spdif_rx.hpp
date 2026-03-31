@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // spdif_rx_cr_v1: CR
 // Used by: SPDIFRX
@@ -140,4 +140,4 @@ using spdif_rx_sr_v1_tt =
                groov::field<"csrne", bool, 1, 1>,
                groov::field<"rxne", bool, 0, 0>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

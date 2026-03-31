@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32h7b3/registers/dcmi.hpp>
+#include "../registers/dcmi.hpp"
 
-namespace stm32::stm32h7b3 {
+namespace mcu::stm32::stm32h7b3 {
 
 namespace dcmi {
   template <stdx::ct_string name,
@@ -70,4 +70,4 @@ namespace dcmi {
 
 } // namespace dcmi
 
-} // namespace stm32::stm32h7b3
+} // namespace mcu::stm32::stm32h7b3

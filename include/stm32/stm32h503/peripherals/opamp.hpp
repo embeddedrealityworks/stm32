@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32h503/registers/opamp.hpp>
+#include "../registers/opamp.hpp"
 
-namespace stm32::stm32h503 {
+namespace mcu::stm32::stm32h503 {
 
 namespace opamp1 {
   template <stdx::ct_string name,
@@ -35,4 +35,4 @@ namespace opamp1 {
 
 } // namespace opamp1
 
-} // namespace stm32::stm32h503
+} // namespace mcu::stm32::stm32h503

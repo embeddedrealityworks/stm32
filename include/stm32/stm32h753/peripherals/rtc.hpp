@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32h753/registers/rtc.hpp>
+#include "../registers/rtc.hpp"
 
-namespace stm32::stm32h753 {
+namespace mcu::stm32::stm32h753 {
 
 namespace rtc {
   template <stdx::ct_string name,
@@ -270,4 +270,4 @@ namespace rtc {
 
 } // namespace rtc
 
-} // namespace stm32::stm32h753
+} // namespace mcu::stm32::stm32h753

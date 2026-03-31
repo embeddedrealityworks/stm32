@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // spi_spi_sspcr1_v1: SPI_SSPCR1
 // Used by: SPI
@@ -110,7 +110,7 @@ using spi_spi_sspsr_v1_tt =
                groov::field<"ftlvl", std::uint8_t, 12, 11, common::access::ro>,
                groov::field<"frlvl", std::uint8_t, 10, 9, common::access::ro>,
                groov::field<"fre", bool, 8, 8, common::access::ro>,
-               groov::field<"bsy", common::bit_ready_bar, 7, 7, common::access::ro>,
+               groov::field<"bsy", common::bit_nready, 7, 7, common::access::ro>,
                groov::field<"ovr", bool, 6, 6, common::access::ro>,
                groov::field<"modf", bool, 5, 5, common::access::ro>,
                groov::field<"crcerr", bool, 4, 4>,
@@ -132,4 +132,4 @@ using spi_spi_ssptxcrcr_v1_tt =
                groov::field<"reserved0", std::uint32_t, 31, 1>,
                groov::field<"txcrc", bool, 0, 0>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

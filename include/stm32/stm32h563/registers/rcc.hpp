@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // rcc_rcc_ahb1enr_v1: RCC_AHB1ENR
 // Used by: RCC, SEC_RCC
@@ -770,13 +770,13 @@ using rcc_rcc_cfgr2_v1_tt =
              baseaddress + offset,
              common::access::rw,
                groov::field<"reserved4", std::uint16_t, 31, 23, common::access::ro>,
-               groov::field<"apb3dis", common::bit_enable_bar, 22, 22>,
-               groov::field<"apb2dis", common::bit_enable_bar, 21, 21>,
-               groov::field<"apb1dis", common::bit_enable_bar, 20, 20>,
-               groov::field<"ahb4dis", common::bit_enable_bar, 19, 19>,
+               groov::field<"apb3dis", common::bit_nenable, 22, 22>,
+               groov::field<"apb2dis", common::bit_nenable, 21, 21>,
+               groov::field<"apb1dis", common::bit_nenable, 20, 20>,
+               groov::field<"ahb4dis", common::bit_nenable, 19, 19>,
                groov::field<"reserved3", bool, 18, 18, common::access::ro>,
-               groov::field<"ahb2dis", common::bit_enable_bar, 17, 17>,
-               groov::field<"ahb1dis", common::bit_enable_bar, 16, 16>,
+               groov::field<"ahb2dis", common::bit_nenable, 17, 17>,
+               groov::field<"ahb1dis", common::bit_nenable, 16, 16>,
                groov::field<"reserved2", bool, 15, 15, common::access::ro>,
                groov::field<"ppre3", std::uint8_t, 14, 12>,
                groov::field<"reserved1", bool, 11, 11, common::access::ro>,
@@ -1151,4 +1151,4 @@ using rcc_rcc_seccfgr_v1_tt =
                groov::field<"hsesec", bool, 1, 1>,
                groov::field<"hsisec", bool, 0, 0>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

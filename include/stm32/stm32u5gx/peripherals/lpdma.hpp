@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32u5gx/registers/lpdma.hpp>
+#include "../registers/lpdma.hpp"
 
-namespace stm32::stm32u5gx {
+namespace mcu::stm32::stm32u5gx {
 
 namespace lpdmax {
   template <stdx::ct_string name,
@@ -235,4 +235,4 @@ namespace lpdmax {
 
 } // namespace lpdmax
 
-} // namespace stm32::stm32u5gx
+} // namespace mcu::stm32::stm32u5gx

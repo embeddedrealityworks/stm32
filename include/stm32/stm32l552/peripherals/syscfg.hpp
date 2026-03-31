@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32l552/registers/syscfg.hpp>
+#include "../registers/syscfg.hpp"
 
-namespace stm32::stm32l552 {
+namespace mcu::stm32::stm32l552 {
 
 namespace syscfgx {
   template <stdx::ct_string name,
@@ -70,4 +70,4 @@ namespace syscfgx {
 
 } // namespace syscfgx
 
-} // namespace stm32::stm32l552
+} // namespace mcu::stm32::stm32l552

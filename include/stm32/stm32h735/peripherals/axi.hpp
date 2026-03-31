@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32h735/registers/axi.hpp>
+#include "../registers/axi.hpp"
 
-namespace stm32::stm32h735 {
+namespace mcu::stm32::stm32h735 {
 
 namespace axi {
   template <stdx::ct_string name,
@@ -245,4 +245,4 @@ namespace axi {
 
 } // namespace axi
 
-} // namespace stm32::stm32h735
+} // namespace mcu::stm32::stm32h735

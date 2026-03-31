@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // adc_adc12_ccr_v1: ADC12_CCR
 // Used by: ADC12_Common, SEC_ADC12_Common
@@ -453,7 +453,7 @@ using adc_adc_cr_v1_tt =
                groov::field<"adstp", bool, 4, 4, common::access::ro>,
                groov::field<"jadstart", bool, 3, 3, common::access::ro>,
                groov::field<"adstart", bool, 2, 2, common::access::ro>,
-               groov::field<"addis", common::bit_enable_bar, 1, 1, common::access::ro>,
+               groov::field<"addis", common::bit_nenable, 1, 1, common::access::ro>,
                groov::field<"aden", common::bit_enable, 0, 0, common::access::ro>>;
 
 // adc_adc_cr_v2: ADC_CR
@@ -473,7 +473,7 @@ using adc_adc_cr_v2_tt =
                groov::field<"adstp", bool, 4, 4, common::access::ro>,
                groov::field<"reserved0", bool, 3, 3, common::access::ro>,
                groov::field<"adstart", bool, 2, 2, common::access::ro>,
-               groov::field<"addis", common::bit_enable_bar, 1, 1, common::access::ro>,
+               groov::field<"addis", common::bit_nenable, 1, 1, common::access::ro>,
                groov::field<"aden", common::bit_enable, 0, 0, common::access::ro>>;
 
 // adc_adc_difsel_v1: ADC_DIFSEL
@@ -1056,4 +1056,4 @@ using adc_adc_sqr4_v1_tt =
                groov::field<"reserved0", bool, 5, 5, common::access::ro>,
                groov::field<"sq15", std::uint8_t, 4, 0>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

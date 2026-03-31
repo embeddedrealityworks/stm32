@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32l0x3/registers/gpio.hpp>
+#include "../registers/gpio.hpp"
 
-namespace stm32::stm32l0x3 {
+namespace mcu::stm32::stm32l0x3 {
 
 namespace gpiox {
   template <stdx::ct_string name,
@@ -134,4 +134,4 @@ namespace gpioa {
 
 } // namespace gpioa
 
-} // namespace stm32::stm32l0x3
+} // namespace mcu::stm32::stm32l0x3

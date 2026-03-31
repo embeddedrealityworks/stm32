@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32f102/registers/dbg.hpp>
+#include "../registers/dbg.hpp"
 
-namespace stm32::stm32f102 {
+namespace mcu::stm32::stm32f102 {
 
 namespace dbg {
   template <stdx::ct_string name,
@@ -25,4 +25,4 @@ namespace dbg {
 
 } // namespace dbg
 
-} // namespace stm32::stm32f102
+} // namespace mcu::stm32::stm32f102

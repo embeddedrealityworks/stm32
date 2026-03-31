@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32f107/registers/usb_otg.hpp>
+#include "../registers/usb_otg.hpp"
 
-namespace stm32::stm32f107 {
+namespace mcu::stm32::stm32f107 {
 
 namespace usb_otg_global {
   template <stdx::ct_string name,
@@ -527,4 +527,4 @@ namespace usb_otg_pwrclk {
 
 } // namespace usb_otg_pwrclk
 
-} // namespace stm32::stm32f107
+} // namespace mcu::stm32::stm32f107

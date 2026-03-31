@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // comp_csr_v1: CSR
 // Used by: COMP
@@ -41,4 +41,4 @@ using comp_csr_v1_tt =
                groov::field<"pu400k", bool, 1, 1>,
                groov::field<"pu10k", bool, 0, 0>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

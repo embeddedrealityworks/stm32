@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32l4s5/registers/octospi.hpp>
+#include "../registers/octospi.hpp"
 
-namespace stm32::stm32l4s5 {
+namespace mcu::stm32::stm32l4s5 {
 
 namespace octospix {
   template <stdx::ct_string name,
@@ -145,4 +145,4 @@ namespace octospix {
 
 } // namespace octospix
 
-} // namespace stm32::stm32l4s5
+} // namespace mcu::stm32::stm32l4s5

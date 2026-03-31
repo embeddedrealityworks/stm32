@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32n657/registers/pssi.hpp>
+#include "../registers/pssi.hpp"
 
-namespace stm32::stm32n657 {
+namespace mcu::stm32::stm32n657 {
 
 namespace pssix {
   template <stdx::ct_string name,
@@ -50,4 +50,4 @@ namespace pssix {
 
 } // namespace pssix
 
-} // namespace stm32::stm32n657
+} // namespace mcu::stm32::stm32n657

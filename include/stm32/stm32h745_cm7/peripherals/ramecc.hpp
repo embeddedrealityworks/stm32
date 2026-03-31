@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32h745_cm7/registers/ramecc.hpp>
+#include "../registers/ramecc.hpp"
 
-namespace stm32::stm32h745_cm7 {
+namespace mcu::stm32::stm32h745_cm7 {
 
 namespace ramecc1 {
   template <stdx::ct_string name,
@@ -408,4 +408,4 @@ namespace ramecc3 {
 
 } // namespace ramecc3
 
-} // namespace stm32::stm32h745_cm7
+} // namespace mcu::stm32::stm32h745_cm7

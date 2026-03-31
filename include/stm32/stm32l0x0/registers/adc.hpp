@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // adc_calfact_v1: CALFACT
 // Used by: ADC
@@ -134,7 +134,7 @@ using adc_cr_v1_tt =
                groov::field<"adstp", bool, 4, 4>,
                groov::field<"reserved0", bool, 3, 3, common::access::ro>,
                groov::field<"adstart", bool, 2, 2>,
-               groov::field<"addis", common::bit_enable_bar, 1, 1>,
+               groov::field<"addis", common::bit_nenable, 1, 1>,
                groov::field<"aden", common::bit_enable, 0, 0>>;
 
 // adc_dr_v1: DR
@@ -220,4 +220,4 @@ using adc_tr_v1_tt =
                groov::field<"reserved0", std::uint8_t, 15, 12, common::access::ro>,
                groov::field<"lt", std::uint16_t, 11, 0>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

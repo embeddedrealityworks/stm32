@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // tamp_atcr1_v1: ATCR1
 // Used by: TAMP, SEC_TAMP
@@ -587,7 +587,7 @@ using tamp_fltcr_v1_tt =
              baseaddress + offset,
              common::access::rw,
                groov::field<"reserved0", std::uint32_t, 31, 8, common::access::ro>,
-               groov::field<"tamppudis", common::bit_enable_bar, 7, 7>,
+               groov::field<"tamppudis", common::bit_nenable, 7, 7>,
                groov::field<"tampprch", std::uint8_t, 6, 5>,
                groov::field<"tampflt", std::uint8_t, 4, 3>,
                groov::field<"tampfreq", std::uint8_t, 2, 0>>;
@@ -763,4 +763,4 @@ using tamp_sr_v1_tt =
                groov::field<"tamp2f", bool, 1, 1>,
                groov::field<"tamp1f", bool, 0, 0>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

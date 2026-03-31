@@ -3,7 +3,7 @@
 
 #include <cstdint>
 
-namespace stm32::stm32h7r {
+namespace mcu::stm32::stm32h7r {
 namespace adc1 { inline constexpr std::uint32_t ADC1_BASE = 0x4002'2000; } // namespace adc1
 namespace adc12_common { inline constexpr std::uint32_t ADC12_COMMON_BASE = 0x4002'2300; } // namespace adc12_common
 namespace adc2 { inline constexpr std::uint32_t ADC2_BASE = 0x4002'2100; } // namespace adc2
@@ -104,4 +104,4 @@ namespace xspi1 { inline constexpr std::uint32_t XSPI1_BASE = 0x5200'5000; } // 
 namespace xspi2 { inline constexpr std::uint32_t XSPI2_BASE = 0x5200'a000; } // namespace xspi2
 namespace xspim1 { inline constexpr std::uint32_t XSPIM1_BASE = 0x5200'b400; } // namespace xspim1
 
-} // namespace stm32::stm32h7r
+} // namespace mcu::stm32::stm32h7r

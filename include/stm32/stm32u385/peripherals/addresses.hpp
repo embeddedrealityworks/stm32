@@ -3,7 +3,7 @@
 
 #include <cstdint>
 
-namespace stm32::stm32u385 {
+namespace mcu::stm32::stm32u385 {
 namespace adc1 { inline constexpr std::uint32_t ADC1_BASE = 0x4202'8000; } // namespace adc1
 namespace adc12 { inline constexpr std::uint32_t ADC12_BASE = 0x4202'8300; } // namespace adc12
 namespace adc2 { inline constexpr std::uint32_t ADC2_BASE = 0x4202'8100; } // namespace adc2
@@ -154,4 +154,4 @@ namespace usbsram { inline constexpr std::uint32_t USBSRAM_BASE = 0x4001'6400; }
 namespace vrefbuf { inline constexpr std::uint32_t VREFBUF_BASE = 0x4000'7400; } // namespace vrefbuf
 namespace wwdg { inline constexpr std::uint32_t WWDG_BASE = 0x4000'2c00; } // namespace wwdg
 
-} // namespace stm32::stm32u385
+} // namespace mcu::stm32::stm32u385

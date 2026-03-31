@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32h5e5/registers/gpioj.hpp>
+#include "../registers/gpioj.hpp"
 
-namespace stm32::stm32h5e5 {
+namespace mcu::stm32::stm32h5e5 {
 
 namespace gpiojx {
   template <stdx::ct_string name,
@@ -80,4 +80,4 @@ namespace gpiojx {
 
 } // namespace gpiojx
 
-} // namespace stm32::stm32h5e5
+} // namespace mcu::stm32::stm32h5e5

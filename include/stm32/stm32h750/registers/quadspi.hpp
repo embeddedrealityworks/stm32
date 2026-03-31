@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // quadspi_quadspi_abr_v1: QUADSPI_ABR
 // Used by: QUADSPI
@@ -214,4 +214,4 @@ using quadspi_quadspi_sr_v1_tt =
                groov::field<"tcf", bool, 1, 1>,
                groov::field<"tef", bool, 0, 0>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

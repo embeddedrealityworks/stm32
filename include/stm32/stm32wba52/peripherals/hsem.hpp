@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32wba52/registers/hsem.hpp>
+#include "../registers/hsem.hpp"
 
-namespace stm32::stm32wba52 {
+namespace mcu::stm32::stm32wba52 {
 
 namespace hsemx {
   template <stdx::ct_string name,
@@ -235,4 +235,4 @@ namespace hsemx {
 
 } // namespace hsemx
 
-} // namespace stm32::stm32wba52
+} // namespace mcu::stm32::stm32wba52

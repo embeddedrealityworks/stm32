@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32u385/registers/i3c.hpp>
+#include "../registers/i3c.hpp"
 
-namespace stm32::stm32u385 {
+namespace mcu::stm32::stm32u385 {
 
 namespace i3cx {
   template <stdx::ct_string name,
@@ -175,4 +175,4 @@ namespace i3cx {
 
 } // namespace i3cx
 
-} // namespace stm32::stm32u385
+} // namespace mcu::stm32::stm32u385

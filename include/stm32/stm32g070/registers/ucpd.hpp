@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // ucpd_cfg1_v1: CFG1
 // Used by: UCPD1, UCPD2
@@ -41,7 +41,7 @@ using ucpd_cfg2_v1_tt =
                groov::field<"wupen", common::bit_enable, 3, 3>,
                groov::field<"forceclk", bool, 2, 2>,
                groov::field<"rxfilt2n3", bool, 1, 1>,
-               groov::field<"rxfiltdis", common::bit_enable_bar, 0, 0>>;
+               groov::field<"rxfiltdis", common::bit_nenable, 0, 0>>;
 
 // ucpd_cfg3_v1: CFG3
 // Used by: UCPD1, UCPD2
@@ -73,8 +73,8 @@ using ucpd_cr_v1_tt =
              baseaddress + offset,
              common::access::rw,
                groov::field<"reserved2", std::uint16_t, 31, 22, common::access::ro>,
-               groov::field<"cc2tcdis", common::bit_enable_bar, 21, 21>,
-               groov::field<"cc1tcdis", common::bit_enable_bar, 20, 20>,
+               groov::field<"cc2tcdis", common::bit_nenable, 21, 21>,
+               groov::field<"cc1tcdis", common::bit_nenable, 20, 20>,
                groov::field<"reserved1", bool, 19, 19, common::access::ro>,
                groov::field<"rdch", bool, 18, 18>,
                groov::field<"frstx", bool, 17, 17>,
@@ -323,4 +323,4 @@ using ucpd_txdr_v1_tt =
                groov::field<"reserved0", std::uint32_t, 31, 8, common::access::ro>,
                groov::field<"txdata", std::uint8_t, 7, 0>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

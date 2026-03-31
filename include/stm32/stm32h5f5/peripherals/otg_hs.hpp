@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32h5f5/registers/otg_hs.hpp>
+#include "../registers/otg_hs.hpp"
 
-namespace stm32::stm32h5f5 {
+namespace mcu::stm32::stm32h5f5 {
 
 namespace otg_hsx {
   template <stdx::ct_string name,
@@ -1220,4 +1220,4 @@ namespace otg_hsx {
 
 } // namespace otg_hsx
 
-} // namespace stm32::stm32h5f5
+} // namespace mcu::stm32::stm32h5f5

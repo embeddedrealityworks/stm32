@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // trng_trng_cr_v1: TRNG_CR
 // Used by: TRNG
@@ -307,4 +307,4 @@ using trng_trng_val_v1_tt =
              common::access::ro,
                groov::field<"rnd_val", std::uint32_t, 31, 0>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

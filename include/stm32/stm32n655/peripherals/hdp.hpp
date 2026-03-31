@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32n655/registers/hdp.hpp>
+#include "../registers/hdp.hpp"
 
-namespace stm32::stm32n655 {
+namespace mcu::stm32::stm32n655 {
 
 namespace hdpx {
   template <stdx::ct_string name,
@@ -45,4 +45,4 @@ namespace hdpx {
 
 } // namespace hdpx
 
-} // namespace stm32::stm32n655
+} // namespace mcu::stm32::stm32n655

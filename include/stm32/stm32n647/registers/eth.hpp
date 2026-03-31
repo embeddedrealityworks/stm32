@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // eth_eth_dmaa4dacr_v1: ETH_DMAA4DACR
 // Used by: ETH, ETH_S
@@ -1640,8 +1640,8 @@ using eth_eth_macpocr_v1_tt =
              common::access::rw,
                groov::field<"reserved1", std::uint16_t, 31, 16, common::access::ro>,
                groov::field<"dn", std::uint8_t, 15, 8>,
-               groov::field<"pdrdis", common::bit_enable_bar, 7, 7>,
-               groov::field<"drrdis", common::bit_enable_bar, 6, 6>,
+               groov::field<"pdrdis", common::bit_nenable, 7, 7>,
+               groov::field<"drrdis", common::bit_nenable, 6, 6>,
                groov::field<"apdreqtrig", bool, 5, 5>,
                groov::field<"asynctrig", bool, 4, 4>,
                groov::field<"reserved0", bool, 3, 3, common::access::ro>,
@@ -3359,4 +3359,4 @@ using eth_eth_tx_single_collision_good_packets_v1_tt =
              common::access::rw,
                groov::field<"txsnglcolg", std::uint32_t, 31, 0, common::access::ro>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

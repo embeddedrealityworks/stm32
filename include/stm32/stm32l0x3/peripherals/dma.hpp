@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32l0x3/registers/dma.hpp>
+#include "../registers/dma.hpp"
 
-namespace stm32::stm32l0x3 {
+namespace mcu::stm32::stm32l0x3 {
 
 namespace dma1 {
   template <stdx::ct_string name,
@@ -170,4 +170,4 @@ namespace dma1 {
 
 } // namespace dma1
 
-} // namespace stm32::stm32l0x3
+} // namespace mcu::stm32::stm32l0x3

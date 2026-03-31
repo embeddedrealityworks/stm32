@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // static_as_qi_ctrl_v1: AS_QI_CTRL
 // Used by: STATIC
@@ -255,4 +255,4 @@ using static_sync_v1_tt =
              common::access::rw,
                groov::field<"sync", std::uint32_t, 31, 0>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

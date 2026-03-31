@@ -3,7 +3,7 @@
 
 #include <cstdint>
 
-namespace stm32::stm32l4r7 {
+namespace mcu::stm32::stm32l4r7 {
 namespace adc { inline constexpr std::uint32_t ADC_BASE = 0x5004'0000; } // namespace adc
 namespace adc_common { inline constexpr std::uint32_t ADC_COMMON_BASE = 0x5004'0300; } // namespace adc_common
 namespace aes { inline constexpr std::uint32_t AES_BASE = 0x5006'0000; } // namespace aes
@@ -83,4 +83,4 @@ namespace usart3 { inline constexpr std::uint32_t USART3_BASE = 0x4000'4800; } /
 namespace vrefbuf { inline constexpr std::uint32_t VREFBUF_BASE = 0x4001'0030; } // namespace vrefbuf
 namespace wwdg { inline constexpr std::uint32_t WWDG_BASE = 0x4000'2c00; } // namespace wwdg
 
-} // namespace stm32::stm32l4r7
+} // namespace mcu::stm32::stm32l4r7

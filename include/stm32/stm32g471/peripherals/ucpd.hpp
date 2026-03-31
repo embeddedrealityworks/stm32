@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32g471/registers/ucpd.hpp>
+#include "../registers/ucpd.hpp"
 
-namespace stm32::stm32g471 {
+namespace mcu::stm32::stm32g471 {
 
 namespace ucpd1 {
   template <stdx::ct_string name,
@@ -85,4 +85,4 @@ namespace ucpd1 {
 
 } // namespace ucpd1
 
-} // namespace stm32::stm32g471
+} // namespace mcu::stm32::stm32g471

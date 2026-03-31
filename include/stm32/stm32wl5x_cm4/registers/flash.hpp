@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // flash_acr_v1: ACR
 // Used by: FLASH
@@ -41,7 +41,7 @@ using flash_acr2_v1_tt =
              common::access::rw,
                groov::field<"reserved0", std::uint32_t, 31, 3, common::access::ro>,
                groov::field<"c2swdbgen", common::bit_enable, 2, 2>,
-               groov::field<"hdpadis", common::bit_enable_bar, 1, 1>,
+               groov::field<"hdpadis", common::bit_nenable, 1, 1>,
                groov::field<"privmode", common::bit_enable, 0, 0>>;
 
 // flash_c2acr_v1: C2ACR
@@ -99,9 +99,9 @@ using flash_c2sr_v1_tt =
              common::access::rw,
                groov::field<"reserved4", std::uint16_t, 31, 20, common::access::ro>,
                groov::field<"pesd", bool, 19, 19, common::access::ro>,
-               groov::field<"cfgbsy", common::bit_ready_bar, 18, 18, common::access::ro>,
+               groov::field<"cfgbsy", common::bit_nready, 18, 18, common::access::ro>,
                groov::field<"reserved3", bool, 17, 17, common::access::ro>,
-               groov::field<"bsy", common::bit_ready_bar, 16, 16, common::access::ro>,
+               groov::field<"bsy", common::bit_nready, 16, 16, common::access::ro>,
                groov::field<"reserved2", bool, 15, 15, common::access::ro>,
                groov::field<"rderr", bool, 14, 14>,
                groov::field<"reserved1", std::uint8_t, 13, 10, common::access::ro>,
@@ -317,9 +317,9 @@ using flash_sr_v1_tt =
              common::access::rw,
                groov::field<"reserved3", std::uint16_t, 31, 20, common::access::ro>,
                groov::field<"pesd", bool, 19, 19, common::access::ro>,
-               groov::field<"cfgbsy", common::bit_ready_bar, 18, 18, common::access::ro>,
+               groov::field<"cfgbsy", common::bit_nready, 18, 18, common::access::ro>,
                groov::field<"reserved2", bool, 17, 17, common::access::ro>,
-               groov::field<"bsy", common::bit_ready_bar, 16, 16, common::access::ro>,
+               groov::field<"bsy", common::bit_nready, 16, 16, common::access::ro>,
                groov::field<"optverr", bool, 15, 15>,
                groov::field<"rderr", bool, 14, 14>,
                groov::field<"optvn", bool, 13, 13, common::access::ro>,
@@ -384,4 +384,4 @@ using flash_wrp1br_v1_tt =
                groov::field<"reserved0", std::uint16_t, 15, 7, common::access::ro>,
                groov::field<"wrp1b_strt", std::uint8_t, 6, 0>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

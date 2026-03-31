@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // lcsc_lcsc_anatst_cfg_v1: LCSC_ANATST_CFG
 // Used by: LCSC
@@ -226,4 +226,4 @@ using lcsc_lcsc_wheel_sr_v1_tt =
                groov::field<"aclkwise", std::uint16_t, 31, 16>,
                groov::field<"clkwise", std::uint16_t, 15, 0>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

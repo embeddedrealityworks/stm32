@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // ramcfg_ramcfg_ahbsram1cr_v1: RAMCFG_AHBSRAM1CR
 // Used by: RAMCFG, RAMCFG_S
@@ -473,7 +473,7 @@ using ramcfg_ramcfg_flexramcr_v1_tt =
                groov::field<"reserved3", std::uint8_t, 23, 18, common::access::ro>,
                groov::field<"itcmcfg", std::uint8_t, 17, 16>,
                groov::field<"reserved2", std::uint8_t, 15, 13, common::access::ro>,
-               groov::field<"sramhwerdis", common::bit_enable_bar, 12, 12>,
+               groov::field<"sramhwerdis", common::bit_nenable, 12, 12>,
                groov::field<"reserved1", std::uint8_t, 11, 9, common::access::ro>,
                groov::field<"sramer", bool, 8, 8>,
                groov::field<"reserved0", std::uint8_t, 7, 0, common::access::ro>>;
@@ -546,4 +546,4 @@ using ramcfg_ramcfg_vencramisr_v1_tt =
                groov::field<"srambusy", bool, 8, 8, common::access::ro>,
                groov::field<"reserved0", std::uint8_t, 7, 0, common::access::ro>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

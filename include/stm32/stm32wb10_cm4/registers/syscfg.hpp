@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // syscfg_c2imr1_v1: C2IMR1
 // Used by: SYSCFG
@@ -253,7 +253,7 @@ using syscfg_scsr_v1_tt =
              common::access::rw,
                groov::field<"c2rfd", bool, 31, 31>,
                groov::field<"reserved0", std::uint32_t, 30, 2, common::access::ro>,
-               groov::field<"sram2bsy", common::bit_ready_bar, 1, 1, common::access::ro>,
+               groov::field<"sram2bsy", common::bit_nready, 1, 1, common::access::ro>,
                groov::field<"sram2er", bool, 0, 0>>;
 
 // syscfg_sipcr_v1: SIPCR
@@ -371,4 +371,4 @@ using syscfg_swpr2_v1_tt =
                groov::field<"p33wp", bool, 1, 1>,
                groov::field<"p32wp", bool, 0, 0>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

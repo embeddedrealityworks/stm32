@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32wl33/registers/switchable.hpp>
+#include "../registers/switchable.hpp"
 
-namespace stm32::stm32wl33 {
+namespace mcu::stm32::stm32wl33 {
 
 namespace switchable {
   template <stdx::ct_string name,
@@ -30,4 +30,4 @@ namespace switchable {
 
 } // namespace switchable
 
-} // namespace stm32::stm32wl33
+} // namespace mcu::stm32::stm32wl33

@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // ethernet_dmabmr_v1: DMABMR
 // Used by: Ethernet_DMA
@@ -913,4 +913,4 @@ using ethernet_ptpttlr_v1_tt =
              common::access::rw,
                groov::field<"ttsl", std::uint32_t, 31, 0>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // adc12_adc12_ccr_v1: ADC12_CCR
 // Used by: ADC12, ADC12_S
@@ -86,4 +86,4 @@ using adc12_adc12_csr_v1_tt =
                groov::field<"eosmp_mst", bool, 1, 1, common::access::ro>,
                groov::field<"adrdy_mst", common::bit_ready, 0, 0, common::access::ro>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

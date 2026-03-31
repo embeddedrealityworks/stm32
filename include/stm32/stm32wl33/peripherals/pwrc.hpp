@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32wl33/registers/pwrc.hpp>
+#include "../registers/pwrc.hpp"
 
-namespace stm32::stm32wl33 {
+namespace mcu::stm32::stm32wl33 {
 
 namespace pwrc {
   template <stdx::ct_string name,
@@ -160,4 +160,4 @@ namespace pwrc {
 
 } // namespace pwrc
 
-} // namespace stm32::stm32wl33
+} // namespace mcu::stm32::stm32wl33

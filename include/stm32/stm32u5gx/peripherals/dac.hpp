@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32u5gx/registers/dac.hpp>
+#include "../registers/dac.hpp"
 
-namespace stm32::stm32u5gx {
+namespace mcu::stm32::stm32u5gx {
 
 namespace dacx {
   template <stdx::ct_string name,
@@ -120,4 +120,4 @@ namespace dacx {
 
 } // namespace dacx
 
-} // namespace stm32::stm32u5gx
+} // namespace mcu::stm32::stm32u5gx

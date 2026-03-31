@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // mdma_c0bndtr_v1: C0BNDTR
 // Used by: MDMA
@@ -3379,4 +3379,4 @@ using mdma_gisr0_v1_tt =
                groov::field<"gif1", bool, 1, 1>,
                groov::field<"gif0", bool, 0, 0>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

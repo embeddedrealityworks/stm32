@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // gpdma_gpdma_c0br1_v1: GPDMA_C0BR1
 // Used by: GPDMA
@@ -3335,4 +3335,4 @@ using gpdma_gpdma_rcfglockr_v1_tt =
                groov::field<"lock1", common::bit_locked, 1, 1>,
                groov::field<"lock0", common::bit_locked, 0, 0>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

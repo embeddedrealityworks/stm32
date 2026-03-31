@@ -3,7 +3,7 @@
 
 #include <cstdint>
 
-namespace stm32::stm32n645 {
+namespace mcu::stm32::stm32n645 {
 namespace adc1 { inline constexpr std::uint32_t ADC1_BASE = 0x4002'2000; } // namespace adc1
 namespace adc12 { inline constexpr std::uint32_t ADC12_BASE = 0x4002'2300; } // namespace adc12
 namespace adc12_s { inline constexpr std::uint32_t ADC12_S_BASE = 0x5002'2300; } // namespace adc12_s
@@ -239,4 +239,4 @@ namespace xspi3_s { inline constexpr std::uint32_t XSPI3_S_BASE = 0x5802'd000; }
 namespace xspim { inline constexpr std::uint32_t XSPIM_BASE = 0x4802'b400; } // namespace xspim
 namespace xspim_s { inline constexpr std::uint32_t XSPIM_S_BASE = 0x5802'b400; } // namespace xspim_s
 
-} // namespace stm32::stm32n645
+} // namespace mcu::stm32::stm32n645

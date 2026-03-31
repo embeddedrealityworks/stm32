@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32f3x8/registers/fmc.hpp>
+#include "../registers/fmc.hpp"
 
-namespace stm32::stm32f3x8 {
+namespace mcu::stm32::stm32f3x8 {
 
 namespace fmc {
   template <stdx::ct_string name,
@@ -150,4 +150,4 @@ namespace fmc {
 
 } // namespace fmc
 
-} // namespace stm32::stm32f3x8
+} // namespace mcu::stm32::stm32f3x8

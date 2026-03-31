@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32wl5x_cm4/registers/adavancetim.hpp>
+#include "../registers/adavancetim.hpp"
 
-namespace stm32::stm32wl5x_cm4 {
+namespace mcu::stm32::stm32wl5x_cm4 {
 
 namespace tim1 {
   template <stdx::ct_string name,
@@ -160,4 +160,4 @@ namespace tim1 {
 
 } // namespace tim1
 
-} // namespace stm32::stm32wl5x_cm4
+} // namespace mcu::stm32::stm32wl5x_cm4

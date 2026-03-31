@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32h5f4/registers/dcmi.hpp>
+#include "../registers/dcmi.hpp"
 
-namespace stm32::stm32h5f4 {
+namespace mcu::stm32::stm32h5f4 {
 
 namespace dcmix {
   template <stdx::ct_string name,
@@ -70,4 +70,4 @@ namespace dcmix {
 
 } // namespace dcmix
 
-} // namespace stm32::stm32h5f4
+} // namespace mcu::stm32::stm32h5f4

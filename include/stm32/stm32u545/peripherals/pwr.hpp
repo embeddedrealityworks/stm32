@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32u545/registers/pwr.hpp>
+#include "../registers/pwr.hpp"
 
-namespace stm32::stm32u545 {
+namespace mcu::stm32::stm32u545 {
 
 namespace pwrx {
   template <stdx::ct_string name,
@@ -220,4 +220,4 @@ namespace pwrx {
 
 } // namespace pwrx
 
-} // namespace stm32::stm32u545
+} // namespace mcu::stm32::stm32u545

@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32h7r/registers/dts.hpp>
+#include "../registers/dts.hpp"
 
-namespace stm32::stm32h7r {
+namespace mcu::stm32::stm32h7r {
 
 namespace dts {
   template <stdx::ct_string name,
@@ -60,4 +60,4 @@ namespace dts {
 
 } // namespace dts
 
-} // namespace stm32::stm32h7r
+} // namespace mcu::stm32::stm32h7r

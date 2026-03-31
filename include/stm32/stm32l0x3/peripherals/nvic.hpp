@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32l0x3/registers/nvic.hpp>
+#include "../registers/nvic.hpp"
 
-namespace stm32::stm32l0x3 {
+namespace mcu::stm32::stm32l0x3 {
 
 namespace nvic {
   template <stdx::ct_string name,
@@ -75,4 +75,4 @@ namespace nvic {
 
 } // namespace nvic
 
-} // namespace stm32::stm32l0x3
+} // namespace mcu::stm32::stm32l0x3

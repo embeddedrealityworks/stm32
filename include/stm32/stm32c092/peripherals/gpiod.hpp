@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32c092/registers/gpiod.hpp>
+#include "../registers/gpiod.hpp"
 
-namespace stm32::stm32c092 {
+namespace mcu::stm32::stm32c092 {
 
 namespace gpiod {
   template <stdx::ct_string name,
@@ -70,4 +70,4 @@ namespace gpiod {
 
 } // namespace gpiod
 
-} // namespace stm32::stm32c092
+} // namespace mcu::stm32::stm32c092

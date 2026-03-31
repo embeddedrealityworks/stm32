@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32wl33/registers/flash_ctrl.hpp>
+#include "../registers/flash_ctrl.hpp"
 
-namespace stm32::stm32wl33 {
+namespace mcu::stm32::stm32wl33 {
 
 namespace flash_ctrl {
   template <stdx::ct_string name,
@@ -95,4 +95,4 @@ namespace flash_ctrl {
 
 } // namespace flash_ctrl
 
-} // namespace stm32::stm32wl33
+} // namespace mcu::stm32::stm32wl33

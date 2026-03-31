@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // afio_evcr_v1: EVCR
 // Used by: AFIO
@@ -136,4 +136,4 @@ using afio_mapr2_v1_tt =
                groov::field<"tim16_remap", bool, 1, 1>,
                groov::field<"tim15_remap", bool, 0, 0>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

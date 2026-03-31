@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32h5e5/registers/dlybos1.hpp>
+#include "../registers/dlybos1.hpp"
 
-namespace stm32::stm32h5e5 {
+namespace mcu::stm32::stm32h5e5 {
 
 namespace dlybos1x {
   template <stdx::ct_string name,
@@ -25,4 +25,4 @@ namespace dlybos1x {
 
 } // namespace dlybos1x
 
-} // namespace stm32::stm32h5e5
+} // namespace mcu::stm32::stm32h5e5

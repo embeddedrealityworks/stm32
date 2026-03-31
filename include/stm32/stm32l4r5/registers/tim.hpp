@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // tim_tim15_arr_v1: TIM15_ARR
 // Used by: TIM15
@@ -162,7 +162,7 @@ using tim_tim15_cr1_v1_tt =
                groov::field<"reserved0", std::uint8_t, 6, 4, common::access::ro>,
                groov::field<"opm", bool, 3, 3>,
                groov::field<"urs", bool, 2, 2>,
-               groov::field<"udis", common::bit_enable_bar, 1, 1>,
+               groov::field<"udis", common::bit_nenable, 1, 1>,
                groov::field<"cen", common::bit_enable, 0, 0>>;
 
 // tim_tim15_cr2_v1: TIM15_CR2
@@ -487,7 +487,7 @@ using tim_tim16_cr1_v1_tt =
                groov::field<"reserved0", std::uint8_t, 6, 4, common::access::ro>,
                groov::field<"opm", bool, 3, 3>,
                groov::field<"urs", bool, 2, 2>,
-               groov::field<"udis", common::bit_enable_bar, 1, 1>,
+               groov::field<"udis", common::bit_nenable, 1, 1>,
                groov::field<"cen", common::bit_enable, 0, 0>>;
 
 // tim_tim16_cr2_v1: TIM16_CR2
@@ -782,7 +782,7 @@ using tim_tim17_cr1_v1_tt =
                groov::field<"reserved0", std::uint8_t, 6, 4, common::access::ro>,
                groov::field<"opm", bool, 3, 3>,
                groov::field<"urs", bool, 2, 2>,
-               groov::field<"udis", common::bit_enable_bar, 1, 1>,
+               groov::field<"udis", common::bit_nenable, 1, 1>,
                groov::field<"cen", common::bit_enable, 0, 0>>;
 
 // tim_tim17_cr2_v1: TIM17_CR2
@@ -1244,7 +1244,7 @@ using tim_tim1_cr1_v1_tt =
                groov::field<"dir", bool, 4, 4>,
                groov::field<"opm", bool, 3, 3>,
                groov::field<"urs", bool, 2, 2>,
-               groov::field<"udis", common::bit_enable_bar, 1, 1>,
+               groov::field<"udis", common::bit_nenable, 1, 1>,
                groov::field<"cen", common::bit_enable, 0, 0>>;
 
 // tim_tim1_cr2_v1: TIM1_CR2
@@ -1706,7 +1706,7 @@ using tim_tim2_cr1_v1_tt =
                groov::field<"dir", bool, 4, 4>,
                groov::field<"opm", bool, 3, 3>,
                groov::field<"urs", bool, 2, 2>,
-               groov::field<"udis", common::bit_enable_bar, 1, 1>,
+               groov::field<"udis", common::bit_nenable, 1, 1>,
                groov::field<"cen", common::bit_enable, 0, 0>>;
 
 // tim_tim2_cr2_v1: TIM2_CR2
@@ -2106,7 +2106,7 @@ using tim_tim3_cr1_v1_tt =
                groov::field<"dir", bool, 4, 4>,
                groov::field<"opm", bool, 3, 3>,
                groov::field<"urs", bool, 2, 2>,
-               groov::field<"udis", common::bit_enable_bar, 1, 1>,
+               groov::field<"udis", common::bit_nenable, 1, 1>,
                groov::field<"cen", common::bit_enable, 0, 0>>;
 
 // tim_tim3_cr2_v1: TIM3_CR2
@@ -2504,7 +2504,7 @@ using tim_tim4_cr1_v1_tt =
                groov::field<"dir", bool, 4, 4>,
                groov::field<"opm", bool, 3, 3>,
                groov::field<"urs", bool, 2, 2>,
-               groov::field<"udis", common::bit_enable_bar, 1, 1>,
+               groov::field<"udis", common::bit_nenable, 1, 1>,
                groov::field<"cen", common::bit_enable, 0, 0>>;
 
 // tim_tim4_cr2_v1: TIM4_CR2
@@ -2875,7 +2875,7 @@ using tim_tim5_cr1_v1_tt =
                groov::field<"dir", bool, 4, 4>,
                groov::field<"opm", bool, 3, 3>,
                groov::field<"urs", bool, 2, 2>,
-               groov::field<"udis", common::bit_enable_bar, 1, 1>,
+               groov::field<"udis", common::bit_nenable, 1, 1>,
                groov::field<"cen", common::bit_enable, 0, 0>>;
 
 // tim_tim5_cr2_v1: TIM5_CR2
@@ -3072,7 +3072,7 @@ using tim_tim6_cr1_v1_tt =
                groov::field<"reserved0", std::uint8_t, 6, 4, common::access::ro>,
                groov::field<"opm", bool, 3, 3>,
                groov::field<"urs", bool, 2, 2>,
-               groov::field<"udis", common::bit_enable_bar, 1, 1>,
+               groov::field<"udis", common::bit_nenable, 1, 1>,
                groov::field<"cen", common::bit_enable, 0, 0>>;
 
 // tim_tim6_cr2_v1: TIM6_CR2
@@ -3187,7 +3187,7 @@ using tim_tim7_cr1_v1_tt =
                groov::field<"reserved0", std::uint8_t, 6, 4, common::access::ro>,
                groov::field<"opm", bool, 3, 3>,
                groov::field<"urs", bool, 2, 2>,
-               groov::field<"udis", common::bit_enable_bar, 1, 1>,
+               groov::field<"udis", common::bit_nenable, 1, 1>,
                groov::field<"cen", common::bit_enable, 0, 0>>;
 
 // tim_tim7_cr2_v1: TIM7_CR2
@@ -3553,7 +3553,7 @@ using tim_tim8_cr1_v1_tt =
                groov::field<"dir", bool, 4, 4>,
                groov::field<"opm", bool, 3, 3>,
                groov::field<"urs", bool, 2, 2>,
-               groov::field<"udis", common::bit_enable_bar, 1, 1>,
+               groov::field<"udis", common::bit_nenable, 1, 1>,
                groov::field<"cen", common::bit_enable, 0, 0>>;
 
 // tim_tim8_cr2_v1: TIM8_CR2
@@ -3797,4 +3797,4 @@ using tim_tim8_sr_v1_tt =
                groov::field<"cc1if", bool, 1, 1>,
                groov::field<"uif", bool, 0, 0>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

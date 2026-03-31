@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32h7s/registers/mce.hpp>
+#include "../registers/mce.hpp"
 
-namespace stm32::stm32h7s {
+namespace mcu::stm32::stm32h7s {
 
 namespace mcex {
   template <stdx::ct_string name,
@@ -245,4 +245,4 @@ namespace mcex {
 
 } // namespace mcex
 
-} // namespace stm32::stm32h7s
+} // namespace mcu::stm32::stm32h7s

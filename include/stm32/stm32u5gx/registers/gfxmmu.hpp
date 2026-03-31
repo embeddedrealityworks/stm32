@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // gfxmmu_gfxmmu_b0cr_v1: GFXMMU_B0CR
 // Used by: GFXMMU, SEC_GFXMMU
@@ -30870,4 +30870,4 @@ using gfxmmu_gfxmmu_sr_v1_tt =
                groov::field<"b1of", bool, 1, 1, common::access::ro>,
                groov::field<"b0of", bool, 0, 0, common::access::ro>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

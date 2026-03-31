@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // dbgmcu_cr_v1: CR
 // Used by: DBGMCU
@@ -55,4 +55,4 @@ using dbgmcu_dbg_apb1_fz_v1_tt =
                groov::field<"dbg_i2c1_stop", bool, 21, 21>,
                groov::field<"reserved0", std::uint32_t, 20, 0, common::access::ro>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

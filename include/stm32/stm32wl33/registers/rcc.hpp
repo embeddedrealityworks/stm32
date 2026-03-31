@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // rcc_ahbenr_v1: AHBENR
 // Used by: RCC
@@ -495,4 +495,4 @@ using rcc_rfswhsecr_v1_tt =
                groov::field<"swxotuneen", common::bit_enable, 7, 7>,
                groov::field<"gmc", std::uint8_t, 6, 0>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

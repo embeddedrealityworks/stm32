@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32u385/registers/lpuart.hpp>
+#include "../registers/lpuart.hpp"
 
-namespace stm32::stm32u385 {
+namespace mcu::stm32::stm32u385 {
 
 namespace lpuartx {
   template <stdx::ct_string name,
@@ -85,4 +85,4 @@ namespace lpuartx {
 
 } // namespace lpuartx
 
-} // namespace stm32::stm32u385
+} // namespace mcu::stm32::stm32u385

@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32l4r7/registers/octospim.hpp>
+#include "../registers/octospim.hpp"
 
-namespace stm32::stm32l4r7 {
+namespace mcu::stm32::stm32l4r7 {
 
 namespace octospim {
   template <stdx::ct_string name,
@@ -25,4 +25,4 @@ namespace octospim {
 
 } // namespace octospim
 
-} // namespace stm32::stm32l4r7
+} // namespace mcu::stm32::stm32l4r7

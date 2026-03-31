@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32h757_cm7/registers/dma.hpp>
+#include "../registers/dma.hpp"
 
-namespace stm32::stm32h757_cm7 {
+namespace mcu::stm32::stm32h757_cm7 {
 
 namespace dmax {
   template <stdx::ct_string name,
@@ -275,4 +275,4 @@ namespace dmax {
 
 } // namespace dmax
 
-} // namespace stm32::stm32h757_cm7
+} // namespace mcu::stm32::stm32h757_cm7

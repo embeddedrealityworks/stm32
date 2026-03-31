@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32f730/registers/usbphyc.hpp>
+#include "../registers/usbphyc.hpp"
 
-namespace stm32::stm32f730 {
+namespace mcu::stm32::stm32f730 {
 
 namespace usbphyc {
   template <stdx::ct_string name,
@@ -30,4 +30,4 @@ namespace usbphyc {
 
 } // namespace usbphyc
 
-} // namespace stm32::stm32f730
+} // namespace mcu::stm32::stm32f730

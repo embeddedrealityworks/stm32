@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // dcache_dcache_cmdreaddrr_v1: DCACHE_CMDREADDRR
 // Used by: DCACHE, SEC_DCACHE
@@ -74,7 +74,7 @@ using dcache_dcache_fcr_v1_tt =
                groov::field<"ccmdendf", bool, 4, 4, common::access::wo>,
                groov::field<"reserved1", bool, 3, 3, common::access::ro>,
                groov::field<"cerrf", bool, 2, 2, common::access::wo>,
-               groov::field<"cbsyendf", common::bit_ready_bar, 1, 1, common::access::wo>,
+               groov::field<"cbsyendf", common::bit_nready, 1, 1, common::access::wo>,
                groov::field<"reserved0", bool, 0, 0, common::access::ro>>;
 
 // dcache_dcache_ier_v1: DCACHE_IER
@@ -91,7 +91,7 @@ using dcache_dcache_ier_v1_tt =
                groov::field<"cmdendie", common::bit_enable, 4, 4>,
                groov::field<"reserved1", bool, 3, 3, common::access::ro>,
                groov::field<"errie", common::bit_enable, 2, 2>,
-               groov::field<"bsyendie", common::bit_ready_bar, 1, 1>,
+               groov::field<"bsyendie", common::bit_nready, 1, 1>,
                groov::field<"reserved0", bool, 0, 0, common::access::ro>>;
 
 // dcache_dcache_rhmonr_v1: DCACHE_RHMONR
@@ -133,7 +133,7 @@ using dcache_dcache_sr_v1_tt =
                groov::field<"cmdendf", bool, 4, 4, common::access::ro>,
                groov::field<"busycmdf", bool, 3, 3, common::access::ro>,
                groov::field<"errf", bool, 2, 2, common::access::ro>,
-               groov::field<"bsyendf", common::bit_ready_bar, 1, 1, common::access::ro>,
+               groov::field<"bsyendf", common::bit_nready, 1, 1, common::access::ro>,
                groov::field<"busyf", bool, 0, 0, common::access::ro>>;
 
 // dcache_dcache_whmonr_v1: DCACHE_WHMONR
@@ -161,4 +161,4 @@ using dcache_dcache_wmmonr_v1_tt =
                groov::field<"reserved0", std::uint16_t, 31, 16, common::access::ro>,
                groov::field<"wmissmon", std::uint16_t, 15, 0, common::access::ro>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32f765/registers/cec.hpp>
+#include "../registers/cec.hpp"
 
-namespace stm32::stm32f765 {
+namespace mcu::stm32::stm32f765 {
 
 namespace cec {
   template <stdx::ct_string name,
@@ -45,4 +45,4 @@ namespace cec {
 
 } // namespace cec
 
-} // namespace stm32::stm32f765
+} // namespace mcu::stm32::stm32f765

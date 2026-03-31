@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32u5fx/registers/dcb.hpp>
+#include "../registers/dcb.hpp"
 
-namespace stm32::stm32u5fx {
+namespace mcu::stm32::stm32u5fx {
 
 namespace dcb {
   template <stdx::ct_string name,
@@ -20,4 +20,4 @@ namespace dcb {
 
 } // namespace dcb
 
-} // namespace stm32::stm32u5fx
+} // namespace mcu::stm32::stm32u5fx

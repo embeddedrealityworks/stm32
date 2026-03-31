@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32f101/registers/ethernet.hpp>
+#include "../registers/ethernet.hpp"
 
-namespace stm32::stm32f101 {
+namespace mcu::stm32::stm32f101 {
 
 namespace ethernet_mmc {
   template <stdx::ct_string name,
@@ -307,4 +307,4 @@ namespace ethernet_dma {
 
 } // namespace ethernet_dma
 
-} // namespace stm32::stm32f101
+} // namespace mcu::stm32::stm32f101

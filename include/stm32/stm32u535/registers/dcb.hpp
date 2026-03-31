@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // dcb_dscsr_v1: DSCSR
 // Used by: DCB
@@ -21,4 +21,4 @@ using dcb_dscsr_v1_tt =
                groov::field<"cds", bool, 16, 16>,
                groov::field<"reserved0", std::uint16_t, 15, 0, common::access::ro>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

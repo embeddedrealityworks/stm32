@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // gpiop_gpiop_afrh_v1: GPIOP_AFRH
 // Used by: GPIOP
@@ -663,4 +663,4 @@ using gpiop_gpiop_verr_v1_tt =
                groov::field<"majrev", std::uint8_t, 7, 4, common::access::ro>,
                groov::field<"minrev", std::uint8_t, 3, 0, common::access::ro>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

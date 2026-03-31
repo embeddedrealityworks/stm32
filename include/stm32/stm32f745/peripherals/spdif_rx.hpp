@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32f745/registers/spdif_rx.hpp>
+#include "../registers/spdif_rx.hpp"
 
-namespace stm32::stm32f745 {
+namespace mcu::stm32::stm32f745 {
 
 namespace spdif_rx {
   template <stdx::ct_string name,
@@ -50,4 +50,4 @@ namespace spdif_rx {
 
 } // namespace spdif_rx
 
-} // namespace stm32::stm32f745
+} // namespace mcu::stm32::stm32f745

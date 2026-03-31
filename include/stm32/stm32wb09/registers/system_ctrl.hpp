@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // system_ctrl_blerxtx_dtr_v1: BLERXTX_DTR
 // Used by: SYSTEM_CTRL
@@ -325,4 +325,4 @@ using system_ctrl_pwrc_iscr_v1_tt =
                groov::field<"pvd_isc", bool, 1, 1>,
                groov::field<"borh_isc", bool, 0, 0>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

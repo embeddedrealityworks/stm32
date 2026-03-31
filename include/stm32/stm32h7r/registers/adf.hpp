@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // adf_adf_bsmx0cr_v1: ADF_BSMX0CR
 // Used by: ADF
@@ -279,4 +279,4 @@ using adf_adf_sitf0cr_v1_tt =
                groov::field<"scksrc", std::uint8_t, 2, 1>,
                groov::field<"sitfen", common::bit_enable, 0, 0>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

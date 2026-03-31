@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32h5e5/registers/gfxtim.hpp>
+#include "../registers/gfxtim.hpp"
 
-namespace stm32::stm32h5e5 {
+namespace mcu::stm32::stm32h5e5 {
 
 namespace gfxtimx {
   template <stdx::ct_string name,
@@ -145,4 +145,4 @@ namespace gfxtimx {
 
 } // namespace gfxtimx
 
-} // namespace stm32::stm32h5e5
+} // namespace mcu::stm32::stm32h5e5

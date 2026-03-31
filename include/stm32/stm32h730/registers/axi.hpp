@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // axi_axi_comp_id_0_v1: AXI_COMP_ID_0
 // Used by: AXI
@@ -629,4 +629,4 @@ using axi_axi_targ7_fn_mod_iss_bm_v1_tt =
                groov::field<"write_iss_override", common::bit_enable, 1, 1>,
                groov::field<"read_iss_override", common::bit_enable, 0, 0>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

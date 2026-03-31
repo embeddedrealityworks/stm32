@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32wb09/registers/globalstatmach.hpp>
+#include "../registers/globalstatmach.hpp"
 
-namespace stm32::stm32wb09 {
+namespace mcu::stm32::stm32wb09 {
 
 namespace globalstatmach {
   template <stdx::ct_string name,
@@ -50,4 +50,4 @@ namespace globalstatmach {
 
 } // namespace globalstatmach
 
-} // namespace stm32::stm32wb09
+} // namespace mcu::stm32::stm32wb09

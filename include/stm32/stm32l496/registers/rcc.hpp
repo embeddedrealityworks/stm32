@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // rcc_ahb1enr_v1: AHB1ENR
 // Used by: RCC
@@ -748,4 +748,4 @@ using rcc_pllsai2cfgr_v1_tt =
                groov::field<"pllsai2n", std::uint8_t, 14, 8>,
                groov::field<"reserved0", std::uint8_t, 7, 0, common::access::ro>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

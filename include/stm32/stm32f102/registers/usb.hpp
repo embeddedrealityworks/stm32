@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // usb_btable_v1: BTABLE
 // Used by: USB
@@ -277,4 +277,4 @@ using usb_istr_v1_tt =
                groov::field<"dir", bool, 4, 4>,
                groov::field<"ep_id", std::uint8_t, 3, 0>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

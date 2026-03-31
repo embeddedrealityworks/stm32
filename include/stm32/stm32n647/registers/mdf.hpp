@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // mdf_mdf_bsmx0cr_v1: MDF_BSMX0CR
 // Used by: MDF1, MDF1_S
@@ -1716,4 +1716,4 @@ using mdf_mdf_snps5dr_v1_tt =
                groov::field<"extsdr", std::uint8_t, 15, 9, common::access::ro>,
                groov::field<"mcicdc", std::uint16_t, 8, 0, common::access::ro>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

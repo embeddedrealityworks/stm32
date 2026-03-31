@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32u599/registers/hspi.hpp>
+#include "../registers/hspi.hpp"
 
-namespace stm32::stm32u599 {
+namespace mcu::stm32::stm32u599 {
 
 namespace hspix {
   template <stdx::ct_string name,
@@ -170,4 +170,4 @@ namespace hspix {
 
 } // namespace hspix
 
-} // namespace stm32::stm32u599
+} // namespace mcu::stm32::stm32u599

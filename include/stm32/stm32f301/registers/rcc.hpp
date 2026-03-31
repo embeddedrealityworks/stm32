@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // rcc_ahbenr_v1: AHBENR
 // Used by: RCC
@@ -325,4 +325,4 @@ using rcc_csr_v1_tt =
                groov::field<"lsirdy", common::bit_ready, 1, 1, common::access::ro>,
                groov::field<"lsion", bool, 0, 0>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

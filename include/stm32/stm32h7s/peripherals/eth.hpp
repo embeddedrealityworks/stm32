@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32h7s/registers/eth.hpp>
+#include "../registers/eth.hpp"
 
-namespace stm32::stm32h7s {
+namespace mcu::stm32::stm32h7s {
 
 namespace eth {
   template <stdx::ct_string name,
@@ -635,4 +635,4 @@ namespace eth {
 
 } // namespace eth
 
-} // namespace stm32::stm32h7s
+} // namespace mcu::stm32::stm32h7s

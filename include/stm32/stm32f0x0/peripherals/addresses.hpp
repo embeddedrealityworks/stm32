@@ -3,7 +3,7 @@
 
 #include <cstdint>
 
-namespace stm32::stm32f0x0 {
+namespace mcu::stm32::stm32f0x0 {
 namespace adc { inline constexpr std::uint32_t ADC_BASE = 0x4001'2400; } // namespace adc
 namespace crc { inline constexpr std::uint32_t CRC_BASE = 0x4002'3000; } // namespace crc
 namespace dbgmcu { inline constexpr std::uint32_t DBGMCU_BASE = 0x4001'5800; } // namespace dbgmcu
@@ -44,4 +44,4 @@ namespace usart6 { inline constexpr std::uint32_t USART6_BASE = 0x4001'1400; } /
 namespace usb { inline constexpr std::uint32_t USB_BASE = 0x4000'5c00; } // namespace usb
 namespace wwdg { inline constexpr std::uint32_t WWDG_BASE = 0x4000'2c00; } // namespace wwdg
 
-} // namespace stm32::stm32f0x0
+} // namespace mcu::stm32::stm32f0x0

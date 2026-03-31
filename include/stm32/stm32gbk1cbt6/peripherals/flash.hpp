@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32gbk1cbt6/registers/flash.hpp>
+#include "../registers/flash.hpp"
 
-namespace stm32::stm32gbk1cbt6 {
+namespace mcu::stm32::stm32gbk1cbt6 {
 
 namespace flash {
   template <stdx::ct_string name,
@@ -105,4 +105,4 @@ namespace flash {
 
 } // namespace flash
 
-} // namespace stm32::stm32gbk1cbt6
+} // namespace mcu::stm32::stm32gbk1cbt6

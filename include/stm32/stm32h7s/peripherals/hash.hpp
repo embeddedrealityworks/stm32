@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32h7s/registers/hash.hpp>
+#include "../registers/hash.hpp"
 
-namespace stm32::stm32h7s {
+namespace mcu::stm32::stm32h7s {
 
 namespace hash {
   template <stdx::ct_string name,
@@ -660,4 +660,4 @@ namespace hash {
 
 } // namespace hash
 
-} // namespace stm32::stm32h7s
+} // namespace mcu::stm32::stm32h7s

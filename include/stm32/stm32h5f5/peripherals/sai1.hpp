@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32h5f5/registers/sai1.hpp>
+#include "../registers/sai1.hpp"
 
-namespace stm32::stm32h5f5 {
+namespace mcu::stm32::stm32h5f5 {
 
 namespace sai1x {
   template <stdx::ct_string name,
@@ -110,4 +110,4 @@ namespace sai1x {
 
 } // namespace sai1x
 
-} // namespace stm32::stm32h5f5
+} // namespace mcu::stm32::stm32h5f5

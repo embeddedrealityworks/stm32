@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // blue_aesleprivcmdreg_v1: AESLEPRIVCMDREG
 // Used by: BLUE
@@ -483,4 +483,4 @@ using blue_timercapturereg_v1_tt =
              common::access::ro,
                groov::field<"timercapture", std::uint32_t, 31, 0>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

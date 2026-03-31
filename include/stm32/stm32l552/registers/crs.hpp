@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // crs_cfgr_v1: CFGR
 // Used by: CRS, SEC_CRS
@@ -84,4 +84,4 @@ using crs_isr_v1_tt =
                groov::field<"syncwarnf", bool, 1, 1>,
                groov::field<"syncokf", bool, 0, 0>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

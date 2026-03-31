@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32h7b3/registers/hrtim.hpp>
+#include "../registers/hrtim.hpp"
 
-namespace stm32::stm32h7b3 {
+namespace mcu::stm32::stm32h7b3 {
 
 namespace hrtim_common {
   template <stdx::ct_string name,
@@ -924,4 +924,4 @@ namespace hrtim_time {
 
 } // namespace hrtim_time
 
-} // namespace stm32::stm32h7b3
+} // namespace mcu::stm32::stm32h7b3

@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // ltdc_ltdc_awcr_v1: LTDC_AWCR
 // Used by: LTDC
@@ -555,4 +555,4 @@ using ltdc_ltdc_twcr_v1_tt =
                groov::field<"reserved0", std::uint8_t, 15, 11, common::access::ro>,
                groov::field<"totalh", std::uint16_t, 10, 0>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

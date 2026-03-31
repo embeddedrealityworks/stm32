@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32h757_cm4/registers/dlyb.hpp>
+#include "../registers/dlyb.hpp"
 
-namespace stm32::stm32h757_cm4 {
+namespace mcu::stm32::stm32h757_cm4 {
 
 namespace dlybx {
   template <stdx::ct_string name,
@@ -25,4 +25,4 @@ namespace dlybx {
 
 } // namespace dlybx
 
-} // namespace stm32::stm32h757_cm4
+} // namespace mcu::stm32::stm32h757_cm4

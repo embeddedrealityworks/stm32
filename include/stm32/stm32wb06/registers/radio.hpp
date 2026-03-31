@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // radio_aa0_dig_usr_v1: AA0_DIG_USR
 // Used by: RADIO
@@ -737,4 +737,4 @@ using radio_vit_conf_dig_eng_v1_tt =
                groov::field<"reserved0", bool, 1, 1, common::access::ro>,
                groov::field<"vit_en", common::bit_enable, 0, 0>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

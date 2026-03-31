@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32n657/registers/dcmipp.hpp>
+#include "../registers/dcmipp.hpp"
 
-namespace stm32::stm32n657 {
+namespace mcu::stm32::stm32n657 {
 
 namespace dcmippx {
   template <stdx::ct_string name,
@@ -1215,4 +1215,4 @@ namespace dcmippx {
 
 } // namespace dcmippx
 
-} // namespace stm32::stm32n657
+} // namespace mcu::stm32::stm32n657

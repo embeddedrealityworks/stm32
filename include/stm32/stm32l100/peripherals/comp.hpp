@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32l100/registers/comp.hpp>
+#include "../registers/comp.hpp"
 
-namespace stm32::stm32l100 {
+namespace mcu::stm32::stm32l100 {
 
 namespace comp {
   template <stdx::ct_string name,
@@ -20,4 +20,4 @@ namespace comp {
 
 } // namespace comp
 
-} // namespace stm32::stm32l100
+} // namespace mcu::stm32::stm32l100

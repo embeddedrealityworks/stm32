@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32l432/registers/usart.hpp>
+#include "../registers/usart.hpp"
 
-namespace stm32::stm32l432 {
+namespace mcu::stm32::stm32l432 {
 
 namespace usartx {
   template <stdx::ct_string name,
@@ -188,4 +188,4 @@ namespace lpuart1 {
 
 } // namespace lpuart1
 
-} // namespace stm32::stm32l432
+} // namespace mcu::stm32::stm32l432

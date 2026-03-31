@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32h7s/registers/flash.hpp>
+#include "../registers/flash.hpp"
 
-namespace stm32::stm32h7s {
+namespace mcu::stm32::stm32h7s {
 
 namespace flash {
   template <stdx::ct_string name,
@@ -230,4 +230,4 @@ namespace flash {
 
 } // namespace flash
 
-} // namespace stm32::stm32h7s
+} // namespace mcu::stm32::stm32h7s

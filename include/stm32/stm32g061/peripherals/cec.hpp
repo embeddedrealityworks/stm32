@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32g061/registers/cec.hpp>
+#include "../registers/cec.hpp"
 
-namespace stm32::stm32g061 {
+namespace mcu::stm32::stm32g061 {
 
 namespace hdmi_cec {
   template <stdx::ct_string name,
@@ -45,4 +45,4 @@ namespace hdmi_cec {
 
 } // namespace hdmi_cec
 
-} // namespace stm32::stm32g061
+} // namespace mcu::stm32::stm32g061

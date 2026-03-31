@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // rcc_ahbenr_v1: AHBENR
 // Used by: RCC
@@ -408,4 +408,4 @@ using rcc_icscr_v1_tt =
                groov::field<"hsitrim", std::uint8_t, 12, 8>,
                groov::field<"hsical", std::uint8_t, 7, 0, common::access::ro>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

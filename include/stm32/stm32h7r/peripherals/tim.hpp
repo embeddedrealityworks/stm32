@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32h7r/registers/tim.hpp>
+#include "../registers/tim.hpp"
 
-namespace stm32::stm32h7r {
+namespace mcu::stm32::stm32h7r {
 
 namespace tim1 {
   template <stdx::ct_string name,
@@ -1422,4 +1422,4 @@ namespace tim17 {
 
 } // namespace tim17
 
-} // namespace stm32::stm32h7r
+} // namespace mcu::stm32::stm32h7r

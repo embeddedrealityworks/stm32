@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32l4q5/registers/sdio.hpp>
+#include "../registers/sdio.hpp"
 
-namespace stm32::stm32l4q5 {
+namespace mcu::stm32::stm32l4q5 {
 
 namespace sdmmc1 {
   template <stdx::ct_string name,
@@ -394,4 +394,4 @@ namespace sdmmc2 {
 
 } // namespace sdmmc2
 
-} // namespace stm32::stm32l4q5
+} // namespace mcu::stm32::stm32l4q5

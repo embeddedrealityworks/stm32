@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // sec_gtzc_mpcbb1_cr_v1: MPCBB1_CR
 // Used by: SEC_GTZC_MPCBB1
@@ -17,7 +17,7 @@ using sec_gtzc_mpcbb1_cr_v1_tt =
              std::uint32_t,
              baseaddress + offset,
              common::access::rw,
-               groov::field<"srwiladis", common::bit_enable_bar, 31, 31>,
+               groov::field<"srwiladis", common::bit_nenable, 31, 31>,
                groov::field<"invsecstate", bool, 30, 30>,
                groov::field<"reserved0", std::uint32_t, 29, 1, common::access::ro>,
                groov::field<"lck", common::bit_locked, 0, 0>>;
@@ -2870,7 +2870,7 @@ using sec_gtzc_mpcbb2_cr_v1_tt =
              std::uint32_t,
              baseaddress + offset,
              common::access::rw,
-               groov::field<"srwiladis", common::bit_enable_bar, 31, 31>,
+               groov::field<"srwiladis", common::bit_nenable, 31, 31>,
                groov::field<"invsecstate", bool, 30, 30>,
                groov::field<"reserved0", std::uint32_t, 29, 1, common::access::ro>,
                groov::field<"lck", common::bit_locked, 0, 0>>;
@@ -5713,4 +5713,4 @@ using sec_gtzc_mpcbb2_vctr9_v1_tt =
                groov::field<"b289", bool, 1, 1>,
                groov::field<"b288", bool, 0, 0>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

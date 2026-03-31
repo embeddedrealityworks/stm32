@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // dynamic_reg_additional_ctrl_v1: ADDITIONAL_CTRL
 // Used by: DYNAMIC_REG
@@ -209,4 +209,4 @@ using dynamic_reg_vco_cal_config_v1_tt =
                groov::field<"reserved0", bool, 14, 14, common::access::ro>,
                groov::field<"vco_calamp_ext", std::uint16_t, 13, 0>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

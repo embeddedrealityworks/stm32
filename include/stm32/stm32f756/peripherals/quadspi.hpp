@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32f756/registers/quadspi.hpp>
+#include "../registers/quadspi.hpp"
 
-namespace stm32::stm32f756 {
+namespace mcu::stm32::stm32f756 {
 
 namespace quadspi {
   template <stdx::ct_string name,
@@ -80,4 +80,4 @@ namespace quadspi {
 
 } // namespace quadspi
 
-} // namespace stm32::stm32f756
+} // namespace mcu::stm32::stm32f756

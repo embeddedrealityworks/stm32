@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // switchable_irq_enable_v1: IRQ_ENABLE
 // Used by: SWITCHABLE
@@ -56,4 +56,4 @@ using switchable_status_v1_tt =
                groov::field<"frame_sync_complete_f", bool, 1, 1>,
                groov::field<"bit_sync_detected_f", bool, 0, 0>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

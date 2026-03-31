@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // cryp_cr_v1: CR
 // Used by: CRYP
@@ -640,4 +640,4 @@ using cryp_sr_v1_tt =
                groov::field<"ifnf", bool, 1, 1>,
                groov::field<"ifem", bool, 0, 0>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

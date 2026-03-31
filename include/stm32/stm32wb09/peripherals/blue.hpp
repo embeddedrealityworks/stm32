@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32wb09/registers/blue.hpp>
+#include "../registers/blue.hpp"
 
-namespace stm32::stm32wb09 {
+namespace mcu::stm32::stm32wb09 {
 
 namespace blue {
   template <stdx::ct_string name,
@@ -160,4 +160,4 @@ namespace blue {
 
 } // namespace blue
 
-} // namespace stm32::stm32wb09
+} // namespace mcu::stm32::stm32wb09

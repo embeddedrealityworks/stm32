@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32l4p5/registers/dac.hpp>
+#include "../registers/dac.hpp"
 
-namespace stm32::stm32l4p5 {
+namespace mcu::stm32::stm32l4p5 {
 
 namespace dac {
   template <stdx::ct_string name,
@@ -115,4 +115,4 @@ namespace dac {
 
 } // namespace dac
 
-} // namespace stm32::stm32l4p5
+} // namespace mcu::stm32::stm32l4p5

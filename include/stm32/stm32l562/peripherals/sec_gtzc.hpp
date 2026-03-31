@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32l562/registers/sec_gtzc.hpp>
+#include "../registers/sec_gtzc.hpp"
 
-namespace stm32::stm32l562 {
+namespace mcu::stm32::stm32l562 {
 
 namespace sec_gtzc_mpcbb1 {
   template <stdx::ct_string name,
@@ -694,4 +694,4 @@ namespace sec_gtzc_mpcbb2 {
 
 } // namespace sec_gtzc_mpcbb2
 
-} // namespace stm32::stm32l562
+} // namespace mcu::stm32::stm32l562

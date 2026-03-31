@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32h757_cm7/registers/mdma.hpp>
+#include "../registers/mdma.hpp"
 
-namespace stm32::stm32h757_cm7 {
+namespace mcu::stm32::stm32h757_cm7 {
 
 namespace mdma {
   template <stdx::ct_string name,
@@ -1060,4 +1060,4 @@ namespace mdma {
 
 } // namespace mdma
 
-} // namespace stm32::stm32h757_cm7
+} // namespace mcu::stm32::stm32h757_cm7

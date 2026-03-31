@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // rcc_ahbenr_v1: AHBENR
 // Used by: RCC
@@ -493,4 +493,4 @@ using rcc_iopsmen_v1_tt =
                groov::field<"iopbsmen", common::bit_enable, 1, 1>,
                groov::field<"iopasmen", common::bit_enable, 0, 0>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

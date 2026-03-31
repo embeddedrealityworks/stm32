@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // spi_cfg1_v1: CFG1
 // Used by: SPI1, SPI2, SPI3, SPI4, SPI5, SPI6
@@ -266,4 +266,4 @@ using spi_udrdr_v1_tt =
              common::access::rw,
                groov::field<"udrdr", std::uint32_t, 31, 0>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

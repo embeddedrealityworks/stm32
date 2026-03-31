@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // flash_flash_acr_v1: FLASH_ACR
 // Used by: FLASH
@@ -192,9 +192,9 @@ using flash_flash_sr_v1_tt =
              baseaddress + offset,
              common::access::rw,
                groov::field<"reserved3", std::uint16_t, 31, 19, common::access::ro>,
-               groov::field<"cfgbsy", common::bit_ready_bar, 18, 18, common::access::ro>,
+               groov::field<"cfgbsy", common::bit_nready, 18, 18, common::access::ro>,
                groov::field<"reserved2", bool, 17, 17, common::access::ro>,
-               groov::field<"bsy1", common::bit_ready_bar, 16, 16, common::access::ro>,
+               groov::field<"bsy1", common::bit_nready, 16, 16, common::access::ro>,
                groov::field<"optverr", bool, 15, 15>,
                groov::field<"rderr", bool, 14, 14>,
                groov::field<"reserved1", std::uint8_t, 13, 10, common::access::ro>,
@@ -239,4 +239,4 @@ using flash_flash_wrp1br_v1_tt =
                groov::field<"reserved0", std::uint16_t, 15, 6, common::access::ro>,
                groov::field<"wrp1b_strt", std::uint8_t, 5, 0>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

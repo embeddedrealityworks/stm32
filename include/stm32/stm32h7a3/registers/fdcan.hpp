@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // fdcan_can_ttgtp_v1: CAN_TTGTP
 // Used by: CAN_CCU, FDCAN, TT_FDCAN
@@ -1192,4 +1192,4 @@ using fdcan_fdcan_xidfc_v1_tt =
                groov::field<"flesa", std::uint16_t, 15, 2>,
                groov::field<"reserved0", std::uint8_t, 1, 0, common::access::ro>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

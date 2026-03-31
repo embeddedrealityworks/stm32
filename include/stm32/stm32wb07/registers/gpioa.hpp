@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // gpioa_gpioa_afrh_v1: GPIOA_AFRH
 // Used by: GPIOA
@@ -310,4 +310,4 @@ using gpioa_gpioa_pupdr_v1_tt =
                groov::field<"pupdr1", std::uint8_t, 3, 2>,
                groov::field<"pupdr0", std::uint8_t, 1, 0>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

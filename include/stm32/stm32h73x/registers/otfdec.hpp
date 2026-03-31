@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // otfdec_otfdec_icr_v1: OTFDEC_ICR
 // Used by: OTFDEC1, OTFDEC2
@@ -512,4 +512,4 @@ using otfdec_otfdec_r4startaddr_v1_tt =
              common::access::rw,
                groov::field<"regx_start_addr", std::uint32_t, 31, 0>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32u5a5/registers/lpgpio.hpp>
+#include "../registers/lpgpio.hpp"
 
-namespace stm32::stm32u5a5 {
+namespace mcu::stm32::stm32u5a5 {
 
 namespace lpgpiox {
   template <stdx::ct_string name,
@@ -40,4 +40,4 @@ namespace lpgpiox {
 
 } // namespace lpgpiox
 
-} // namespace stm32::stm32u5a5
+} // namespace mcu::stm32::stm32u5a5

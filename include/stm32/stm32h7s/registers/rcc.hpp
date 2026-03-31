@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // rcc_rcc_ahb1enr_v1: RCC_AHB1ENR
 // Used by: RCC
@@ -1216,8 +1216,8 @@ using rcc_rcc_pll1sscgr_v1_tt =
                groov::field<"reserved0", bool, 31, 31, common::access::ro>,
                groov::field<"incstep", std::uint16_t, 30, 16>,
                groov::field<"spreadsel", bool, 15, 15>,
-               groov::field<"rpdfndis", common::bit_enable_bar, 14, 14>,
-               groov::field<"tpdfndis", common::bit_enable_bar, 13, 13>,
+               groov::field<"rpdfndis", common::bit_nenable, 14, 14>,
+               groov::field<"tpdfndis", common::bit_nenable, 13, 13>,
                groov::field<"modper", std::uint16_t, 12, 0>>;
 
 // rcc_rcc_pll2divr1_v1: RCC_PLL2DIVR1
@@ -1279,8 +1279,8 @@ using rcc_rcc_pll2sscgr_v1_tt =
                groov::field<"reserved0", bool, 31, 31, common::access::ro>,
                groov::field<"incstep", std::uint16_t, 30, 16>,
                groov::field<"spreadsel", bool, 15, 15>,
-               groov::field<"rpdfndis", common::bit_enable_bar, 14, 14>,
-               groov::field<"tpdfndis", common::bit_enable_bar, 13, 13>,
+               groov::field<"rpdfndis", common::bit_nenable, 14, 14>,
+               groov::field<"tpdfndis", common::bit_nenable, 13, 13>,
                groov::field<"modper", std::uint16_t, 12, 0>>;
 
 // rcc_rcc_pll3divr1_v1: RCC_PLL3DIVR1
@@ -1340,8 +1340,8 @@ using rcc_rcc_pll3sscgr_v1_tt =
                groov::field<"reserved0", bool, 31, 31, common::access::ro>,
                groov::field<"incstep", std::uint16_t, 30, 16>,
                groov::field<"spreadsel", bool, 15, 15>,
-               groov::field<"rpdfndis", common::bit_enable_bar, 14, 14>,
-               groov::field<"tpdfndis", common::bit_enable_bar, 13, 13>,
+               groov::field<"rpdfndis", common::bit_nenable, 14, 14>,
+               groov::field<"tpdfndis", common::bit_nenable, 13, 13>,
                groov::field<"modper", std::uint16_t, 12, 0>>;
 
 // rcc_rcc_pllcfgr_v1: RCC_PLLCFGR
@@ -1428,4 +1428,4 @@ using rcc_rcc_rsr_v1_tt =
                groov::field<"rmvf", bool, 16, 16>,
                groov::field<"reserved0", std::uint16_t, 15, 0, common::access::ro>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

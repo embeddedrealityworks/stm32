@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // sbs_sbs_cccsr_v1: SBS_CCCSR
 // Used by: SBS, SEC_SBS
@@ -276,4 +276,4 @@ using sbs_sbs_seccfgr_v1_tt =
                groov::field<"classbsec", bool, 1, 1>,
                groov::field<"sbssec", bool, 0, 0>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

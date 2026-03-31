@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32h742/registers/hrtim.hpp>
+#include "../registers/hrtim.hpp"
 
-namespace stm32::stm32h742 {
+namespace mcu::stm32::stm32h742 {
 
 namespace hrtim_master {
   template <stdx::ct_string name,
@@ -924,4 +924,4 @@ namespace hrtim_common {
 
 } // namespace hrtim_common
 
-} // namespace stm32::stm32h742
+} // namespace mcu::stm32::stm32h742

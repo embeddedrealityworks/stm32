@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32wl33/registers/static.hpp>
+#include "../registers/static.hpp"
 
-namespace stm32::stm32wl33 {
+namespace mcu::stm32::stm32wl33 {
 
 namespace static {
   template <stdx::ct_string name,
@@ -90,4 +90,4 @@ namespace static {
 
 } // namespace static
 
-} // namespace stm32::stm32wl33
+} // namespace mcu::stm32::stm32wl33

@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32l152/registers/usb.hpp>
+#include "../registers/usb.hpp"
 
-namespace stm32::stm32l152 {
+namespace mcu::stm32::stm32l152 {
 
 namespace usbx {
   template <stdx::ct_string name,
@@ -80,4 +80,4 @@ namespace usbx {
 
 } // namespace usbx
 
-} // namespace stm32::stm32l152
+} // namespace mcu::stm32::stm32l152

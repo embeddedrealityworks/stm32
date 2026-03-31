@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32h5f4/registers/play.hpp>
+#include "../registers/play.hpp"
 
-namespace stm32::stm32h5f4 {
+namespace mcu::stm32::stm32h5f4 {
 
 namespace playx {
   template <stdx::ct_string name,
@@ -415,4 +415,4 @@ namespace playx {
 
 } // namespace playx
 
-} // namespace stm32::stm32h5f4
+} // namespace mcu::stm32::stm32h5f4

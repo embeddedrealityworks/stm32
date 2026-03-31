@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32h573/registers/dcache.hpp>
+#include "../registers/dcache.hpp"
 
-namespace stm32::stm32h573 {
+namespace mcu::stm32::stm32h573 {
 
 namespace dcachex {
   template <stdx::ct_string name,
@@ -65,4 +65,4 @@ namespace dcachex {
 
 } // namespace dcachex
 
-} // namespace stm32::stm32h573
+} // namespace mcu::stm32::stm32h573

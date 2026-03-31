@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // rrm_reg_block_ble_irq_enable_v1: BLE_IRQ_ENABLE
 // Used by: RRM_REG
@@ -186,4 +186,4 @@ using rrm_reg_block_vp_cpu_sema_bus_v1_tt =
                groov::field<"take_req", bool, 3, 3>,
                groov::field<"take_prio", std::uint8_t, 2, 0>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

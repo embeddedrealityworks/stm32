@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // syscfg_cfgr1_v1: CFGR1
 // Used by: SYSCFG
@@ -140,7 +140,7 @@ using syscfg_scsr_v1_tt =
              baseaddress + offset,
              common::access::rw,
                groov::field<"reserved0", std::uint32_t, 31, 2, common::access::ro>,
-               groov::field<"ccmbsy", common::bit_ready_bar, 1, 1, common::access::ro>,
+               groov::field<"ccmbsy", common::bit_nready, 1, 1, common::access::ro>,
                groov::field<"ccmer", bool, 0, 0>>;
 
 // syscfg_skr_v1: SKR
@@ -199,4 +199,4 @@ using syscfg_swpr_v1_tt =
                groov::field<"page1_wp", bool, 1, 1>,
                groov::field<"page0_wp", bool, 0, 0>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

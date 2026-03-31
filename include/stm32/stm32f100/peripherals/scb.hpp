@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32f100/registers/scb.hpp>
+#include "../registers/scb.hpp"
 
-namespace stm32::stm32f100 {
+namespace mcu::stm32::stm32f100 {
 
 namespace scb_actrl {
   template <stdx::ct_string name,
@@ -99,4 +99,4 @@ namespace scb {
 
 } // namespace scb
 
-} // namespace stm32::stm32f100
+} // namespace mcu::stm32::stm32f100

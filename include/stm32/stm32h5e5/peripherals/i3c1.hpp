@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32h5e5/registers/i3c1.hpp>
+#include "../registers/i3c1.hpp"
 
-namespace stm32::stm32h5e5 {
+namespace mcu::stm32::stm32h5e5 {
 
 namespace i3c1x {
   template <stdx::ct_string name,
@@ -175,4 +175,4 @@ namespace i3c1x {
 
 } // namespace i3c1x
 
-} // namespace stm32::stm32h5e5
+} // namespace mcu::stm32::stm32h5e5

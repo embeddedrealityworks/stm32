@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32u5fx/registers/i2c.hpp>
+#include "../registers/i2c.hpp"
 
-namespace stm32::stm32u5fx {
+namespace mcu::stm32::stm32u5fx {
 
 namespace i2cx {
   template <stdx::ct_string name,
@@ -213,4 +213,4 @@ namespace sec_i2c6 {
 
 } // namespace sec_i2c6
 
-} // namespace stm32::stm32u5fx
+} // namespace mcu::stm32::stm32u5fx

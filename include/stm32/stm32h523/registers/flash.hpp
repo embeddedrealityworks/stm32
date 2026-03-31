@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // flash_flash_acr_v1: FLASH_ACR
 // Used by: FLASH, FLASH_S
@@ -381,7 +381,7 @@ using flash_flash_nssr_v1_tt =
                groov::field<"dbne", bool, 3, 3>,
                groov::field<"reserved0", bool, 2, 2>,
                groov::field<"wbne", bool, 1, 1>,
-               groov::field<"bsy", common::bit_ready_bar, 0, 0>>;
+               groov::field<"bsy", common::bit_nready, 0, 0>>;
 
 // flash_flash_opsr_v1: FLASH_OPSR
 // Used by: FLASH, FLASH_S
@@ -441,7 +441,7 @@ using flash_flash_optsr2_cur_v1_tt =
              common::access::ro,
                groov::field<"tzen", std::uint8_t, 31, 24>,
                groov::field<"reserved2", std::uint16_t, 23, 9>,
-               groov::field<"usbpd_dis", common::bit_enable_bar, 8, 8>,
+               groov::field<"usbpd_dis", common::bit_nenable, 8, 8>,
                groov::field<"reserved1", bool, 7, 7>,
                groov::field<"sram2_ecc", bool, 6, 6>,
                groov::field<"sram3_ecc", bool, 5, 5>,
@@ -462,7 +462,7 @@ using flash_flash_optsr2_prg_v1_tt =
              common::access::rw,
                groov::field<"tzen", std::uint8_t, 31, 24>,
                groov::field<"reserved2", std::uint16_t, 23, 9, common::access::ro>,
-               groov::field<"usbpd_dis", common::bit_enable_bar, 8, 8>,
+               groov::field<"usbpd_dis", common::bit_nenable, 8, 8>,
                groov::field<"reserved1", bool, 7, 7, common::access::ro>,
                groov::field<"sram2_ecc", bool, 6, 6>,
                groov::field<"sram3_ecc", bool, 5, 5>,
@@ -896,7 +896,7 @@ using flash_flash_secsr_v1_tt =
                groov::field<"dbne", bool, 3, 3>,
                groov::field<"reserved0", bool, 2, 2>,
                groov::field<"wbne", bool, 1, 1>,
-               groov::field<"bsy", common::bit_ready_bar, 0, 0>>;
+               groov::field<"bsy", common::bit_nready, 0, 0>>;
 
 // flash_flash_secwm1r_cur_v1: FLASH_SECWM1R_CUR
 // Used by: FLASH, FLASH_S
@@ -1006,4 +1006,4 @@ using flash_flash_wrp2r_prg_v1_tt =
              common::access::rw,
                groov::field<"wrpsg2", std::uint32_t, 31, 0>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

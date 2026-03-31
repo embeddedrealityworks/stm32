@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32h533/registers/gtzc1.hpp>
+#include "../registers/gtzc1.hpp"
 
-namespace stm32::stm32h533 {
+namespace mcu::stm32::stm32h533 {
 
 namespace gtzc1x {
   template <stdx::ct_string name,
@@ -199,4 +199,4 @@ namespace gtzc1x_v2 {
 
 } // namespace gtzc1x_v2
 
-} // namespace stm32::stm32h533
+} // namespace mcu::stm32::stm32h533

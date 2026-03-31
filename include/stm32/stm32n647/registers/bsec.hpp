@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // bsec_bsec_ap_unlock_v1: BSEC_AP_UNLOCK
 // Used by: BSEC, BSEC_S
@@ -7495,4 +7495,4 @@ using bsec_bsec_wrcr_v1_tt =
              common::access::rw,
                groov::field<"wrc", std::uint32_t, 31, 0, common::access::ro>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

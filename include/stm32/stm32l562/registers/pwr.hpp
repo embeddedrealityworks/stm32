@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // pwr_cr1_v1: CR1
 // Used by: PWR, SEC_PWR
@@ -57,7 +57,7 @@ using pwr_cr3_v1_tt =
              baseaddress + offset,
              common::access::rw,
                groov::field<"reserved2", std::uint32_t, 31, 15, common::access::ro>,
-               groov::field<"ucpd_dbdis", common::bit_enable_bar, 14, 14>,
+               groov::field<"ucpd_dbdis", common::bit_nenable, 14, 14>,
                groov::field<"ucpd_stdby", bool, 13, 13>,
                groov::field<"reserved1", bool, 12, 12, common::access::ro>,
                groov::field<"ulpmen", common::bit_enable, 11, 11>,
@@ -642,4 +642,4 @@ using pwr_sr2_v1_tt =
                groov::field<"reglps", bool, 8, 8>,
                groov::field<"reserved0", std::uint8_t, 7, 0>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

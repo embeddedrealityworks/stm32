@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // ptaconv_ptaconv_actcr_v1: PTACONV_ACTCR
 // Used by: PTACONV, SEC_PTACONV
@@ -18,7 +18,7 @@ using ptaconv_ptaconv_actcr_v1_tt =
              baseaddress + offset,
              common::access::rw,
                groov::field<"reserved1", std::uint16_t, 31, 21, common::access::ro>,
-               groov::field<"abortdis", common::bit_enable_bar, 20, 20>,
+               groov::field<"abortdis", common::bit_nenable, 20, 20>,
                groov::field<"tabort", std::uint8_t, 19, 16>,
                groov::field<"actpol", bool, 15, 15>,
                groov::field<"reserved0", std::uint8_t, 14, 8, common::access::ro>,
@@ -54,4 +54,4 @@ using ptaconv_ptaconv_pricr_v1_tt =
                groov::field<"reserved0", std::uint16_t, 14, 5, common::access::ro>,
                groov::field<"tpriority", std::uint8_t, 4, 0>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

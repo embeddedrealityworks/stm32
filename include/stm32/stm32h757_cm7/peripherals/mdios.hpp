@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32h757_cm7/registers/mdios.hpp>
+#include "../registers/mdios.hpp"
 
-namespace stm32::stm32h757_cm7 {
+namespace mcu::stm32::stm32h757_cm7 {
 
 namespace mdios {
   template <stdx::ct_string name,
@@ -370,4 +370,4 @@ namespace mdios {
 
 } // namespace mdios
 
-} // namespace stm32::stm32h757_cm7
+} // namespace mcu::stm32::stm32h757_cm7

@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32u5fx/registers/dbgmcu.hpp>
+#include "../registers/dbgmcu.hpp"
 
-namespace stm32::stm32u5fx {
+namespace mcu::stm32::stm32u5fx {
 
 namespace dbgmcu {
   template <stdx::ct_string name,
@@ -115,4 +115,4 @@ namespace dbgmcu {
 
 } // namespace dbgmcu
 
-} // namespace stm32::stm32u5fx
+} // namespace mcu::stm32::stm32u5fx

@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // tims_arr_v1: ARR
 // Used by: TIM1, TIM8
@@ -302,7 +302,7 @@ using tims_cr1_v1_tt =
                groov::field<"dir", bool, 4, 4>,
                groov::field<"opm", bool, 3, 3>,
                groov::field<"urs", bool, 2, 2>,
-               groov::field<"udis", common::bit_enable_bar, 1, 1>,
+               groov::field<"udis", common::bit_nenable, 1, 1>,
                groov::field<"cen", common::bit_enable, 0, 0>>;
 
 // tims_cr2_v1: CR2
@@ -501,4 +501,4 @@ using tims_sr_v1_tt =
                groov::field<"cc1if", bool, 1, 1>,
                groov::field<"uif", bool, 0, 0>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

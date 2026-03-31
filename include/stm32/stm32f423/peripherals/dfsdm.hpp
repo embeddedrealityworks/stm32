@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32f423/registers/dfsdm.hpp>
+#include "../registers/dfsdm.hpp"
 
-namespace stm32::stm32f423 {
+namespace mcu::stm32::stm32f423 {
 
 namespace dfsdmx {
   template <stdx::ct_string name,
@@ -515,4 +515,4 @@ namespace dfsdmx {
 
 } // namespace dfsdmx
 
-} // namespace stm32::stm32f423
+} // namespace mcu::stm32::stm32f423

@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // stk_calib_v1: CALIB
 // Used by: STK
@@ -63,4 +63,4 @@ using stk_val_v1_tt =
                groov::field<"reserved0", std::uint8_t, 31, 24, common::access::ro>,
                groov::field<"current", std::uint32_t, 23, 0>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

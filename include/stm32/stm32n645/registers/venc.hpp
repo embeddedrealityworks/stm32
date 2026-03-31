@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // venc_venc_swreg0_v1: VENC_SWREG0
 // Used by: VENC, VENC_S
@@ -4267,4 +4267,4 @@ using venc_venc_swreg99_v1_tt =
              common::access::rw,
                groov::field<"swreg_field", std::uint32_t, 31, 0, common::access::wo>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

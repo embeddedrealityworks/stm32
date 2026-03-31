@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // dts_dts_cfgr1_v1: DTS_CFGR1
 // Used by: DTS, SEC_DTS
@@ -185,4 +185,4 @@ using dts_dts_t0valr1_v1_tt =
                groov::field<"ts1_t0", std::uint8_t, 17, 16, common::access::ro>,
                groov::field<"ts1_fmt0", std::uint16_t, 15, 0, common::access::ro>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // scb_actrl_v1: ACTRL
 // Used by: SCB_ACTRL
@@ -20,7 +20,7 @@ using scb_actrl_v1_tt =
                groov::field<"reserved2", std::uint32_t, 31, 13, common::access::ro>,
                groov::field<"disitmatbflush", bool, 12, 12>,
                groov::field<"disramode", common::bit_enable, 11, 11>,
-               groov::field<"fpexcodis", common::bit_enable_bar, 10, 10>,
+               groov::field<"fpexcodis", common::bit_nenable, 10, 10>,
                groov::field<"reserved1", std::uint8_t, 9, 3, common::access::ro>,
                groov::field<"disfold", bool, 2, 2>,
                groov::field<"reserved0", std::uint8_t, 1, 0, common::access::ro>>;
@@ -281,4 +281,4 @@ using scb_vtor_v1_tt =
                groov::field<"tbloff", std::uint32_t, 29, 9>,
                groov::field<"reserved0", std::uint16_t, 8, 0, common::access::ro>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

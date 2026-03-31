@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32f301/registers/dac.hpp>
+#include "../registers/dac.hpp"
 
-namespace stm32::stm32f301 {
+namespace mcu::stm32::stm32f301 {
 
 namespace dac1 {
   template <stdx::ct_string name,
@@ -85,4 +85,4 @@ namespace dac1 {
 
 } // namespace dac1
 
-} // namespace stm32::stm32f301
+} // namespace mcu::stm32::stm32f301

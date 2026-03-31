@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // xspi_xspi_abr_v1: XSPI_ABR
 // Used by: XSPI1, XSPI1_S, XSPI2, XSPI2_S, XSPI3, XSPI3_S
@@ -508,4 +508,4 @@ using xspi_xspi_wtcr_v1_tt =
                groov::field<"reserved0", std::uint32_t, 31, 5, common::access::ro>,
                groov::field<"dcyc", std::uint8_t, 4, 0>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

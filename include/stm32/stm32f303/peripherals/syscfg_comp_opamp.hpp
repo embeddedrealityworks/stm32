@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32f303/registers/syscfg_comp_opamp.hpp>
+#include "../registers/syscfg_comp_opamp.hpp"
 
-namespace stm32::stm32f303 {
+namespace mcu::stm32::stm32f303 {
 
 namespace syscfg_comp_opamp {
   template <stdx::ct_string name,
@@ -115,4 +115,4 @@ namespace syscfg_comp_opamp {
 
 } // namespace syscfg_comp_opamp
 
-} // namespace stm32::stm32f303
+} // namespace mcu::stm32::stm32f303

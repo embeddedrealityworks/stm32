@@ -3,7 +3,7 @@
 
 #include <cstdint>
 
-namespace stm32::stm32f100 {
+namespace mcu::stm32::stm32f100 {
 namespace adc1 { inline constexpr std::uint32_t ADC1_BASE = 0x4001'2400; } // namespace adc1
 namespace afio { inline constexpr std::uint32_t AFIO_BASE = 0x4001'0000; } // namespace afio
 namespace bkp { inline constexpr std::uint32_t BKP_BASE = 0x4000'6c04; } // namespace bkp
@@ -58,4 +58,4 @@ namespace usart2 { inline constexpr std::uint32_t USART2_BASE = 0x4000'4400; } /
 namespace usart3 { inline constexpr std::uint32_t USART3_BASE = 0x4000'4800; } // namespace usart3
 namespace wwdg { inline constexpr std::uint32_t WWDG_BASE = 0x4000'2c00; } // namespace wwdg
 
-} // namespace stm32::stm32f100
+} // namespace mcu::stm32::stm32f100

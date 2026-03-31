@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32h73x/registers/dbgmcu.hpp>
+#include "../registers/dbgmcu.hpp"
 
-namespace stm32::stm32h73x {
+namespace mcu::stm32::stm32h73x {
 
 namespace dbgmcu {
   template <stdx::ct_string name,
@@ -95,4 +95,4 @@ namespace dbgmcu {
 
 } // namespace dbgmcu
 
-} // namespace stm32::stm32h73x
+} // namespace mcu::stm32::stm32h73x

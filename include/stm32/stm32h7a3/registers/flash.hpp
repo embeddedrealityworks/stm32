@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // flash_flash_acr_v1: FLASH_ACR
 // Used by: Flash
@@ -754,7 +754,7 @@ using flash_flash_sr1_v1_tt =
                groov::field<"crc_busy1", bool, 3, 3, common::access::ro>,
                groov::field<"qw1", bool, 2, 2, common::access::ro>,
                groov::field<"wbne1", bool, 1, 1, common::access::ro>,
-               groov::field<"bsy1", common::bit_ready_bar, 0, 0, common::access::ro>>;
+               groov::field<"bsy1", common::bit_nready, 0, 0, common::access::ro>>;
 
 // flash_flash_sr2_v1: FLASH_SR2
 // Used by: Flash
@@ -784,7 +784,7 @@ using flash_flash_sr2_v1_tt =
                groov::field<"crc_busy2", bool, 3, 3, common::access::ro>,
                groov::field<"qw2", bool, 2, 2, common::access::ro>,
                groov::field<"wbne2", bool, 1, 1, common::access::ro>,
-               groov::field<"bsy2", common::bit_ready_bar, 0, 0, common::access::ro>>;
+               groov::field<"bsy2", common::bit_nready, 0, 0, common::access::ro>>;
 
 // flash_flash_wpsgn_cur1r_v1: FLASH_WPSGN_CUR1R
 // Used by: Flash
@@ -834,4 +834,4 @@ using flash_flash_wpsgn_prg2r_v1_tt =
              common::access::rw,
                groov::field<"wrpsgn2", std::uint32_t, 31, 0>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

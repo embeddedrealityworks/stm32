@@ -2,10 +2,10 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/common/access.hpp>
-#include <stm32/common/bittypes.hpp>
+#include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
-namespace stm32::regs {
+namespace mcu::stm32::regs {
 
 // lptim_arr_v1: ARR
 // Used by: LPTIM1, LPTIM3, LPTIM2
@@ -177,4 +177,4 @@ using lptim_lptim_cfgr2_v2_tt =
                groov::field<"reserved0", std::uint32_t, 31, 2, common::access::ro>,
                groov::field<"in1sel", std::uint8_t, 1, 0>>;
 
-} // namespace stm32::regs
+} // namespace mcu::stm32::regs

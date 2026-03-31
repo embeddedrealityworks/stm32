@@ -2,9 +2,9 @@
 #pragma once
 
 #include <groov/groov.hpp>
-#include <stm32/stm32f103/registers/stk.hpp>
+#include "../registers/stk.hpp"
 
-namespace stm32::stm32f103 {
+namespace mcu::stm32::stm32f103 {
 
 namespace stk {
   template <stdx::ct_string name,
@@ -35,4 +35,4 @@ namespace stk {
 
 } // namespace stk
 
-} // namespace stm32::stm32f103
+} // namespace mcu::stm32::stm32f103
