@@ -1,0 +1,44 @@
+
+namespace firewall {
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using cssa_tt = regs::firewall_firewall_cssa_v1_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using csl_tt = regs::firewall_firewall_csl_v1_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using nvdssa_tt = regs::firewall_firewall_cssa_v1_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using nvdsl_tt = regs::firewall_firewall_csl_v1_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using vdssa_tt = regs::firewall_firewall_vdssa_v1_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using vdsl_tt = regs::firewall_firewall_vdsl_v1_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using cr_tt = regs::firewall_firewall_cr_v1_tt<name, baseaddress, offset>;
+
+  template <std::uint32_t baseaddress>
+  using firewall_t =
+    groov::group<"firewall",
+                 groov::mmio_bus<>,
+                 cssa_tt<"cssa", baseaddress, 0x0>,
+                 csl_tt<"csl", baseaddress, 0x4>,
+                 nvdssa_tt<"nvdssa", baseaddress, 0x8>,
+                 nvdsl_tt<"nvdsl", baseaddress, 0xc>,
+                 vdssa_tt<"vdssa", baseaddress, 0x10>,
+                 vdsl_tt<"vdsl", baseaddress, 0x14>,
+                 cr_tt<"cr", baseaddress, 0x20>>;
+
+} // namespace firewall

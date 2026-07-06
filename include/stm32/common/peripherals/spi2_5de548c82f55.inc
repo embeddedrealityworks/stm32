@@ -1,0 +1,54 @@
+
+namespace spi2 {
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using spi2_cr1_tt = regs::spi_spi_cr1_v1_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using spi2_cr2_tt = regs::spi_spi_cr2_v1_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using spi2_sr_tt = regs::spi_spi_sr_v1_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using spi2_dr_tt = regs::spi_spi_dr_v1_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using spi2_crcpr_tt = regs::spi_spi_crcpr_v1_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using spi2_rxcrcr_tt = regs::spi_spi_rxcrcr_v2_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using spi2_txcrcr_tt = regs::spi_spi_txcrcr_v2_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using spi2_i2scfgr_tt = regs::spi2_spi2_i2scfgr_v1_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using spi2_i2spr_tt = regs::spi_spi_i2spr_v1_tt<name, baseaddress, offset>;
+
+  template <std::uint32_t baseaddress>
+  using spi2_t =
+    groov::group<"spi2",
+                 groov::mmio_bus<>,
+                 spi2_cr1_tt<"spi2_cr1", baseaddress, 0x0>,
+                 spi2_cr2_tt<"spi2_cr2", baseaddress, 0x4>,
+                 spi2_sr_tt<"spi2_sr", baseaddress, 0x8>,
+                 spi2_dr_tt<"spi2_dr", baseaddress, 0xc>,
+                 spi2_crcpr_tt<"spi2_crcpr", baseaddress, 0x10>,
+                 spi2_rxcrcr_tt<"spi2_rxcrcr", baseaddress, 0x14>,
+                 spi2_txcrcr_tt<"spi2_txcrcr", baseaddress, 0x18>,
+                 spi2_i2scfgr_tt<"spi2_i2scfgr", baseaddress, 0x1c>,
+                 spi2_i2spr_tt<"spi2_i2spr", baseaddress, 0x20>>;
+
+} // namespace spi2

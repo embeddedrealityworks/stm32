@@ -1,0 +1,19 @@
+
+namespace vrefx {
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using csr_tt = regs::vrefbuf_vrefbuf_csr_v1_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using ccr_tt = regs::vrefbuf_ccr_v1_tt<name, baseaddress, offset>;
+
+  template <stdx::ct_string name, std::uint32_t baseaddress>
+  using vrefx_t =
+    groov::group<name,
+                 groov::mmio_bus<>,
+                 csr_tt<"csr", baseaddress, 0x0>,
+                 ccr_tt<"ccr", baseaddress, 0x4>>;
+
+} // namespace vrefx

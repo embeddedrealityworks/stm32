@@ -1,0 +1,19 @@
+
+namespace dbg {
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using idcode_tt = regs::dbg_idcode_v1_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using cr_tt = regs::dbg_cr_v2_tt<name, baseaddress, offset>;
+
+  template <std::uint32_t baseaddress>
+  using dbg_t =
+    groov::group<"dbg",
+                 groov::mmio_bus<>,
+                 idcode_tt<"idcode", baseaddress, 0x0>,
+                 cr_tt<"cr", baseaddress, 0x4>>;
+
+} // namespace dbg

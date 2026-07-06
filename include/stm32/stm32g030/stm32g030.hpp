@@ -23,6 +23,7 @@
 #include "peripherals/wwdg.hpp"
 
 #include "peripherals/addresses.hpp"
+#include "../common/core/cm0.hpp"
 
 namespace mcu::stm32 {
 

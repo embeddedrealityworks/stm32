@@ -1,0 +1,74 @@
+
+namespace gpiodx {
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using gpiod_moder_tt = regs::gpio_gpioa_moder_v1_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using gpiod_otyper_tt = regs::gpio_gpioa_otyper_v1_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using gpiod_ospeedr_tt = regs::gpio_gpioa_ospeedr_v1_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using gpiod_pupdr_tt = regs::gpio_gpioa_pupdr_v1_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using gpiod_idr_tt = regs::gpioa_gpioa_idr_v1_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using gpiod_odr_tt = regs::gpio_gpioa_odr_v1_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using gpiod_bsrr_tt = regs::gpioa_gpioa_bsrr_v1_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using gpiod_lckr_tt = regs::gpio_gpioa_lckr_v1_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using gpiod_afrl_tt = regs::gpio_gpioa_afrl_v1_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using gpiod_afrh_tt = regs::gpio_gpioa_afrh_v1_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using gpiod_brr_tt = regs::gpioa_gpioa_brr_v1_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using gpiod_hslvr_tt = regs::gpio_gpioa_hslvr_v1_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using gpiod_seccfgr_tt = regs::gpioa_gpioa_seccfgr_v1_tt<name, baseaddress, offset>;
+
+  template <stdx::ct_string name, std::uint32_t baseaddress>
+  using gpiodx_t =
+    groov::group<name,
+                 groov::mmio_bus<>,
+                 gpiod_moder_tt<"gpiod_moder", baseaddress, 0x0>,
+                 gpiod_otyper_tt<"gpiod_otyper", baseaddress, 0x4>,
+                 gpiod_ospeedr_tt<"gpiod_ospeedr", baseaddress, 0x8>,
+                 gpiod_pupdr_tt<"gpiod_pupdr", baseaddress, 0xc>,
+                 gpiod_idr_tt<"gpiod_idr", baseaddress, 0x10>,
+                 gpiod_odr_tt<"gpiod_odr", baseaddress, 0x14>,
+                 gpiod_bsrr_tt<"gpiod_bsrr", baseaddress, 0x18>,
+                 gpiod_lckr_tt<"gpiod_lckr", baseaddress, 0x1c>,
+                 gpiod_afrl_tt<"gpiod_afrl", baseaddress, 0x20>,
+                 gpiod_afrh_tt<"gpiod_afrh", baseaddress, 0x24>,
+                 gpiod_brr_tt<"gpiod_brr", baseaddress, 0x28>,
+                 gpiod_hslvr_tt<"gpiod_hslvr", baseaddress, 0x2c>,
+                 gpiod_seccfgr_tt<"gpiod_seccfgr", baseaddress, 0x30>>;
+
+} // namespace gpiodx

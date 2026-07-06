@@ -1,0 +1,24 @@
+
+namespace dbgmcu {
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using cr_tt = regs::dbgmcu_cr_v8_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using dbg_apb0_fz_tt = regs::dbgmcu_dbg_apb0_fz_v1_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using dbg_apb1_fz_tt = regs::dbgmcu_dbg_apb1_fz_v1_tt<name, baseaddress, offset>;
+
+  template <std::uint32_t baseaddress>
+  using dbgmcu_t =
+    groov::group<"dbgmcu",
+                 groov::mmio_bus<>,
+                 cr_tt<"cr", baseaddress, 0x0>,
+                 dbg_apb0_fz_tt<"dbg_apb0_fz", baseaddress, 0x4>,
+                 dbg_apb1_fz_tt<"dbg_apb1_fz", baseaddress, 0x8>>;
+
+} // namespace dbgmcu

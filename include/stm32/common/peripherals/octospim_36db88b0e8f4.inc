@@ -1,0 +1,14 @@
+
+namespace octospimx {
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using octospim_cr_tt = regs::octospim_octospim_cr_v1_tt<name, baseaddress, offset>;
+
+  template <stdx::ct_string name, std::uint32_t baseaddress>
+  using octospimx_t =
+    groov::group<name,
+                 groov::mmio_bus<>,
+                 octospim_cr_tt<"octospim_cr", baseaddress, 0x0>>;
+
+} // namespace octospimx

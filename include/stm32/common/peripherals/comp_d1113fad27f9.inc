@@ -1,0 +1,24 @@
+
+namespace comp {
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using comp1_csr_tt = regs::comp_comp1_csr_v1_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using comp2_csr_tt = regs::comp_comp1_csr_v1_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using comp3_csr_tt = regs::comp_comp1_csr_v1_tt<name, baseaddress, offset>;
+
+  template <std::uint32_t baseaddress>
+  using comp_t =
+    groov::group<"comp",
+                 groov::mmio_bus<>,
+                 comp1_csr_tt<"comp1_csr", baseaddress, 0x0>,
+                 comp2_csr_tt<"comp2_csr", baseaddress, 0x4>,
+                 comp3_csr_tt<"comp3_csr", baseaddress, 0x8>>;
+
+} // namespace comp

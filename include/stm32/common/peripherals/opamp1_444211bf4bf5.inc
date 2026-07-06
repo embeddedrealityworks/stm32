@@ -1,0 +1,24 @@
+
+namespace opamp1x {
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using opamp1_csr_tt = regs::opamp_opamp1_csr_v2_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using opamp1_otr_tt = regs::opamp_opamp1_otr_v1_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using opamp1_hsotr_tt = regs::opamp_opamp1_hsotr_v1_tt<name, baseaddress, offset>;
+
+  template <stdx::ct_string name, std::uint32_t baseaddress>
+  using opamp1x_t =
+    groov::group<name,
+                 groov::mmio_bus<>,
+                 opamp1_csr_tt<"opamp1_csr", baseaddress, 0x0>,
+                 opamp1_otr_tt<"opamp1_otr", baseaddress, 0x4>,
+                 opamp1_hsotr_tt<"opamp1_hsotr", baseaddress, 0x8>>;
+
+} // namespace opamp1x

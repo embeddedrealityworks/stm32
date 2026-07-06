@@ -1,0 +1,39 @@
+
+namespace lptim1 {
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using lptim1_isr_output_tt = regs::lptim_lptim_isr_output_v1_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using lptim1_isr_intput_tt = regs::lptim1_lptim1_isr_alternate1_v1_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using lptim1_icr_output_tt = regs::lptim_lptim_icr_output_v1_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using lptim1_icr_intput_tt = regs::lptim1_lptim1_icr_alternate1_v1_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using lptim1_dier_output_tt = regs::lptim_lptim_dier_output_v1_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using lptim1_dier_intput_tt = regs::lptim_lptim_dier_intput_v1_tt<name, baseaddress, offset>;
+
+  template <std::uint32_t baseaddress>
+  using lptim1_t =
+    groov::group<"lptim1",
+                 groov::mmio_bus<>,
+                 lptim1_isr_output_tt<"lptim1_isr_output", baseaddress, 0x0>,
+                 lptim1_isr_intput_tt<"lptim1_isr_intput", baseaddress, 0x0>,
+                 lptim1_icr_output_tt<"lptim1_icr_output", baseaddress, 0x4>,
+                 lptim1_icr_intput_tt<"lptim1_icr_intput", baseaddress, 0x4>,
+                 lptim1_dier_output_tt<"lptim1_dier_output", baseaddress, 0x8>,
+                 lptim1_dier_intput_tt<"lptim1_dier_intput", baseaddress, 0x8>>;
+
+} // namespace lptim1

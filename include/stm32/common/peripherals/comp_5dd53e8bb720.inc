@@ -1,0 +1,29 @@
+
+namespace compx {
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using comp_sr_tt = regs::comp_comp_sr_v2_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using comp_icfr_tt = regs::comp_comp_icfr_v2_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using comp_cfgr1_tt = regs::comp_comp_cfgr1_v2_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using comp_cfgr2_tt = regs::comp_comp_cfgr1_v2_tt<name, baseaddress, offset>;
+
+  template <stdx::ct_string name, std::uint32_t baseaddress>
+  using compx_t =
+    groov::group<name,
+                 groov::mmio_bus<>,
+                 comp_sr_tt<"comp_sr", baseaddress, 0x0>,
+                 comp_icfr_tt<"comp_icfr", baseaddress, 0x4>,
+                 comp_cfgr1_tt<"comp_cfgr1", baseaddress, 0xc>,
+                 comp_cfgr2_tt<"comp_cfgr2", baseaddress, 0x10>>;
+
+} // namespace compx

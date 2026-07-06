@@ -1,0 +1,69 @@
+
+namespace tim13x {
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using tim13_cr1_tt = regs::tim_tim16_cr1_v1_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using tim13_dier_tt = regs::tim_tim14_dier_v1_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using tim13_sr_tt = regs::tim_tim14_sr_v1_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using tim13_egr_tt = regs::tim14_tim14_egr_v1_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using tim13_ccmr1_tt = regs::tim_tim14_ccmr1_input_v1_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using tim13_ccmr1_alternate1_tt = regs::tim14_tim14_ccmr1_alternate1_v1_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using tim13_ccer_tt = regs::tim_tim14_ccer_v1_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using tim13_cnt_tt = regs::tim_tim3_cnt_alternate_v1_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using tim13_psc_tt = regs::tim_tim1_psc_v1_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using tim13_arr_tt = regs::tim_tim1_arr_v2_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using tim13_ccr1_tt = regs::tim_tim1_ccr1_v2_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using tim13_tisel_tt = regs::tim_tim14_tisel_v1_tt<name, baseaddress, offset>;
+
+  template <stdx::ct_string name, std::uint32_t baseaddress>
+  using tim13x_t =
+    groov::group<name,
+                 groov::mmio_bus<>,
+                 tim13_cr1_tt<"tim13_cr1", baseaddress, 0x0>,
+                 tim13_dier_tt<"tim13_dier", baseaddress, 0xc>,
+                 tim13_sr_tt<"tim13_sr", baseaddress, 0x10>,
+                 tim13_egr_tt<"tim13_egr", baseaddress, 0x14>,
+                 tim13_ccmr1_tt<"tim13_ccmr1", baseaddress, 0x18>,
+                 tim13_ccmr1_alternate1_tt<"tim13_ccmr1_alternate1", baseaddress, 0x18>,
+                 tim13_ccer_tt<"tim13_ccer", baseaddress, 0x20>,
+                 tim13_cnt_tt<"tim13_cnt", baseaddress, 0x24>,
+                 tim13_psc_tt<"tim13_psc", baseaddress, 0x28>,
+                 tim13_arr_tt<"tim13_arr", baseaddress, 0x2c>,
+                 tim13_ccr1_tt<"tim13_ccr1", baseaddress, 0x34>,
+                 tim13_tisel_tt<"tim13_tisel", baseaddress, 0x5c>>;
+
+} // namespace tim13x

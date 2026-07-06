@@ -1,0 +1,177 @@
+
+namespace lptim1 {
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using isr_tt = regs::lptim_isr_v2_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using icr_tt = regs::lptim_icr_v2_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using ier_tt = regs::lptim_ier_v2_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using cfgr_tt = regs::lptim_cfgr_v1_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using cr_tt = regs::lptim_cr_v2_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using cmp_tt = regs::lptim_cmp_v1_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using arr_tt = regs::tim_arr_v1_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using cnt_tt = regs::lptim_cnt_v1_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using lptim1_or_tt = regs::lptim_or_v2_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using rcr_tt = regs::tim_rcr_v1_tt<name, baseaddress, offset>;
+
+  template <std::uint32_t baseaddress>
+  using lptim1_t =
+    groov::group<"lptim1",
+                 groov::mmio_bus<>,
+                 isr_tt<"isr", baseaddress, 0x0>,
+                 icr_tt<"icr", baseaddress, 0x4>,
+                 ier_tt<"ier", baseaddress, 0x8>,
+                 cfgr_tt<"cfgr", baseaddress, 0xc>,
+                 cr_tt<"cr", baseaddress, 0x10>,
+                 cmp_tt<"cmp", baseaddress, 0x14>,
+                 arr_tt<"arr", baseaddress, 0x18>,
+                 cnt_tt<"cnt", baseaddress, 0x1c>,
+                 lptim1_or_tt<"lptim1_or", baseaddress, 0x20>,
+                 rcr_tt<"rcr", baseaddress, 0x28>>;
+
+} // namespace lptim1
+
+namespace lptim2 {
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using isr_tt = regs::lptim_isr_v2_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using icr_tt = regs::lptim_icr_v2_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using ier_tt = regs::lptim_ier_v2_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using cfgr_tt = regs::lptim_cfgr_v1_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using cr_tt = regs::lptim_cr_v2_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using cmp_tt = regs::lptim_cmp_v1_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using arr_tt = regs::tim_arr_v1_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using cnt_tt = regs::lptim_cnt_v1_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using lptim2_or_tt = regs::lptim_or_v2_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using rcr_tt = regs::tim_rcr_v1_tt<name, baseaddress, offset>;
+
+  template <std::uint32_t baseaddress>
+  using lptim2_t =
+    groov::group<"lptim2",
+                 groov::mmio_bus<>,
+                 isr_tt<"isr", baseaddress, 0x0>,
+                 icr_tt<"icr", baseaddress, 0x4>,
+                 ier_tt<"ier", baseaddress, 0x8>,
+                 cfgr_tt<"cfgr", baseaddress, 0xc>,
+                 cr_tt<"cr", baseaddress, 0x10>,
+                 cmp_tt<"cmp", baseaddress, 0x14>,
+                 arr_tt<"arr", baseaddress, 0x18>,
+                 cnt_tt<"cnt", baseaddress, 0x1c>,
+                 lptim2_or_tt<"lptim2_or", baseaddress, 0x20>,
+                 rcr_tt<"rcr", baseaddress, 0x28>>;
+
+} // namespace lptim2
+
+namespace lptim3 {
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using isr_tt = regs::lptim_isr_v2_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using icr_tt = regs::lptim_icr_v2_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using ier_tt = regs::lptim_ier_v2_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using cfgr_tt = regs::lptim_cfgr_v1_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using cr_tt = regs::lptim_cr_v2_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using cmp_tt = regs::lptim_cmp_v1_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using arr_tt = regs::tim_arr_v1_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using cnt_tt = regs::lptim_cnt_v1_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using lptim3_or_tt = regs::lptim_or_v2_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using rcr_tt = regs::tim_rcr_v1_tt<name, baseaddress, offset>;
+
+  template <std::uint32_t baseaddress>
+  using lptim3_t =
+    groov::group<"lptim3",
+                 groov::mmio_bus<>,
+                 isr_tt<"isr", baseaddress, 0x0>,
+                 icr_tt<"icr", baseaddress, 0x4>,
+                 ier_tt<"ier", baseaddress, 0x8>,
+                 cfgr_tt<"cfgr", baseaddress, 0xc>,
+                 cr_tt<"cr", baseaddress, 0x10>,
+                 cmp_tt<"cmp", baseaddress, 0x14>,
+                 arr_tt<"arr", baseaddress, 0x18>,
+                 cnt_tt<"cnt", baseaddress, 0x1c>,
+                 lptim3_or_tt<"lptim3_or", baseaddress, 0x20>,
+                 rcr_tt<"rcr", baseaddress, 0x28>>;
+
+} // namespace lptim3

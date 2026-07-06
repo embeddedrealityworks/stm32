@@ -1,0 +1,19 @@
+
+namespace dlybx {
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using cr_tt = regs::dlyb_dlyb_cr_v2_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using cfgr_tt = regs::dlyb_cfgr_v1_tt<name, baseaddress, offset>;
+
+  template <stdx::ct_string name, std::uint32_t baseaddress>
+  using dlybx_t =
+    groov::group<name,
+                 groov::mmio_bus<>,
+                 cr_tt<"cr", baseaddress, 0x0>,
+                 cfgr_tt<"cfgr", baseaddress, 0x4>>;
+
+} // namespace dlybx

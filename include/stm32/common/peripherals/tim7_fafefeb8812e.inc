@@ -1,0 +1,49 @@
+
+namespace tim7x {
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using tim7_cr1_tt = regs::tim_tim6_cr1_v1_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using tim7_cr2_tt = regs::tim_cr2_v8_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using tim7_dier_tt = regs::tim_dier_v10_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using tim7_sr_tt = regs::tim_sr_v12_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using tim7_egr_tt = regs::tim_egr_v10_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using tim7_cnt_tt = regs::tim_tim1_cnt_v1_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using tim7_psc_tt = regs::tim_tim1_psc_v1_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using tim7_arr_tt = regs::tim_tim1_arr_v2_tt<name, baseaddress, offset>;
+
+  template <stdx::ct_string name, std::uint32_t baseaddress>
+  using tim7x_t =
+    groov::group<name,
+                 groov::mmio_bus<>,
+                 tim7_cr1_tt<"tim7_cr1", baseaddress, 0x0>,
+                 tim7_cr2_tt<"tim7_cr2", baseaddress, 0x4>,
+                 tim7_dier_tt<"tim7_dier", baseaddress, 0xc>,
+                 tim7_sr_tt<"tim7_sr", baseaddress, 0x10>,
+                 tim7_egr_tt<"tim7_egr", baseaddress, 0x14>,
+                 tim7_cnt_tt<"tim7_cnt", baseaddress, 0x24>,
+                 tim7_psc_tt<"tim7_psc", baseaddress, 0x28>,
+                 tim7_arr_tt<"tim7_arr", baseaddress, 0x2c>>;
+
+} // namespace tim7x

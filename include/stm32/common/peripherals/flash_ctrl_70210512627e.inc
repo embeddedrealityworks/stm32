@@ -1,0 +1,79 @@
+
+namespace flash_ctrl {
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using command_tt = regs::flash_ctrl_command_v1_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using config_tt = regs::flash_ctrl_config_v2_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using irqstat_tt = regs::flash_ctrl_irqstat_v2_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using irqmask_tt = regs::flash_ctrl_irqmask_v2_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using irqraw_tt = regs::flash_ctrl_irqraw_v2_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using size_tt = regs::flash_ctrl_size_v2_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using address_tt = regs::flash_ctrl_address_v1_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using lfsrval_tt = regs::flash_ctrl_lfsrval_v1_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using pageprot0_tt = regs::flash_ctrl_pageprot0_v2_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using pageprot1_tt = regs::flash_ctrl_pageprot1_v2_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using data0_tt = regs::jpeg_jpeg_huffmin0_0_v1_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using data1_tt = regs::jpeg_jpeg_huffmin1_0_v1_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using data2_tt = regs::jpeg_jpeg_huffmin2_0_v1_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using data3_tt = regs::jpeg_jpeg_huffmin3_0_v1_tt<name, baseaddress, offset>;
+
+  template <std::uint32_t baseaddress>
+  using flash_ctrl_t =
+    groov::group<"flash_ctrl",
+                 groov::mmio_bus<>,
+                 command_tt<"command", baseaddress, 0x0>,
+                 config_tt<"config", baseaddress, 0x4>,
+                 irqstat_tt<"irqstat", baseaddress, 0x8>,
+                 irqmask_tt<"irqmask", baseaddress, 0xc>,
+                 irqraw_tt<"irqraw", baseaddress, 0x10>,
+                 size_tt<"size", baseaddress, 0x14>,
+                 address_tt<"address", baseaddress, 0x18>,
+                 lfsrval_tt<"lfsrval", baseaddress, 0x24>,
+                 pageprot0_tt<"pageprot0", baseaddress, 0x34>,
+                 pageprot1_tt<"pageprot1", baseaddress, 0x38>,
+                 data0_tt<"data0", baseaddress, 0x40>,
+                 data1_tt<"data1", baseaddress, 0x44>,
+                 data2_tt<"data2", baseaddress, 0x48>,
+                 data3_tt<"data3", baseaddress, 0x4c>>;
+
+} // namespace flash_ctrl

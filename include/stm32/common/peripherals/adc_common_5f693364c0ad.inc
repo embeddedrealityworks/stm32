@@ -1,0 +1,24 @@
+
+namespace adc_common {
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using adc1_csr_tt = regs::adc_csr_v2_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using adc1_ccr_tt = regs::adc_common_adc1_ccr_v1_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using adc1_cdr_tt = regs::adc_cdr_v2_tt<name, baseaddress, offset>;
+
+  template <std::uint32_t baseaddress>
+  using adc_common_t =
+    groov::group<"adc_common",
+                 groov::mmio_bus<>,
+                 adc1_csr_tt<"adc1_csr", baseaddress, 0x0>,
+                 adc1_ccr_tt<"adc1_ccr", baseaddress, 0x8>,
+                 adc1_cdr_tt<"adc1_cdr", baseaddress, 0xc>>;
+
+} // namespace adc_common

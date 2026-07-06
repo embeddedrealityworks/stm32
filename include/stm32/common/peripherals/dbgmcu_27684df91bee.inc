@@ -1,0 +1,14 @@
+
+namespace dbgmcu {
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using idcode_tt = regs::dbg_idcode_v1_tt<name, baseaddress, offset>;
+
+  template <std::uint32_t baseaddress>
+  using dbgmcu_t =
+    groov::group<"dbgmcu",
+                 groov::mmio_bus<>,
+                 idcode_tt<"idcode", baseaddress, 0x0>>;
+
+} // namespace dbgmcu

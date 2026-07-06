@@ -1,0 +1,59 @@
+
+namespace syscfg {
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using memrmp_tt = regs::syscfg_memrmp_v3_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using cfgr1_tt = regs::syscfg_cfgr1_v5_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using exticr1_tt = regs::syscfg_exticr1_v2_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using exticr2_tt = regs::syscfg_exticr2_v2_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using exticr3_tt = regs::syscfg_exticr3_v2_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using exticr4_tt = regs::syscfg_exticr4_v2_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using scsr_tt = regs::syscfg_scsr_v2_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using cfgr2_tt = regs::syscfg_cfgr2_v6_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using swpr_tt = regs::syscfg_swpr_v2_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using skr_tt = regs::rtc_wpr_v1_tt<name, baseaddress, offset>;
+
+  template <std::uint32_t baseaddress>
+  using syscfg_t =
+    groov::group<"syscfg",
+                 groov::mmio_bus<>,
+                 memrmp_tt<"memrmp", baseaddress, 0x0>,
+                 cfgr1_tt<"cfgr1", baseaddress, 0x4>,
+                 exticr1_tt<"exticr1", baseaddress, 0x8>,
+                 exticr2_tt<"exticr2", baseaddress, 0xc>,
+                 exticr3_tt<"exticr3", baseaddress, 0x10>,
+                 exticr4_tt<"exticr4", baseaddress, 0x14>,
+                 scsr_tt<"scsr", baseaddress, 0x18>,
+                 cfgr2_tt<"cfgr2", baseaddress, 0x1c>,
+                 swpr_tt<"swpr", baseaddress, 0x20>,
+                 skr_tt<"skr", baseaddress, 0x24>>;
+
+} // namespace syscfg

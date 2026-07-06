@@ -1,0 +1,39 @@
+
+namespace exti {
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using imr_tt = regs::exti_imr_v3_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using emr_tt = regs::exti_imr_v3_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using rtsr_tt = regs::exti_rtsr_v3_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using ftsr_tt = regs::exti_rtsr_v3_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using swier_tt = regs::exti_swier_v3_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using pr_tt = regs::exti_pr_v4_tt<name, baseaddress, offset>;
+
+  template <std::uint32_t baseaddress>
+  using exti_t =
+    groov::group<"exti",
+                 groov::mmio_bus<>,
+                 imr_tt<"imr", baseaddress, 0x0>,
+                 emr_tt<"emr", baseaddress, 0x4>,
+                 rtsr_tt<"rtsr", baseaddress, 0x8>,
+                 ftsr_tt<"ftsr", baseaddress, 0xc>,
+                 swier_tt<"swier", baseaddress, 0x10>,
+                 pr_tt<"pr", baseaddress, 0x14>>;
+
+} // namespace exti

@@ -1,0 +1,24 @@
+
+namespace switchable {
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using rfip_version_tt = regs::radio_control_reg_block_radio_control_id_v1_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using irq_enable_tt = regs::switchable_irq_enable_v1_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using status_tt = regs::switchable_status_v1_tt<name, baseaddress, offset>;
+
+  template <std::uint32_t baseaddress>
+  using switchable_t =
+    groov::group<"switchable",
+                 groov::mmio_bus<>,
+                 rfip_version_tt<"rfip_version", baseaddress, 0x0>,
+                 irq_enable_tt<"irq_enable", baseaddress, 0x4>,
+                 status_tt<"status", baseaddress, 0x8>>;
+
+} // namespace switchable

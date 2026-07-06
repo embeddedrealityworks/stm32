@@ -30,6 +30,7 @@
 #include "peripherals/wakeup_reg_block.hpp"
 
 #include "peripherals/addresses.hpp"
+#include "../common/core/cm0p.hpp"
 
 namespace mcu::stm32 {
 

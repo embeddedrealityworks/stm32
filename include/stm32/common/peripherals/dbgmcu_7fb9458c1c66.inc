@@ -1,0 +1,34 @@
+
+namespace dbgmcu {
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using idcode_tt = regs::dbg_idcode_v2_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using cr_tt = regs::dbg_dbgmcu_cr_v1_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using apb1_fzr1_tt = regs::dbgmcu_apb1_fzr1_v1_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using apb1_fzr2_tt = regs::dbgmcu_apb1fzr2_v1_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using apb2_fzr_tt = regs::dbgmcu_apb2_fzr_v1_tt<name, baseaddress, offset>;
+
+  template <std::uint32_t baseaddress>
+  using dbgmcu_t =
+    groov::group<"dbgmcu",
+                 groov::mmio_bus<>,
+                 idcode_tt<"idcode", baseaddress, 0x0>,
+                 cr_tt<"cr", baseaddress, 0x4>,
+                 apb1_fzr1_tt<"apb1_fzr1", baseaddress, 0x8>,
+                 apb1_fzr2_tt<"apb1_fzr2", baseaddress, 0xc>,
+                 apb2_fzr_tt<"apb2_fzr", baseaddress, 0x10>>;
+
+} // namespace dbgmcu

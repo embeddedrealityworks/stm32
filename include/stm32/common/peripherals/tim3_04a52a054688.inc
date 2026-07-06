@@ -1,0 +1,129 @@
+
+namespace tim3x {
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using tim3_cr1_tt = regs::tim_tim1_cr1_v2_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using tim3_cr2_tt = regs::tim_tim2_cr2_v1_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using tim3_smcr_tt = regs::tim_tim1_smcr_v2_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using tim3_dier_tt = regs::tim_tim2_dier_v1_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using tim3_sr_tt = regs::tim_tim2_sr_v1_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using tim3_egr_tt = regs::tim2_tim2_egr_v1_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using tim3_ccmr1_tt = regs::tim_tim1_ccmr1_input_v1_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using tim3_ccmr1_alternate1_tt = regs::tim1_tim1_ccmr1_alternate1_v1_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using tim3_ccmr2_tt = regs::tim_tim1_ccmr2_input_v1_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using tim3_ccmr2_alternate1_tt = regs::tim1_tim1_ccmr2_alternate1_v1_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using tim3_ccer_tt = regs::tim_tim3_ccer_v1_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using tim3_cnt_tt = regs::tim_tim3_cnt_alternate_v1_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using tim3_psc_tt = regs::tim_tim1_psc_v1_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using tim3_arr_tt = regs::tim_tim1_arr_v2_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using tim3_ccr1_tt = regs::tim_tim1_ccr1_v2_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using tim3_ccr2_tt = regs::tim_tim1_ccr2_v2_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using tim3_ccr3_tt = regs::tim_tim1_ccr3_v2_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using tim3_ccr4_tt = regs::tim_tim1_ccr4_v2_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using tim3_ecr_tt = regs::tim_tim1_ecr_v2_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using tim3_tisel_tt = regs::tim_tim1_tisel_v1_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using tim3_af1_tt = regs::tim_tim3_af1_v1_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using tim3_af2_tt = regs::tim_tim2_af2_v1_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using tim3_dcr_tt = regs::tim_tim1_dcr_v2_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using tim3_dmar_tt = regs::tim_tim1_dmar_v1_tt<name, baseaddress, offset>;
+
+  template <stdx::ct_string name, std::uint32_t baseaddress>
+  using tim3x_t =
+    groov::group<name,
+                 groov::mmio_bus<>,
+                 tim3_cr1_tt<"tim3_cr1", baseaddress, 0x0>,
+                 tim3_cr2_tt<"tim3_cr2", baseaddress, 0x4>,
+                 tim3_smcr_tt<"tim3_smcr", baseaddress, 0x8>,
+                 tim3_dier_tt<"tim3_dier", baseaddress, 0xc>,
+                 tim3_sr_tt<"tim3_sr", baseaddress, 0x10>,
+                 tim3_egr_tt<"tim3_egr", baseaddress, 0x14>,
+                 tim3_ccmr1_tt<"tim3_ccmr1", baseaddress, 0x18>,
+                 tim3_ccmr1_alternate1_tt<"tim3_ccmr1_alternate1", baseaddress, 0x18>,
+                 tim3_ccmr2_tt<"tim3_ccmr2", baseaddress, 0x1c>,
+                 tim3_ccmr2_alternate1_tt<"tim3_ccmr2_alternate1", baseaddress, 0x1c>,
+                 tim3_ccer_tt<"tim3_ccer", baseaddress, 0x20>,
+                 tim3_cnt_tt<"tim3_cnt", baseaddress, 0x24>,
+                 tim3_psc_tt<"tim3_psc", baseaddress, 0x28>,
+                 tim3_arr_tt<"tim3_arr", baseaddress, 0x2c>,
+                 tim3_ccr1_tt<"tim3_ccr1", baseaddress, 0x34>,
+                 tim3_ccr2_tt<"tim3_ccr2", baseaddress, 0x38>,
+                 tim3_ccr3_tt<"tim3_ccr3", baseaddress, 0x3c>,
+                 tim3_ccr4_tt<"tim3_ccr4", baseaddress, 0x40>,
+                 tim3_ecr_tt<"tim3_ecr", baseaddress, 0x58>,
+                 tim3_tisel_tt<"tim3_tisel", baseaddress, 0x5c>,
+                 tim3_af1_tt<"tim3_af1", baseaddress, 0x60>,
+                 tim3_af2_tt<"tim3_af2", baseaddress, 0x64>,
+                 tim3_dcr_tt<"tim3_dcr", baseaddress, 0x3dc>,
+                 tim3_dmar_tt<"tim3_dmar", baseaddress, 0x3e0>>;
+
+} // namespace tim3x

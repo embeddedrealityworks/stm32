@@ -1,0 +1,19 @@
+
+namespace octospim {
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using p1cr_tt = regs::octospii_o_manager_p1cr_v1_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using p2cr_tt = regs::octospii_o_manager_p1cr_v1_tt<name, baseaddress, offset>;
+
+  template <std::uint32_t baseaddress>
+  using octospim_t =
+    groov::group<"octospim",
+                 groov::mmio_bus<>,
+                 p1cr_tt<"p1cr", baseaddress, 0x4>,
+                 p2cr_tt<"p2cr", baseaddress, 0x8>>;
+
+} // namespace octospim

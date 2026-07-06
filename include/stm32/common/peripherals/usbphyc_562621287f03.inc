@@ -1,0 +1,24 @@
+
+namespace usbphyc {
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using pll1_tt = regs::usbphyc_pll1_v1_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using tune_tt = regs::usbphyc_tune_v1_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using ldo_tt = regs::usbphyc_ldo_v1_tt<name, baseaddress, offset>;
+
+  template <std::uint32_t baseaddress>
+  using usbphyc_t =
+    groov::group<"usbphyc",
+                 groov::mmio_bus<>,
+                 pll1_tt<"pll1", baseaddress, 0x0>,
+                 tune_tt<"tune", baseaddress, 0xc>,
+                 ldo_tt<"ldo", baseaddress, 0x18>>;
+
+} // namespace usbphyc

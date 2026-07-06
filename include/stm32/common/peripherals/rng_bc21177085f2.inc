@@ -1,0 +1,49 @@
+
+namespace rngx {
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using rng_cr_tt = regs::rng_rng_cr_v2_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using rng_sr_tt = regs::rng_rng_sr_v1_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using rng_dr_tt = regs::rng_rng_dr_v2_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using rng_nscr_tt = regs::rng_rng_nscr_v2_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using rng_htcr0_tt = regs::rng_rng_htcr_v1_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using rng_htcr1_tt = regs::rng_rng_htcr_v1_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using rng_htcr2_tt = regs::rng_rng_htcr_v1_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using rng_htcr3_tt = regs::rng_rng_htcr_v1_tt<name, baseaddress, offset>;
+
+  template <stdx::ct_string name, std::uint32_t baseaddress>
+  using rngx_t =
+    groov::group<name,
+                 groov::mmio_bus<>,
+                 rng_cr_tt<"rng_cr", baseaddress, 0x0>,
+                 rng_sr_tt<"rng_sr", baseaddress, 0x4>,
+                 rng_dr_tt<"rng_dr", baseaddress, 0x8>,
+                 rng_nscr_tt<"rng_nscr", baseaddress, 0xc>,
+                 rng_htcr0_tt<"rng_htcr0", baseaddress, 0x10>,
+                 rng_htcr1_tt<"rng_htcr1", baseaddress, 0x14>,
+                 rng_htcr2_tt<"rng_htcr2", baseaddress, 0x18>,
+                 rng_htcr3_tt<"rng_htcr3", baseaddress, 0x1c>>;
+
+} // namespace rngx

@@ -38,6 +38,7 @@
 #include "peripherals/wwdg.hpp"
 
 #include "peripherals/addresses.hpp"
+#include "../common/core/cm33.hpp"
 
 namespace mcu::stm32 {
 

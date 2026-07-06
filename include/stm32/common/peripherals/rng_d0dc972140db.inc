@@ -1,0 +1,29 @@
+
+namespace rngx {
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using cr_tt = regs::rng_cr_v4_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using sr_tt = regs::rng_sr_v1_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using dr_tt = regs::rng_dr_v1_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using htcr_tt = regs::rng_rng_htcr_v2_tt<name, baseaddress, offset>;
+
+  template <stdx::ct_string name, std::uint32_t baseaddress>
+  using rngx_t =
+    groov::group<name,
+                 groov::mmio_bus<>,
+                 cr_tt<"cr", baseaddress, 0x0>,
+                 sr_tt<"sr", baseaddress, 0x4>,
+                 dr_tt<"dr", baseaddress, 0x8>,
+                 htcr_tt<"htcr", baseaddress, 0x10>>;
+
+} // namespace rngx

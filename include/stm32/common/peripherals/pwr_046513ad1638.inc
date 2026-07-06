@@ -1,0 +1,54 @@
+
+namespace pwr {
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using pwr_cr1_tt = regs::pwr_cr1_v3_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using pwr_csr1_tt = regs::pwr_csr1_v4_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using pwr_cr2_tt = regs::pwr_cr2_v5_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using pwr_cr3_tt = regs::pwr_cr3_v4_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using pwr_cpucr_tt = regs::pwr_cpucr_v1_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using pwr_d3cr_tt = regs::pwr_d3cr_v1_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using pwr_wkupcr_tt = regs::pwr_wkupcr_v1_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using pwr_wkupfr_tt = regs::pwr_wkupfr_v1_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using pwr_wkupepr_tt = regs::pwr_wkupepr_v1_tt<name, baseaddress, offset>;
+
+  template <std::uint32_t baseaddress>
+  using pwr_t =
+    groov::group<"pwr",
+                 groov::mmio_bus<>,
+                 pwr_cr1_tt<"pwr_cr1", baseaddress, 0x0>,
+                 pwr_csr1_tt<"pwr_csr1", baseaddress, 0x4>,
+                 pwr_cr2_tt<"pwr_cr2", baseaddress, 0x8>,
+                 pwr_cr3_tt<"pwr_cr3", baseaddress, 0xc>,
+                 pwr_cpucr_tt<"pwr_cpucr", baseaddress, 0x10>,
+                 pwr_d3cr_tt<"pwr_d3cr", baseaddress, 0x18>,
+                 pwr_wkupcr_tt<"pwr_wkupcr", baseaddress, 0x20>,
+                 pwr_wkupfr_tt<"pwr_wkupfr", baseaddress, 0x24>,
+                 pwr_wkupepr_tt<"pwr_wkupepr", baseaddress, 0x28>>;
+
+} // namespace pwr

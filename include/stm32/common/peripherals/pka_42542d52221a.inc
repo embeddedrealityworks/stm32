@@ -1,0 +1,24 @@
+
+namespace pka {
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using pka_cr_tt = regs::pka_pka_cr_v4_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using pka_sr_tt = regs::pka_pka_sr_v5_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using pka_clrfr_tt = regs::pka_pka_clrfr_v5_tt<name, baseaddress, offset>;
+
+  template <std::uint32_t baseaddress>
+  using pka_t =
+    groov::group<"pka",
+                 groov::mmio_bus<>,
+                 pka_cr_tt<"pka_cr", baseaddress, 0x0>,
+                 pka_sr_tt<"pka_sr", baseaddress, 0x4>,
+                 pka_clrfr_tt<"pka_clrfr", baseaddress, 0x8>>;
+
+} // namespace pka

@@ -1,0 +1,39 @@
+
+namespace pka {
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using cr_tt = regs::pka_cr_v2_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using sr_tt = regs::pka_pka_sr_v4_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using clrfr_tt = regs::pka_clrfr_v2_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using verr_tt = regs::iwdg_verr_v1_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using ipidr_tt = regs::dmamux_dmamux_ipidr_v1_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using sidr_tt = regs::iwdg_sidr_v1_tt<name, baseaddress, offset>;
+
+  template <std::uint32_t baseaddress>
+  using pka_t =
+    groov::group<"pka",
+                 groov::mmio_bus<>,
+                 cr_tt<"cr", baseaddress, 0x0>,
+                 sr_tt<"sr", baseaddress, 0x4>,
+                 clrfr_tt<"clrfr", baseaddress, 0x8>,
+                 verr_tt<"verr", baseaddress, 0x1ff4>,
+                 ipidr_tt<"ipidr", baseaddress, 0x1ff8>,
+                 sidr_tt<"sidr", baseaddress, 0x1ffc>>;
+
+} // namespace pka

@@ -1,0 +1,84 @@
+
+namespace tim9_s {
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using tim9_cr1_tt = regs::tim_tim16_cr1_v1_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using tim9_cr2_tt = regs::tim_tim9_cr2_v1_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using tim9_smcr_tt = regs::tim15_tim15_smcr_v1_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using tim9_dier_tt = regs::tim_tim12_dier_v1_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using tim9_sr_tt = regs::tim_tim12_sr_v1_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using tim9_egr_tt = regs::tim_tim12_egr_v1_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using tim9_ccmr1_input_tt = regs::tim_tim1_ccmr1_input_v1_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using tim9_ccmr1_output_tt = regs::tim15_tim15_ccmr1_alternate1_v1_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using tim9_ccer_tt = regs::tim_tim12_ccer_v1_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using tim9_cnt_tt = regs::tim_tim3_cnt_alternate_v1_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using tim9_psc_tt = regs::tim_tim1_psc_v1_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using tim9_arr_tt = regs::tim_tim1_arr_v2_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using tim9_ccr1_tt = regs::tim_tim1_ccr1_v2_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using tim9_ccr2_tt = regs::tim_tim1_ccr2_v2_tt<name, baseaddress, offset>;
+  template <stdx::ct_string name,
+            std::uint32_t   baseaddress,
+            std::uint32_t   offset>
+  using tim9_tisel_tt = regs::tim15_tim15_tisel_v1_tt<name, baseaddress, offset>;
+
+  template <std::uint32_t baseaddress>
+  using tim9_s_t =
+    groov::group<"tim9_s",
+                 groov::mmio_bus<>,
+                 tim9_cr1_tt<"tim9_cr1", baseaddress, 0x0>,
+                 tim9_cr2_tt<"tim9_cr2", baseaddress, 0x4>,
+                 tim9_smcr_tt<"tim9_smcr", baseaddress, 0x8>,
+                 tim9_dier_tt<"tim9_dier", baseaddress, 0xc>,
+                 tim9_sr_tt<"tim9_sr", baseaddress, 0x10>,
+                 tim9_egr_tt<"tim9_egr", baseaddress, 0x14>,
+                 tim9_ccmr1_input_tt<"tim9_ccmr1_input", baseaddress, 0x18>,
+                 tim9_ccmr1_output_tt<"tim9_ccmr1_output", baseaddress, 0x18>,
+                 tim9_ccer_tt<"tim9_ccer", baseaddress, 0x20>,
+                 tim9_cnt_tt<"tim9_cnt", baseaddress, 0x24>,
+                 tim9_psc_tt<"tim9_psc", baseaddress, 0x28>,
+                 tim9_arr_tt<"tim9_arr", baseaddress, 0x2c>,
+                 tim9_ccr1_tt<"tim9_ccr1", baseaddress, 0x34>,
+                 tim9_ccr2_tt<"tim9_ccr2", baseaddress, 0x38>,
+                 tim9_tisel_tt<"tim9_tisel", baseaddress, 0x5c>>;
+
+} // namespace tim9_s

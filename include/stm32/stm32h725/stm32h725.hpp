@@ -56,6 +56,7 @@
 #include "peripherals/wwdg.hpp"
 
 #include "peripherals/addresses.hpp"
+#include "../common/core/cm7.hpp"
 
 namespace mcu::stm32 {
 

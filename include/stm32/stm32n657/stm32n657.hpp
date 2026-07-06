@@ -94,6 +94,7 @@
 #include "peripherals/xspim.hpp"
 
 #include "peripherals/addresses.hpp"
+#include "../common/core/cm55.hpp"
 
 namespace mcu::stm32 {
 
