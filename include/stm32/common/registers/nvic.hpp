@@ -5,7 +5,7 @@
 #include "../access.hpp"
 #include "../bittypes.hpp"
 
-namespace mcu::stm32::regs {
+namespace erworks::stm32::regs {
 
 // nvic_iabr0_v1: IABR0
 template <stdx::ct_string name,
@@ -344,4 +344,4 @@ using nvic_stir_v1_tt =
                groov::field<"reserved0", std::uint32_t, 31, 9, common::access::ro>,
                groov::field<"intid", std::uint16_t, 8, 0>>;
 
-} // namespace mcu::stm32::regs
+} // namespace erworks::stm32::regs

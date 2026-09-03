@@ -2,6 +2,6 @@
 #pragma once
 #include <groov/groov.hpp>
 #include "../../../common/registers/adavancetim.hpp"
-namespace mcu::stm32::stm32wl5x_cm0p {
+namespace erworks::stm32::stm32wl5x_cm0p {
 #include "../../../common/peripherals/adavancetim_d41ea6ef9da2.inc"
-} // namespace mcu::stm32::stm32wl5x_cm0p
+} // namespace erworks::stm32::stm32wl5x_cm0p

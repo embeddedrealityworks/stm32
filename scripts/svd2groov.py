@@ -640,7 +640,7 @@ def generate_register_header(templates: list[RegisterTemplate]) -> str:
     lines.append('#include "../access.hpp"')
     lines.append('#include "../bittypes.hpp"')
     lines.append('')
-    lines.append('namespace mcu::stm32::regs {')
+    lines.append('namespace erworks::stm32::regs {')
 
     for tmpl in templates:
         lines.append('')
@@ -666,7 +666,7 @@ def generate_register_header(templates: list[RegisterTemplate]) -> str:
             lines.append(line)
 
     lines.append('')
-    lines.append('} // namespace mcu::stm32::regs')
+    lines.append('} // namespace erworks::stm32::regs')
     lines.append('')
     return '\n'.join(lines)
 
@@ -813,11 +813,11 @@ def generate_peripheral_files(
         '#pragma once',
         '#include <groov/groov.hpp>',
         f'#include "../../../common/registers/{ptype}.hpp"',
-        f'namespace mcu::stm32::{mcu} {{',
+        f'namespace erworks::stm32::{mcu} {{',
         # ponytail: #include inside namespace — valid C++, wraps shared body
         # in this MCU's namespace without duplicating content per MCU.
         f'#include "../../../common/peripherals/{inc_filename}"',  # NOLINT
-        f'}} // namespace mcu::stm32::{mcu}',
+        f'}} // namespace erworks::stm32::{mcu}',
         '',
     ]
     return '\n'.join(lines)
@@ -838,7 +838,7 @@ def generate_addresses_header(
     lines.append('')
     lines.append('#include <cstdint>')
     lines.append('')
-    lines.append(f'namespace mcu::stm32::{mcu} {{')
+    lines.append(f'namespace erworks::stm32::{mcu} {{')
 
     for p in sorted(peripherals, key=lambda p: p.name.lower()):
         p_lower = p.name.lower()
@@ -850,7 +850,7 @@ def generate_addresses_header(
             f'}} // namespace {p_lower}')
 
     lines.append('')
-    lines.append(f'}} // namespace mcu::stm32::{mcu}')
+    lines.append(f'}} // namespace erworks::stm32::{mcu}')
     lines.append('')
     return '\n'.join(lines)
 
@@ -880,7 +880,7 @@ def generate_aggregate(
     if cpu_variant:
         lines.append(f'#include "../../common/core/{cpu_variant}.hpp"')
     lines.append('')
-    lines.append('namespace mcu::stm32 {')
+    lines.append('namespace erworks::stm32 {')
 
     for p in sorted(peripherals, key=lambda p: p.name.lower()):
         p_lower = p.name.lower()
@@ -900,7 +900,7 @@ def generate_aggregate(
                 f'{mcu}::{p_lower}::{p_upper}_BASE>{{}};')
 
     lines.append('')
-    lines.append('} // namespace mcu::stm32')
+    lines.append('} // namespace erworks::stm32')
     lines.append('')
     return '\n'.join(lines)
 

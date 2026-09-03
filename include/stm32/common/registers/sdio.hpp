@@ -5,7 +5,7 @@
 #include "../access.hpp"
 #include "../bittypes.hpp"
 
-namespace mcu::stm32::regs {
+namespace erworks::stm32::regs {
 
 // sdio_arg_v1: ARG
 template <stdx::ct_string name,
@@ -375,4 +375,4 @@ using sdio_sta_v1_tt =
                groov::field<"dcrcfail", bool, 1, 1>,
                groov::field<"ccrcfail", bool, 0, 0>>;
 
-} // namespace mcu::stm32::regs
+} // namespace erworks::stm32::regs

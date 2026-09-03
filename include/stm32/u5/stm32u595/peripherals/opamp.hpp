@@ -2,6 +2,6 @@
 #pragma once
 #include <groov/groov.hpp>
 #include "../../../common/registers/opamp.hpp"
-namespace mcu::stm32::stm32u595 {
+namespace erworks::stm32::stm32u595 {
 #include "../../../common/peripherals/opamp_c1db2c625857.inc"
-} // namespace mcu::stm32::stm32u595
+} // namespace erworks::stm32::stm32u595

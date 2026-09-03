@@ -5,7 +5,7 @@
 #include "../access.hpp"
 #include "../bittypes.hpp"
 
-namespace mcu::stm32::regs {
+namespace erworks::stm32::regs {
 
 // ramcfg_m1cr_v1: M1CR
 template <stdx::ct_string name,
@@ -987,4 +987,4 @@ using ramcfg_ramecc_m1sr_v1_tt =
                groov::field<"dedf", bool, 1, 1>,
                groov::field<"sedcf", bool, 0, 0>>;
 
-} // namespace mcu::stm32::regs
+} // namespace erworks::stm32::regs

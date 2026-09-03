@@ -5,7 +5,7 @@
 #include "../access.hpp"
 #include "../bittypes.hpp"
 
-namespace mcu::stm32::regs {
+namespace erworks::stm32::regs {
 
 // otfdec_cr_v1: CR
 template <stdx::ct_string name,
@@ -593,4 +593,4 @@ using otfdec_r4startaddr_v1_tt =
              common::access::rw,
                groov::field<"reg4_start_addr", std::uint32_t, 31, 0>>;
 
-} // namespace mcu::stm32::regs
+} // namespace erworks::stm32::regs

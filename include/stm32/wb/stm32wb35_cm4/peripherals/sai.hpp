@@ -2,6 +2,6 @@
 #pragma once
 #include <groov/groov.hpp>
 #include "../../../common/registers/sai.hpp"
-namespace mcu::stm32::stm32wb35_cm4 {
+namespace erworks::stm32::stm32wb35_cm4 {
 #include "../../../common/peripherals/sai_e445d90f6ffd.inc"
-} // namespace mcu::stm32::stm32wb35_cm4
+} // namespace erworks::stm32::stm32wb35_cm4

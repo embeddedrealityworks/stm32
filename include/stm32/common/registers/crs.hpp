@@ -5,7 +5,7 @@
 #include "../access.hpp"
 #include "../bittypes.hpp"
 
-namespace mcu::stm32::regs {
+namespace erworks::stm32::regs {
 
 // crs_cfgr_v1: CFGR
 template <stdx::ct_string name,
@@ -234,4 +234,4 @@ using crs_isr_v1_tt =
                groov::field<"syncwarnf", bool, 1, 1>,
                groov::field<"syncokf", bool, 0, 0>>;
 
-} // namespace mcu::stm32::regs
+} // namespace erworks::stm32::regs

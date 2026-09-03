@@ -5,7 +5,7 @@
 #include "../access.hpp"
 #include "../bittypes.hpp"
 
-namespace mcu::stm32::regs {
+namespace erworks::stm32::regs {
 
 // dbgmcu_ahb1fzr_v1: AHB1FZR
 template <stdx::ct_string name,
@@ -2273,4 +2273,4 @@ using dbgmcu_sr_v1_tt =
                groov::field<"ap_locked", std::uint8_t, 15, 8>,
                groov::field<"ap_present", std::uint8_t, 7, 0>>;
 
-} // namespace mcu::stm32::regs
+} // namespace erworks::stm32::regs

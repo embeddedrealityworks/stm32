@@ -5,7 +5,7 @@
 #include "../access.hpp"
 #include "../bittypes.hpp"
 
-namespace mcu::stm32::regs {
+namespace erworks::stm32::regs {
 
 // trng_trng_cr_v1: TRNG_CR
 template <stdx::ct_string name,
@@ -254,4 +254,4 @@ using trng_trng_val_v1_tt =
              common::access::ro,
                groov::field<"rnd_val", std::uint32_t, 31, 0>>;
 
-} // namespace mcu::stm32::regs
+} // namespace erworks::stm32::regs

@@ -2,6 +2,6 @@
 #pragma once
 #include <groov/groov.hpp>
 #include "../../../common/registers/lcd.hpp"
-namespace mcu::stm32::stm32l0x3 {
+namespace erworks::stm32::stm32l0x3 {
 #include "../../../common/peripherals/lcd_e5bad5149b76.inc"
-} // namespace mcu::stm32::stm32l0x3
+} // namespace erworks::stm32::stm32l0x3

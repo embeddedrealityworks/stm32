@@ -5,7 +5,7 @@
 #include "../access.hpp"
 #include "../bittypes.hpp"
 
-namespace mcu::stm32::regs {
+namespace erworks::stm32::regs {
 
 // bdma_bdma_ccr0_v1: BDMA_CCR0
 template <stdx::ct_string name,
@@ -183,4 +183,4 @@ using bdma_ifcr_v1_tt =
                groov::field<"ctcif1", bool, 1, 1>,
                groov::field<"cgif1", bool, 0, 0>>;
 
-} // namespace mcu::stm32::regs
+} // namespace erworks::stm32::regs

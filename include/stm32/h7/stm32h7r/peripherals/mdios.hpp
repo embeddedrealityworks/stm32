@@ -2,6 +2,6 @@
 #pragma once
 #include <groov/groov.hpp>
 #include "../../../common/registers/mdios.hpp"
-namespace mcu::stm32::stm32h7r {
+namespace erworks::stm32::stm32h7r {
 #include "../../../common/peripherals/mdios_99d047f14e7f.inc"
-} // namespace mcu::stm32::stm32h7r
+} // namespace erworks::stm32::stm32h7r

@@ -2,6 +2,6 @@
 #pragma once
 #include <groov/groov.hpp>
 #include "../../../common/registers/usb.hpp"
-namespace mcu::stm32::stm32u073 {
+namespace erworks::stm32::stm32u073 {
 #include "../../../common/peripherals/usb_5671a0f121ee.inc"
-} // namespace mcu::stm32::stm32u073
+} // namespace erworks::stm32::stm32u073

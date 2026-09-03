@@ -5,7 +5,7 @@
 #include "../access.hpp"
 #include "../bittypes.hpp"
 
-namespace mcu::stm32::regs {
+namespace erworks::stm32::regs {
 
 // hdp_hdp_gpoclr_v1: HDP_GPOCLR
 template <stdx::ct_string name,
@@ -73,4 +73,4 @@ using hdp_hdp_val_v1_tt =
                groov::field<"reserved0", std::uint32_t, 31, 8, common::access::ro>,
                groov::field<"hdpval", std::uint8_t, 7, 0, common::access::ro>>;
 
-} // namespace mcu::stm32::regs
+} // namespace erworks::stm32::regs

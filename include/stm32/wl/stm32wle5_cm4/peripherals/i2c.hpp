@@ -2,6 +2,6 @@
 #pragma once
 #include <groov/groov.hpp>
 #include "../../../common/registers/i2c.hpp"
-namespace mcu::stm32::stm32wle5_cm4 {
+namespace erworks::stm32::stm32wle5_cm4 {
 #include "../../../common/peripherals/i2c_93522aee0588.inc"
-} // namespace mcu::stm32::stm32wle5_cm4
+} // namespace erworks::stm32::stm32wle5_cm4

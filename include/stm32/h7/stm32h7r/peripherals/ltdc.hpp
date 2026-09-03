@@ -2,6 +2,6 @@
 #pragma once
 #include <groov/groov.hpp>
 #include "../../../common/registers/ltdc.hpp"
-namespace mcu::stm32::stm32h7r {
+namespace erworks::stm32::stm32h7r {
 #include "../../../common/peripherals/ltdc_d1915a47f9d4.inc"
-} // namespace mcu::stm32::stm32h7r
+} // namespace erworks::stm32::stm32h7r

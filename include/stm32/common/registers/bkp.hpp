@@ -5,7 +5,7 @@
 #include "../access.hpp"
 #include "../bittypes.hpp"
 
-namespace mcu::stm32::regs {
+namespace erworks::stm32::regs {
 
 // bkp_cr_v1: CR
 template <stdx::ct_string name,
@@ -556,4 +556,4 @@ using bkp_rtccr_v1_tt =
                groov::field<"cco", bool, 7, 7>,
                groov::field<"cal", std::uint8_t, 6, 0>>;
 
-} // namespace mcu::stm32::regs
+} // namespace erworks::stm32::regs

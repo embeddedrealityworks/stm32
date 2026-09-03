@@ -2,6 +2,6 @@
 #pragma once
 #include <groov/groov.hpp>
 #include "../../../common/registers/dcache.hpp"
-namespace mcu::stm32::stm32h562 {
+namespace erworks::stm32::stm32h562 {
 #include "../../../common/peripherals/dcache_eaf28e5b221c.inc"
-} // namespace mcu::stm32::stm32h562
+} // namespace erworks::stm32::stm32h562

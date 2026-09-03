@@ -2,6 +2,6 @@
 #pragma once
 #include <groov/groov.hpp>
 #include "../../../common/registers/dma2d.hpp"
-namespace mcu::stm32::stm32l4r5 {
+namespace erworks::stm32::stm32l4r5 {
 #include "../../../common/peripherals/dma2d_f5c179e88597.inc"
-} // namespace mcu::stm32::stm32l4r5
+} // namespace erworks::stm32::stm32l4r5

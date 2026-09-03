@@ -92,7 +92,7 @@
 #include "peripherals/addresses.hpp"
 #include "../../common/core/cm55.hpp"
 
-namespace mcu::stm32 {
+namespace erworks::stm32 {
 
 constexpr auto adc1 = stm32n647::adcx::adcx_t<"adc1",stm32n647::adc1::ADC1_BASE>{};
 
@@ -562,4 +562,4 @@ constexpr auto xspim = stm32n647::xspimx::xspimx_t<"xspim",stm32n647::xspim::XSP
 
 constexpr auto xspim_s = stm32n647::xspimx::xspimx_t<"xspim_s",stm32n647::xspim_s::XSPIM_S_BASE>{};
 
-} // namespace mcu::stm32
+} // namespace erworks::stm32

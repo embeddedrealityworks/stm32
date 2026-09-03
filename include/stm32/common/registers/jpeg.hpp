@@ -5,7 +5,7 @@
 #include "../access.hpp"
 #include "../bittypes.hpp"
 
-namespace mcu::stm32::regs {
+namespace erworks::stm32::regs {
 
 // jpeg_cfr_v1: CFR
 template <stdx::ct_string name,
@@ -4034,4 +4034,4 @@ using jpeg_qmem0_0_v1_tt =
              common::access::rw,
                groov::field<"qmem_ram", std::uint32_t, 31, 0>>;
 
-} // namespace mcu::stm32::regs
+} // namespace erworks::stm32::regs

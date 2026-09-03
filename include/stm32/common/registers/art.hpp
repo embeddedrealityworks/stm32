@@ -5,7 +5,7 @@
 #include "../access.hpp"
 #include "../bittypes.hpp"
 
-namespace mcu::stm32::regs {
+namespace erworks::stm32::regs {
 
 // art_ctr_v1: CTR
 template <stdx::ct_string name,
@@ -21,4 +21,4 @@ using art_ctr_v1_tt =
                groov::field<"reserved0", std::uint8_t, 7, 1, common::access::ro>,
                groov::field<"en", common::bit_enable, 0, 0>>;
 
-} // namespace mcu::stm32::regs
+} // namespace erworks::stm32::regs

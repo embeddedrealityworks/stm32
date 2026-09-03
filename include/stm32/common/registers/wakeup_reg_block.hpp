@@ -5,7 +5,7 @@
 #include "../access.hpp"
 #include "../bittypes.hpp"
 
-namespace mcu::stm32::regs {
+namespace erworks::stm32::regs {
 
 // wakeup_reg_block_absolute_time_v1: ABSOLUTE_TIME
 template <stdx::ct_string name,
@@ -132,4 +132,4 @@ using wakeup_reg_block_wakeup_offset_v1_tt =
                groov::field<"reserved0", std::uint32_t, 31, 8, common::access::ro>,
                groov::field<"wakeup_offset", std::uint8_t, 7, 0>>;
 
-} // namespace mcu::stm32::regs
+} // namespace erworks::stm32::regs

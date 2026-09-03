@@ -4,7 +4,7 @@
 #include "../../access.hpp"
 #include "../../bittypes.hpp"
 
-namespace mcu::core {
+namespace erworks::stm32::core {
 namespace scb {
 
 template <stdx::ct_string name,
@@ -525,4 +525,4 @@ using scb_t =
 inline constexpr std::uint32_t SCB_BASE = 0xE000ED00U;
 
 } // namespace scb
-} // namespace mcu::core
+} // namespace erworks::stm32::core

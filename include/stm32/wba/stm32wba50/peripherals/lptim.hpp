@@ -2,6 +2,6 @@
 #pragma once
 #include <groov/groov.hpp>
 #include "../../../common/registers/lptim.hpp"
-namespace mcu::stm32::stm32wba50 {
+namespace erworks::stm32::stm32wba50 {
 #include "../../../common/peripherals/lptim_55a0724d561e.inc"
-} // namespace mcu::stm32::stm32wba50
+} // namespace erworks::stm32::stm32wba50

@@ -2,6 +2,6 @@
 #pragma once
 #include <groov/groov.hpp>
 #include "../../../common/registers/icache.hpp"
-namespace mcu::stm32::stm32l562 {
+namespace erworks::stm32::stm32l562 {
 #include "../../../common/peripherals/icache_b528d3ef12a9.inc"
-} // namespace mcu::stm32::stm32l562
+} // namespace erworks::stm32::stm32l562

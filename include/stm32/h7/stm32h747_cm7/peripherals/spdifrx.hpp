@@ -2,6 +2,6 @@
 #pragma once
 #include <groov/groov.hpp>
 #include "../../../common/registers/spdifrx.hpp"
-namespace mcu::stm32::stm32h747_cm7 {
+namespace erworks::stm32::stm32h747_cm7 {
 #include "../../../common/peripherals/spdifrx_7dc53252a444.inc"
-} // namespace mcu::stm32::stm32h747_cm7
+} // namespace erworks::stm32::stm32h747_cm7

@@ -5,7 +5,7 @@
 #include "../access.hpp"
 #include "../bittypes.hpp"
 
-namespace mcu::stm32::regs {
+namespace erworks::stm32::regs {
 
 // hspi_hspi_cr_v1: HSPI_CR
 template <stdx::ct_string name,
@@ -37,4 +37,4 @@ using hspi_hspi_cr_v1_tt =
                groov::field<"abort", bool, 1, 1>,
                groov::field<"en", common::bit_enable, 0, 0>>;
 
-} // namespace mcu::stm32::regs
+} // namespace erworks::stm32::regs

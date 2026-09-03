@@ -5,7 +5,7 @@
 #include "../access.hpp"
 #include "../bittypes.hpp"
 
-namespace mcu::stm32::regs {
+namespace erworks::stm32::regs {
 
 // lpgpio_lpgpio_brr_v1: LPGPIO_BRR
 template <stdx::ct_string name,
@@ -142,4 +142,4 @@ using lpgpio_lpgpio_odr_v1_tt =
                groov::field<"ody1", bool, 1, 1>,
                groov::field<"ody0", bool, 0, 0>>;
 
-} // namespace mcu::stm32::regs
+} // namespace erworks::stm32::regs

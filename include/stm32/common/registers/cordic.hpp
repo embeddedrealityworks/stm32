@@ -5,7 +5,7 @@
 #include "../access.hpp"
 #include "../bittypes.hpp"
 
-namespace mcu::stm32::regs {
+namespace erworks::stm32::regs {
 
 // cordic_cordic_csr_v1: CORDIC_CSR
 template <stdx::ct_string name,
@@ -130,4 +130,4 @@ using cordic_wdata_v2_tt =
              common::access::wo,
                groov::field<"arg", std::uint32_t, 31, 0>>;
 
-} // namespace mcu::stm32::regs
+} // namespace erworks::stm32::regs

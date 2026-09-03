@@ -5,7 +5,7 @@
 #include "../access.hpp"
 #include "../bittypes.hpp"
 
-namespace mcu::stm32::regs {
+namespace erworks::stm32::regs {
 
 // pwr_c2cr1_v1: C2CR1
 template <stdx::ct_string name,
@@ -6553,4 +6553,4 @@ using pwr_wkupfr_v1_tt =
                groov::field<"wkupf2", bool, 1, 1>,
                groov::field<"wkupf1", bool, 0, 0>>;
 
-} // namespace mcu::stm32::regs
+} // namespace erworks::stm32::regs

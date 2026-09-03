@@ -2,6 +2,6 @@
 #pragma once
 #include <groov/groov.hpp>
 #include "../../../common/registers/sdio.hpp"
-namespace mcu::stm32::stm32l4r9 {
+namespace erworks::stm32::stm32l4r9 {
 #include "../../../common/peripherals/sdio_b349e8021db7.inc"
-} // namespace mcu::stm32::stm32l4r9
+} // namespace erworks::stm32::stm32l4r9

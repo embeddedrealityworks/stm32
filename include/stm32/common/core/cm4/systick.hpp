@@ -4,7 +4,7 @@
 #include "../../access.hpp"
 #include "../../bittypes.hpp"
 
-namespace mcu::core {
+namespace erworks::stm32::core {
 namespace systick {
 
 template <stdx::ct_string name,
@@ -64,4 +64,4 @@ using systick_t =
 inline constexpr std::uint32_t SYSTICK_BASE = 0xE000E010U;
 
 } // namespace systick
-} // namespace mcu::core
+} // namespace erworks::stm32::core

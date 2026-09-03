@@ -5,7 +5,7 @@
 #include "../access.hpp"
 #include "../bittypes.hpp"
 
-namespace mcu::stm32::regs {
+namespace erworks::stm32::regs {
 
 // adf_adf_bsmx0cr_v1: ADF_BSMX0CR
 template <stdx::ct_string name,
@@ -558,4 +558,4 @@ using adf_adf_trgisel_v1_tt =
                groov::field<"reserved0", std::uint32_t, 31, 2, common::access::ro>,
                groov::field<"trgisel", std::uint8_t, 1, 0>>;
 
-} // namespace mcu::stm32::regs
+} // namespace erworks::stm32::regs

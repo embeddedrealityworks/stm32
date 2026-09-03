@@ -6,8 +6,8 @@
 #include "cm0p/mpu.hpp"
 
 // Cortex-CM0P core peripheral instances
-namespace mcu::core {
+namespace erworks::stm32::core {
 inline constexpr auto systick = systick::systick_t<systick::SYSTICK_BASE>{};
 inline constexpr auto scb = scb::scb_t<scb::SCB_BASE>{};
 inline constexpr auto mpu = mpu::mpu_t<mpu::MPU_BASE>{};
-} // namespace mcu::core
+} // namespace erworks::stm32::core

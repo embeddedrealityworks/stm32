@@ -2,6 +2,6 @@
 #pragma once
 #include <groov/groov.hpp>
 #include "../../../common/registers/flash.hpp"
-namespace mcu::stm32::stm32f479 {
+namespace erworks::stm32::stm32f479 {
 #include "../../../common/peripherals/flash_5f85c97244d4.inc"
-} // namespace mcu::stm32::stm32f479
+} // namespace erworks::stm32::stm32f479

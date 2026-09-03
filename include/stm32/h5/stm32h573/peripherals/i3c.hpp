@@ -2,6 +2,6 @@
 #pragma once
 #include <groov/groov.hpp>
 #include "../../../common/registers/i3c.hpp"
-namespace mcu::stm32::stm32h573 {
+namespace erworks::stm32::stm32h573 {
 #include "../../../common/peripherals/i3c_20db5a95a5de.inc"
-} // namespace mcu::stm32::stm32h573
+} // namespace erworks::stm32::stm32h573

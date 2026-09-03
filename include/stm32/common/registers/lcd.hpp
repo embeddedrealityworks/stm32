@@ -5,7 +5,7 @@
 #include "../access.hpp"
 #include "../bittypes.hpp"
 
-namespace mcu::stm32::regs {
+namespace erworks::stm32::regs {
 
 // lcd_clr_v1: CLR
 template <stdx::ct_string name,
@@ -376,4 +376,4 @@ using lcd_sr_v2_tt =
                groov::field<"sof", bool, 1, 1, common::access::ro>,
                groov::field<"ens", bool, 0, 0, common::access::ro>>;
 
-} // namespace mcu::stm32::regs
+} // namespace erworks::stm32::regs

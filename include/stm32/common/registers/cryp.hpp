@@ -5,7 +5,7 @@
 #include "../access.hpp"
 #include "../bittypes.hpp"
 
-namespace mcu::stm32::regs {
+namespace erworks::stm32::regs {
 
 // cryp_cr_v1: CR
 template <stdx::ct_string name,
@@ -2067,4 +2067,4 @@ using cryp_susp7r_v1_tt =
              common::access::rw,
                groov::field<"susp7r", std::uint32_t, 31, 0>>;
 
-} // namespace mcu::stm32::regs
+} // namespace erworks::stm32::regs

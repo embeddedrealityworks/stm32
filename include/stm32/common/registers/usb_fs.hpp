@@ -5,7 +5,7 @@
 #include "../access.hpp"
 #include "../bittypes.hpp"
 
-namespace mcu::stm32::regs {
+namespace erworks::stm32::regs {
 
 // usb_fs_daddr_v1: DADDR
 template <stdx::ct_string name,
@@ -69,4 +69,4 @@ using usb_fs_usb_ep0r_v1_tt =
                groov::field<"stat_tx", std::uint8_t, 5, 4>,
                groov::field<"ea", std::uint8_t, 3, 0>>;
 
-} // namespace mcu::stm32::regs
+} // namespace erworks::stm32::regs

@@ -5,7 +5,7 @@
 #include "../access.hpp"
 #include "../bittypes.hpp"
 
-namespace mcu::stm32::regs {
+namespace erworks::stm32::regs {
 
 // mdma_mdma_c0bndtr_v1: MDMA_C0BNDTR
 template <stdx::ct_string name,
@@ -740,4 +740,4 @@ using mdma_mdma_gisr0_v1_tt =
                groov::field<"gif1", bool, 1, 1>,
                groov::field<"gif0", bool, 0, 0>>;
 
-} // namespace mcu::stm32::regs
+} // namespace erworks::stm32::regs

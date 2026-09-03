@@ -5,7 +5,7 @@
 #include "../access.hpp"
 #include "../bittypes.hpp"
 
-namespace mcu::stm32::regs {
+namespace erworks::stm32::regs {
 
 // crc_cr_v1: CR
 template <stdx::ct_string name,
@@ -280,4 +280,4 @@ using crc_pol_v2_tt =
              common::access::rw,
                groov::field<"polynomialcoefficients", std::uint32_t, 31, 0>>;
 
-} // namespace mcu::stm32::regs
+} // namespace erworks::stm32::regs

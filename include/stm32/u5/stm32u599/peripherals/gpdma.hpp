@@ -2,6 +2,6 @@
 #pragma once
 #include <groov/groov.hpp>
 #include "../../../common/registers/gpdma.hpp"
-namespace mcu::stm32::stm32u599 {
+namespace erworks::stm32::stm32u599 {
 #include "../../../common/peripherals/gpdma_a9e1d0bd287e.inc"
-} // namespace mcu::stm32::stm32u599
+} // namespace erworks::stm32::stm32u599

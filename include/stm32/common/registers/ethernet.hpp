@@ -5,7 +5,7 @@
 #include "../access.hpp"
 #include "../bittypes.hpp"
 
-namespace mcu::stm32::regs {
+namespace erworks::stm32::regs {
 
 // ethernet_dmabmr_v1: DMABMR
 template <stdx::ct_string name,
@@ -2935,4 +2935,4 @@ using ethernet_tx_single_collision_good_packets_v1_tt =
              common::access::ro,
                groov::field<"txsnglcolg", std::uint32_t, 31, 0>>;
 
-} // namespace mcu::stm32::regs
+} // namespace erworks::stm32::regs

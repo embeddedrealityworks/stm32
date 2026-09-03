@@ -5,7 +5,7 @@
 #include "../access.hpp"
 #include "../bittypes.hpp"
 
-namespace mcu::stm32::regs {
+namespace erworks::stm32::regs {
 
 // otg_hs_diepint6_v1: DIEPINT6
 template <stdx::ct_string name,
@@ -794,4 +794,4 @@ using otg_hs_otg_hptxsts_v1_tt =
                groov::field<"ptxqsav", std::uint8_t, 23, 16, common::access::ro>,
                groov::field<"ptxfsavl", std::uint16_t, 15, 0, common::access::ro>>;
 
-} // namespace mcu::stm32::regs
+} // namespace erworks::stm32::regs

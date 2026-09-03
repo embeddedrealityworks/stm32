@@ -5,7 +5,7 @@
 #include "../access.hpp"
 #include "../bittypes.hpp"
 
-namespace mcu::stm32::regs {
+namespace erworks::stm32::regs {
 
 // hpdma_hpdma_c0cidcfgr_v1: HPDMA_C0CIDCFGR
 template <stdx::ct_string name,
@@ -147,4 +147,4 @@ using hpdma_hpdma_c0tr2_v1_tt =
                groov::field<"reserved0", std::uint8_t, 8, 5, common::access::ro>,
                groov::field<"reqsel", std::uint8_t, 4, 0>>;
 
-} // namespace mcu::stm32::regs
+} // namespace erworks::stm32::regs

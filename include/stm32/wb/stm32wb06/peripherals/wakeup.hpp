@@ -2,6 +2,6 @@
 #pragma once
 #include <groov/groov.hpp>
 #include "../../../common/registers/wakeup.hpp"
-namespace mcu::stm32::stm32wb06 {
+namespace erworks::stm32::stm32wb06 {
 #include "../../../common/peripherals/wakeup_791e5d5cf4c1.inc"
-} // namespace mcu::stm32::stm32wb06
+} // namespace erworks::stm32::stm32wb06

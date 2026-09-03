@@ -2,6 +2,6 @@
 #pragma once
 #include <groov/groov.hpp>
 #include "../../../common/registers/crc.hpp"
-namespace mcu::stm32::stm32wba52 {
+namespace erworks::stm32::stm32wba52 {
 #include "../../../common/peripherals/crc_665dd8a57efa.inc"
-} // namespace mcu::stm32::stm32wba52
+} // namespace erworks::stm32::stm32wba52

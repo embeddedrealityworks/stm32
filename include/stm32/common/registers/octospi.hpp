@@ -5,7 +5,7 @@
 #include "../access.hpp"
 #include "../bittypes.hpp"
 
-namespace mcu::stm32::regs {
+namespace erworks::stm32::regs {
 
 // octospi_ar_v1: AR
 template <stdx::ct_string name,
@@ -857,4 +857,4 @@ using octospi_wtcr_v1_tt =
                groov::field<"reserved0", std::uint32_t, 31, 5, common::access::ro>,
                groov::field<"dcyc", std::uint8_t, 4, 0>>;
 
-} // namespace mcu::stm32::regs
+} // namespace erworks::stm32::regs

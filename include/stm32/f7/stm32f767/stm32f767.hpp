@@ -44,7 +44,7 @@
 #include "peripherals/addresses.hpp"
 #include "../../common/core/cm7.hpp"
 
-namespace mcu::stm32 {
+namespace erworks::stm32 {
 
 constexpr auto adc1 = stm32f767::adcx::adcx_t<"adc1",stm32f767::adc1::ADC1_BASE>{};
 
@@ -234,4 +234,4 @@ constexpr auto usart6 = stm32f767::usartx::usartx_t<"usart6",stm32f767::usart6::
 
 constexpr auto wwdg = stm32f767::wwdg::wwdg_t<stm32f767::wwdg::WWDG_BASE>{};
 
-} // namespace mcu::stm32
+} // namespace erworks::stm32

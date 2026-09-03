@@ -5,7 +5,7 @@
 #include "../access.hpp"
 #include "../bittypes.hpp"
 
-namespace mcu::stm32::regs {
+namespace erworks::stm32::regs {
 
 // gtzc_fcr1_v1: FCR1
 template <stdx::ct_string name,
@@ -8603,4 +8603,4 @@ using gtzc_tzsc_seccfgr3_v7_tt =
                groov::field<"cordicsec", bool, 1, 1>,
                groov::field<"mdf1sec", bool, 0, 0>>;
 
-} // namespace mcu::stm32::regs
+} // namespace erworks::stm32::regs

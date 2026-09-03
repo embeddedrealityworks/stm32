@@ -5,7 +5,7 @@
 #include "../access.hpp"
 #include "../bittypes.hpp"
 
-namespace mcu::stm32::regs {
+namespace erworks::stm32::regs {
 
 // hrtim_adc1r_v1: ADC1R
 template <stdx::ct_string name,
@@ -2991,4 +2991,4 @@ using hrtim_timfcr_v1_tt =
                groov::field<"cont", bool, 3, 3>,
                groov::field<"ck_pscx", std::uint8_t, 2, 0>>;
 
-} // namespace mcu::stm32::regs
+} // namespace erworks::stm32::regs

@@ -5,7 +5,7 @@
 #include "../access.hpp"
 #include "../bittypes.hpp"
 
-namespace mcu::stm32::regs {
+namespace erworks::stm32::regs {
 
 // dcmi_cr_v1: CR
 template <stdx::ct_string name,
@@ -500,4 +500,4 @@ using dcmi_sr_v1_tt =
                groov::field<"vsync", bool, 1, 1>,
                groov::field<"hsync", bool, 0, 0>>;
 
-} // namespace mcu::stm32::regs
+} // namespace erworks::stm32::regs

@@ -2,6 +2,6 @@
 #pragma once
 #include <groov/groov.hpp>
 #include "../../../common/registers/pssi.hpp"
-namespace mcu::stm32::stm32u599 {
+namespace erworks::stm32::stm32u599 {
 #include "../../../common/peripherals/pssi_da8f742fbdbd.inc"
-} // namespace mcu::stm32::stm32u599
+} // namespace erworks::stm32::stm32u599

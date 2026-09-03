@@ -5,7 +5,7 @@
 #include "../access.hpp"
 #include "../bittypes.hpp"
 
-namespace mcu::stm32::regs {
+namespace erworks::stm32::regs {
 
 // spdif_rx_cr_v1: CR
 template <stdx::ct_string name,
@@ -133,4 +133,4 @@ using spdif_rx_sr_v1_tt =
                groov::field<"csrne", bool, 1, 1>,
                groov::field<"rxne", bool, 0, 0>>;
 
-} // namespace mcu::stm32::regs
+} // namespace erworks::stm32::regs

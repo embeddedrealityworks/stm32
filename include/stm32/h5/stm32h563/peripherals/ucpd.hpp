@@ -2,6 +2,6 @@
 #pragma once
 #include <groov/groov.hpp>
 #include "../../../common/registers/ucpd.hpp"
-namespace mcu::stm32::stm32h563 {
+namespace erworks::stm32::stm32h563 {
 #include "../../../common/peripherals/ucpd_11b803a76956.inc"
-} // namespace mcu::stm32::stm32h563
+} // namespace erworks::stm32::stm32h563

@@ -2,6 +2,6 @@
 #pragma once
 #include <groov/groov.hpp>
 #include "../../../common/registers/otg_fs.hpp"
-namespace mcu::stm32::stm32u585 {
+namespace erworks::stm32::stm32u585 {
 #include "../../../common/peripherals/otg_fs_371bc7f27500.inc"
-} // namespace mcu::stm32::stm32u585
+} // namespace erworks::stm32::stm32u585

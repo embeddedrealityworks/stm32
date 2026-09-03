@@ -5,7 +5,7 @@
 #include "../access.hpp"
 #include "../bittypes.hpp"
 
-namespace mcu::stm32::regs {
+namespace erworks::stm32::regs {
 
 // rif_iac_icr0_v1: IAC_ICR0
 template <stdx::ct_string name,
@@ -973,4 +973,4 @@ using rif_iac_isr5_v1_tt =
                groov::field<"iaf161", bool, 1, 1, common::access::ro>,
                groov::field<"iaf160", bool, 0, 0, common::access::ro>>;
 
-} // namespace mcu::stm32::regs
+} // namespace erworks::stm32::regs

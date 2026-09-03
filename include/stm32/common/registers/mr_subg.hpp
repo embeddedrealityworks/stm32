@@ -5,7 +5,7 @@
 #include "../access.hpp"
 #include "../bittypes.hpp"
 
-namespace mcu::stm32::regs {
+namespace erworks::stm32::regs {
 
 // mr_subg_afc0_config_v1: AFC0_CONFIG
 template <stdx::ct_string name,
@@ -521,4 +521,4 @@ using mr_subg_synth2_ana_eng_v1_tt =
                groov::field<"rfd_pll_ld_win_acc", bool, 3, 3>,
                groov::field<"rfd_pll_vco_alc_amp", std::uint8_t, 2, 0>>;
 
-} // namespace mcu::stm32::regs
+} // namespace erworks::stm32::regs

@@ -5,7 +5,7 @@
 #include "../access.hpp"
 #include "../bittypes.hpp"
 
-namespace mcu::stm32::regs {
+namespace erworks::stm32::regs {
 
 // otg_fs_diepctl0_v1: DIEPCTL0
 template <stdx::ct_string name,
@@ -1412,4 +1412,4 @@ using otg_fs_otg_pcgcctl1_v1_tt =
                groov::field<"cntgateclk", std::uint8_t, 2, 1>,
                groov::field<"gateen", common::bit_enable, 0, 0>>;
 
-} // namespace mcu::stm32::regs
+} // namespace erworks::stm32::regs

@@ -5,7 +5,7 @@
 #include "../access.hpp"
 #include "../bittypes.hpp"
 
-namespace mcu::stm32::regs {
+namespace erworks::stm32::regs {
 
 // axi_axi_comp_id_0_v1: AXI_COMP_ID_0
 template <stdx::ct_string name,
@@ -171,4 +171,4 @@ using axi_axi_targ1_fn_mod_lb_v1_tt =
                groov::field<"reserved0", std::uint32_t, 31, 1, common::access::ro>,
                groov::field<"fn_mod_lb", bool, 0, 0>>;
 
-} // namespace mcu::stm32::regs
+} // namespace erworks::stm32::regs

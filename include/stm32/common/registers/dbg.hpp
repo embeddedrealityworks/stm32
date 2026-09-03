@@ -5,7 +5,7 @@
 #include "../access.hpp"
 #include "../bittypes.hpp"
 
-namespace mcu::stm32::regs {
+namespace erworks::stm32::regs {
 
 // dbg_apb_fz1_v1: APB_FZ1
 template <stdx::ct_string name,
@@ -946,4 +946,4 @@ using dbg_idcode_v2_tt =
                groov::field<"rev_id", std::uint16_t, 31, 16>,
                groov::field<"dev_id", std::uint16_t, 15, 0>>;
 
-} // namespace mcu::stm32::regs
+} // namespace erworks::stm32::regs

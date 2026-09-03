@@ -5,7 +5,7 @@
 #include "../access.hpp"
 #include "../bittypes.hpp"
 
-namespace mcu::stm32::regs {
+namespace erworks::stm32::regs {
 
 // tzsc_icr1_v1: ICR1
 template <stdx::ct_string name,
@@ -128,4 +128,4 @@ using tzsc_tzsc_seccfgr1_v1_tt =
                groov::field<"aessec", bool, 2, 2>,
                groov::field<"reserved0", std::uint8_t, 1, 0, common::access::ro>>;
 
-} // namespace mcu::stm32::regs
+} // namespace erworks::stm32::regs

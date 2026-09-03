@@ -2,6 +2,6 @@
 #pragma once
 #include <groov/groov.hpp>
 #include "../../../common/registers/firewall.hpp"
-namespace mcu::stm32::stm32l053 {
+namespace erworks::stm32::stm32l053 {
 #include "../../../common/peripherals/firewall_a523dcaec775.inc"
-} // namespace mcu::stm32::stm32l053
+} // namespace erworks::stm32::stm32l053

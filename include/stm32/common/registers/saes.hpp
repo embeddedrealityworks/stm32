@@ -5,7 +5,7 @@
 #include "../access.hpp"
 #include "../bittypes.hpp"
 
-namespace mcu::stm32::regs {
+namespace erworks::stm32::regs {
 
 // saes_cr_v1: CR
 template <stdx::ct_string name,
@@ -280,4 +280,4 @@ using saes_saes_sr_v1_tt =
                groov::field<"rderrf", bool, 1, 1, common::access::ro>,
                groov::field<"reserved0", bool, 0, 0, common::access::ro>>;
 
-} // namespace mcu::stm32::regs
+} // namespace erworks::stm32::regs

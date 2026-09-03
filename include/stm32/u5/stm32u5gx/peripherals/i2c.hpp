@@ -2,6 +2,6 @@
 #pragma once
 #include <groov/groov.hpp>
 #include "../../../common/registers/i2c.hpp"
-namespace mcu::stm32::stm32u5gx {
+namespace erworks::stm32::stm32u5gx {
 #include "../../../common/peripherals/i2c_1bbcc6fbbbd0.inc"
-} // namespace mcu::stm32::stm32u5gx
+} // namespace erworks::stm32::stm32u5gx

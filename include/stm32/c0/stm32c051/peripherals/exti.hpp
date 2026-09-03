@@ -2,6 +2,6 @@
 #pragma once
 #include <groov/groov.hpp>
 #include "../../../common/registers/exti.hpp"
-namespace mcu::stm32::stm32c051 {
+namespace erworks::stm32::stm32c051 {
 #include "../../../common/peripherals/exti_d3a720cef6b6.inc"
-} // namespace mcu::stm32::stm32c051
+} // namespace erworks::stm32::stm32c051

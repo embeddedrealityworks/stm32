@@ -2,6 +2,6 @@
 #pragma once
 #include <groov/groov.hpp>
 #include "../../../common/registers/iwdg.hpp"
-namespace mcu::stm32::stm32f777 {
+namespace erworks::stm32::stm32f777 {
 #include "../../../common/peripherals/iwdg_eb4e3e3b8cd1.inc"
-} // namespace mcu::stm32::stm32f777
+} // namespace erworks::stm32::stm32f777

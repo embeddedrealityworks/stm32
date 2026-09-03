@@ -5,7 +5,7 @@
 #include "../access.hpp"
 #include "../bittypes.hpp"
 
-namespace mcu::stm32::regs {
+namespace erworks::stm32::regs {
 
 // dcb_dscsr_v1: DSCSR
 template <stdx::ct_string name,
@@ -20,4 +20,4 @@ using dcb_dscsr_v1_tt =
                groov::field<"cds", bool, 16, 16>,
                groov::field<"reserved0", std::uint16_t, 15, 0, common::access::ro>>;
 
-} // namespace mcu::stm32::regs
+} // namespace erworks::stm32::regs

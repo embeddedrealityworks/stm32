@@ -5,7 +5,7 @@
 #include "../access.hpp"
 #include "../bittypes.hpp"
 
-namespace mcu::stm32::regs {
+namespace erworks::stm32::regs {
 
 // sai_aclrfr_v1: ACLRFR
 template <stdx::ct_string name,
@@ -871,4 +871,4 @@ using sai_sai_pdmdly_v1_tt =
                groov::field<"reserved0", bool, 3, 3, common::access::ro>,
                groov::field<"dlym1l", std::uint8_t, 2, 0>>;
 
-} // namespace mcu::stm32::regs
+} // namespace erworks::stm32::regs

@@ -5,7 +5,7 @@
 #include "../access.hpp"
 #include "../bittypes.hpp"
 
-namespace mcu::stm32::regs {
+namespace erworks::stm32::regs {
 
 // gfxtim_gfxtim_afcr_v1: GFXTIM_AFCR
 template <stdx::ct_string name,
@@ -515,4 +515,4 @@ using gfxtim_gfxtim_wdgtcr_v1_tt =
                groov::field<"wdgdis", common::bit_nenable, 1, 1, common::access::wo>,
                groov::field<"wdgen", common::bit_enable, 0, 0, common::access::wo>>;
 
-} // namespace mcu::stm32::regs
+} // namespace erworks::stm32::regs

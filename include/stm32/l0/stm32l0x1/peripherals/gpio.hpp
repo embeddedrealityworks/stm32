@@ -2,6 +2,6 @@
 #pragma once
 #include <groov/groov.hpp>
 #include "../../../common/registers/gpio.hpp"
-namespace mcu::stm32::stm32l0x1 {
+namespace erworks::stm32::stm32l0x1 {
 #include "../../../common/peripherals/gpio_c50cb50b2b23.inc"
-} // namespace mcu::stm32::stm32l0x1
+} // namespace erworks::stm32::stm32l0x1

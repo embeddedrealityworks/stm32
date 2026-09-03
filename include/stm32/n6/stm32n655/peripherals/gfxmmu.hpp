@@ -2,6 +2,6 @@
 #pragma once
 #include <groov/groov.hpp>
 #include "../../../common/registers/gfxmmu.hpp"
-namespace mcu::stm32::stm32n655 {
+namespace erworks::stm32::stm32n655 {
 #include "../../../common/peripherals/gfxmmu_5baadf81e2bd.inc"
-} // namespace mcu::stm32::stm32n655
+} // namespace erworks::stm32::stm32n655

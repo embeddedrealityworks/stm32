@@ -2,6 +2,6 @@
 #pragma once
 #include <groov/groov.hpp>
 #include "../../../common/registers/octospii_o_manager.hpp"
-namespace mcu::stm32::stm32h73x {
+namespace erworks::stm32::stm32h73x {
 #include "../../../common/peripherals/octospii_o_manager_0acf2735d85d.inc"
-} // namespace mcu::stm32::stm32h73x
+} // namespace erworks::stm32::stm32h73x

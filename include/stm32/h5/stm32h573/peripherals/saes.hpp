@@ -2,6 +2,6 @@
 #pragma once
 #include <groov/groov.hpp>
 #include "../../../common/registers/saes.hpp"
-namespace mcu::stm32::stm32h573 {
+namespace erworks::stm32::stm32h573 {
 #include "../../../common/peripherals/saes_43310d8c2691.inc"
-} // namespace mcu::stm32::stm32h573
+} // namespace erworks::stm32::stm32h573

@@ -5,7 +5,7 @@
 #include "../access.hpp"
 #include "../bittypes.hpp"
 
-namespace mcu::stm32::regs {
+namespace erworks::stm32::regs {
 
 // dts_dts_cfgr1_v1: DTS_CFGR1
 template <stdx::ct_string name,
@@ -629,4 +629,4 @@ using dts_dts_tsraw_isr_v1_tt =
                groov::field<"ts1_irq_raw_status", bool, 1, 1, common::access::ro>,
                groov::field<"ts0_irq_raw_status", bool, 0, 0, common::access::ro>>;
 
-} // namespace mcu::stm32::regs
+} // namespace erworks::stm32::regs

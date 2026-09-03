@@ -5,7 +5,7 @@
 #include "../access.hpp"
 #include "../bittypes.hpp"
 
-namespace mcu::stm32::regs {
+namespace erworks::stm32::regs {
 
 // retained_cpu_wakeuptime_v1: CPU_WAKEUPTIME
 template <stdx::ct_string name,
@@ -69,4 +69,4 @@ using retained_wakeup_ctrl_v1_tt =
                groov::field<"reserved0", std::uint32_t, 29, 8, common::access::ro>,
                groov::field<"soc_wakeup_offset", std::uint8_t, 7, 0>>;
 
-} // namespace mcu::stm32::regs
+} // namespace erworks::stm32::regs

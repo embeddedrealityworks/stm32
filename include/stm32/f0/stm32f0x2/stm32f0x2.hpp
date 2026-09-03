@@ -31,7 +31,7 @@
 #include "peripherals/addresses.hpp"
 #include "../../common/core/cm0.hpp"
 
-namespace mcu::stm32 {
+namespace erworks::stm32 {
 
 constexpr auto adc = stm32f0x2::adc::adc_t<stm32f0x2::adc::ADC_BASE>{};
 
@@ -121,4 +121,4 @@ constexpr auto usb = stm32f0x2::usb::usb_t<stm32f0x2::usb::USB_BASE>{};
 
 constexpr auto wwdg = stm32f0x2::wwdg::wwdg_t<stm32f0x2::wwdg::WWDG_BASE>{};
 
-} // namespace mcu::stm32
+} // namespace erworks::stm32

@@ -5,7 +5,7 @@
 #include "../access.hpp"
 #include "../bittypes.hpp"
 
-namespace mcu::stm32::regs {
+namespace erworks::stm32::regs {
 
 // mce_mce_attr1_v1: MCE_ATTR1
 template <stdx::ct_string name,
@@ -942,4 +942,4 @@ using mce_mce_sr_v1_tt =
                groov::field<"reserved0", bool, 1, 1, common::access::ro>,
                groov::field<"mkvalid", bool, 0, 0, common::access::ro>>;
 
-} // namespace mcu::stm32::regs
+} // namespace erworks::stm32::regs

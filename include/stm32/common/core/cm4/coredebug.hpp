@@ -4,7 +4,7 @@
 #include "../../access.hpp"
 #include "../../bittypes.hpp"
 
-namespace mcu::core {
+namespace erworks::stm32::core {
 namespace coredebug {
 
 template <stdx::ct_string name,
@@ -83,4 +83,4 @@ using coredebug_t =
 inline constexpr std::uint32_t COREDEBUG_BASE = 0xE000EDF0U;
 
 } // namespace coredebug
-} // namespace mcu::core
+} // namespace erworks::stm32::core

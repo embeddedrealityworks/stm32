@@ -2,6 +2,6 @@
 #pragma once
 #include <groov/groov.hpp>
 #include "../../../common/registers/wakeup_reg_block.hpp"
-namespace mcu::stm32::stm32wb05 {
+namespace erworks::stm32::stm32wb05 {
 #include "../../../common/peripherals/wakeup_reg_block_3b543e3cd569.inc"
-} // namespace mcu::stm32::stm32wb05
+} // namespace erworks::stm32::stm32wb05

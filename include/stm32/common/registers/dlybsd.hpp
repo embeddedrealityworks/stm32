@@ -5,7 +5,7 @@
 #include "../access.hpp"
 #include "../bittypes.hpp"
 
-namespace mcu::stm32::regs {
+namespace erworks::stm32::regs {
 
 // dlybsd_dlybsd_cfg_v1: DLYBSD_CFG
 template <stdx::ct_string name,
@@ -37,4 +37,4 @@ using dlybsd_dlybsd_status_v1_tt =
                groov::field<"sdmmc_rx_tap_sel_ack", bool, 1, 1>,
                groov::field<"sdmmc_dll_lock", common::bit_locked, 0, 0>>;
 
-} // namespace mcu::stm32::regs
+} // namespace erworks::stm32::regs

@@ -2,6 +2,6 @@
 #pragma once
 #include <groov/groov.hpp>
 #include "../../../common/registers/hdmi_cec.hpp"
-namespace mcu::stm32::stm32f446 {
+namespace erworks::stm32::stm32f446 {
 #include "../../../common/peripherals/hdmi_cec_e5ec7249d5b0.inc"
-} // namespace mcu::stm32::stm32f446
+} // namespace erworks::stm32::stm32f446

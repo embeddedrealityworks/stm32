@@ -2,6 +2,6 @@
 #pragma once
 #include <groov/groov.hpp>
 #include "../../../common/registers/ramcfg.hpp"
-namespace mcu::stm32::stm32u575 {
+namespace erworks::stm32::stm32u575 {
 #include "../../../common/peripherals/ramcfg_6abd796d7d93.inc"
-} // namespace mcu::stm32::stm32u575
+} // namespace erworks::stm32::stm32u575

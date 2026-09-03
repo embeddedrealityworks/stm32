@@ -5,7 +5,7 @@
 #include "../access.hpp"
 #include "../bittypes.hpp"
 
-namespace mcu::stm32::regs {
+namespace erworks::stm32::regs {
 
 // cacheaxi_cacheaxi_cmdreaddrr_v1: CACHEAXI_CMDREADDRR
 template <stdx::ct_string name,
@@ -139,4 +139,4 @@ using cacheaxi_cacheaxi_wtmonr_v1_tt =
              common::access::rw,
                groov::field<"wtmon", std::uint32_t, 31, 0, common::access::ro>>;
 
-} // namespace mcu::stm32::regs
+} // namespace erworks::stm32::regs

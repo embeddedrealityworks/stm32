@@ -29,7 +29,7 @@
 #include "peripherals/addresses.hpp"
 #include "../../common/core/cm0p.hpp"
 
-namespace mcu::stm32 {
+namespace erworks::stm32 {
 
 constexpr auto adc = stm32l0x1::adc::adc_t<stm32l0x1::adc::ADC_BASE>{};
 
@@ -113,4 +113,4 @@ constexpr auto usart5 = stm32l0x1::usartx::usartx_t<"usart5",stm32l0x1::usart5::
 
 constexpr auto wwdg = stm32l0x1::wwdg::wwdg_t<stm32l0x1::wwdg::WWDG_BASE>{};
 
-} // namespace mcu::stm32
+} // namespace erworks::stm32

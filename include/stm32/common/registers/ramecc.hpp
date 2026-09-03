@@ -5,7 +5,7 @@
 #include "../access.hpp"
 #include "../bittypes.hpp"
 
-namespace mcu::stm32::regs {
+namespace erworks::stm32::regs {
 
 // ramecc_ier_v1: IER
 template <stdx::ct_string name,
@@ -170,4 +170,4 @@ using ramecc_m4far_v1_tt =
              common::access::ro,
                groov::field<"fadd", std::uint32_t, 31, 0>>;
 
-} // namespace mcu::stm32::regs
+} // namespace erworks::stm32::regs

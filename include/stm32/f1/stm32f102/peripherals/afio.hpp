@@ -2,6 +2,6 @@
 #pragma once
 #include <groov/groov.hpp>
 #include "../../../common/registers/afio.hpp"
-namespace mcu::stm32::stm32f102 {
+namespace erworks::stm32::stm32f102 {
 #include "../../../common/peripherals/afio_95aea227ca3d.inc"
-} // namespace mcu::stm32::stm32f102
+} // namespace erworks::stm32::stm32f102

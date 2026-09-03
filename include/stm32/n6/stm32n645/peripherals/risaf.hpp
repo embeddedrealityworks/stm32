@@ -2,6 +2,6 @@
 #pragma once
 #include <groov/groov.hpp>
 #include "../../../common/registers/risaf.hpp"
-namespace mcu::stm32::stm32n645 {
+namespace erworks::stm32::stm32n645 {
 #include "../../../common/peripherals/risaf_57fa0597301e.inc"
-} // namespace mcu::stm32::stm32n645
+} // namespace erworks::stm32::stm32n645

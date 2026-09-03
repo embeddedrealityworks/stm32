@@ -5,7 +5,7 @@
 #include "../access.hpp"
 #include "../bittypes.hpp"
 
-namespace mcu::stm32::regs {
+namespace erworks::stm32::regs {
 
 // pka_clrfr_v1: CLRFR
 template <stdx::ct_string name,
@@ -462,4 +462,4 @@ using pka_sr_v1_tt =
                groov::field<"reserved0", std::uint16_t, 15, 1>,
                groov::field<"initok", bool, 0, 0>>;
 
-} // namespace mcu::stm32::regs
+} // namespace erworks::stm32::regs

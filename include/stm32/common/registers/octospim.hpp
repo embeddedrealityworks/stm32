@@ -5,7 +5,7 @@
 #include "../access.hpp"
 #include "../bittypes.hpp"
 
-namespace mcu::stm32::regs {
+namespace erworks::stm32::regs {
 
 // octospim_octospim_cr_v1: OCTOSPIM_CR
 template <stdx::ct_string name,
@@ -26,4 +26,4 @@ using octospim_octospim_cr_v1_tt =
                groov::field<"mode", common::bit_enable, 1, 1>,
                groov::field<"muxen", common::bit_enable, 0, 0>>;
 
-} // namespace mcu::stm32::regs
+} // namespace erworks::stm32::regs

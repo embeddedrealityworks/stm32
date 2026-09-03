@@ -2,6 +2,6 @@
 #pragma once
 #include <groov/groov.hpp>
 #include "../../../common/registers/octospim.hpp"
-namespace mcu::stm32::stm32l4q5 {
+namespace erworks::stm32::stm32l4q5 {
 #include "../../../common/peripherals/octospim_5c36f9d4c0ff.inc"
-} // namespace mcu::stm32::stm32l4q5
+} // namespace erworks::stm32::stm32l4q5

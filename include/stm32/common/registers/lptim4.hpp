@@ -5,7 +5,7 @@
 #include "../access.hpp"
 #include "../bittypes.hpp"
 
-namespace mcu::stm32::regs {
+namespace erworks::stm32::regs {
 
 // lptim4_lptim4_icr_v1: LPTIM4_ICR
 template <stdx::ct_string name,
@@ -29,4 +29,4 @@ using lptim4_lptim4_icr_v1_tt =
                groov::field<"arrmcf", bool, 1, 1>,
                groov::field<"cc1cf", bool, 0, 0>>;
 
-} // namespace mcu::stm32::regs
+} // namespace erworks::stm32::regs

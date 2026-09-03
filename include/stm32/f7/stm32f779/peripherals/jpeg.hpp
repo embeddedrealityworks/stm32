@@ -2,6 +2,6 @@
 #pragma once
 #include <groov/groov.hpp>
 #include "../../../common/registers/jpeg.hpp"
-namespace mcu::stm32::stm32f779 {
+namespace erworks::stm32::stm32f779 {
 #include "../../../common/peripherals/jpeg_981cd8a41ae5.inc"
-} // namespace mcu::stm32::stm32f779
+} // namespace erworks::stm32::stm32f779

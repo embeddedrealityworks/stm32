@@ -5,7 +5,7 @@
 #include "../access.hpp"
 #include "../bittypes.hpp"
 
-namespace mcu::stm32::regs {
+namespace erworks::stm32::regs {
 
 // eth_eth_dmaa4dacr_v1: ETH_DMAA4DACR
 template <stdx::ct_string name,
@@ -3919,4 +3919,4 @@ using eth_eth_tx_single_collision_good_packets_v2_tt =
              common::access::ro,
                groov::field<"txsnglcolg", std::uint32_t, 31, 0>>;
 
-} // namespace mcu::stm32::regs
+} // namespace erworks::stm32::regs

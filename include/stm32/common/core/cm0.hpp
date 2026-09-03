@@ -5,7 +5,7 @@
 #include "cm0/scb.hpp"
 
 // Cortex-CM0 core peripheral instances
-namespace mcu::core {
+namespace erworks::stm32::core {
 inline constexpr auto systick = systick::systick_t<systick::SYSTICK_BASE>{};
 inline constexpr auto scb = scb::scb_t<scb::SCB_BASE>{};
-} // namespace mcu::core
+} // namespace erworks::stm32::core

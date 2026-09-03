@@ -5,7 +5,7 @@
 #include "../access.hpp"
 #include "../bittypes.hpp"
 
-namespace mcu::stm32::regs {
+namespace erworks::stm32::regs {
 
 // dynamic_reg_additional_ctrl_v1: ADDITIONAL_CTRL
 template <stdx::ct_string name,
@@ -198,4 +198,4 @@ using dynamic_reg_vco_cal_config_v1_tt =
                groov::field<"reserved0", bool, 14, 14, common::access::ro>,
                groov::field<"vco_calamp_ext", std::uint16_t, 13, 0>>;
 
-} // namespace mcu::stm32::regs
+} // namespace erworks::stm32::regs

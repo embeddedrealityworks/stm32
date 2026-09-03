@@ -2,6 +2,6 @@
 #pragma once
 #include <groov/groov.hpp>
 #include "../../../common/registers/dmamux.hpp"
-namespace mcu::stm32::stm32l552 {
+namespace erworks::stm32::stm32l552 {
 #include "../../../common/peripherals/dmamux_9c93ecabf0b6.inc"
-} // namespace mcu::stm32::stm32l552
+} // namespace erworks::stm32::stm32l552

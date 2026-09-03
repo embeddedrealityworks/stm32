@@ -2,6 +2,6 @@
 #pragma once
 #include <groov/groov.hpp>
 #include "../../../common/registers/switchable.hpp"
-namespace mcu::stm32::stm32wl33 {
+namespace erworks::stm32::stm32wl33 {
 #include "../../../common/peripherals/switchable_d6fa90a8471e.inc"
-} // namespace mcu::stm32::stm32wl33
+} // namespace erworks::stm32::stm32wl33

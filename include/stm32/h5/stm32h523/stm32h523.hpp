@@ -62,7 +62,7 @@
 #include "peripherals/addresses.hpp"
 #include "../../common/core/cm33.hpp"
 
-namespace mcu::stm32 {
+namespace erworks::stm32 {
 
 constexpr auto adc = stm32h523::adcx::adcx_t<"adc",stm32h523::adc::ADC_BASE>{};
 
@@ -360,4 +360,4 @@ constexpr auto wwdg = stm32h523::wwdgx::wwdgx_t<"wwdg",stm32h523::wwdg::WWDG_BAS
 
 constexpr auto wwdg_s = stm32h523::wwdgx::wwdgx_t<"wwdg_s",stm32h523::wwdg_s::WWDG_S_BASE>{};
 
-} // namespace mcu::stm32
+} // namespace erworks::stm32

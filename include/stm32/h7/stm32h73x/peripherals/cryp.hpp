@@ -2,6 +2,6 @@
 #pragma once
 #include <groov/groov.hpp>
 #include "../../../common/registers/cryp.hpp"
-namespace mcu::stm32::stm32h73x {
+namespace erworks::stm32::stm32h73x {
 #include "../../../common/peripherals/cryp_1eba6261284a.inc"
-} // namespace mcu::stm32::stm32h73x
+} // namespace erworks::stm32::stm32h73x

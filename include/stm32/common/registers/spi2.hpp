@@ -5,7 +5,7 @@
 #include "../access.hpp"
 #include "../bittypes.hpp"
 
-namespace mcu::stm32::regs {
+namespace erworks::stm32::regs {
 
 // spi2_spi2_i2scfgr_v1: SPI2_I2SCFGR
 template <stdx::ct_string name,
@@ -28,4 +28,4 @@ using spi2_spi2_i2scfgr_v1_tt =
                groov::field<"datlen", std::uint8_t, 2, 1>,
                groov::field<"chlen", common::bit_enable, 0, 0>>;
 
-} // namespace mcu::stm32::regs
+} // namespace erworks::stm32::regs

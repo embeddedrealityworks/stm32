@@ -2,6 +2,6 @@
 #pragma once
 #include <groov/groov.hpp>
 #include "../../../common/registers/dsihost.hpp"
-namespace mcu::stm32::stm32f479 {
+namespace erworks::stm32::stm32f479 {
 #include "../../../common/peripherals/dsihost_ee936ee3d992.inc"
-} // namespace mcu::stm32::stm32f479
+} // namespace erworks::stm32::stm32f479

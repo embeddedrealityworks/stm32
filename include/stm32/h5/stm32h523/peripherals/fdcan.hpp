@@ -2,6 +2,6 @@
 #pragma once
 #include <groov/groov.hpp>
 #include "../../../common/registers/fdcan.hpp"
-namespace mcu::stm32::stm32h523 {
+namespace erworks::stm32::stm32h523 {
 #include "../../../common/peripherals/fdcan_bfaf837c1e51.inc"
-} // namespace mcu::stm32::stm32h523
+} // namespace erworks::stm32::stm32h523

@@ -40,7 +40,7 @@
 #include "peripherals/addresses.hpp"
 #include "../../common/core/cm0p.hpp"
 
-namespace mcu::stm32 {
+namespace erworks::stm32 {
 
 constexpr auto adc = stm32wl33::adc::adc_t<stm32wl33::adc::ADC_BASE>{};
 
@@ -112,4 +112,4 @@ constexpr auto tim2 = stm32wl33::tim2::tim2_t<stm32wl33::tim2::TIM2_BASE>{};
 
 constexpr auto usart = stm32wl33::usart::usart_t<stm32wl33::usart::USART_BASE>{};
 
-} // namespace mcu::stm32
+} // namespace erworks::stm32

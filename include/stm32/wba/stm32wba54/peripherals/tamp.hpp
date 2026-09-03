@@ -2,6 +2,6 @@
 #pragma once
 #include <groov/groov.hpp>
 #include "../../../common/registers/tamp.hpp"
-namespace mcu::stm32::stm32wba54 {
+namespace erworks::stm32::stm32wba54 {
 #include "../../../common/peripherals/tamp_bc4d3df6ebe7.inc"
-} // namespace mcu::stm32::stm32wba54
+} // namespace erworks::stm32::stm32wba54

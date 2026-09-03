@@ -44,7 +44,7 @@
 #include "peripherals/addresses.hpp"
 #include "../../common/core/cm4.hpp"
 
-namespace mcu::stm32 {
+namespace erworks::stm32 {
 
 constexpr auto adc1 = stm32l486::adcx::adcx_t<"adc1",stm32l486::adc1::ADC1_BASE>{};
 
@@ -200,4 +200,4 @@ constexpr auto vrefbuf = stm32l486::vrefbuf::vrefbuf_t<stm32l486::vrefbuf::VREFB
 
 constexpr auto wwdg = stm32l486::wwdg::wwdg_t<stm32l486::wwdg::WWDG_BASE>{};
 
-} // namespace mcu::stm32
+} // namespace erworks::stm32

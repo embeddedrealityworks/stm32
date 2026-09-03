@@ -5,7 +5,7 @@
 #include "../access.hpp"
 #include "../bittypes.hpp"
 
-namespace mcu::stm32::regs {
+namespace erworks::stm32::regs {
 
 // lcsc_lcsc_anatst_cfg_v1: LCSC_ANATST_CFG
 template <stdx::ct_string name,
@@ -212,4 +212,4 @@ using lcsc_lcsc_wheel_sr_v1_tt =
                groov::field<"aclkwise", std::uint16_t, 31, 16>,
                groov::field<"clkwise", std::uint16_t, 15, 0>>;
 
-} // namespace mcu::stm32::regs
+} // namespace erworks::stm32::regs

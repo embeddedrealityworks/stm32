@@ -2,6 +2,6 @@
 #pragma once
 #include <groov/groov.hpp>
 #include "../../../common/registers/swpmi.hpp"
-namespace mcu::stm32::stm32l476 {
+namespace erworks::stm32::stm32l476 {
 #include "../../../common/peripherals/swpmi_cc68b32fe151.inc"
-} // namespace mcu::stm32::stm32l476
+} // namespace erworks::stm32::stm32l476

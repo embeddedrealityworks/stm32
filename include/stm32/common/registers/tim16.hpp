@@ -5,7 +5,7 @@
 #include "../access.hpp"
 #include "../bittypes.hpp"
 
-namespace mcu::stm32::regs {
+namespace erworks::stm32::regs {
 
 // tim16_af1_v1: AF1
 template <stdx::ct_string name,
@@ -278,4 +278,4 @@ using tim16_tim16_or1_v1_tt =
                groov::field<"hse32en", common::bit_enable, 1, 1>,
                groov::field<"reserved0", bool, 0, 0, common::access::ro>>;
 
-} // namespace mcu::stm32::regs
+} // namespace erworks::stm32::regs

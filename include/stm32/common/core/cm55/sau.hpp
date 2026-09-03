@@ -4,7 +4,7 @@
 #include "../../access.hpp"
 #include "../../bittypes.hpp"
 
-namespace mcu::core {
+namespace erworks::stm32::core {
 namespace sau {
 
 template <stdx::ct_string name,
@@ -102,4 +102,4 @@ using sau_t =
 inline constexpr std::uint32_t SAU_BASE = 0xE000EDD0U;
 
 } // namespace sau
-} // namespace mcu::core
+} // namespace erworks::stm32::core

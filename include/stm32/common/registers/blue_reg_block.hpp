@@ -5,7 +5,7 @@
 #include "../access.hpp"
 #include "../bittypes.hpp"
 
-namespace mcu::stm32::regs {
+namespace erworks::stm32::regs {
 
 // blue_reg_block_aesleprivcmdreg_v1: AESLEPRIVCMDREG
 template <stdx::ct_string name,
@@ -370,4 +370,4 @@ using blue_reg_block_timercapturereg_v1_tt =
              common::access::ro,
                groov::field<"timercapture", std::uint32_t, 31, 0>>;
 
-} // namespace mcu::stm32::regs
+} // namespace erworks::stm32::regs

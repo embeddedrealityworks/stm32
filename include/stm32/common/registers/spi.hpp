@@ -5,7 +5,7 @@
 #include "../access.hpp"
 #include "../bittypes.hpp"
 
-namespace mcu::stm32::regs {
+namespace erworks::stm32::regs {
 
 // spi_autocr_v1: AUTOCR
 template <stdx::ct_string name,
@@ -1574,4 +1574,4 @@ using spi_udrdr_v1_tt =
              common::access::rw,
                groov::field<"udrdr", std::uint32_t, 31, 0>>;
 
-} // namespace mcu::stm32::regs
+} // namespace erworks::stm32::regs

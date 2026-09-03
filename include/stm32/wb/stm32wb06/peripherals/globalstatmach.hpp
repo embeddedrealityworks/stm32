@@ -2,6 +2,6 @@
 #pragma once
 #include <groov/groov.hpp>
 #include "../../../common/registers/globalstatmach.hpp"
-namespace mcu::stm32::stm32wb06 {
+namespace erworks::stm32::stm32wb06 {
 #include "../../../common/peripherals/globalstatmach_0c2f8ea51dba.inc"
-} // namespace mcu::stm32::stm32wb06
+} // namespace erworks::stm32::stm32wb06

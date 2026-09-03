@@ -5,7 +5,7 @@
 #include "../access.hpp"
 #include "../bittypes.hpp"
 
-namespace mcu::stm32::regs {
+namespace erworks::stm32::regs {
 
 // globalstatmach_reg_block_word0_v1: WORD0
 template <stdx::ct_string name,
@@ -114,4 +114,4 @@ using globalstatmach_reg_block_word6_v1_tt =
                groov::field<"reserved0", std::uint32_t, 31, 7, common::access::ro>,
                groov::field<"defaultantennaid", std::uint8_t, 6, 0>>;
 
-} // namespace mcu::stm32::regs
+} // namespace erworks::stm32::regs

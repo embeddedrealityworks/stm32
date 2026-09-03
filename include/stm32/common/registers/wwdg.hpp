@@ -5,7 +5,7 @@
 #include "../access.hpp"
 #include "../bittypes.hpp"
 
-namespace mcu::stm32::regs {
+namespace erworks::stm32::regs {
 
 // wwdg_cfr_v1: CFR
 template <stdx::ct_string name,
@@ -190,4 +190,4 @@ using wwdg_wwdg_sr_v1_tt =
                groov::field<"reserved0", std::uint32_t, 31, 1, common::access::ro>,
                groov::field<"ewif", bool, 0, 0>>;
 
-} // namespace mcu::stm32::regs
+} // namespace erworks::stm32::regs

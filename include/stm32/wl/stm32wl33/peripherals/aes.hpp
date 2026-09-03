@@ -2,6 +2,6 @@
 #pragma once
 #include <groov/groov.hpp>
 #include "../../../common/registers/aes.hpp"
-namespace mcu::stm32::stm32wl33 {
+namespace erworks::stm32::stm32wl33 {
 #include "../../../common/peripherals/aes_1c537934c2e5.inc"
-} // namespace mcu::stm32::stm32wl33
+} // namespace erworks::stm32::stm32wl33

@@ -5,7 +5,7 @@
 #include "../access.hpp"
 #include "../bittypes.hpp"
 
-namespace mcu::stm32::regs {
+namespace erworks::stm32::regs {
 
 // lcdc_lcd_ram1_v1: LCD_RAM1
 template <stdx::ct_string name,
@@ -31,4 +31,4 @@ using lcdc_lcd_ram9_v1_tt =
                groov::field<"reserved0", std::uint16_t, 31, 16, common::access::ro>,
                groov::field<"segment_data", std::uint16_t, 15, 0>>;
 
-} // namespace mcu::stm32::regs
+} // namespace erworks::stm32::regs

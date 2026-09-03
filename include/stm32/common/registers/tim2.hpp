@@ -5,7 +5,7 @@
 #include "../access.hpp"
 #include "../bittypes.hpp"
 
-namespace mcu::stm32::regs {
+namespace erworks::stm32::regs {
 
 // tim2_af1_v1: AF1
 template <stdx::ct_string name,
@@ -316,4 +316,4 @@ using tim2_tim2_sr_v1_tt =
                groov::field<"cc1if", bool, 1, 1>,
                groov::field<"uif", bool, 0, 0>>;
 
-} // namespace mcu::stm32::regs
+} // namespace erworks::stm32::regs

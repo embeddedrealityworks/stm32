@@ -5,7 +5,7 @@
 #include "../access.hpp"
 #include "../bittypes.hpp"
 
-namespace mcu::stm32::regs {
+namespace erworks::stm32::regs {
 
 // fmc_bcr1_v1: BCR1
 template <stdx::ct_string name,
@@ -1253,4 +1253,4 @@ using fmc_sdsr_v1_tt =
                groov::field<"modes1", std::uint8_t, 2, 1>,
                groov::field<"re", bool, 0, 0>>;
 
-} // namespace mcu::stm32::regs
+} // namespace erworks::stm32::regs

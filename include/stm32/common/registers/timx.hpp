@@ -5,7 +5,7 @@
 #include "../access.hpp"
 #include "../bittypes.hpp"
 
-namespace mcu::stm32::regs {
+namespace erworks::stm32::regs {
 
 // timx_tim1_cr2_v1: TIM1_CR2
 template <stdx::ct_string name,
@@ -56,4 +56,4 @@ using timx_tim6_cr2_v1_tt =
                groov::field<"mms", std::uint8_t, 6, 4>,
                groov::field<"reserved0", std::uint8_t, 3, 0, common::access::ro>>;
 
-} // namespace mcu::stm32::regs
+} // namespace erworks::stm32::regs

@@ -5,7 +5,7 @@
 #include "../access.hpp"
 #include "../bittypes.hpp"
 
-namespace mcu::stm32::regs {
+namespace erworks::stm32::regs {
 
 // ltdc_awcr_v1: AWCR
 template <stdx::ct_string name,
@@ -1406,4 +1406,4 @@ using ltdc_twcr_v2_tt =
                groov::field<"reserved0", std::uint8_t, 15, 11, common::access::ro>,
                groov::field<"totalh", std::uint16_t, 10, 0>>;
 
-} // namespace mcu::stm32::regs
+} // namespace erworks::stm32::regs

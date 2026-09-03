@@ -2,6 +2,6 @@
 #pragma once
 #include <groov/groov.hpp>
 #include "../../../common/registers/ramcfg.hpp"
-namespace mcu::stm32::stm32h5e4 {
+namespace erworks::stm32::stm32h5e4 {
 #include "../../../common/peripherals/ramcfg_cb1b0a70e879.inc"
-} // namespace mcu::stm32::stm32h5e4
+} // namespace erworks::stm32::stm32h5e4

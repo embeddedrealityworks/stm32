@@ -5,7 +5,7 @@
 #include "../access.hpp"
 #include "../bittypes.hpp"
 
-namespace mcu::stm32::regs {
+namespace erworks::stm32::regs {
 
 // radio_control_reg_block_clk32count_reg_v1: CLK32COUNT_REG
 template <stdx::ct_string name,
@@ -86,4 +86,4 @@ using radio_control_reg_block_radio_control_irq_status_v1_tt =
                groov::field<"reserved0", std::uint8_t, 7, 1, common::access::ro>,
                groov::field<"slow_clk_irq", bool, 0, 0>>;
 
-} // namespace mcu::stm32::regs
+} // namespace erworks::stm32::regs

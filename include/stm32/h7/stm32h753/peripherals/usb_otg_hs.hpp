@@ -2,6 +2,6 @@
 #pragma once
 #include <groov/groov.hpp>
 #include "../../../common/registers/usb_otg_hs.hpp"
-namespace mcu::stm32::stm32h753 {
+namespace erworks::stm32::stm32h753 {
 #include "../../../common/peripherals/usb_otg_hs_510efdf60943.inc"
-} // namespace mcu::stm32::stm32h753
+} // namespace erworks::stm32::stm32h753

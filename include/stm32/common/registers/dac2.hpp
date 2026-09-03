@@ -5,7 +5,7 @@
 #include "../access.hpp"
 #include "../bittypes.hpp"
 
-namespace mcu::stm32::regs {
+namespace erworks::stm32::regs {
 
 // dac2_cr_v1: CR
 template <stdx::ct_string name,
@@ -55,4 +55,4 @@ using dac2_swtrigr_v1_tt =
                groov::field<"reserved0", std::uint32_t, 31, 1, common::access::ro>,
                groov::field<"swtrig1", bool, 0, 0>>;
 
-} // namespace mcu::stm32::regs
+} // namespace erworks::stm32::regs

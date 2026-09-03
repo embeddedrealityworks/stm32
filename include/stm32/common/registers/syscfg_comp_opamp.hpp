@@ -5,7 +5,7 @@
 #include "../access.hpp"
 #include "../bittypes.hpp"
 
-namespace mcu::stm32::regs {
+namespace erworks::stm32::regs {
 
 // syscfg_comp_opamp_comp1_csr_v1: COMP1_CSR
 template <stdx::ct_string name,
@@ -276,4 +276,4 @@ using syscfg_comp_opamp_syscfg_cfgr4_v1_tt =
                groov::field<"adc12_ext3_rmp", bool, 1, 1>,
                groov::field<"adc12_ext2_rmp", bool, 0, 0>>;
 
-} // namespace mcu::stm32::regs
+} // namespace erworks::stm32::regs

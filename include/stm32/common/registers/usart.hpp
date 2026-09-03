@@ -5,7 +5,7 @@
 #include "../access.hpp"
 #include "../bittypes.hpp"
 
-namespace mcu::stm32::regs {
+namespace erworks::stm32::regs {
 
 // usart_autocr_v1: AUTOCR
 template <stdx::ct_string name,
@@ -3481,4 +3481,4 @@ using usart_usart_tdr_v1_tt =
                groov::field<"reserved0", std::uint32_t, 31, 9, common::access::ro>,
                groov::field<"tdr", std::uint16_t, 8, 0>>;
 
-} // namespace mcu::stm32::regs
+} // namespace erworks::stm32::regs

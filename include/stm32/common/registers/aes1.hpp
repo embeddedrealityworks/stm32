@@ -5,7 +5,7 @@
 #include "../access.hpp"
 #include "../bittypes.hpp"
 
-namespace mcu::stm32::regs {
+namespace erworks::stm32::regs {
 
 // aes1_doutr_v1: DOUTR
 template <stdx::ct_string name,
@@ -106,4 +106,4 @@ using aes1_susp7r_v1_tt =
              common::access::rw,
                groov::field<"susp7", std::uint32_t, 31, 0>>;
 
-} // namespace mcu::stm32::regs
+} // namespace erworks::stm32::regs

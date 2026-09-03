@@ -5,7 +5,7 @@
 #include "../access.hpp"
 #include "../bittypes.hpp"
 
-namespace mcu::stm32::regs {
+namespace erworks::stm32::regs {
 
 // risaf_risaf_iaesr_v1: RISAF_IAESR
 template <stdx::ct_string name,
@@ -153,4 +153,4 @@ using risaf_risaf_reg1_startr_v1_tt =
              common::access::rw,
                groov::field<"baddstart", std::uint32_t, 31, 0>>;
 
-} // namespace mcu::stm32::regs
+} // namespace erworks::stm32::regs

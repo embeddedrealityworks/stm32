@@ -5,7 +5,7 @@
 #include "../access.hpp"
 #include "../bittypes.hpp"
 
-namespace mcu::stm32::regs {
+namespace erworks::stm32::regs {
 
 // rifsc_rifsc_ppsr0_v1: RIFSC_PPSR0
 template <stdx::ct_string name,
@@ -877,4 +877,4 @@ using rifsc_rifsc_risc_seccfgr5_v1_tt =
                groov::field<"sec161", bool, 1, 1>,
                groov::field<"sec160", bool, 0, 0>>;
 
-} // namespace mcu::stm32::regs
+} // namespace erworks::stm32::regs

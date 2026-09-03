@@ -5,7 +5,7 @@
 #include "../access.hpp"
 #include "../bittypes.hpp"
 
-namespace mcu::stm32::regs {
+namespace erworks::stm32::regs {
 
 // mdios_mdios_clrfr_v1: MDIOS_CLRFR
 template <stdx::ct_string name,
@@ -979,4 +979,4 @@ using mdios_mdios_wrfr_v2_tt =
              common::access::rw,
                groov::field<"wrf", std::uint32_t, 31, 0, common::access::ro>>;
 
-} // namespace mcu::stm32::regs
+} // namespace erworks::stm32::regs

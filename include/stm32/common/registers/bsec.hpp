@@ -5,7 +5,7 @@
 #include "../access.hpp"
 #include "../bittypes.hpp"
 
-namespace mcu::stm32::regs {
+namespace erworks::stm32::regs {
 
 // bsec_bsec_ap_unlock_v1: BSEC_AP_UNLOCK
 template <stdx::ct_string name,
@@ -2771,4 +2771,4 @@ using bsec_bsec_wrcr_v1_tt =
              common::access::rw,
                groov::field<"wrc", std::uint32_t, 31, 0, common::access::ro>>;
 
-} // namespace mcu::stm32::regs
+} // namespace erworks::stm32::regs

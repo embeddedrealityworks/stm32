@@ -5,7 +5,7 @@
 #include "../access.hpp"
 #include "../bittypes.hpp"
 
-namespace mcu::stm32::regs {
+namespace erworks::stm32::regs {
 
 // aes_aes_cr_v1: AES_CR
 template <stdx::ct_string name,
@@ -1176,4 +1176,4 @@ using aes_susp7r_v2_tt =
              common::access::wo,
                groov::field<"susp7", std::uint32_t, 31, 0>>;
 
-} // namespace mcu::stm32::regs
+} // namespace erworks::stm32::regs

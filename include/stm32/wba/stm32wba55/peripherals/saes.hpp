@@ -2,6 +2,6 @@
 #pragma once
 #include <groov/groov.hpp>
 #include "../../../common/registers/saes.hpp"
-namespace mcu::stm32::stm32wba55 {
+namespace erworks::stm32::stm32wba55 {
 #include "../../../common/peripherals/saes_b085e03e0adb.inc"
-} // namespace mcu::stm32::stm32wba55
+} // namespace erworks::stm32::stm32wba55

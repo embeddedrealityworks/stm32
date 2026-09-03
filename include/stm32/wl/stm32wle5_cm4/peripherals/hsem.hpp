@@ -2,6 +2,6 @@
 #pragma once
 #include <groov/groov.hpp>
 #include "../../../common/registers/hsem.hpp"
-namespace mcu::stm32::stm32wle5_cm4 {
+namespace erworks::stm32::stm32wle5_cm4 {
 #include "../../../common/peripherals/hsem_3a909fe390ed.inc"
-} // namespace mcu::stm32::stm32wle5_cm4
+} // namespace erworks::stm32::stm32wle5_cm4

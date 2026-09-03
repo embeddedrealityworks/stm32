@@ -5,7 +5,7 @@
 #include "../access.hpp"
 #include "../bittypes.hpp"
 
-namespace mcu::stm32::regs {
+namespace erworks::stm32::regs {
 
 // ucpd_cfg1_v1: CFG1
 template <stdx::ct_string name,
@@ -830,4 +830,4 @@ using ucpd_ucpd_tx_payszr_v1_tt =
                groov::field<"reserved0", std::uint32_t, 31, 10, common::access::ro>,
                groov::field<"txpaysz", std::uint16_t, 9, 0>>;
 
-} // namespace mcu::stm32::regs
+} // namespace erworks::stm32::regs

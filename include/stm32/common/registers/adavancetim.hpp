@@ -5,7 +5,7 @@
 #include "../access.hpp"
 #include "../bittypes.hpp"
 
-namespace mcu::stm32::regs {
+namespace erworks::stm32::regs {
 
 // adavancetim_af1_v1: AF1
 template <stdx::ct_string name,
@@ -127,4 +127,4 @@ using adavancetim_smcr_v1_tt =
                groov::field<"occs", bool, 3, 3>,
                groov::field<"sms", std::uint8_t, 2, 0>>;
 
-} // namespace mcu::stm32::regs
+} // namespace erworks::stm32::regs

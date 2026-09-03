@@ -2,6 +2,6 @@
 #pragma once
 #include <groov/groov.hpp>
 #include "../../../common/registers/octospi.hpp"
-namespace mcu::stm32::stm32u535 {
+namespace erworks::stm32::stm32u535 {
 #include "../../../common/peripherals/octospi_5ec762812fab.inc"
-} // namespace mcu::stm32::stm32u535
+} // namespace erworks::stm32::stm32u535

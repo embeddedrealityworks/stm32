@@ -5,7 +5,7 @@
 #include "../access.hpp"
 #include "../bittypes.hpp"
 
-namespace mcu::stm32::regs {
+namespace erworks::stm32::regs {
 
 // lpuart_autocr_v1: AUTOCR
 template <stdx::ct_string name,
@@ -1287,4 +1287,4 @@ using lpuart_lpuart_rqr_v3_tt =
                groov::field<"sbkrq", bool, 1, 1>,
                groov::field<"reserved0", bool, 0, 0, common::access::ro>>;
 
-} // namespace mcu::stm32::regs
+} // namespace erworks::stm32::regs

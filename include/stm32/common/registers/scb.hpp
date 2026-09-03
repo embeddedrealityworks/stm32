@@ -5,7 +5,7 @@
 #include "../access.hpp"
 #include "../bittypes.hpp"
 
-namespace mcu::stm32::regs {
+namespace erworks::stm32::regs {
 
 // scb_actrl_v1: ACTRL
 template <stdx::ct_string name,
@@ -346,4 +346,4 @@ using scb_vtor_v2_tt =
                groov::field<"tbloff", std::uint32_t, 31, 7>,
                groov::field<"reserved0", std::uint8_t, 6, 0, common::access::ro>>;
 
-} // namespace mcu::stm32::regs
+} // namespace erworks::stm32::regs

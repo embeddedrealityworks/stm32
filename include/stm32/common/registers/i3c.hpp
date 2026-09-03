@@ -5,7 +5,7 @@
 #include "../access.hpp"
 #include "../bittypes.hpp"
 
-namespace mcu::stm32::regs {
+namespace erworks::stm32::regs {
 
 // i3c_i3c_bcr_v1: I3C_BCR
 template <stdx::ct_string name,
@@ -991,4 +991,4 @@ using i3c_i3c_timingr2_v1_tt =
                groov::field<"stalld", bool, 1, 1>,
                groov::field<"stallt", bool, 0, 0>>;
 
-} // namespace mcu::stm32::regs
+} // namespace erworks::stm32::regs

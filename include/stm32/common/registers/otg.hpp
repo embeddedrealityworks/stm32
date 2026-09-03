@@ -5,7 +5,7 @@
 #include "../access.hpp"
 #include "../bittypes.hpp"
 
-namespace mcu::stm32::regs {
+namespace erworks::stm32::regs {
 
 // otg_otg_gccfg_v1: OTG_GCCFG
 template <stdx::ct_string name,
@@ -37,4 +37,4 @@ using otg_otg_gccfg_v1_tt =
                groov::field<"fsvplus", bool, 1, 1, common::access::ro>,
                groov::field<"chgdet", bool, 0, 0, common::access::ro>>;
 
-} // namespace mcu::stm32::regs
+} // namespace erworks::stm32::regs

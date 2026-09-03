@@ -2,6 +2,6 @@
 #pragma once
 #include <groov/groov.hpp>
 #include "../../../common/registers/nvic.hpp"
-namespace mcu::stm32::stm32f0x8 {
+namespace erworks::stm32::stm32f0x8 {
 #include "../../../common/peripherals/nvic_9128b9ec1b0f.inc"
-} // namespace mcu::stm32::stm32f0x8
+} // namespace erworks::stm32::stm32f0x8

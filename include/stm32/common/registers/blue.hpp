@@ -5,7 +5,7 @@
 #include "../access.hpp"
 #include "../bittypes.hpp"
 
-namespace mcu::stm32::regs {
+namespace erworks::stm32::regs {
 
 // blue_debugcmdreg_v1: DEBUGCMDREG
 template <stdx::ct_string name,
@@ -40,4 +40,4 @@ using blue_debugstatusreg_v1_tt =
                groov::field<"reserved0", std::uint16_t, 15, 7>,
                groov::field<"debugstatusreg", std::uint8_t, 6, 0>>;
 
-} // namespace mcu::stm32::regs
+} // namespace erworks::stm32::regs

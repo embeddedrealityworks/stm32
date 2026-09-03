@@ -5,7 +5,7 @@
 #include "../access.hpp"
 #include "../bittypes.hpp"
 
-namespace mcu::stm32::regs {
+namespace erworks::stm32::regs {
 
 // stk_calib_v1: CALIB
 template <stdx::ct_string name,
@@ -73,4 +73,4 @@ using stk_rvr_v1_tt =
                groov::field<"reserved0", std::uint8_t, 31, 24, common::access::ro>,
                groov::field<"reload", std::uint32_t, 23, 0>>;
 
-} // namespace mcu::stm32::regs
+} // namespace erworks::stm32::regs

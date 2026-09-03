@@ -5,7 +5,7 @@
 #include "../access.hpp"
 #include "../bittypes.hpp"
 
-namespace mcu::stm32::regs {
+namespace erworks::stm32::regs {
 
 // sbs_sbs_bklockr_v1: SBS_BKLOCKR
 template <stdx::ct_string name,
@@ -594,4 +594,4 @@ using sbs_sbs_seccfgr_v2_tt =
                groov::field<"classbsec", bool, 1, 1>,
                groov::field<"sbssec", bool, 0, 0>>;
 
-} // namespace mcu::stm32::regs
+} // namespace erworks::stm32::regs

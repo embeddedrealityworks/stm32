@@ -5,7 +5,7 @@
 #include "../access.hpp"
 #include "../bittypes.hpp"
 
-namespace mcu::stm32::regs {
+namespace erworks::stm32::regs {
 
 // gfxmmu_b0cr_v1: B0CR
 template <stdx::ct_string name,
@@ -284,4 +284,4 @@ using gfxmmu_sr_v1_tt =
                groov::field<"b1of", bool, 1, 1>,
                groov::field<"b0of", bool, 0, 0>>;
 
-} // namespace mcu::stm32::regs
+} // namespace erworks::stm32::regs

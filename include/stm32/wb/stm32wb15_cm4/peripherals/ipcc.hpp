@@ -2,6 +2,6 @@
 #pragma once
 #include <groov/groov.hpp>
 #include "../../../common/registers/ipcc.hpp"
-namespace mcu::stm32::stm32wb15_cm4 {
+namespace erworks::stm32::stm32wb15_cm4 {
 #include "../../../common/peripherals/ipcc_1884763f40ef.inc"
-} // namespace mcu::stm32::stm32wb15_cm4
+} // namespace erworks::stm32::stm32wb15_cm4

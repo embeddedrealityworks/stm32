@@ -5,7 +5,7 @@
 #include "../access.hpp"
 #include "../bittypes.hpp"
 
-namespace mcu::stm32::regs {
+namespace erworks::stm32::regs {
 
 // opamp_csr_v1: CSR
 template <stdx::ct_string name,
@@ -439,4 +439,4 @@ using opamp_otr_v1_tt =
                groov::field<"ao2_opt_offset_trim", std::uint16_t, 19, 10>,
                groov::field<"ao1_opt_offset_trim", std::uint16_t, 9, 0>>;
 
-} // namespace mcu::stm32::regs
+} // namespace erworks::stm32::regs

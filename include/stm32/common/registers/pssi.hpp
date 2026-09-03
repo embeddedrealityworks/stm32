@@ -5,7 +5,7 @@
 #include "../access.hpp"
 #include "../bittypes.hpp"
 
-namespace mcu::stm32::regs {
+namespace erworks::stm32::regs {
 
 // pssi_cr_v1: CR
 template <stdx::ct_string name,
@@ -293,4 +293,4 @@ using pssi_sr_v1_tt =
                groov::field<"rtt4b", bool, 2, 2>,
                groov::field<"reserved0", std::uint8_t, 1, 0>>;
 
-} // namespace mcu::stm32::regs
+} // namespace erworks::stm32::regs

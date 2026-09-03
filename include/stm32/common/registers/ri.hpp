@@ -5,7 +5,7 @@
 #include "../access.hpp"
 #include "../bittypes.hpp"
 
-namespace mcu::stm32::regs {
+namespace erworks::stm32::regs {
 
 // ri_ascr1_v1: ASCR1
 template <stdx::ct_string name,
@@ -203,4 +203,4 @@ using ri_icr_v1_tt =
                groov::field<"ic2ios", std::uint8_t, 7, 4>,
                groov::field<"ic1ios", std::uint8_t, 3, 0>>;
 
-} // namespace mcu::stm32::regs
+} // namespace erworks::stm32::regs

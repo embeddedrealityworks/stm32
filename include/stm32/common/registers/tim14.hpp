@@ -5,7 +5,7 @@
 #include "../access.hpp"
 #include "../bittypes.hpp"
 
-namespace mcu::stm32::regs {
+namespace erworks::stm32::regs {
 
 // tim14_tim14_ccmr1_alternate1_v1: TIM14_CCMR1_ALTERNATE1
 template <stdx::ct_string name,
@@ -37,4 +37,4 @@ using tim14_tim14_egr_v1_tt =
                groov::field<"cc1g", bool, 1, 1>,
                groov::field<"ug", bool, 0, 0>>;
 
-} // namespace mcu::stm32::regs
+} // namespace erworks::stm32::regs

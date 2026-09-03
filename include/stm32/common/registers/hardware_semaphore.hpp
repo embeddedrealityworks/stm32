@@ -5,7 +5,7 @@
 #include "../access.hpp"
 #include "../bittypes.hpp"
 
-namespace mcu::stm32::regs {
+namespace erworks::stm32::regs {
 
 // hardware_semaphore_c1icr_v1: C1ICR
 template <stdx::ct_string name,
@@ -79,4 +79,4 @@ using hardware_semaphore_hwcfgr2_v1_tt =
                groov::field<"masterid2", std::uint8_t, 7, 4>,
                groov::field<"masterid1", std::uint8_t, 3, 0>>;
 
-} // namespace mcu::stm32::regs
+} // namespace erworks::stm32::regs

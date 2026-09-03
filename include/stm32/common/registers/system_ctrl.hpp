@@ -5,7 +5,7 @@
 #include "../access.hpp"
 #include "../bittypes.hpp"
 
-namespace mcu::stm32::regs {
+namespace erworks::stm32::regs {
 
 // system_ctrl_blerxtx_dtr_v1: BLERXTX_DTR
 template <stdx::ct_string name,
@@ -739,4 +739,4 @@ using system_ctrl_syscfg_sr1_v1_tt =
                groov::field<"rfip_busy_status", bool, 5, 5>,
                groov::field<"reserved0", std::uint8_t, 4, 0>>;
 
-} // namespace mcu::stm32::regs
+} // namespace erworks::stm32::regs

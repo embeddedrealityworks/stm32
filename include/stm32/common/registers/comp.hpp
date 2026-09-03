@@ -5,7 +5,7 @@
 #include "../access.hpp"
 #include "../bittypes.hpp"
 
-namespace mcu::stm32::regs {
+namespace erworks::stm32::regs {
 
 // comp_comp1_csr_v1: COMP1_CSR
 template <stdx::ct_string name,
@@ -585,4 +585,4 @@ using comp_csr_v2_tt =
                groov::field<"reserved0", bool, 1, 1, common::access::ro>,
                groov::field<"en", common::bit_enable, 0, 0>>;
 
-} // namespace mcu::stm32::regs
+} // namespace erworks::stm32::regs

@@ -2,6 +2,6 @@
 #pragma once
 #include <groov/groov.hpp>
 #include "../../../common/registers/system_ctrl.hpp"
-namespace mcu::stm32::stm32wb07 {
+namespace erworks::stm32::stm32wb07 {
 #include "../../../common/peripherals/system_ctrl_4ac2443d9f68.inc"
-} // namespace mcu::stm32::stm32wb07
+} // namespace erworks::stm32::stm32wb07

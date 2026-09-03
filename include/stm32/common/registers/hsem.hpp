@@ -5,7 +5,7 @@
 #include "../access.hpp"
 #include "../bittypes.hpp"
 
-namespace mcu::stm32::regs {
+namespace erworks::stm32::regs {
 
 // hsem_hsem_c1icr_v1: HSEM_C1ICR
 template <stdx::ct_string name,
@@ -601,4 +601,4 @@ using hsem_hsem_sisr_v1_tt =
                groov::field<"reserved0", std::uint16_t, 31, 16, common::access::ro>,
                groov::field<"sisf", std::uint16_t, 15, 0, common::access::ro>>;
 
-} // namespace mcu::stm32::regs
+} // namespace erworks::stm32::regs

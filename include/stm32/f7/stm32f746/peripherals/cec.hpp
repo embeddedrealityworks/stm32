@@ -2,6 +2,6 @@
 #pragma once
 #include <groov/groov.hpp>
 #include "../../../common/registers/cec.hpp"
-namespace mcu::stm32::stm32f746 {
+namespace erworks::stm32::stm32f746 {
 #include "../../../common/peripherals/cec_ea51bf4aca7b.inc"
-} // namespace mcu::stm32::stm32f746
+} // namespace erworks::stm32::stm32f746

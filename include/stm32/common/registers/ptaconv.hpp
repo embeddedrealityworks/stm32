@@ -5,7 +5,7 @@
 #include "../access.hpp"
 #include "../bittypes.hpp"
 
-namespace mcu::stm32::regs {
+namespace erworks::stm32::regs {
 
 // ptaconv_ptaconv_actcr_v1: PTACONV_ACTCR
 template <stdx::ct_string name,
@@ -51,4 +51,4 @@ using ptaconv_ptaconv_pricr_v1_tt =
                groov::field<"reserved0", std::uint16_t, 14, 5, common::access::ro>,
                groov::field<"tpriority", std::uint8_t, 4, 0>>;
 
-} // namespace mcu::stm32::regs
+} // namespace erworks::stm32::regs

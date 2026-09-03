@@ -2,6 +2,6 @@
 #pragma once
 #include <groov/groov.hpp>
 #include "../../../common/registers/radio_control.hpp"
-namespace mcu::stm32::stm32wb07 {
+namespace erworks::stm32::stm32wb07 {
 #include "../../../common/peripherals/radio_control_0bce0381c73f.inc"
-} // namespace mcu::stm32::stm32wb07
+} // namespace erworks::stm32::stm32wb07

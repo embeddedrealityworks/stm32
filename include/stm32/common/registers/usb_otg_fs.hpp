@@ -5,7 +5,7 @@
 #include "../access.hpp"
 #include "../bittypes.hpp"
 
-namespace mcu::stm32::regs {
+namespace erworks::stm32::regs {
 
 // usb_otg_fs_diepctl1_v1: DIEPCTL1
 template <stdx::ct_string name,
@@ -1241,4 +1241,4 @@ using usb_otg_fs_otg_fs_gusbcfg_v1_tt =
                groov::field<"reserved0", std::uint8_t, 5, 3, common::access::ro>,
                groov::field<"tocal", std::uint8_t, 2, 0>>;
 
-} // namespace mcu::stm32::regs
+} // namespace erworks::stm32::regs

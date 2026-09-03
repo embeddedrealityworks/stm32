@@ -5,7 +5,7 @@
 #include "../access.hpp"
 #include "../bittypes.hpp"
 
-namespace mcu::stm32::regs {
+namespace erworks::stm32::regs {
 
 // lptim_ccmr1_v1: CCMR1
 template <stdx::ct_string name,
@@ -1443,4 +1443,4 @@ using lptim_or_v3_tt =
                groov::field<"or2", bool, 1, 1>,
                groov::field<"or1", bool, 0, 0>>;
 
-} // namespace mcu::stm32::regs
+} // namespace erworks::stm32::regs

@@ -5,7 +5,7 @@
 #include "../access.hpp"
 #include "../bittypes.hpp"
 
-namespace mcu::stm32::regs {
+namespace erworks::stm32::regs {
 
 // lpawur_agc_config_v1: AGC_CONFIG
 template <stdx::ct_string name,
@@ -122,4 +122,4 @@ using lpawur_rfip_config_v1_tt =
                groov::field<"wakeup_level", std::uint8_t, 2, 1>,
                groov::field<"lpawur_enable", bool, 0, 0>>;
 
-} // namespace mcu::stm32::regs
+} // namespace erworks::stm32::regs

@@ -5,7 +5,7 @@
 #include "../access.hpp"
 #include "../bittypes.hpp"
 
-namespace mcu::stm32::regs {
+namespace erworks::stm32::regs {
 
 // tamp_atcr1_v1: ATCR1
 template <stdx::ct_string name,
@@ -3524,4 +3524,4 @@ using tamp_tamp_sr_v11_tt =
                groov::field<"tamp2f", bool, 1, 1, common::access::ro>,
                groov::field<"tamp1f", bool, 0, 0, common::access::ro>>;
 
-} // namespace mcu::stm32::regs
+} // namespace erworks::stm32::regs

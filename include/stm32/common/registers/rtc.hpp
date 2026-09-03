@@ -5,7 +5,7 @@
 #include "../access.hpp"
 #include "../bittypes.hpp"
 
-namespace mcu::stm32::regs {
+namespace erworks::stm32::regs {
 
 // rtc_alrabinr_v1: ALRABINR
 template <stdx::ct_string name,
@@ -2839,4 +2839,4 @@ using rtc_wutr_v2_tt =
                groov::field<"wutoclr", std::uint16_t, 31, 16>,
                groov::field<"wut", std::uint16_t, 15, 0>>;
 
-} // namespace mcu::stm32::regs
+} // namespace erworks::stm32::regs

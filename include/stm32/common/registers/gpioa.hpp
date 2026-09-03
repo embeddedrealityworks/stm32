@@ -5,7 +5,7 @@
 #include "../access.hpp"
 #include "../bittypes.hpp"
 
-namespace mcu::stm32::regs {
+namespace erworks::stm32::regs {
 
 // gpioa_afrh_v1: AFRH
 template <stdx::ct_string name,
@@ -520,4 +520,4 @@ using gpioa_pupdr_v1_tt =
                groov::field<"pupd1", std::uint8_t, 3, 2>,
                groov::field<"pupd0", std::uint8_t, 1, 0>>;
 
-} // namespace mcu::stm32::regs
+} // namespace erworks::stm32::regs

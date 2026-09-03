@@ -2,6 +2,6 @@
 #pragma once
 #include <groov/groov.hpp>
 #include "../../../common/registers/bkp.hpp"
-namespace mcu::stm32::stm32f102 {
+namespace erworks::stm32::stm32f102 {
 #include "../../../common/peripherals/bkp_cae35a5fc034.inc"
-} // namespace mcu::stm32::stm32f102
+} // namespace erworks::stm32::stm32f102

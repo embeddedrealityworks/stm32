@@ -4,7 +4,7 @@
 #include "../../access.hpp"
 #include "../../bittypes.hpp"
 
-namespace mcu::core {
+namespace erworks::stm32::core {
 namespace mpu {
 
 template <stdx::ct_string name,
@@ -173,4 +173,4 @@ using mpu_t =
 inline constexpr std::uint32_t MPU_BASE = 0xE000ED90U;
 
 } // namespace mpu
-} // namespace mcu::core
+} // namespace erworks::stm32::core

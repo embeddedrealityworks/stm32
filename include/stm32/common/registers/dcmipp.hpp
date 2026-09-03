@@ -5,7 +5,7 @@
 #include "../access.hpp"
 #include "../bittypes.hpp"
 
-namespace mcu::stm32::regs {
+namespace erworks::stm32::regs {
 
 // dcmipp_dcmipp_cmcr_v1: DCMIPP_CMCR
 template <stdx::ct_string name,
@@ -1766,4 +1766,4 @@ using dcmipp_dcmipp_prsr_v1_tt =
                groov::field<"errf", bool, 6, 6, common::access::ro>,
                groov::field<"reserved0", std::uint8_t, 5, 0, common::access::ro>>;
 
-} // namespace mcu::stm32::regs
+} // namespace erworks::stm32::regs

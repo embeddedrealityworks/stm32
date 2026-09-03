@@ -5,7 +5,7 @@
 #include "../access.hpp"
 #include "../bittypes.hpp"
 
-namespace mcu::stm32::regs {
+namespace erworks::stm32::regs {
 
 // syscfg_c2imr1_v1: C2IMR1
 template <stdx::ct_string name,
@@ -4583,4 +4583,4 @@ using syscfg_ur9_v2_tt =
                groov::field<"reserved0", std::uint8_t, 15, 8>,
                groov::field<"wrps_2", std::uint8_t, 7, 0>>;
 
-} // namespace mcu::stm32::regs
+} // namespace erworks::stm32::regs

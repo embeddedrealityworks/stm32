@@ -5,7 +5,7 @@
 #include "../access.hpp"
 #include "../bittypes.hpp"
 
-namespace mcu::stm32::regs {
+namespace erworks::stm32::regs {
 
 // pwrc_bof_tune_v1: BOF_TUNE
 template <stdx::ct_string name,
@@ -900,4 +900,4 @@ using pwrc_wupb_v1_tt =
                groov::field<"reserved0", std::uint16_t, 31, 16, common::access::ro>,
                groov::field<"wupb", std::uint16_t, 15, 0>>;
 
-} // namespace mcu::stm32::regs
+} // namespace erworks::stm32::regs

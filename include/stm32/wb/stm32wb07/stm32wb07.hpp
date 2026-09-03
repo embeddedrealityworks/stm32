@@ -33,7 +33,7 @@
 #include "peripherals/addresses.hpp"
 #include "../../common/core/cm0p.hpp"
 
-namespace mcu::stm32 {
+namespace erworks::stm32 {
 
 constexpr auto adc = stm32wb07::adc::adc_t<stm32wb07::adc::ADC_BASE>{};
 
@@ -91,4 +91,4 @@ constexpr auto usart = stm32wb07::usart::usart_t<stm32wb07::usart::USART_BASE>{}
 
 constexpr auto wakeup = stm32wb07::wakeup::wakeup_t<stm32wb07::wakeup::WAKEUP_BASE>{};
 
-} // namespace mcu::stm32
+} // namespace erworks::stm32

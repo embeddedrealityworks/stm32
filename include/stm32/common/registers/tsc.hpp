@@ -5,7 +5,7 @@
 #include "../access.hpp"
 #include "../bittypes.hpp"
 
-namespace mcu::stm32::regs {
+namespace erworks::stm32::regs {
 
 // tsc_cr_v1: CR
 template <stdx::ct_string name,
@@ -489,4 +489,4 @@ using tsc_tsc_isr_v2_tt =
                groov::field<"mcef", bool, 1, 1>,
                groov::field<"eoaf", bool, 0, 0>>;
 
-} // namespace mcu::stm32::regs
+} // namespace erworks::stm32::regs

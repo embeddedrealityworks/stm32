@@ -17,3 +17,10 @@ stm32_dep = stm32_sub.get_variable('stm32_dep')
 ----
 
 This will collect also groov meson fork.
+
+[source,cpp]
+---
+#include <stm32.hpp>
+---
+
+This will include correct header as long as meson property stm32_mcu is set.

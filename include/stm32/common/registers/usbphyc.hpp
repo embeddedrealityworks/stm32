@@ -5,7 +5,7 @@
 #include "../access.hpp"
 #include "../bittypes.hpp"
 
-namespace mcu::stm32::regs {
+namespace erworks::stm32::regs {
 
 // usbphyc_ldo_v1: LDO
 template <stdx::ct_string name,
@@ -63,4 +63,4 @@ using usbphyc_tune_v1_tt =
                groov::field<"incurrint", bool, 1, 1>,
                groov::field<"incurren", common::bit_enable, 0, 0>>;
 
-} // namespace mcu::stm32::regs
+} // namespace erworks::stm32::regs

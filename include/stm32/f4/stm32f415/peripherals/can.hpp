@@ -2,6 +2,6 @@
 #pragma once
 #include <groov/groov.hpp>
 #include "../../../common/registers/can.hpp"
-namespace mcu::stm32::stm32f415 {
+namespace erworks::stm32::stm32f415 {
 #include "../../../common/peripherals/can_9fde1c9c0c91.inc"
-} // namespace mcu::stm32::stm32f415
+} // namespace erworks::stm32::stm32f415

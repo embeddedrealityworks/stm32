@@ -2,6 +2,6 @@
 #pragma once
 #include <groov/groov.hpp>
 #include "../../../common/registers/quadspi.hpp"
-namespace mcu::stm32::stm32g483 {
+namespace erworks::stm32::stm32g483 {
 #include "../../../common/peripherals/quadspi_242523d8c35a.inc"
-} // namespace mcu::stm32::stm32g483
+} // namespace erworks::stm32::stm32g483

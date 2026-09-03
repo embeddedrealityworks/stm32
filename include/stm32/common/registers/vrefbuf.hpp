@@ -5,7 +5,7 @@
 #include "../access.hpp"
 #include "../bittypes.hpp"
 
-namespace mcu::stm32::regs {
+namespace erworks::stm32::regs {
 
 // vrefbuf_ccr_v1: CCR
 template <stdx::ct_string name,
@@ -78,4 +78,4 @@ using vrefbuf_vrefbuf_csr_v2_tt =
                groov::field<"hiz", bool, 1, 1>,
                groov::field<"envr", bool, 0, 0>>;
 
-} // namespace mcu::stm32::regs
+} // namespace erworks::stm32::regs

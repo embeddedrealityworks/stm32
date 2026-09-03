@@ -57,7 +57,7 @@
 #include "peripherals/addresses.hpp"
 #include "../../common/core/cm4.hpp"
 
-namespace mcu::stm32 {
+namespace erworks::stm32 {
 
 constexpr auto adc1 = stm32h745_cm4::adcx::adcx_t<"adc1",stm32h745_cm4::adc1::ADC1_BASE>{};
 
@@ -307,4 +307,4 @@ constexpr auto wwdg1 = stm32h745_cm4::wwdgx::wwdgx_t<"wwdg1",stm32h745_cm4::wwdg
 
 constexpr auto wwdg2 = stm32h745_cm4::wwdgx::wwdgx_t<"wwdg2",stm32h745_cm4::wwdg2::WWDG2_BASE>{};
 
-} // namespace mcu::stm32
+} // namespace erworks::stm32

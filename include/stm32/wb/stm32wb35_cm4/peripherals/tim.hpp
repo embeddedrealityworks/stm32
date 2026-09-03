@@ -2,6 +2,6 @@
 #pragma once
 #include <groov/groov.hpp>
 #include "../../../common/registers/tim.hpp"
-namespace mcu::stm32::stm32wb35_cm4 {
+namespace erworks::stm32::stm32wb35_cm4 {
 #include "../../../common/peripherals/tim_50331d2ab7ad.inc"
-} // namespace mcu::stm32::stm32wb35_cm4
+} // namespace erworks::stm32::stm32wb35_cm4

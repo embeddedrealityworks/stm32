@@ -5,7 +5,7 @@
 #include "../access.hpp"
 #include "../bittypes.hpp"
 
-namespace mcu::stm32::regs {
+namespace erworks::stm32::regs {
 
 // tim12_tim12_cr2_v1: TIM12_CR2
 template <stdx::ct_string name,
@@ -37,4 +37,4 @@ using tim12_tim12_egr_v1_tt =
                groov::field<"cc1g", bool, 1, 1>,
                groov::field<"ug", bool, 0, 0>>;
 
-} // namespace mcu::stm32::regs
+} // namespace erworks::stm32::regs

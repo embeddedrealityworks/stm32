@@ -2,6 +2,6 @@
 #pragma once
 #include <groov/groov.hpp>
 #include "../../../common/registers/pka.hpp"
-namespace mcu::stm32::stm32u545 {
+namespace erworks::stm32::stm32u545 {
 #include "../../../common/peripherals/pka_afb1e75d2bc7.inc"
-} // namespace mcu::stm32::stm32u545
+} // namespace erworks::stm32::stm32u545

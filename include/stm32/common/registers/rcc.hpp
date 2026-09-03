@@ -5,7 +5,7 @@
 #include "../access.hpp"
 #include "../bittypes.hpp"
 
-namespace mcu::stm32::regs {
+namespace erworks::stm32::regs {
 
 // rcc_ahb1enr_v1: AHB1ENR
 template <stdx::ct_string name,
@@ -33529,4 +33529,4 @@ using rcc_sscgr_v1_tt =
                groov::field<"incstep", std::uint16_t, 27, 13>,
                groov::field<"modper", std::uint16_t, 12, 0>>;
 
-} // namespace mcu::stm32::regs
+} // namespace erworks::stm32::regs

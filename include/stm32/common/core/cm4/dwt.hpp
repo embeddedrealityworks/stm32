@@ -4,7 +4,7 @@
 #include "../../access.hpp"
 #include "../../bittypes.hpp"
 
-namespace mcu::core {
+namespace erworks::stm32::core {
 namespace dwt {
 
 template <stdx::ct_string name,
@@ -252,4 +252,4 @@ using dwt_t =
 inline constexpr std::uint32_t DWT_BASE = 0xE0001000U;
 
 } // namespace dwt
-} // namespace mcu::core
+} // namespace erworks::stm32::core

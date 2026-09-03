@@ -2,6 +2,6 @@
 #pragma once
 #include <groov/groov.hpp>
 #include "../../../common/registers/tsc.hpp"
-namespace mcu::stm32::stm32wb15_cm4 {
+namespace erworks::stm32::stm32wb15_cm4 {
 #include "../../../common/peripherals/tsc_1fe59b28cb08.inc"
-} // namespace mcu::stm32::stm32wb15_cm4
+} // namespace erworks::stm32::stm32wb15_cm4

@@ -5,7 +5,7 @@
 #include "../access.hpp"
 #include "../bittypes.hpp"
 
-namespace mcu::stm32::regs {
+namespace erworks::stm32::regs {
 
 // fsmc_bcr1_v1: BCR1
 template <stdx::ct_string name,
@@ -470,4 +470,4 @@ using fsmc_sr2_v1_tt =
                groov::field<"ils", bool, 1, 1>,
                groov::field<"irs", bool, 0, 0>>;
 
-} // namespace mcu::stm32::regs
+} // namespace erworks::stm32::regs

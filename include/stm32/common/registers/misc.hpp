@@ -5,7 +5,7 @@
 #include "../access.hpp"
 #include "../bittypes.hpp"
 
-namespace mcu::stm32::regs {
+namespace erworks::stm32::regs {
 
 // misc_rrm_udra_ctrl_v1: RRM_UDRA_CTRL
 template <stdx::ct_string name,
@@ -71,4 +71,4 @@ using misc_wakeup_irq_status_v1_tt =
                groov::field<"rfip_wakeup_f", bool, 1, 1>,
                groov::field<"cpu_wakeup_f", bool, 0, 0>>;
 
-} // namespace mcu::stm32::regs
+} // namespace erworks::stm32::regs

@@ -5,7 +5,7 @@
 #include "../access.hpp"
 #include "../bittypes.hpp"
 
-namespace mcu::stm32::regs {
+namespace erworks::stm32::regs {
 
 // lpdma_lpdma_c0cr_v1: LPDMA_C0CR
 template <stdx::ct_string name,
@@ -308,4 +308,4 @@ using lpdma_misr_v1_tt =
                groov::field<"mis1", bool, 1, 1>,
                groov::field<"mis0", bool, 0, 0>>;
 
-} // namespace mcu::stm32::regs
+} // namespace erworks::stm32::regs

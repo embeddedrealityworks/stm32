@@ -5,7 +5,7 @@
 #include "../access.hpp"
 #include "../bittypes.hpp"
 
-namespace mcu::stm32::regs {
+namespace erworks::stm32::regs {
 
 // flash_acr_v1: ACR
 template <stdx::ct_string name,
@@ -9797,4 +9797,4 @@ using flash_wrprot2_v1_tt =
                groov::field<"reserved0", std::uint16_t, 31, 16>,
                groov::field<"wrprot2", std::uint16_t, 15, 0>>;
 
-} // namespace mcu::stm32::regs
+} // namespace erworks::stm32::regs

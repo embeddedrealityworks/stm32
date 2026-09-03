@@ -46,7 +46,7 @@
 #include "peripherals/addresses.hpp"
 #include "../../common/core/cm4.hpp"
 
-namespace mcu::stm32 {
+namespace erworks::stm32 {
 
 constexpr auto adc = stm32l4p5::adc::adc_t<stm32l4p5::adc::ADC_BASE>{};
 
@@ -204,4 +204,4 @@ constexpr auto vrefbuf = stm32l4p5::vrefbuf::vrefbuf_t<stm32l4p5::vrefbuf::VREFB
 
 constexpr auto wwdg = stm32l4p5::wwdg::wwdg_t<stm32l4p5::wwdg::WWDG_BASE>{};
 
-} // namespace mcu::stm32
+} // namespace erworks::stm32

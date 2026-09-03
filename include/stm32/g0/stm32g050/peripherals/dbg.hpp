@@ -2,6 +2,6 @@
 #pragma once
 #include <groov/groov.hpp>
 #include "../../../common/registers/dbg.hpp"
-namespace mcu::stm32::stm32g050 {
+namespace erworks::stm32::stm32g050 {
 #include "../../../common/peripherals/dbg_d134c7e1c19f.inc"
-} // namespace mcu::stm32::stm32g050
+} // namespace erworks::stm32::stm32g050

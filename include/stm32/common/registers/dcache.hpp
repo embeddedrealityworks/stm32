@@ -5,7 +5,7 @@
 #include "../access.hpp"
 #include "../bittypes.hpp"
 
-namespace mcu::stm32::regs {
+namespace erworks::stm32::regs {
 
 // dcache_dcache_cmdreaddrr_v1: DCACHE_CMDREADDRR
 template <stdx::ct_string name,
@@ -369,4 +369,4 @@ using dcache_dcache_wmmonr_v3_tt =
                groov::field<"reserved0", std::uint16_t, 31, 16>,
                groov::field<"wmissmon", std::uint16_t, 15, 0>>;
 
-} // namespace mcu::stm32::regs
+} // namespace erworks::stm32::regs

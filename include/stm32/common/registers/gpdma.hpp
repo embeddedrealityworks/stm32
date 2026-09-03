@@ -5,7 +5,7 @@
 #include "../access.hpp"
 #include "../bittypes.hpp"
 
-namespace mcu::stm32::regs {
+namespace erworks::stm32::regs {
 
 // gpdma_gpdma_c0br1_v1: GPDMA_C0BR1
 template <stdx::ct_string name,
@@ -1059,4 +1059,4 @@ using gpdma_misr_v1_tt =
                groov::field<"mis1", bool, 1, 1>,
                groov::field<"mis0", bool, 0, 0>>;
 
-} // namespace mcu::stm32::regs
+} // namespace erworks::stm32::regs

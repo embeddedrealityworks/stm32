@@ -5,7 +5,7 @@
 #include "../access.hpp"
 #include "../bittypes.hpp"
 
-namespace mcu::stm32::regs {
+namespace erworks::stm32::regs {
 
 // quadspi_abr_v1: ABR
 template <stdx::ct_string name,
@@ -299,4 +299,4 @@ using quadspi_sr_v2_tt =
                groov::field<"tcf", bool, 1, 1>,
                groov::field<"tef", bool, 0, 0>>;
 
-} // namespace mcu::stm32::regs
+} // namespace erworks::stm32::regs

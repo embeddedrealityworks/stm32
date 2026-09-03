@@ -5,7 +5,7 @@
 #include "../access.hpp"
 #include "../bittypes.hpp"
 
-namespace mcu::stm32::regs {
+namespace erworks::stm32::regs {
 
 // switchable_irq_enable_v1: IRQ_ENABLE
 template <stdx::ct_string name,
@@ -38,4 +38,4 @@ using switchable_status_v1_tt =
                groov::field<"frame_sync_complete_f", bool, 1, 1>,
                groov::field<"bit_sync_detected_f", bool, 0, 0>>;
 
-} // namespace mcu::stm32::regs
+} // namespace erworks::stm32::regs

@@ -5,7 +5,7 @@
 #include "../access.hpp"
 #include "../bittypes.hpp"
 
-namespace mcu::stm32::regs {
+namespace erworks::stm32::regs {
 
 // firewall_firewall_cr_v1: FIREWALL_CR
 template <stdx::ct_string name,
@@ -73,4 +73,4 @@ using firewall_firewall_vdssa_v1_tt =
                groov::field<"add", std::uint16_t, 15, 6>,
                groov::field<"reserved0", std::uint8_t, 5, 0, common::access::ro>>;
 
-} // namespace mcu::stm32::regs
+} // namespace erworks::stm32::regs

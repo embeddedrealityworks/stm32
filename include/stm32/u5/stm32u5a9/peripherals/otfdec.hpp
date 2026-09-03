@@ -2,6 +2,6 @@
 #pragma once
 #include <groov/groov.hpp>
 #include "../../../common/registers/otfdec.hpp"
-namespace mcu::stm32::stm32u5a9 {
+namespace erworks::stm32::stm32u5a9 {
 #include "../../../common/peripherals/otfdec_a117302ea317.inc"
-} // namespace mcu::stm32::stm32u5a9
+} // namespace erworks::stm32::stm32u5a9

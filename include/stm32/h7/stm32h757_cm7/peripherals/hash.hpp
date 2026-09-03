@@ -2,6 +2,6 @@
 #pragma once
 #include <groov/groov.hpp>
 #include "../../../common/registers/hash.hpp"
-namespace mcu::stm32::stm32h757_cm7 {
+namespace erworks::stm32::stm32h757_cm7 {
 #include "../../../common/peripherals/hash_400a340c3693.inc"
-} // namespace mcu::stm32::stm32h757_cm7
+} // namespace erworks::stm32::stm32h757_cm7

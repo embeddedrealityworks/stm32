@@ -5,7 +5,7 @@
 #include "../access.hpp"
 #include "../bittypes.hpp"
 
-namespace mcu::stm32::regs {
+namespace erworks::stm32::regs {
 
 // ipcc_c1cr_v1: C1CR
 template <stdx::ct_string name,
@@ -122,4 +122,4 @@ using ipcc_ipcc_c1scr_v1_tt =
                groov::field<"ch2c", bool, 1, 1>,
                groov::field<"ch1c", bool, 0, 0>>;
 
-} // namespace mcu::stm32::regs
+} // namespace erworks::stm32::regs

@@ -5,7 +5,7 @@
 #include "../access.hpp"
 #include "../bittypes.hpp"
 
-namespace mcu::stm32::regs {
+namespace erworks::stm32::regs {
 
 // i2c2_i2c2_cr1_v1: I2C2_CR1
 template <stdx::ct_string name,
@@ -56,4 +56,4 @@ using i2c2_i2c2_timeout_v1_tt =
                groov::field<"tidle", bool, 12, 12>,
                groov::field<"timeouta", std::uint16_t, 11, 0>>;
 
-} // namespace mcu::stm32::regs
+} // namespace erworks::stm32::regs

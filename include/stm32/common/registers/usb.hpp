@@ -5,7 +5,7 @@
 #include "../access.hpp"
 #include "../bittypes.hpp"
 
-namespace mcu::stm32::regs {
+namespace erworks::stm32::regs {
 
 // usb_addr0_rx_v1: ADDR0_RX
 template <stdx::ct_string name,
@@ -1033,4 +1033,4 @@ using usb_usb_lpmcsr_v1_tt =
                groov::field<"lpmack", bool, 1, 1>,
                groov::field<"lpmen", common::bit_enable, 0, 0>>;
 
-} // namespace mcu::stm32::regs
+} // namespace erworks::stm32::regs

@@ -5,7 +5,7 @@
 #include "../access.hpp"
 #include "../bittypes.hpp"
 
-namespace mcu::stm32::regs {
+namespace erworks::stm32::regs {
 
 // radio_reg_reg_block_aa0_dig_usr_v1: AA0_DIG_USR
 template <stdx::ct_string name,
@@ -685,4 +685,4 @@ using radio_reg_reg_block_vit_conf_dig_eng_v1_tt =
                groov::field<"reserved0", bool, 1, 1, common::access::ro>,
                groov::field<"vit_en", common::bit_enable, 0, 0>>;
 
-} // namespace mcu::stm32::regs
+} // namespace erworks::stm32::regs

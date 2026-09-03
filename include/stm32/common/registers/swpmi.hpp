@@ -5,7 +5,7 @@
 #include "../access.hpp"
 #include "../bittypes.hpp"
 
-namespace mcu::stm32::regs {
+namespace erworks::stm32::regs {
 
 // swpmi_brr_v1: BRR
 template <stdx::ct_string name,
@@ -263,4 +263,4 @@ using swpmi_tdr_v1_tt =
              common::access::wo,
                groov::field<"td", std::uint32_t, 31, 0>>;
 
-} // namespace mcu::stm32::regs
+} // namespace erworks::stm32::regs

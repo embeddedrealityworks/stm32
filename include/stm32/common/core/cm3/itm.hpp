@@ -4,7 +4,7 @@
 #include "../../access.hpp"
 #include "../../bittypes.hpp"
 
-namespace mcu::core {
+namespace erworks::stm32::core {
 namespace itm {
 
 template <stdx::ct_string name,
@@ -223,4 +223,4 @@ using itm_t =
 inline constexpr std::uint32_t ITM_BASE = 0xE0000000U;
 
 } // namespace itm
-} // namespace mcu::core
+} // namespace erworks::stm32::core

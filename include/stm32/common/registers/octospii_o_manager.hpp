@@ -5,7 +5,7 @@
 #include "../access.hpp"
 #include "../bittypes.hpp"
 
-namespace mcu::stm32::regs {
+namespace erworks::stm32::regs {
 
 // octospii_o_manager_cr_v1: CR
 template <stdx::ct_string name,
@@ -46,4 +46,4 @@ using octospii_o_manager_p1cr_v1_tt =
                groov::field<"clksrc", bool, 1, 1>,
                groov::field<"clken", common::bit_enable, 0, 0>>;
 
-} // namespace mcu::stm32::regs
+} // namespace erworks::stm32::regs

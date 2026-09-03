@@ -5,7 +5,7 @@
 #include "../access.hpp"
 #include "../bittypes.hpp"
 
-namespace mcu::stm32::regs {
+namespace erworks::stm32::regs {
 
 // exti_c1emr1_v1: C1EMR1
 template <stdx::ct_string name,
@@ -8010,4 +8010,4 @@ using exti_swier3_v1_tt =
                groov::field<"swier82", bool, 18, 18>,
                groov::field<"reserved0", std::uint32_t, 17, 0, common::access::ro>>;
 
-} // namespace mcu::stm32::regs
+} // namespace erworks::stm32::regs

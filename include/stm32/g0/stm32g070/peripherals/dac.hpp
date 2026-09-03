@@ -2,6 +2,6 @@
 #pragma once
 #include <groov/groov.hpp>
 #include "../../../common/registers/dac.hpp"
-namespace mcu::stm32::stm32g070 {
+namespace erworks::stm32::stm32g070 {
 #include "../../../common/peripherals/dac_ce16495c1511.inc"
-} // namespace mcu::stm32::stm32g070
+} // namespace erworks::stm32::stm32g070

@@ -5,7 +5,7 @@
 #include "../access.hpp"
 #include "../bittypes.hpp"
 
-namespace mcu::stm32::regs {
+namespace erworks::stm32::regs {
 
 // gpio_afrh_v1: AFRH
 template <stdx::ct_string name,
@@ -2478,4 +2478,4 @@ using gpio_seccfgr_v1_tt =
                groov::field<"sec1", bool, 1, 1>,
                groov::field<"sec0", bool, 0, 0>>;
 
-} // namespace mcu::stm32::regs
+} // namespace erworks::stm32::regs

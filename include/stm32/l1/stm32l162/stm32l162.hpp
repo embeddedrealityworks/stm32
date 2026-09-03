@@ -31,7 +31,7 @@
 #include "peripherals/addresses.hpp"
 #include "../../common/core/cm3.hpp"
 
-namespace mcu::stm32 {
+namespace erworks::stm32 {
 
 constexpr auto adc = stm32l162::adc::adc_t<stm32l162::adc::ADC_BASE>{};
 
@@ -133,4 +133,4 @@ constexpr auto usb_sram = stm32l162::usbx::usbx_t<"usb_sram",stm32l162::usb_sram
 
 constexpr auto wwdg = stm32l162::wwdg::wwdg_t<stm32l162::wwdg::WWDG_BASE>{};
 
-} // namespace mcu::stm32
+} // namespace erworks::stm32

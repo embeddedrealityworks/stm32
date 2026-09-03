@@ -5,7 +5,7 @@
 #include "../access.hpp"
 #include "../bittypes.hpp"
 
-namespace mcu::stm32::regs {
+namespace erworks::stm32::regs {
 
 // dsihost_dsi_ccr_v1: DSI_CCR
 template <stdx::ct_string name,
@@ -1187,4 +1187,4 @@ using dsihost_dsi_wrpcr_v1_tt =
                groov::field<"reserved0", bool, 1, 1, common::access::ro>,
                groov::field<"pllen", common::bit_enable, 0, 0>>;
 
-} // namespace mcu::stm32::regs
+} // namespace erworks::stm32::regs

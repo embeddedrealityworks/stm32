@@ -5,7 +5,7 @@
 #include "../access.hpp"
 #include "../bittypes.hpp"
 
-namespace mcu::stm32::regs {
+namespace erworks::stm32::regs {
 
 // mdf_gcr_v1: GCR
 template <stdx::ct_string name,
@@ -313,4 +313,4 @@ using mdf_mdf_snps0dr_v3_tt =
                groov::field<"extsdr", std::uint8_t, 15, 9>,
                groov::field<"mcicdc", std::uint16_t, 8, 0>>;
 
-} // namespace mcu::stm32::regs
+} // namespace erworks::stm32::regs

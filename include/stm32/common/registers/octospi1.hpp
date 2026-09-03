@@ -5,7 +5,7 @@
 #include "../access.hpp"
 #include "../bittypes.hpp"
 
-namespace mcu::stm32::regs {
+namespace erworks::stm32::regs {
 
 // octospi1_octospi1_cr_v1: OCTOSPI1_CR
 template <stdx::ct_string name,
@@ -76,4 +76,4 @@ using octospi1_octospi1_dcr3_v1_tt =
                groov::field<"reserved0", std::uint8_t, 15, 8, common::access::ro>,
                groov::field<"maxtran", std::uint8_t, 7, 0>>;
 
-} // namespace mcu::stm32::regs
+} // namespace erworks::stm32::regs

@@ -5,7 +5,7 @@
 #include "../access.hpp"
 #include "../bittypes.hpp"
 
-namespace mcu::stm32::regs {
+namespace erworks::stm32::regs {
 
 // ccb_ccb_cr_v1: CCB_CR
 template <stdx::ct_string name,
@@ -211,4 +211,4 @@ using ccb_ccb_sr_v1_tt =
                groov::field<"reserved0", std::uint8_t, 7, 5>,
                groov::field<"opstep", std::uint8_t, 4, 0>>;
 
-} // namespace mcu::stm32::regs
+} // namespace erworks::stm32::regs

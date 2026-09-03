@@ -5,7 +5,7 @@
 #include "../access.hpp"
 #include "../bittypes.hpp"
 
-namespace mcu::stm32::regs {
+namespace erworks::stm32::regs {
 
 // dfsdm_awscd0r_v1: AWSCD0R
 template <stdx::ct_string name,
@@ -720,4 +720,4 @@ using dfsdm_dfsdm_flt0rdatar_v1_tt =
                groov::field<"reserved0", bool, 3, 3, common::access::ro>,
                groov::field<"rdatach", std::uint8_t, 2, 0, common::access::ro>>;
 
-} // namespace mcu::stm32::regs
+} // namespace erworks::stm32::regs

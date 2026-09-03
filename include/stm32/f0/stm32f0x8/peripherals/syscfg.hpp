@@ -2,6 +2,6 @@
 #pragma once
 #include <groov/groov.hpp>
 #include "../../../common/registers/syscfg.hpp"
-namespace mcu::stm32::stm32f0x8 {
+namespace erworks::stm32::stm32f0x8 {
 #include "../../../common/peripherals/syscfg_77cb30beade6.inc"
-} // namespace mcu::stm32::stm32f0x8
+} // namespace erworks::stm32::stm32f0x8

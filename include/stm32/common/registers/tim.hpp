@@ -5,7 +5,7 @@
 #include "../access.hpp"
 #include "../bittypes.hpp"
 
-namespace mcu::stm32::regs {
+namespace erworks::stm32::regs {
 
 // tim_af1_v1: AF1
 template <stdx::ct_string name,
@@ -6657,4 +6657,4 @@ using tim_tisel_v5_tt =
                groov::field<"reserved0", std::uint8_t, 7, 4, common::access::ro>,
                groov::field<"ti1sel", std::uint8_t, 3, 0>>;
 
-} // namespace mcu::stm32::regs
+} // namespace erworks::stm32::regs

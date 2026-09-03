@@ -5,7 +5,7 @@
 #include "../access.hpp"
 #include "../bittypes.hpp"
 
-namespace mcu::stm32::regs {
+namespace erworks::stm32::regs {
 
 // mpu_mpu_ctrl_v1: MPU_CTRL
 template <stdx::ct_string name,
@@ -98,4 +98,4 @@ using mpu_mpu_typer_v1_tt =
                groov::field<"reserved0", std::uint8_t, 7, 1>,
                groov::field<"separate", bool, 0, 0>>;
 
-} // namespace mcu::stm32::regs
+} // namespace erworks::stm32::regs

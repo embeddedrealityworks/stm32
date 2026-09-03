@@ -2,6 +2,6 @@
 #pragma once
 #include <groov/groov.hpp>
 #include "../../../common/registers/fsmc.hpp"
-namespace mcu::stm32::stm32f423 {
+namespace erworks::stm32::stm32f423 {
 #include "../../../common/peripherals/fsmc_eab4b7d1665b.inc"
-} // namespace mcu::stm32::stm32f423
+} // namespace erworks::stm32::stm32f423

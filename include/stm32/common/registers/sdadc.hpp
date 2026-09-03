@@ -5,7 +5,7 @@
 #include "../access.hpp"
 #include "../bittypes.hpp"
 
-namespace mcu::stm32::regs {
+namespace erworks::stm32::regs {
 
 // sdadc_clrisr_v1: CLRISR
 template <stdx::ct_string name,
@@ -262,4 +262,4 @@ using sdadc_rdata13r_v1_tt =
                groov::field<"rdata3", std::uint16_t, 31, 16>,
                groov::field<"rdata1", std::uint16_t, 15, 0>>;
 
-} // namespace mcu::stm32::regs
+} // namespace erworks::stm32::regs

@@ -5,7 +5,7 @@
 #include "../access.hpp"
 #include "../bittypes.hpp"
 
-namespace mcu::stm32::regs {
+namespace erworks::stm32::regs {
 
 // i2c_ccr_v1: CCR
 template <stdx::ct_string name,
@@ -1310,4 +1310,4 @@ using i2c_txdr_v2_tt =
                groov::field<"reserved0", std::uint32_t, 31, 8>,
                groov::field<"txdata", std::uint8_t, 7, 0>>;
 
-} // namespace mcu::stm32::regs
+} // namespace erworks::stm32::regs

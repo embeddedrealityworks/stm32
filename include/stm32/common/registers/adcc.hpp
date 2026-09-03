@@ -5,7 +5,7 @@
 #include "../access.hpp"
 #include "../bittypes.hpp"
 
-namespace mcu::stm32::regs {
+namespace erworks::stm32::regs {
 
 // adcc_adcc_ccr_v1: ADCC_CCR
 template <stdx::ct_string name,
@@ -76,4 +76,4 @@ using adcc_adcc_csr_v1_tt =
                groov::field<"eosmp_mst", bool, 1, 1>,
                groov::field<"adrdy_mst", common::bit_ready, 0, 0>>;
 
-} // namespace mcu::stm32::regs
+} // namespace erworks::stm32::regs

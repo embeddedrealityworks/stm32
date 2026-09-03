@@ -2,7 +2,7 @@
 
 #include <groov/groov.hpp>
 
-namespace mcu::stm32::common {
+namespace erworks::stm32::common {
 
 enum class bit_enable : bool {
   ENABLE  = true,
@@ -73,4 +73,4 @@ enum class bit_reset : bool {
   one        = true
 };
 
-} // namespace mcu::stm32::common
+} // namespace erworks::stm32::common

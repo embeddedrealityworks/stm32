@@ -5,7 +5,7 @@
 #include "../access.hpp"
 #include "../bittypes.hpp"
 
-namespace mcu::stm32::regs {
+namespace erworks::stm32::regs {
 
 // cec_cec_cfgr_v1: CEC_CFGR
 template <stdx::ct_string name,
@@ -361,4 +361,4 @@ using cec_txdr_v1_tt =
                groov::field<"reserved0", std::uint32_t, 31, 8, common::access::ro>,
                groov::field<"txd", std::uint8_t, 7, 0>>;
 
-} // namespace mcu::stm32::regs
+} // namespace erworks::stm32::regs

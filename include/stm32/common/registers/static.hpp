@@ -5,7 +5,7 @@
 #include "../access.hpp"
 #include "../bittypes.hpp"
 
-namespace mcu::stm32::regs {
+namespace erworks::stm32::regs {
 
 // static_as_qi_ctrl_v1: AS_QI_CTRL
 template <stdx::ct_string name,
@@ -240,4 +240,4 @@ using static_sync_v1_tt =
              common::access::rw,
                groov::field<"sync", std::uint32_t, 31, 0>>;
 
-} // namespace mcu::stm32::regs
+} // namespace erworks::stm32::regs

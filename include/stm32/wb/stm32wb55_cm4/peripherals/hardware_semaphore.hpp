@@ -2,6 +2,6 @@
 #pragma once
 #include <groov/groov.hpp>
 #include "../../../common/registers/hardware_semaphore.hpp"
-namespace mcu::stm32::stm32wb55_cm4 {
+namespace erworks::stm32::stm32wb55_cm4 {
 #include "../../../common/peripherals/hardware_semaphore_6a0634745c9a.inc"
-} // namespace mcu::stm32::stm32wb55_cm4
+} // namespace erworks::stm32::stm32wb55_cm4

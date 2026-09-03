@@ -5,7 +5,7 @@
 #include "../access.hpp"
 #include "../bittypes.hpp"
 
-namespace mcu::stm32::regs {
+namespace erworks::stm32::regs {
 
 // venc_venc_swreg0_v1: VENC_SWREG0
 template <stdx::ct_string name,
@@ -40,4 +40,4 @@ using venc_venc_swreg96_v1_tt =
              common::access::rw,
                groov::field<"swreg_field", std::uint32_t, 31, 0, common::access::wo>>;
 
-} // namespace mcu::stm32::regs
+} // namespace erworks::stm32::regs

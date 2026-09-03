@@ -5,7 +5,7 @@
 #include "../access.hpp"
 #include "../bittypes.hpp"
 
-namespace mcu::stm32::regs {
+namespace erworks::stm32::regs {
 
 // comp1_cfgr1_v1: CFGR1
 template <stdx::ct_string name,
@@ -131,4 +131,4 @@ using comp1_sr_v1_tt =
                groov::field<"c2val", bool, 1, 1>,
                groov::field<"c1val", bool, 0, 0>>;
 
-} // namespace mcu::stm32::regs
+} // namespace erworks::stm32::regs

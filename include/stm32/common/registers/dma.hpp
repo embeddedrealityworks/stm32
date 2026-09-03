@@ -5,7 +5,7 @@
 #include "../access.hpp"
 #include "../bittypes.hpp"
 
-namespace mcu::stm32::regs {
+namespace erworks::stm32::regs {
 
 // dma_ccr1_v1: CCR1
 template <stdx::ct_string name,
@@ -1159,4 +1159,4 @@ using dma_s1cr_v3_tt =
                groov::field<"dmeie", common::bit_enable, 1, 1>,
                groov::field<"en", common::bit_enable, 0, 0>>;
 
-} // namespace mcu::stm32::regs
+} // namespace erworks::stm32::regs

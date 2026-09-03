@@ -5,7 +5,7 @@
 #include "../access.hpp"
 #include "../bittypes.hpp"
 
-namespace mcu::stm32::regs {
+namespace erworks::stm32::regs {
 
 // play_play_cfgcr_v1: PLAY_CFGCR
 template <stdx::ct_string name,
@@ -457,4 +457,4 @@ using play_play_swinset_v1_tt =
                groov::field<"swin1", bool, 1, 1>,
                groov::field<"swin0", bool, 0, 0>>;
 
-} // namespace mcu::stm32::regs
+} // namespace erworks::stm32::regs

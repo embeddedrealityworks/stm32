@@ -5,7 +5,7 @@
 #include "../access.hpp"
 #include "../bittypes.hpp"
 
-namespace mcu::stm32::regs {
+namespace erworks::stm32::regs {
 
 // usb_otg_hs_otg_hs_daintmsk_v1: OTG_HS_DAINTMSK
 template <stdx::ct_string name,
@@ -889,4 +889,4 @@ using usb_otg_hs_otg_hs_hptxfsiz_v1_tt =
                groov::field<"ptxfd", std::uint16_t, 31, 16>,
                groov::field<"ptxsa", std::uint16_t, 15, 0>>;
 
-} // namespace mcu::stm32::regs
+} // namespace erworks::stm32::regs

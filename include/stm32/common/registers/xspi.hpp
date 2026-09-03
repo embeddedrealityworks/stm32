@@ -5,7 +5,7 @@
 #include "../access.hpp"
 #include "../bittypes.hpp"
 
-namespace mcu::stm32::regs {
+namespace erworks::stm32::regs {
 
 // xspi_xspi_calfcr_v1: XSPI_CALFCR
 template <stdx::ct_string name,
@@ -158,4 +158,4 @@ using xspi_xspi_sr_v1_tt =
                groov::field<"tcf", bool, 1, 1, common::access::ro>,
                groov::field<"tef", bool, 0, 0, common::access::ro>>;
 
-} // namespace mcu::stm32::regs
+} // namespace erworks::stm32::regs

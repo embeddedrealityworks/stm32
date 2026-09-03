@@ -5,7 +5,7 @@
 #include "../access.hpp"
 #include "../bittypes.hpp"
 
-namespace mcu::stm32::regs {
+namespace erworks::stm32::regs {
 
 // dma2d_cr_v1: CR
 template <stdx::ct_string name,
@@ -1002,4 +1002,4 @@ using dma2d_opfccr_v2_tt =
                groov::field<"reserved0", std::uint8_t, 8, 3, common::access::ro>,
                groov::field<"cm", std::uint8_t, 2, 0>>;
 
-} // namespace mcu::stm32::regs
+} // namespace erworks::stm32::regs

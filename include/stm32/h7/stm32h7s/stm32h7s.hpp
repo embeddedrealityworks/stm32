@@ -61,7 +61,7 @@
 #include "peripherals/addresses.hpp"
 #include "../../common/core/cm7.hpp"
 
-namespace mcu::stm32 {
+namespace erworks::stm32 {
 
 constexpr auto adc1 = stm32h7s::adcx::adcx_t<"adc1",stm32h7s::adc1::ADC1_BASE>{};
 
@@ -273,4 +273,4 @@ constexpr auto xspi2 = stm32h7s::xspix::xspix_t<"xspi2",stm32h7s::xspi2::XSPI2_B
 
 constexpr auto xspim1 = stm32h7s::xspim1::xspim1_t<stm32h7s::xspim1::XSPIM1_BASE>{};
 
-} // namespace mcu::stm32
+} // namespace erworks::stm32

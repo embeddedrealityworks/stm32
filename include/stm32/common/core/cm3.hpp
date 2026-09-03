@@ -9,11 +9,11 @@
 #include "cm3/itm.hpp"
 
 // Cortex-CM3 core peripheral instances
-namespace mcu::core {
+namespace erworks::stm32::core {
 inline constexpr auto systick = systick::systick_t<systick::SYSTICK_BASE>{};
 inline constexpr auto scb = scb::scb_t<scb::SCB_BASE>{};
 inline constexpr auto mpu = mpu::mpu_t<mpu::MPU_BASE>{};
 inline constexpr auto coredebug = coredebug::coredebug_t<coredebug::COREDEBUG_BASE>{};
 inline constexpr auto dwt = dwt::dwt_t<dwt::DWT_BASE>{};
 inline constexpr auto itm = itm::itm_t<itm::ITM_BASE>{};
-} // namespace mcu::core
+} // namespace erworks::stm32::core

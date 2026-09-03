@@ -5,7 +5,7 @@
 #include "../access.hpp"
 #include "../bittypes.hpp"
 
-namespace mcu::stm32::regs {
+namespace erworks::stm32::regs {
 
 // csi_csi_cr_v1: CSI_CR
 template <stdx::ct_string name,
@@ -535,4 +535,4 @@ using csi_csi_vc0cfgr4_v1_tt =
                groov::field<"reserved0", std::uint8_t, 7, 6, common::access::ro>,
                groov::field<"dt5", std::uint8_t, 5, 0>>;
 
-} // namespace mcu::stm32::regs
+} // namespace erworks::stm32::regs

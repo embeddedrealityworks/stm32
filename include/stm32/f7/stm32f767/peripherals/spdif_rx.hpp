@@ -2,6 +2,6 @@
 #pragma once
 #include <groov/groov.hpp>
 #include "../../../common/registers/spdif_rx.hpp"
-namespace mcu::stm32::stm32f767 {
+namespace erworks::stm32::stm32f767 {
 #include "../../../common/peripherals/spdif_rx_acffadafca5a.inc"
-} // namespace mcu::stm32::stm32f767
+} // namespace erworks::stm32::stm32f767

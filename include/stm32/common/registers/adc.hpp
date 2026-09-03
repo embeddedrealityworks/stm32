@@ -5,7 +5,7 @@
 #include "../access.hpp"
 #include "../bittypes.hpp"
 
-namespace mcu::stm32::regs {
+namespace erworks::stm32::regs {
 
 // adc_adc12_ccr_v1: ADC12_CCR
 template <stdx::ct_string name,
@@ -6854,4 +6854,4 @@ using adc_wd_th_v2_tt =
                groov::field<"reserved0", std::uint8_t, 15, 12, common::access::ro>,
                groov::field<"wd_lt", std::uint16_t, 11, 0>>;
 
-} // namespace mcu::stm32::regs
+} // namespace erworks::stm32::regs

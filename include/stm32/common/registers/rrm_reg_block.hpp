@@ -5,7 +5,7 @@
 #include "../access.hpp"
 #include "../bittypes.hpp"
 
-namespace mcu::stm32::regs {
+namespace erworks::stm32::regs {
 
 // rrm_reg_block_ble_irq_enable_v1: BLE_IRQ_ENABLE
 template <stdx::ct_string name,
@@ -145,4 +145,4 @@ using rrm_reg_block_vp_cpu_sema_bus_v1_tt =
                groov::field<"take_req", bool, 3, 3>,
                groov::field<"take_prio", std::uint8_t, 2, 0>>;
 
-} // namespace mcu::stm32::regs
+} // namespace erworks::stm32::regs

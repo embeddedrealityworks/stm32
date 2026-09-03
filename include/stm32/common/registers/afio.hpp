@@ -5,7 +5,7 @@
 #include "../access.hpp"
 #include "../bittypes.hpp"
 
-namespace mcu::stm32::regs {
+namespace erworks::stm32::regs {
 
 // afio_evcr_v1: EVCR
 template <stdx::ct_string name,
@@ -148,4 +148,4 @@ using afio_mapr2_v2_tt =
                groov::field<"tim9_remap", bool, 5, 5>,
                groov::field<"reserved0", std::uint8_t, 4, 0, common::access::ro>>;
 
-} // namespace mcu::stm32::regs
+} // namespace erworks::stm32::regs

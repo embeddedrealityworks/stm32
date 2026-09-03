@@ -5,7 +5,7 @@
 #include "../access.hpp"
 #include "../bittypes.hpp"
 
-namespace mcu::stm32::regs {
+namespace erworks::stm32::regs {
 
 // can_can_btr_v1: CAN_BTR
 template <stdx::ct_string name,
@@ -634,4 +634,4 @@ using can_fmr_v1_tt =
                groov::field<"reserved0", std::uint8_t, 7, 1, common::access::ro>,
                groov::field<"finit", bool, 0, 0>>;
 
-} // namespace mcu::stm32::regs
+} // namespace erworks::stm32::regs

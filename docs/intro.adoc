@@ -5,3 +5,7 @@ STM32 Groov register access.
 === Dependencies
 
 - https://intel.github.io/generic-register-operation-optimizer[Intel Generic Register Operation Optimizer]
+
+=== Usage
+
+You have this as subproject. Meson should know the target when configuring build.

@@ -2,6 +2,6 @@
 #pragma once
 #include <groov/groov.hpp>
 #include "../../../common/registers/dlyb.hpp"
-namespace mcu::stm32::stm32h757_cm7 {
+namespace erworks::stm32::stm32h757_cm7 {
 #include "../../../common/peripherals/dlyb_04df7c1787cf.inc"
-} // namespace mcu::stm32::stm32h757_cm7
+} // namespace erworks::stm32::stm32h757_cm7

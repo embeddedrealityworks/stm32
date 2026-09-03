@@ -5,7 +5,7 @@
 #include "../access.hpp"
 #include "../bittypes.hpp"
 
-namespace mcu::stm32::regs {
+namespace erworks::stm32::regs {
 
 // sai1_sai1_aclrfr_v1: SAI1_ACLRFR
 template <stdx::ct_string name,
@@ -45,4 +45,4 @@ using sai1_sai1_asr_v1_tt =
                groov::field<"mutedet", bool, 1, 1>,
                groov::field<"ovrudr", bool, 0, 0>>;
 
-} // namespace mcu::stm32::regs
+} // namespace erworks::stm32::regs

@@ -285,7 +285,7 @@ def generate_peripheral_header(periph: CorePeripheral) -> str:
         '#include "../../access.hpp"',
         '#include "../../bittypes.hpp"',
         '',
-        'namespace mcu::core {',
+        'namespace erworks::stm32::core {',
         f'namespace {periph.key} {{',
     ]
 
@@ -338,7 +338,7 @@ def generate_peripheral_header(periph: CorePeripheral) -> str:
         f'0x{periph.base:08X}U;',
         '',
         f'}} // namespace {pkey}',
-        '} // namespace mcu::core',
+        '} // namespace erworks::stm32::core',
         '',
     ]
     return '\n'.join(lines)
@@ -356,14 +356,14 @@ def generate_core_aggregate(variant: str, available: list[str]) -> str:
     lines += [
         '',
         f'// Cortex-{variant.upper()} core peripheral instances',
-        'namespace mcu::core {',
+        'namespace erworks::stm32::core {',
     ]
     for pkey in available:
         lines.append(
             f'inline constexpr auto {pkey} = '
             f'{pkey}::{pkey}_t<{pkey}::{pkey.upper()}_BASE>{{}};')
     lines += [
-        '} // namespace mcu::core',
+        '} // namespace erworks::stm32::core',
         '',
     ]
     return '\n'.join(lines)

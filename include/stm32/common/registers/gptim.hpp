@@ -5,7 +5,7 @@
 #include "../access.hpp"
 #include "../bittypes.hpp"
 
-namespace mcu::stm32::regs {
+namespace erworks::stm32::regs {
 
 // gptim_bdtr_v1: BDTR
 template <stdx::ct_string name,
@@ -58,4 +58,4 @@ using gptim_tim2_or1_v1_tt =
                groov::field<"etr_rmp", bool, 1, 1>,
                groov::field<"reserved0", bool, 0, 0, common::access::ro>>;
 
-} // namespace mcu::stm32::regs
+} // namespace erworks::stm32::regs

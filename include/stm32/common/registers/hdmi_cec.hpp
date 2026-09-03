@@ -5,7 +5,7 @@
 #include "../access.hpp"
 #include "../bittypes.hpp"
 
-namespace mcu::stm32::regs {
+namespace erworks::stm32::regs {
 
 // hdmi_cec_cec_cfgr_v1: CEC_CFGR
 template <stdx::ct_string name,
@@ -41,4 +41,4 @@ using hdmi_cec_cec_cr_v1_tt =
                groov::field<"txsom", bool, 1, 1, common::access::ro>,
                groov::field<"cecen", common::bit_enable, 0, 0>>;
 
-} // namespace mcu::stm32::regs
+} // namespace erworks::stm32::regs

@@ -5,7 +5,7 @@
 #include "../access.hpp"
 #include "../bittypes.hpp"
 
-namespace mcu::stm32::regs {
+namespace erworks::stm32::regs {
 
 // status_databuffer_info_v1: DATABUFFER_INFO
 template <stdx::ct_string name,
@@ -221,4 +221,4 @@ using status_vco_calib_out_v1_tt =
                groov::field<"reserved0", bool, 7, 7>,
                groov::field<"vco_calfreq_out", std::uint8_t, 6, 0>>;
 
-} // namespace mcu::stm32::regs
+} // namespace erworks::stm32::regs

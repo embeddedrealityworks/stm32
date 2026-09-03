@@ -5,7 +5,7 @@
 #include "../access.hpp"
 #include "../bittypes.hpp"
 
-namespace mcu::stm32::regs {
+namespace erworks::stm32::regs {
 
 // icache_icache_cr_v1: ICACHE_CR
 template <stdx::ct_string name,
@@ -266,4 +266,4 @@ using icache_icache_sr_v3_tt =
                groov::field<"bsyendf", common::bit_nready, 1, 1>,
                groov::field<"busyf", bool, 0, 0>>;
 
-} // namespace mcu::stm32::regs
+} // namespace erworks::stm32::regs
