@@ -838,7 +838,7 @@ def generate_aggregate(
     lines.append('')
     lines.append(f'#include "{mcu}/addresses.hpp"')
     if cpu_variant:
-        lines.append(f'#include "../common/core/{cpu_variant}.hpp"')
+        lines.append(f'#include "../core/{cpu_variant}.hpp"')
     lines.append('')
     lines.append('namespace erworks::stm32 {')
 
