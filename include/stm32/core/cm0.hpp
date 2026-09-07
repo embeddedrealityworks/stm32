@@ -3,7 +3,7 @@
 #include "cm0/systick.hpp"
 #include "cm0/scb.hpp"
 
-namespace erworks::stm::core {
-inline constexpr auto systic = systick::systic_t<systick::SYSTICK_BASE>{};
-inline constexpr auto scb = scb::scb_t<scb::SCB_BASE>{}
+namespace erworks::stm32 {
+inline constexpr auto systick = core::systick::systick_t<core::systick::SYSTICK_BASE>{};
+inline constexpr auto scb = core::scb::scb_t<core::scb::SCB_BASE>{};
 }
