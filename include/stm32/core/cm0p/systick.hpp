@@ -60,7 +60,7 @@ using systick_t = groov::group<"systick",
                                val_tt<"val", Baseaddress, 0x8>,
                                calib_tt<"calib", Baseaddress, 0xc>>;
 
-inline constexpr std::uint32_t SYSTICK_BASE = 0xE000'E010U;
+inline constexpr std::uint32_t SYSTICK_BASE = 0xE000E010U;
 
 // NOLINTEND(*-magic-numbers)
 } // namespace erworks::stm32::core::systick

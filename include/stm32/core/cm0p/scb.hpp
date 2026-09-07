@@ -39,6 +39,11 @@ using icsr_tt = groov::reg<
   groov::field<"reserved2", std::uint8_t, 11, 9, common::access::ro>,
   groov::field<"vectactive", std::uint16_t, 8, 0, common::access::ro>>;
 
+template<stdx::ct_string Name, std::uint32_t Baseaddress, std::uint32_t Offset>
+  using vtor_tt = groov::reg<Name, std::uint32_t, Baseaddress + Offset, common::access::rw,
+        groov::field<"tbloff", std::uint32_t, 31, 8>,
+        groov::field<"reserved0", std::uint8_t, 7, 0, common::access::ro>>;
+
 template <stdx::ct_string Name, std::uint32_t Baseaddress, std::uint32_t Offset>
 using aircr_tt = groov::reg<
   Name,
@@ -113,6 +118,7 @@ groov::group<"scb",
   groov::mmio_bus<>,
   cpuid_tt<"cpuid", Baseaddress, 0x0>,
   icsr_tt<"icsr", Baseaddress, 0x4>,
+  vtor_tt<"vtor", Baseaddress, 0x8>,
   aircr_tt<"aircr", Baseaddress, 0xc>,
   scr_tt<"scr", Baseaddress, 0x10>,
   ccr_tt<"ccr", Baseaddress, 0x14>,
@@ -120,7 +126,7 @@ groov::group<"scb",
   shpriii_tt<"shpr3", Baseaddress, 0x20>,
   shcsr_tt<"shcsr", Baseaddress, 0x24>>;
 
-inline constexpr std::uint32_t SCB_BASE     = 0xE000'ED00U;
+inline constexpr std::uint32_t SCB_BASE = 0xE000ED00U;
 
 // NOLINTEND(*-magic-numbers)
 } // namespace erworks::stm32::core::scb
