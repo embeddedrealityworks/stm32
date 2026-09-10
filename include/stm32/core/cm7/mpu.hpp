@@ -25,9 +25,9 @@ using ctrl_tt = groov::reg<Name,
                            Baseaddress + Offset,
                            common::access::rw,
                            groov::field<"reserved0", std::uint32_t, 31, 3, common::access::ro>,
-                           groov::field<"privdefena", bool, 2, 2>,
-                           groov::field<"hfnmiena", bool, 1, 1>,
-                           groov::field<"enable", bool, 0, 0>>;
+                           groov::field<"privdefena", common::bit_enable, 2, 2>,
+                           groov::field<"hfnmiena", common::bit_enable, 1, 1>,
+                           groov::field<"enable", common::bit_enable, 0, 0>>;
 
 template <stdx::ct_string Name, std::uint32_t Baseaddress, std::uint32_t Offset>
 using rnr_tt = groov::reg<Name,
@@ -61,7 +61,7 @@ using rasr_tt = groov::reg<Name,
                            groov::field<"srd", std::uint8_t, 15, 8>,
                            groov::field<"reserved0", std::uint8_t, 7, 6, common::access::ro>,
                            groov::field<"size", std::uint8_t, 5, 1>,
-                           groov::field<"enable", bool, 0, 0>>;
+                           groov::field<"enable", common::bit_enable, 0, 0>>;
 
 template <stdx::ct_string Name, std::uint32_t Baseaddress, std::uint32_t Offset>
 using rbar_a1_tt = groov::reg<Name,

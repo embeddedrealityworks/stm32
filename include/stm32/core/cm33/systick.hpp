@@ -18,8 +18,8 @@ using ctrl_tt = groov::reg<Name,
                            groov::field<"countflag", bool, 16, 16>,
                            groov::field<"reserved0", std::uint16_t, 15, 3, common::access::ro>,
                            groov::field<"clksource", bool, 2, 2>,
-                           groov::field<"tickint", bool, 1, 1>,
-                           groov::field<"enable", bool, 0, 0>>;
+                           groov::field<"tickint", common::bit_enable, 1, 1>,
+                           groov::field<"enable", common::bit_enable, 0, 0>>;
 
 template <stdx::ct_string Name, std::uint32_t Baseaddress, std::uint32_t Offset>
 using load_tt = groov::reg<Name,

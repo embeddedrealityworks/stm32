@@ -3,6 +3,7 @@
 #include <groov/groov.hpp>
 
 #include "../../common/access.hpp"
+#include "../../common/bittypes.hpp"
 
 namespace erworks::stm32::core::scb {
 
@@ -25,12 +26,12 @@ using icsr_tt = groov::reg<
   std::uint32_t,
   Baseaddress + Offset,
   common::access::rw,
-  groov::field<"nmipendset", bool, 31, 31>,
+  groov::field<"nmipendset", common::bit_reset, 31, 31>,
   groov::field<"reserved0", std::uint8_t, 30, 29, common::access::ro>,
   groov::field<"pend", bool, 28, 28>,
-  groov::field<"pendsvclr", bool, 27, 27, common::access::wo>,
-  groov::field<"pendstset", bool, 26, 26>,
-  groov::field<"pendstclr", bool, 25, 25, common::access::wo>,
+  groov::field<"pendsvclr", common::bit_reset, 27, 27, common::access::wo>,
+  groov::field<"pendstset", common::bit_reset, 26, 26>,
+  groov::field<"pendstclr", common::bit_reset, 25, 25, common::access::wo>,
   groov::field<"reserved0", bool, 24, 24>,
   groov::field<"ispreempt", bool, 23, 23>,
   groov::field<"isrpending", bool, 22, 22, common::access::ro>,
@@ -74,7 +75,7 @@ using ccr_tt = groov::reg<
   groov::field<"reserved0", std::uint32_t, 31, 10, common::access::ro>,
   groov::field<"stkalign", bool, 9, 9>,
   groov::field<"reserved1", std::uint8_t, 8, 4, common::access::ro>,
-  groov::field<"unalign_trp", bool, 3, 3>,
+  groov::field<"unalign_trp", common::bit_enable, 3, 3>,
   groov::field<"reserved2", std::uint8_t, 2, 0, common::access::ro>>;
 
 template <stdx::ct_string Name, std::uint32_t Baseaddress, std::uint32_t Offset>

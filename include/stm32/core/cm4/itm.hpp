@@ -36,17 +36,17 @@ using tcr_tt = groov::reg<Name,
                           Baseaddress + Offset,
                           common::access::rw,
                           groov::field<"reserved2", std::uint8_t, 31, 24, common::access::ro>,
-                          groov::field<"busy", bool, 23, 23>,
+                          groov::field<"busy", common::bit_nready, 23, 23>,
                           groov::field<"tracebusid", std::uint8_t, 22, 16>,
                           groov::field<"reserved1", std::uint8_t, 15, 12, common::access::ro>,
                           groov::field<"gtsfreq", std::uint8_t, 11, 10>,
                           groov::field<"tsprescale", std::uint8_t, 9, 8>,
                           groov::field<"reserved0", std::uint8_t, 7, 5, common::access::ro>,
-                          groov::field<"swoena", bool, 4, 4>,
-                          groov::field<"dwtena", bool, 3, 3>,
-                          groov::field<"syncena", bool, 2, 2>,
-                          groov::field<"tsena", bool, 1, 1>,
-                          groov::field<"itmena", bool, 0, 0>>;
+                          groov::field<"swoena", common::bit_enable, 4, 4>,
+                          groov::field<"dwtena", common::bit_enable, 3, 3>,
+                          groov::field<"syncena", common::bit_enable, 2, 2>,
+                          groov::field<"tsena", common::bit_enable, 1, 1>,
+                          groov::field<"itmena", common::bit_enable, 0, 0>>;
 
 template <stdx::ct_string Name, std::uint32_t Baseaddress, std::uint32_t Offset>
 using lar_tt = groov::reg<Name,

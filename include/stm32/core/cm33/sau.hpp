@@ -16,7 +16,7 @@ using ctrl_tt = groov::reg<Name,
                            common::access::rw,
                            groov::field<"reserved0", std::uint32_t, 31, 2, common::access::ro>,
                            groov::field<"allns", bool, 1, 1>,
-                           groov::field<"enable", bool, 0, 0>>;
+                           groov::field<"enable", common::bit_enable, 0, 0>>;
 
 template <stdx::ct_string Name, std::uint32_t Baseaddress, std::uint32_t Offset>
 using type_tt = groov::reg<Name,
@@ -50,7 +50,7 @@ using rlar_tt = groov::reg<Name,
                            groov::field<"laddr", std::uint32_t, 31, 5>,
                            groov::field<"reserved0", std::uint8_t, 4, 2, common::access::ro>,
                            groov::field<"nsc", bool, 1, 1>,
-                           groov::field<"enable", bool, 0, 0>>;
+                           groov::field<"enable", common::bit_enable, 0, 0>>;
 
 template <stdx::ct_string Name, std::uint32_t Baseaddress, std::uint32_t Offset>
 using sfsr_tt = groov::reg<Name,
