@@ -20,6 +20,7 @@ using fpccr_tt = groov::reg<Name,
                             groov::field<"clronret", bool, 28, 28>,
                             groov::field<"clronrets", bool, 27, 27>,
                             groov::field<"ts", bool, 26, 26>,
+                            groov::field<"reserved0", std::uint16_t, 25, 11, common::access::ro>,
                             groov::field<"ufrdy", common::bit_ready, 10, 10>,
                             groov::field<"splimviol", bool, 9, 9>,
                             groov::field<"monrdy", common::bit_ready, 8, 8>,
@@ -37,17 +38,20 @@ using fpcar_tt = groov::reg<Name,
                             std::uint32_t,
                             Baseaddress + Offset,
                             common::access::rw,
-                            groov::field<"address", std::uint32_t, 31, 3>>;
+                            groov::field<"address", std::uint32_t, 31, 3>,
+                            groov::field<"reserved0", std::uint8_t, 2, 0, common::access::ro>>;
 
 template <stdx::ct_string Name, std::uint32_t Baseaddress, std::uint32_t Offset>
 using fpdscr_tt = groov::reg<Name,
                              std::uint32_t,
                              Baseaddress + Offset,
                              common::access::rw,
+                             groov::field<"reserved1", std::uint8_t, 31, 27, common::access::ro>,
                              groov::field<"ahp", bool, 26, 26>,
                              groov::field<"dn", bool, 25, 25>,
                              groov::field<"fz", bool, 24, 24>,
-                             groov::field<"rmode", std::uint8_t, 23, 22>>;
+                             groov::field<"rmode", std::uint8_t, 23, 22>,
+                             groov::field<"reserved0", std::uint32_t, 21, 0, common::access::ro>>;
 
 template <stdx::ct_string Name, std::uint32_t Baseaddress, std::uint32_t Offset>
 using mvfr0_tt =
@@ -71,6 +75,7 @@ using mvfr1_tt = groov::reg<Name,
                             common::access::ro,
                             groov::field<"fp_fused_mac", std::uint8_t, 31, 28>,
                             groov::field<"fp_hpfp", std::uint8_t, 27, 24>,
+                            groov::field<"reserved0", std::uint16_t, 23, 8, common::access::ro>,
                             groov::field<"d_nan_mode", std::uint8_t, 7, 4>,
                             groov::field<"ftz_mode", std::uint8_t, 3, 0>>;
 
@@ -79,7 +84,9 @@ using mvfr2_tt = groov::reg<Name,
                             std::uint32_t,
                             Baseaddress + Offset,
                             common::access::ro,
-                            groov::field<"fpmisc", std::uint8_t, 7, 4>>;
+                            groov::field<"reserved1", std::uint32_t, 31, 8, common::access::ro>,
+                            groov::field<"fpmisc", std::uint8_t, 7, 4>,
+                            groov::field<"reserved0", std::uint8_t, 3, 0, common::access::ro>>;
 
 template <std::uint32_t Baseaddress>
 using fpu_t = groov::group<"fpu",

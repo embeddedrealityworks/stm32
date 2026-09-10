@@ -19,6 +19,7 @@ using ctrl_tt = groov::reg<Name,
                            groov::field<"noexttrig", bool, 26, 26>,
                            groov::field<"nocyccnt", bool, 25, 25>,
                            groov::field<"noprfcnt", bool, 24, 24>,
+                           groov::field<"reserved1", bool, 23, 23, common::access::ro>,
                            groov::field<"cycevtena", bool, 22, 22>,
                            groov::field<"foldevtena", bool, 21, 21>,
                            groov::field<"lsuevtena", bool, 20, 20>,
@@ -26,6 +27,7 @@ using ctrl_tt = groov::reg<Name,
                            groov::field<"excevtena", bool, 18, 18>,
                            groov::field<"cpievtena", bool, 17, 17>,
                            groov::field<"exctrcena", bool, 16, 16>,
+                           groov::field<"reserved0", std::uint8_t, 15, 13, common::access::ro>,
                            groov::field<"pcsamplena", bool, 12, 12>,
                            groov::field<"synctap", std::uint8_t, 11, 10>,
                            groov::field<"cyctap", bool, 9, 9>,
@@ -45,6 +47,7 @@ using cpicnt_tt = groov::reg<Name,
                              std::uint32_t,
                              Baseaddress + Offset,
                              common::access::rw,
+                             groov::field<"reserved0", std::uint32_t, 31, 8, common::access::ro>,
                              groov::field<"cpicnt", std::uint8_t, 7, 0>>;
 
 template <stdx::ct_string Name, std::uint32_t Baseaddress, std::uint32_t Offset>
@@ -52,6 +55,7 @@ using exccnt_tt = groov::reg<Name,
                              std::uint32_t,
                              Baseaddress + Offset,
                              common::access::rw,
+                             groov::field<"reserved0", std::uint32_t, 31, 8, common::access::ro>,
                              groov::field<"exccnt", std::uint8_t, 7, 0>>;
 
 template <stdx::ct_string Name, std::uint32_t Baseaddress, std::uint32_t Offset>
@@ -59,6 +63,7 @@ using sleepcnt_tt = groov::reg<Name,
                                std::uint32_t,
                                Baseaddress + Offset,
                                common::access::rw,
+                               groov::field<"reserved0", std::uint32_t, 31, 8, common::access::ro>,
                                groov::field<"sleepcnt", std::uint8_t, 7, 0>>;
 
 template <stdx::ct_string Name, std::uint32_t Baseaddress, std::uint32_t Offset>
@@ -66,6 +71,7 @@ using lsucnt_tt = groov::reg<Name,
                              std::uint32_t,
                              Baseaddress + Offset,
                              common::access::rw,
+                             groov::field<"reserved0", std::uint32_t, 31, 8, common::access::ro>,
                              groov::field<"lsucnt", std::uint8_t, 7, 0>>;
 
 template <stdx::ct_string Name, std::uint32_t Baseaddress, std::uint32_t Offset>
@@ -73,6 +79,7 @@ using foldcnt_tt = groov::reg<Name,
                               std::uint32_t,
                               Baseaddress + Offset,
                               common::access::rw,
+                              groov::field<"reserved0", std::uint32_t, 31, 8, common::access::ro>,
                               groov::field<"foldcnt", std::uint8_t, 7, 0>>;
 
 template <stdx::ct_string Name, std::uint32_t Baseaddress, std::uint32_t Offset>

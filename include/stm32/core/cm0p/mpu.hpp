@@ -45,6 +45,7 @@ using rbar_tt = groov::reg<Name,
                            Baseaddress + Offset,
                            common::access::rw,
                            groov::field<"addr", std::uint32_t, 31, 8>,
+                           groov::field<"reserved0", std::uint8_t, 7, 5, common::access::ro>,
                            groov::field<"valid", bool, 4, 4>,
                            groov::field<"region", std::uint8_t, 3, 0>>;
 

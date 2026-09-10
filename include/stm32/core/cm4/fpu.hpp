@@ -17,11 +17,14 @@ namespace erworks::stm32::core::fpu {
                               common::access::rw,
                               groov::field<"aspen", common::bit_enable, 31, 31>,
                               groov::field<"lspen", common::bit_enable, 30, 30>,
+                              groov::field<"reserved2", std::uint32_t, 29, 9, common::access::ro>,
                               groov::field<"monrdy", common::bit_ready, 8, 8>,
+                              groov::field<"reserved1", bool, 7, 7, common::access::ro>,
                               groov::field<"bfrdy", common::bit_ready, 6, 6>,
                               groov::field<"mmrdy", common::bit_ready, 5, 5>,
                               groov::field<"hfrdy", common::bit_ready, 4, 4>,
                               groov::field<"thread", bool, 3, 3>,
+                              groov::field<"reserved0", bool, 2, 2, common::access::ro>,
                               groov::field<"user", bool, 1, 1>,
                               groov::field<"lspact", bool, 0, 0>>;
 
@@ -32,7 +35,8 @@ namespace erworks::stm32::core::fpu {
                               std::uint32_t,
                               Baseaddress + Offset,
                               common::access::rw,
-                              groov::field<"address", std::uint32_t, 31, 3>>;
+                              groov::field<"address", std::uint32_t, 31, 3>,
+                              groov::field<"reserved0", std::uint8_t, 2, 0, common::access::ro>>;
 
   template <stdx::ct_string Name,
             std::uint32_t   Baseaddress,
@@ -41,10 +45,12 @@ namespace erworks::stm32::core::fpu {
                                std::uint32_t,
                                Baseaddress + Offset,
                                common::access::rw,
+                               groov::field<"reserved1", std::uint8_t, 31, 27, common::access::ro>,
                                groov::field<"ahp", bool, 26, 26>,
                                groov::field<"dn", bool, 25, 25>,
                                groov::field<"fz", bool, 24, 24>,
-                               groov::field<"rmode", std::uint8_t, 23, 22>>;
+                               groov::field<"rmode", std::uint8_t, 23, 22>,
+                               groov::field<"reserved0", std::uint32_t, 21, 0, common::access::ro>>;
 
   template <stdx::ct_string Name,
             std::uint32_t   Baseaddress,
@@ -73,6 +79,7 @@ namespace erworks::stm32::core::fpu {
                common::access::ro,
                groov::field<"fp_fused_mac", std::uint8_t, 31, 28>,
                groov::field<"fp_hpfp", std::uint8_t, 27, 24>,
+               groov::field<"reserved0", std::uint16_t, 23, 8, common::access::ro>,
                groov::field<"d_nan_mode", std::uint8_t, 7, 4>,
                groov::field<"ftz_mode", std::uint8_t, 3, 0>>;
 
@@ -83,7 +90,9 @@ namespace erworks::stm32::core::fpu {
                               std::uint32_t,
                               Baseaddress + Offset,
                               common::access::ro,
-                              groov::field<"vfp_misc", std::uint8_t, 7, 4>>;
+                              groov::field<"reserved1", std::uint32_t, 31, 8, common::access::ro>,
+                              groov::field<"vfp_misc", std::uint8_t, 7, 4>,
+                              groov::field<"reserved0", std::uint8_t, 3, 0, common::access::ro>>;
 
   template <std::uint32_t Baseaddress>
   using fpu_t = groov::group<"fpu",

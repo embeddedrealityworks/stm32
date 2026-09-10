@@ -13,7 +13,9 @@ using ctrl_tt = groov::reg<Name,
                            std::uint32_t,
                            Baseaddress + Offset,
                            common::access::rw,
+                           groov::field<"reserved1", std::uint16_t, 31, 17, common::access::ro>,
                            groov::field<"countflag", bool, 16, 16>,
+                           groov::field<"reserved0", std::uint16_t, 15, 3, common::access::ro>,
                            groov::field<"clksource", bool, 2, 2>,
                            groov::field<"tickint", bool, 1, 1>,
                            groov::field<"enable", bool, 0, 0>>;
@@ -23,6 +25,7 @@ using load_tt = groov::reg<Name,
                            std::uint32_t,
                            Baseaddress + Offset,
                            common::access::rw,
+                           groov::field<"reserved0", std::uint8_t, 31, 24, common::access::ro>,
                            groov::field<"reload", std::uint32_t, 23, 0>>;
 
 template <stdx::ct_string Name, std::uint32_t Baseaddress, std::uint32_t Offset>
@@ -30,6 +33,7 @@ using val_tt = groov::reg<Name,
                           std::uint32_t,
                           Baseaddress + Offset,
                           common::access::rw,
+                          groov::field<"reserved0", std::uint8_t, 31, 24, common::access::ro>,
                           groov::field<"current", std::uint32_t, 23, 0>>;
 
 template <stdx::ct_string Name, std::uint32_t Baseaddress, std::uint32_t Offset>
@@ -39,6 +43,7 @@ using calib_tt = groov::reg<Name,
                             common::access::ro,
                             groov::field<"noref", bool, 31, 31>,
                             groov::field<"skew", bool, 30, 30>,
+                            groov::field<"reserved0", std::uint8_t, 29, 24, common::access::ro>,
                             groov::field<"tenms", std::uint32_t, 23, 0>>;
 
 template <std::uint32_t Baseaddress>

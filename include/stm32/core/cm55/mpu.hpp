@@ -17,8 +17,10 @@ using type_tt =
              std::uint32_t,
              Baseaddress + Offset,
              common::access::ro,
+               groov::field<"reserved1", std::uint8_t, 31, 24, common::access::ro>,
                groov::field<"iregion", std::uint8_t, 23, 16>,
                groov::field<"dregion", std::uint8_t, 15, 8>,
+               groov::field<"reserved0", std::uint8_t, 7, 1, common::access::ro>,
                groov::field<"separate", bool, 0, 0>>;
 
 template <stdx::ct_string Name,
@@ -29,6 +31,7 @@ using ctrl_tt =
              std::uint32_t,
              Baseaddress + Offset,
              common::access::rw,
+               groov::field<"reserved0", std::uint32_t, 31, 3, common::access::ro>,
                groov::field<"privdefena", bool, 2, 2>,
                groov::field<"hfnmiena", bool, 1, 1>,
                groov::field<"enable", bool, 0, 0>>;
@@ -41,6 +44,7 @@ using rnr_tt =
              std::uint32_t,
              Baseaddress + Offset,
              common::access::rw,
+               groov::field<"reserved0", std::uint32_t, 31, 8, common::access::ro>,
                groov::field<"region", std::uint8_t, 7, 0>>;
 
 template <stdx::ct_string Name,
