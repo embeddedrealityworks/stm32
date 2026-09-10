@@ -44,5 +44,6 @@
 
 subprojects/*
 !subprojects/generic-register-operation-optimizer.wrap
+.meson-subproject-wrap-hash.txt
 
 svd/raw*
