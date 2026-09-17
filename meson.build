@@ -16,14 +16,15 @@ if meson.is_subproject()
     stm32_mcu = meson.get_external_property('stm32_mcu')
 
     subdir('include/stm32')
+    subdir('linker')
 
     inc = include_directories('include')
-
-    svd_file = meson.current_source_dir() / 'svd' / stm32_mcu.to_upper() + '.svd'
 
     stm32_dep = declare_dependency(
         include_directories: inc,
         dependencies: [groov_dep],
+        link_with: stm32_lib,
+        link_args: ['-T', ld_script.full_path()],
     )
 
 else
