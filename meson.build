@@ -17,8 +17,14 @@ if meson.is_subproject()
 
     subdir('include/stm32')
     subdir('linker')
+    subdir('src')
 
     inc = include_directories('include')
+
+    stm32_lib = static_library(
+      'stm32_lib',
+      startup_src,
+      )
 
     stm32_dep = declare_dependency(
         include_directories: inc,
