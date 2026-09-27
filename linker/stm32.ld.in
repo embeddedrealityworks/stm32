@@ -1,10 +1,12 @@
-ENTRY(_start)
+ENTRY(_reset)
 
 MEMORY
 {
   flash (rx) : ORIGIN = @flash_origin@, LENGTH = @flash_kb@K
   ram (xrw) : ORIGIN = @ram_origin@, LENGTH = @ram_kb@K
 }
+
+_estack = ORIGIN(ram) + LENGTH(ram);
 
 SECTIONS
 {
@@ -43,6 +45,15 @@ SECTIONS
   *(.rodata*)
   . = ALIGN(4);
   _erodata = .;
+} >flash
+
+.init_array :
+{
+  . = ALIGN(4);
+  __init_array_start = .;
+  KEEP(*(SORT(.init_array.*)))
+  KEEP(*(.init_array))
+  __init_array_end = .;
 } >flash
 
 .data :
