@@ -153,11 +153,17 @@ struct Register {
   std::string          signature;
 };
 
+struct Interrupt {
+  std::string name;
+  int         value = -1;
+};
+
 struct Peripheral {
   std::string                name;
   unsigned long              base_address = 0;
   std::string                group_name;
   std::vector<Register>      registers;
+  std::vector<Interrupt>     interrupts;
   std::optional<std::string> derived_from;
 };
 
@@ -253,6 +259,20 @@ auto parse_register(const pt::ptree &reg_node) -> Register {
   return r;
 }
 
+// A peripheral's <interrupt> elements are direct children, not wrapped
+// (unlike <registers>/<register>).
+auto parse_interrupts(const pt::ptree &node) -> std::vector<Interrupt> {
+  std::vector<Interrupt> irqs;
+  for (const auto &[key, child] : node) {
+    if (key != "interrupt") continue;
+    auto name = opt_child(child, "name");
+    auto val  = opt_child(child, "value");
+    if (!name || !val) continue;
+    irqs.push_back(Interrupt{*name, static_cast<int>(parse_int(*val))});
+  }
+  return irqs;
+}
+
 auto parse_peripheral(const pt::ptree           &node,
                       const std::vector<Peripheral> &order,
                       const std::map<std::string, std::size_t> &pos) -> Peripheral {
@@ -279,6 +299,13 @@ auto parse_peripheral(const pt::ptree           &node,
     for (const auto &[key, rn] : *regs_node)
       if (key == "register") p.registers.push_back(parse_register(rn));
   }
+
+  // Interrupts differ per instance even when derived (e.g. USART2 from
+  // USART1), so only fall back to the source's when this one has none.
+  p.interrupts = parse_interrupts(node);
+  if (p.interrupts.empty() && src_it != pos.end())
+    p.interrupts = order[src_it->second].interrupts;
+
   return p;
 }
 
@@ -965,6 +992,27 @@ void list_peripherals(const std::string &svd_path) {
   for (const auto &n : names) std::println("{}", n);
 }
 
+// Device-wide interrupt list: peripherals can share an IRQ line (e.g. an
+// EXTI range spans multiple EXTIx entries), so dedupe by vector position,
+// keeping the name first seen in document order.
+auto collect_interrupts(const std::vector<Peripheral> &peripherals)
+  -> std::vector<Interrupt> {
+  std::map<int, std::string> by_value;
+  for (const auto &p : peripherals)
+    for (const auto &irq : p.interrupts)
+      by_value.emplace(irq.value, irq.name);
+
+  std::vector<Interrupt> out;
+  for (const auto &[value, name] : by_value) out.push_back({name, value});
+  return out;
+}
+
+void list_interrupts(const std::string &svd_path) {
+  auto peripherals = parse_svd_tree(read_svd(svd_path));
+  for (const auto &irq : collect_interrupts(peripherals))
+    std::println("{} {}", irq.value, irq.name);
+}
+
 } // namespace
 
 auto main(int argc, char *argv[]) -> int {
@@ -982,6 +1030,8 @@ auto main(int argc, char *argv[]) -> int {
     .default_value(0);
   parser.flag("--list-peripherals")
     .help("Print peripheral names (one per line) and exit");
+  parser.flag("--list-interrupts")
+    .help("Print \"<value> <name>\" for each interrupt, sorted by value, and exit");
 
   auto result = parser.parse_or_exit(argc, argv);
 
@@ -1000,6 +1050,11 @@ auto main(int argc, char *argv[]) -> int {
 
   if (result.get<bool>("--list-peripherals")) {
     for (const auto &path : svd_files) list_peripherals(path);
+    return 0;
+  }
+
+  if (result.get<bool>("--list-interrupts")) {
+    for (const auto &path : svd_files) list_interrupts(path);
     return 0;
   }
 
