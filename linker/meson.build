@@ -14,4 +14,3 @@ ld_script = configure_file(
   output: 'linker.ld',
   configuration: ld_conf,
   )
-
