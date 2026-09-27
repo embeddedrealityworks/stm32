@@ -23,7 +23,7 @@ if meson.is_subproject()
 
     stm32_lib = static_library(
       'stm32_lib',
-      startup_src,
+      stm32_src,
       )
 
     stm32_dep = declare_dependency(
