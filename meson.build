@@ -34,6 +34,5 @@ if meson.is_subproject()
     )
 
 else
-    subdir('tools')
     subdir('docs')
 endif
