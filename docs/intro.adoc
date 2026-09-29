@@ -1,6 +1,6 @@
 == Introduction
 
-STM32 Groov register access.
+STM32 Groov register access, startup and linker code.
 
 === Dependencies
 
@@ -8,4 +8,12 @@ STM32 Groov register access.
 
 === Usage
 
-You have this as subproject. Meson should know the target when configuring build.
+You have this as subproject. Meson should know the target when configuring build. Following meson external properties should be set:
+flash_origin
+flash_kb
+ram_origin
+ram_kb
+heap_size
+stack_size
+stm32_mcu
++ additional clock configuration.
