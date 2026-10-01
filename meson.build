@@ -8,15 +8,23 @@ project(
     meson_version: '>=1.10',
 )
 
+fs = import('fs')
+
 if meson.is_subproject()
 
     groov_sub = subproject('generic-register-operation-optimizer')
     groov_dep = groov_sub.get_variable('groov_dep')
 
-    stm32_mcu = meson.get_external_property('stm32_mcu')
+    ioc_file = get_option('ioc')
+    if not fs.exists(ioc_file)
+        error('The specified ioc file does not exist: ' + ioc_file)
+    endif
 
+    # configure headers
     subdir('include/stm32')
+    # configure linker script
     subdir('linker')
+    # fetch source files
     subdir('src')
 
     inc = include_directories('include')
